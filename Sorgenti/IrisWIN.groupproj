@@ -1,0 +1,1302 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0e927eea-5b95-48f8-a3c1-8eedefac1d3f}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PJRilPre\A002PAnagrafe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJStipendi\P000PStipendi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJStatoGiuridico\S000PStatoGiuridico.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJIrisWEB\W000PIrisWEB.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJIrisWEB\W000PIrisWEB_SRV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJIrisWEB\W000PIrisWEB_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJAppMobile\WM000PIrisAPP.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJRilPre\A077PCOMServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJStipendi\P077PCOMServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJStipendi\P714PComServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B000PConfigWebServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B005PAggIris.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B006PScaricoAuto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B006PScaricoService.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B008PGeneraPassword.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B010PMessaggiOrologi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B010PMessaggiOrologiSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B011PAllineamentoServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B012PAllineamentoClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B013PIntegrazioneEMK.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B014PIntegrazioneAnagrafica.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B015PScaricoGiustificativi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B015PScaricoGiustificativiSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B016PSetup.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B019PGeneratoreStampe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B019PGeneratoreStampeSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B020PIrisWebSvc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B020PIrisWEBSvc_Vcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B020PTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B021PIrisRestSvc_Vcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B021PIrisRestSvc_SRV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B021PIrisRestSvc_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B021PTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B022PUtilityGestDocumentale.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B023PCifraturaCedolini.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B026PArchiviazioneCartelliniSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B027PCartellinoSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B028PPrintServer_COM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B110PWSMobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJServizi\B110PWSMobile_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudRilPre\IrisCloudRilPre.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudRilPre\IrisCloudRilPre_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudStipendi\IrisCloudStipendi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCloudStipendi\IrisCloudStipendi_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJCalcolatrice\PCalcolatrice.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJX_Utenti\X001PCentriCostoTOHM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJX_Utenti\X002PSSOLoginWeb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJX_Utenti\X004PIntegrazioneNBS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <BorlandProject>
+                <Default.Personality/>
+            </BorlandProject>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="A002PAnagrafe">
+        <MSBuild Projects="PJRilPre\A002PAnagrafe.dproj"/>
+    </Target>
+    <Target Name="A002PAnagrafe:Clean">
+        <MSBuild Projects="PJRilPre\A002PAnagrafe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A002PAnagrafe:Make">
+        <MSBuild Projects="PJRilPre\A002PAnagrafe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P000PStipendi">
+        <MSBuild Projects="PJStipendi\P000PStipendi.dproj"/>
+    </Target>
+    <Target Name="P000PStipendi:Clean">
+        <MSBuild Projects="PJStipendi\P000PStipendi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P000PStipendi:Make">
+        <MSBuild Projects="PJStipendi\P000PStipendi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S000PStatoGiuridico">
+        <MSBuild Projects="PJStatoGiuridico\S000PStatoGiuridico.dproj"/>
+    </Target>
+    <Target Name="S000PStatoGiuridico:Clean">
+        <MSBuild Projects="PJStatoGiuridico\S000PStatoGiuridico.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S000PStatoGiuridico:Make">
+        <MSBuild Projects="PJStatoGiuridico\S000PStatoGiuridico.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="W000PIrisWEB">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB.dproj"/>
+    </Target>
+    <Target Name="W000PIrisWEB:Clean">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="W000PIrisWEB:Make">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="W000PIrisWEB_SRV">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_SRV.dproj"/>
+    </Target>
+    <Target Name="W000PIrisWEB_SRV:Clean">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_SRV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="W000PIrisWEB_SRV:Make">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_SRV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="W000PIrisWEB_IIS">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_IIS.dproj"/>
+    </Target>
+    <Target Name="W000PIrisWEB_IIS:Clean">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="W000PIrisWEB_IIS:Make">
+        <MSBuild Projects="PJIrisWEB\W000PIrisWEB_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WM000PIrisAPP">
+        <MSBuild Projects="PJAppMobile\WM000PIrisAPP.dproj"/>
+    </Target>
+    <Target Name="WM000PIrisAPP:Clean">
+        <MSBuild Projects="PJAppMobile\WM000PIrisAPP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WM000PIrisAPP:Make">
+        <MSBuild Projects="PJAppMobile\WM000PIrisAPP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A077PCOMServer">
+        <MSBuild Projects="PJRilPre\A077PCOMServer.dproj"/>
+    </Target>
+    <Target Name="A077PCOMServer:Clean">
+        <MSBuild Projects="PJRilPre\A077PCOMServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A077PCOMServer:Make">
+        <MSBuild Projects="PJRilPre\A077PCOMServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P077PCOMServer">
+        <MSBuild Projects="PJStipendi\P077PCOMServer.dproj"/>
+    </Target>
+    <Target Name="P077PCOMServer:Clean">
+        <MSBuild Projects="PJStipendi\P077PCOMServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P077PCOMServer:Make">
+        <MSBuild Projects="PJStipendi\P077PCOMServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P714PComServer">
+        <MSBuild Projects="PJStipendi\P714PComServer.dproj"/>
+    </Target>
+    <Target Name="P714PComServer:Clean">
+        <MSBuild Projects="PJStipendi\P714PComServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P714PComServer:Make">
+        <MSBuild Projects="PJStipendi\P714PComServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B000PConfigWebServer">
+        <MSBuild Projects="PJServizi\B000PConfigWebServer.dproj"/>
+    </Target>
+    <Target Name="B000PConfigWebServer:Clean">
+        <MSBuild Projects="PJServizi\B000PConfigWebServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B000PConfigWebServer:Make">
+        <MSBuild Projects="PJServizi\B000PConfigWebServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B005PAggIris">
+        <MSBuild Projects="PJServizi\B005PAggIris.dproj"/>
+    </Target>
+    <Target Name="B005PAggIris:Clean">
+        <MSBuild Projects="PJServizi\B005PAggIris.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B005PAggIris:Make">
+        <MSBuild Projects="PJServizi\B005PAggIris.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B006PScaricoAuto">
+        <MSBuild Projects="PJServizi\B006PScaricoAuto.dproj"/>
+    </Target>
+    <Target Name="B006PScaricoAuto:Clean">
+        <MSBuild Projects="PJServizi\B006PScaricoAuto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B006PScaricoAuto:Make">
+        <MSBuild Projects="PJServizi\B006PScaricoAuto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B006PScaricoService">
+        <MSBuild Projects="PJServizi\B006PScaricoService.dproj"/>
+    </Target>
+    <Target Name="B006PScaricoService:Clean">
+        <MSBuild Projects="PJServizi\B006PScaricoService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B006PScaricoService:Make">
+        <MSBuild Projects="PJServizi\B006PScaricoService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B008PGeneraPassword">
+        <MSBuild Projects="PJServizi\B008PGeneraPassword.dproj"/>
+    </Target>
+    <Target Name="B008PGeneraPassword:Clean">
+        <MSBuild Projects="PJServizi\B008PGeneraPassword.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B008PGeneraPassword:Make">
+        <MSBuild Projects="PJServizi\B008PGeneraPassword.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologi">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologi.dproj"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologi:Clean">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologi:Make">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologiSrv">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologiSrv.dproj"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologiSrv:Clean">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologiSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B010PMessaggiOrologiSrv:Make">
+        <MSBuild Projects="PJServizi\B010PMessaggiOrologiSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B011PAllineamentoServer">
+        <MSBuild Projects="PJServizi\B011PAllineamentoServer.dproj"/>
+    </Target>
+    <Target Name="B011PAllineamentoServer:Clean">
+        <MSBuild Projects="PJServizi\B011PAllineamentoServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B011PAllineamentoServer:Make">
+        <MSBuild Projects="PJServizi\B011PAllineamentoServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B012PAllineamentoClient">
+        <MSBuild Projects="PJServizi\B012PAllineamentoClient.dproj"/>
+    </Target>
+    <Target Name="B012PAllineamentoClient:Clean">
+        <MSBuild Projects="PJServizi\B012PAllineamentoClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B012PAllineamentoClient:Make">
+        <MSBuild Projects="PJServizi\B012PAllineamentoClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B013PIntegrazioneEMK">
+        <MSBuild Projects="PJServizi\B013PIntegrazioneEMK.dproj"/>
+    </Target>
+    <Target Name="B013PIntegrazioneEMK:Clean">
+        <MSBuild Projects="PJServizi\B013PIntegrazioneEMK.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B013PIntegrazioneEMK:Make">
+        <MSBuild Projects="PJServizi\B013PIntegrazioneEMK.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagrafica">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagrafica.dproj"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagrafica:Clean">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagrafica.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagrafica:Make">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagrafica.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagraficaSrv">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagraficaSrv:Clean">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B014PIntegrazioneAnagraficaSrv:Make">
+        <MSBuild Projects="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativi">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativi.dproj"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativi:Clean">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativi:Make">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativiSrv">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativiSrv.dproj"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativiSrv:Clean">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativiSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B015PScaricoGiustificativiSrv:Make">
+        <MSBuild Projects="PJServizi\B015PScaricoGiustificativiSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B016PSetup">
+        <MSBuild Projects="PJServizi\B016PSetup.dproj"/>
+    </Target>
+    <Target Name="B016PSetup:Clean">
+        <MSBuild Projects="PJServizi\B016PSetup.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B016PSetup:Make">
+        <MSBuild Projects="PJServizi\B016PSetup.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampe">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampe.dproj"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampe:Clean">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampe:Make">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampeSrv">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampeSrv.dproj"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampeSrv:Clean">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampeSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B019PGeneratoreStampeSrv:Make">
+        <MSBuild Projects="PJServizi\B019PGeneratoreStampeSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B020PIrisWebSvc">
+        <MSBuild Projects="PJServizi\B020PIrisWebSvc.dproj"/>
+    </Target>
+    <Target Name="B020PIrisWebSvc:Clean">
+        <MSBuild Projects="PJServizi\B020PIrisWebSvc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B020PIrisWebSvc:Make">
+        <MSBuild Projects="PJServizi\B020PIrisWebSvc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B020PIrisWEBSvc_Vcl">
+        <MSBuild Projects="PJServizi\B020PIrisWEBSvc_Vcl.dproj"/>
+    </Target>
+    <Target Name="B020PIrisWEBSvc_Vcl:Clean">
+        <MSBuild Projects="PJServizi\B020PIrisWEBSvc_Vcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B020PIrisWEBSvc_Vcl:Make">
+        <MSBuild Projects="PJServizi\B020PIrisWEBSvc_Vcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B020PTest">
+        <MSBuild Projects="PJServizi\B020PTest.dproj"/>
+    </Target>
+    <Target Name="B020PTest:Clean">
+        <MSBuild Projects="PJServizi\B020PTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B020PTest:Make">
+        <MSBuild Projects="PJServizi\B020PTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_Vcl">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_Vcl.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_Vcl:Clean">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_Vcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_Vcl:Make">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_Vcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_SRV.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV:Clean">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_SRV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV:Make">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_SRV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_IIS.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS:Clean">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS:Make">
+        <MSBuild Projects="PJServizi\B021PIrisRestSvc_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PTest">
+        <MSBuild Projects="PJServizi\B021PTest.dproj"/>
+    </Target>
+    <Target Name="B021PTest:Clean">
+        <MSBuild Projects="PJServizi\B021PTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PTest:Make">
+        <MSBuild Projects="PJServizi\B021PTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B022PUtilityGestDocumentale">
+        <MSBuild Projects="PJServizi\B022PUtilityGestDocumentale.dproj"/>
+    </Target>
+    <Target Name="B022PUtilityGestDocumentale:Clean">
+        <MSBuild Projects="PJServizi\B022PUtilityGestDocumentale.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B022PUtilityGestDocumentale:Make">
+        <MSBuild Projects="PJServizi\B022PUtilityGestDocumentale.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B023PCifraturaCedolini">
+        <MSBuild Projects="PJServizi\B023PCifraturaCedolini.dproj"/>
+    </Target>
+    <Target Name="B023PCifraturaCedolini:Clean">
+        <MSBuild Projects="PJServizi\B023PCifraturaCedolini.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B023PCifraturaCedolini:Make">
+        <MSBuild Projects="PJServizi\B023PCifraturaCedolini.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv">
+        <MSBuild Projects="PJServizi\B026PArchiviazioneCartelliniSrv.dproj"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv:Clean">
+        <MSBuild Projects="PJServizi\B026PArchiviazioneCartelliniSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv:Make">
+        <MSBuild Projects="PJServizi\B026PArchiviazioneCartelliniSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv">
+        <MSBuild Projects="PJServizi\B027PCartellinoSrv.dproj"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv:Clean">
+        <MSBuild Projects="PJServizi\B027PCartellinoSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv:Make">
+        <MSBuild Projects="PJServizi\B027PCartellinoSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM">
+        <MSBuild Projects="PJServizi\B028PPrintServer_COM.dproj"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Clean">
+        <MSBuild Projects="PJServizi\B028PPrintServer_COM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Make">
+        <MSBuild Projects="PJServizi\B028PPrintServer_COM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B110PWSMobile">
+        <MSBuild Projects="PJServizi\B110PWSMobile.dproj"/>
+    </Target>
+    <Target Name="B110PWSMobile:Clean">
+        <MSBuild Projects="PJServizi\B110PWSMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B110PWSMobile:Make">
+        <MSBuild Projects="PJServizi\B110PWSMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B110PWSMobile_IIS">
+        <MSBuild Projects="PJServizi\B110PWSMobile_IIS.dproj"/>
+    </Target>
+    <Target Name="B110PWSMobile_IIS:Clean">
+        <MSBuild Projects="PJServizi\B110PWSMobile_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B110PWSMobile_IIS:Make">
+        <MSBuild Projects="PJServizi\B110PWSMobile_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudRilPre">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre.dproj"/>
+    </Target>
+    <Target Name="IrisCloudRilPre:Clean">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudRilPre:Make">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudRilPre_IIS">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre_IIS.dproj"/>
+    </Target>
+    <Target Name="IrisCloudRilPre_IIS:Clean">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudRilPre_IIS:Make">
+        <MSBuild Projects="PJCloudRilPre\IrisCloudRilPre_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu:Clean">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu:Make">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu_IIS">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu_IIS:Clean">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudStaGiu_IIS:Make">
+        <MSBuild Projects="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudStipendi">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi.dproj"/>
+    </Target>
+    <Target Name="IrisCloudStipendi:Clean">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudStipendi:Make">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IrisCloudStipendi_IIS">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi_IIS.dproj"/>
+    </Target>
+    <Target Name="IrisCloudStipendi_IIS:Clean">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IrisCloudStipendi_IIS:Make">
+        <MSBuild Projects="PJCloudStipendi\IrisCloudStipendi_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PCalcolatrice">
+        <MSBuild Projects="PJCalcolatrice\PCalcolatrice.dproj"/>
+    </Target>
+    <Target Name="PCalcolatrice:Clean">
+        <MSBuild Projects="PJCalcolatrice\PCalcolatrice.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PCalcolatrice:Make">
+        <MSBuild Projects="PJCalcolatrice\PCalcolatrice.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM.dproj"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM:Clean">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM:Make">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM_IIS">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM_IIS:Clean">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="X001PCentriCostoTOHM_IIS:Make">
+        <MSBuild Projects="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="X002PSSOLoginWeb">
+        <MSBuild Projects="PJX_Utenti\X002PSSOLoginWeb.dproj"/>
+    </Target>
+    <Target Name="X002PSSOLoginWeb:Clean">
+        <MSBuild Projects="PJX_Utenti\X002PSSOLoginWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="X002PSSOLoginWeb:Make">
+        <MSBuild Projects="PJX_Utenti\X002PSSOLoginWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBS">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBS.dproj"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBS:Clean">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBS:Make">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBSSrv">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBSSrv:Clean">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="X004PIntegrazioneNBSSrv:Make">
+        <MSBuild Projects="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="A002PAnagrafe;P000PStipendi;S000PStatoGiuridico;W000PIrisWEB;W000PIrisWEB_SRV;W000PIrisWEB_IIS;WM000PIrisAPP;A077PCOMServer;P077PCOMServer;P714PComServer;B000PConfigWebServer;B005PAggIris;B006PScaricoAuto;B006PScaricoService;B008PGeneraPassword;B010PMessaggiOrologi;B010PMessaggiOrologiSrv;B011PAllineamentoServer;B012PAllineamentoClient;B013PIntegrazioneEMK;B014PIntegrazioneAnagrafica;B014PIntegrazioneAnagraficaSrv;B015PScaricoGiustificativi;B015PScaricoGiustificativiSrv;B016PSetup;B019PGeneratoreStampe;B019PGeneratoreStampeSrv;B020PIrisWebSvc;B020PIrisWEBSvc_Vcl;B020PTest;B021PIrisRestSvc_Vcl;B021PIrisRestSvc_SRV;B021PIrisRestSvc_IIS;B021PTest;B022PUtilityGestDocumentale;B023PCifraturaCedolini;B026PArchiviazioneCartelliniSrv;B027PCartellinoSrv;B028PPrintServer_COM;B110PWSMobile;B110PWSMobile_IIS;IrisCloudRilPre;IrisCloudRilPre_IIS;IrisCloudStaGiu;IrisCloudStaGiu_IIS;IrisCloudStipendi;IrisCloudStipendi_IIS;PCalcolatrice;X001PCentriCostoTOHM;X001PCentriCostoTOHM_IIS;X002PSSOLoginWeb;X004PIntegrazioneNBS;X004PIntegrazioneNBSSrv"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="A002PAnagrafe:Clean;P000PStipendi:Clean;S000PStatoGiuridico:Clean;W000PIrisWEB:Clean;W000PIrisWEB_SRV:Clean;W000PIrisWEB_IIS:Clean;WM000PIrisAPP:Clean;A077PCOMServer:Clean;P077PCOMServer:Clean;P714PComServer:Clean;B000PConfigWebServer:Clean;B005PAggIris:Clean;B006PScaricoAuto:Clean;B006PScaricoService:Clean;B008PGeneraPassword:Clean;B010PMessaggiOrologi:Clean;B010PMessaggiOrologiSrv:Clean;B011PAllineamentoServer:Clean;B012PAllineamentoClient:Clean;B013PIntegrazioneEMK:Clean;B014PIntegrazioneAnagrafica:Clean;B014PIntegrazioneAnagraficaSrv:Clean;B015PScaricoGiustificativi:Clean;B015PScaricoGiustificativiSrv:Clean;B016PSetup:Clean;B019PGeneratoreStampe:Clean;B019PGeneratoreStampeSrv:Clean;B020PIrisWebSvc:Clean;B020PIrisWEBSvc_Vcl:Clean;B020PTest:Clean;B021PIrisRestSvc_Vcl:Clean;B021PIrisRestSvc_SRV:Clean;B021PIrisRestSvc_IIS:Clean;B021PTest:Clean;B022PUtilityGestDocumentale:Clean;B023PCifraturaCedolini:Clean;B026PArchiviazioneCartelliniSrv:Clean;B027PCartellinoSrv:Clean;B028PPrintServer_COM:Clean;B110PWSMobile:Clean;B110PWSMobile_IIS:Clean;IrisCloudRilPre:Clean;IrisCloudRilPre_IIS:Clean;IrisCloudStaGiu:Clean;IrisCloudStaGiu_IIS:Clean;IrisCloudStipendi:Clean;IrisCloudStipendi_IIS:Clean;PCalcolatrice:Clean;X001PCentriCostoTOHM:Clean;X001PCentriCostoTOHM_IIS:Clean;X002PSSOLoginWeb:Clean;X004PIntegrazioneNBS:Clean;X004PIntegrazioneNBSSrv:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="A002PAnagrafe:Make;P000PStipendi:Make;S000PStatoGiuridico:Make;W000PIrisWEB:Make;W000PIrisWEB_SRV:Make;W000PIrisWEB_IIS:Make;WM000PIrisAPP:Make;A077PCOMServer:Make;P077PCOMServer:Make;P714PComServer:Make;B000PConfigWebServer:Make;B005PAggIris:Make;B006PScaricoAuto:Make;B006PScaricoService:Make;B008PGeneraPassword:Make;B010PMessaggiOrologi:Make;B010PMessaggiOrologiSrv:Make;B011PAllineamentoServer:Make;B012PAllineamentoClient:Make;B013PIntegrazioneEMK:Make;B014PIntegrazioneAnagrafica:Make;B014PIntegrazioneAnagraficaSrv:Make;B015PScaricoGiustificativi:Make;B015PScaricoGiustificativiSrv:Make;B016PSetup:Make;B019PGeneratoreStampe:Make;B019PGeneratoreStampeSrv:Make;B020PIrisWebSvc:Make;B020PIrisWEBSvc_Vcl:Make;B020PTest:Make;B021PIrisRestSvc_Vcl:Make;B021PIrisRestSvc_SRV:Make;B021PIrisRestSvc_IIS:Make;B021PTest:Make;B022PUtilityGestDocumentale:Make;B023PCifraturaCedolini:Make;B026PArchiviazioneCartelliniSrv:Make;B027PCartellinoSrv:Make;B028PPrintServer_COM:Make;B110PWSMobile:Make;B110PWSMobile_IIS:Make;IrisCloudRilPre:Make;IrisCloudRilPre_IIS:Make;IrisCloudStaGiu:Make;IrisCloudStaGiu_IIS:Make;IrisCloudStipendi:Make;IrisCloudStipendi_IIS:Make;PCalcolatrice:Make;X001PCentriCostoTOHM:Make;X001PCentriCostoTOHM_IIS:Make;X002PSSOLoginWeb:Make;X004PIntegrazioneNBS:Make;X004PIntegrazioneNBSSrv:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+    <ItemGroup Condition="'$(BuildGroup)'=='IrisCloud'">
+        <BuildGroupProject Include="PJCloudRilPre\IrisCloudRilPre.dproj">
+            <ProjectGuid>{1FDAEEC2-627F-4477-AB6B-665036C185AB}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj">
+            <ProjectGuid>{CB69F480-BAB2-486C-8113-D4CB4B36DB1D}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB_IIS.dproj">
+            <ProjectGuid>{AA6CFB17-6615-4E10-8F3B-F7502DF42F29}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB_SRV.dproj">
+            <ProjectGuid>{F5A89266-6521-4A80-9E9F-16DBD313F1F2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B026PArchiviazioneCartelliniSrv.dproj">
+            <ProjectGuid>{1D33ECEE-0AB9-4B70-AAC4-21D83A30E94C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B027PCartellinoSrv.dproj">
+            <ProjectGuid>{F7B33523-B63A-4F17-BDCE-E211E8884BFA}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B019PGeneratoreStampe.dproj">
+            <ProjectGuid>{B2D6093E-8CE2-4109-BC93-866EE5C45B38}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X002PSSOLoginWeb.dproj">
+            <ProjectGuid>{FD7F3C4D-0550-4F33-A811-D67D12CD3190}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudRilPre\IrisCloudRilPre_IIS.dproj">
+            <ProjectGuid>{B1643D91-388A-47AC-A6B0-4991AD0ABBDC}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B010PMessaggiOrologi.dproj">
+            <ProjectGuid>{52ECE843-3EAB-4C03-8456-FF6587E2DA02}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj">
+            <ProjectGuid>{7E8B5FEB-43D1-4D47-97F3-EF6932AECAFF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj">
+            <ProjectGuid>{799D955A-3F90-4274-933C-BE9F3A8D5251}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStipendi\IrisCloudStipendi.dproj">
+            <ProjectGuid>{234C38C0-F54F-4A5E-A53E-005748416D80}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B006PScaricoAuto.dproj">
+            <ProjectGuid>{DD10471C-D8E6-48CE-B3BA-33E2FF760372}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJRilPre\A002PAnagrafe.dproj">
+            <ProjectGuid>{883CBD0D-7943-4DF6-B238-FF41ADA84B1D}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B023PCifraturaCedolini.dproj">
+            <ProjectGuid>{41C27C97-382E-4B87-8B59-6DC09E5258CB}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PIrisWebSvc.dproj">
+            <ProjectGuid>{E5070807-B522-4516-BEC2-CAD1D1DD0168}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B006PScaricoService.dproj">
+            <ProjectGuid>{5BE0BF65-A205-451D-8DEE-770B7786307B}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJAppMobile\WM000PIrisAPP.dproj">
+            <ProjectGuid>{561C24E8-7811-498C-942E-934B46BD99C4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PTest.dproj">
+            <ProjectGuid>{6F48C644-1F30-4292-9A8D-5EDFFF74BEFC}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B110PWSMobile_IIS.dproj">
+            <ProjectGuid>{B7D3E775-F04C-46E2-91EE-A52895EFA327}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj">
+            <ProjectGuid>{348C32BC-3C5E-4CE6-AFC8-4DCF41F9E01A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B012PAllineamentoClient.dproj">
+            <ProjectGuid>{AAC612AA-C6A5-4AE6-8F01-B73789EAB764}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B015PScaricoGiustificativiSrv.dproj">
+            <ProjectGuid>{26A1F526-237D-445C-8CCF-66867C58A883}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B011PAllineamentoServer.dproj">
+            <ProjectGuid>{67DFD103-8D6C-4343-B8BE-A56830AA47E6}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X001PCentriCostoTOHM.dproj">
+            <ProjectGuid>{AB88DB05-58A9-4CC6-9319-AED860246EE2}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB.dproj">
+            <ProjectGuid>{247A602A-6B35-48D4-854D-FA878004DBF1}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B008PGeneraPassword.dproj">
+            <ProjectGuid>{F0ECFD67-0E54-44A7-8E18-9C5412350DCD}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B019PGeneratoreStampeSrv.dproj">
+            <ProjectGuid>{3B88BE5C-542A-4B77-B810-8952378D2EB8}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_IIS.dproj">
+            <ProjectGuid>{644726A7-B239-42BA-A99A-F858ACEA4C40}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B028PPrintServer_COM.dproj">
+            <ProjectGuid>{193D9805-C35D-445C-9114-076CC355CCEE}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_Vcl.dproj">
+            <ProjectGuid>{0AA685F0-FFF7-4191-8356-A0EF3E086A30}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_SRV.dproj">
+            <ProjectGuid>{BB645347-F5EB-4FB1-BC05-62B8E890AFE1}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B010PMessaggiOrologiSrv.dproj">
+            <ProjectGuid>{1892EBCF-B3D0-44A1-9033-0B39949F64EA}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj">
+            <ProjectGuid>{43D1DF10-A68C-41AF-8BD2-F286181DBA89}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PTest.dproj">
+            <ProjectGuid>{4E02381B-74F7-415A-9FC4-0F110F98CB50}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B014PIntegrazioneAnagrafica.dproj">
+            <ProjectGuid>{381586E0-B9D4-4C96-869A-6881280AA591}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJRilPre\A077PCOMServer.dproj">
+            <ProjectGuid>{07A886DC-310E-4BF9-8BE5-058F3E9F1B4A}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStatoGiuridico\S000PStatoGiuridico.dproj">
+            <ProjectGuid>{F024F554-6E96-4989-AFDA-DC18CBAD27B9}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PIrisWEBSvc_Vcl.dproj">
+            <ProjectGuid>{CF38FAF7-23EF-4226-AFDF-1C26BBB4CC8E}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStipendi\IrisCloudStipendi_IIS.dproj">
+            <ProjectGuid>{1AD186A0-47AA-4030-9696-76A338806F25}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B110PWSMobile.dproj">
+            <ProjectGuid>{6D794842-E13F-4D8B-BA97-7B9EDFBC3E49}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P714PComServer.dproj">
+            <ProjectGuid>{B6B69010-C8AA-41CD-A36F-41CC5E9770AE}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P000PStipendi.dproj">
+            <ProjectGuid>{D96A8100-0FC0-4E1F-9139-1B3AA8EB1BFD}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B000PConfigWebServer.dproj">
+            <ProjectGuid>{7F177996-B465-4664-AEB6-D20DDE09AA85}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B013PIntegrazioneEMK.dproj">
+            <ProjectGuid>{9DBCA285-D906-45C0-8DB5-CACC44844C0B}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P077PCOMServer.dproj">
+            <ProjectGuid>{FAF3EED0-5D78-4767-B121-C0352A38E065}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B015PScaricoGiustificativi.dproj">
+            <ProjectGuid>{A73A43A9-FA92-4B11-B2C7-F63F95EF0D0A}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B016PSetup.dproj">
+            <ProjectGuid>{BB5C39E7-6471-412F-AA78-6D1CA5BD1292}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCalcolatrice\PCalcolatrice.dproj">
+            <ProjectGuid>{22B2D241-C798-4F3D-B868-0F6FE12EC177}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B022PUtilityGestDocumentale.dproj">
+            <ProjectGuid>{0A199927-2CAF-49A1-896A-8F7B02B7A062}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B005PAggIris.dproj">
+            <ProjectGuid>{EB27706E-E140-45DC-9DA1-996447DE5DA0}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X004PIntegrazioneNBS.dproj">
+            <ProjectGuid>{6D77CB09-C213-4D4B-84A5-3FC40C543197}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
+    <ItemGroup Condition="'$(BuildGroup)'=='IrisWEB'">
+        <BuildGroupProject Include="PJCloudRilPre\IrisCloudRilPre.dproj">
+            <ProjectGuid>{1FDAEEC2-627F-4477-AB6B-665036C185AB}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStatoGiuridico\IrisCloudStaGiu.dproj">
+            <ProjectGuid>{CB69F480-BAB2-486C-8113-D4CB4B36DB1D}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB_IIS.dproj">
+            <ProjectGuid>{AA6CFB17-6615-4E10-8F3B-F7502DF42F29}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB_SRV.dproj">
+            <ProjectGuid>{F5A89266-6521-4A80-9E9F-16DBD313F1F2}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B026PArchiviazioneCartelliniSrv.dproj">
+            <ProjectGuid>{1D33ECEE-0AB9-4B70-AAC4-21D83A30E94C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B027PCartellinoSrv.dproj">
+            <ProjectGuid>{F7B33523-B63A-4F17-BDCE-E211E8884BFA}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B019PGeneratoreStampe.dproj">
+            <ProjectGuid>{B2D6093E-8CE2-4109-BC93-866EE5C45B38}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X002PSSOLoginWeb.dproj">
+            <ProjectGuid>{FD7F3C4D-0550-4F33-A811-D67D12CD3190}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudRilPre\IrisCloudRilPre_IIS.dproj">
+            <ProjectGuid>{B1643D91-388A-47AC-A6B0-4991AD0ABBDC}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B010PMessaggiOrologi.dproj">
+            <ProjectGuid>{52ECE843-3EAB-4C03-8456-FF6587E2DA02}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X004PIntegrazioneNBSSrv.dproj">
+            <ProjectGuid>{7E8B5FEB-43D1-4D47-97F3-EF6932AECAFF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStatoGiuridico\IrisCloudStaGiu_IIS.dproj">
+            <ProjectGuid>{799D955A-3F90-4274-933C-BE9F3A8D5251}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStipendi\IrisCloudStipendi.dproj">
+            <ProjectGuid>{234C38C0-F54F-4A5E-A53E-005748416D80}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B006PScaricoAuto.dproj">
+            <ProjectGuid>{DD10471C-D8E6-48CE-B3BA-33E2FF760372}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJRilPre\A002PAnagrafe.dproj">
+            <ProjectGuid>{883CBD0D-7943-4DF6-B238-FF41ADA84B1D}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B023PCifraturaCedolini.dproj">
+            <ProjectGuid>{41C27C97-382E-4B87-8B59-6DC09E5258CB}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PIrisWebSvc.dproj">
+            <ProjectGuid>{E5070807-B522-4516-BEC2-CAD1D1DD0168}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B006PScaricoService.dproj">
+            <ProjectGuid>{5BE0BF65-A205-451D-8DEE-770B7786307B}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJAppMobile\WM000PIrisAPP.dproj">
+            <ProjectGuid>{561C24E8-7811-498C-942E-934B46BD99C4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PTest.dproj">
+            <ProjectGuid>{6F48C644-1F30-4292-9A8D-5EDFFF74BEFC}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B110PWSMobile_IIS.dproj">
+            <ProjectGuid>{B7D3E775-F04C-46E2-91EE-A52895EFA327}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X001PCentriCostoTOHM_IIS.dproj">
+            <ProjectGuid>{348C32BC-3C5E-4CE6-AFC8-4DCF41F9E01A}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B012PAllineamentoClient.dproj">
+            <ProjectGuid>{AAC612AA-C6A5-4AE6-8F01-B73789EAB764}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B015PScaricoGiustificativiSrv.dproj">
+            <ProjectGuid>{26A1F526-237D-445C-8CCF-66867C58A883}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B011PAllineamentoServer.dproj">
+            <ProjectGuid>{67DFD103-8D6C-4343-B8BE-A56830AA47E6}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X001PCentriCostoTOHM.dproj">
+            <ProjectGuid>{AB88DB05-58A9-4CC6-9319-AED860246EE2}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJIrisWEB\W000PIrisWEB.dproj">
+            <ProjectGuid>{247A602A-6B35-48D4-854D-FA878004DBF1}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B008PGeneraPassword.dproj">
+            <ProjectGuid>{F0ECFD67-0E54-44A7-8E18-9C5412350DCD}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B019PGeneratoreStampeSrv.dproj">
+            <ProjectGuid>{3B88BE5C-542A-4B77-B810-8952378D2EB8}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_IIS.dproj">
+            <ProjectGuid>{644726A7-B239-42BA-A99A-F858ACEA4C40}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B028PPrintServer_COM.dproj">
+            <ProjectGuid>{193D9805-C35D-445C-9114-076CC355CCEE}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_Vcl.dproj">
+            <ProjectGuid>{0AA685F0-FFF7-4191-8356-A0EF3E086A30}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PIrisRestSvc_SRV.dproj">
+            <ProjectGuid>{BB645347-F5EB-4FB1-BC05-62B8E890AFE1}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B010PMessaggiOrologiSrv.dproj">
+            <ProjectGuid>{1892EBCF-B3D0-44A1-9033-0B39949F64EA}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B014PIntegrazioneAnagraficaSrv.dproj">
+            <ProjectGuid>{43D1DF10-A68C-41AF-8BD2-F286181DBA89}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B021PTest.dproj">
+            <ProjectGuid>{4E02381B-74F7-415A-9FC4-0F110F98CB50}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B014PIntegrazioneAnagrafica.dproj">
+            <ProjectGuid>{381586E0-B9D4-4C96-869A-6881280AA591}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJRilPre\A077PCOMServer.dproj">
+            <ProjectGuid>{07A886DC-310E-4BF9-8BE5-058F3E9F1B4A}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStatoGiuridico\S000PStatoGiuridico.dproj">
+            <ProjectGuid>{F024F554-6E96-4989-AFDA-DC18CBAD27B9}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B020PIrisWEBSvc_Vcl.dproj">
+            <ProjectGuid>{CF38FAF7-23EF-4226-AFDF-1C26BBB4CC8E}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCloudStipendi\IrisCloudStipendi_IIS.dproj">
+            <ProjectGuid>{1AD186A0-47AA-4030-9696-76A338806F25}</ProjectGuid>
+            <Configurations/>
+            <Platforms/>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B110PWSMobile.dproj">
+            <ProjectGuid>{6D794842-E13F-4D8B-BA97-7B9EDFBC3E49}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P714PComServer.dproj">
+            <ProjectGuid>{B6B69010-C8AA-41CD-A36F-41CC5E9770AE}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P000PStipendi.dproj">
+            <ProjectGuid>{D96A8100-0FC0-4E1F-9139-1B3AA8EB1BFD}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B000PConfigWebServer.dproj">
+            <ProjectGuid>{7F177996-B465-4664-AEB6-D20DDE09AA85}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B013PIntegrazioneEMK.dproj">
+            <ProjectGuid>{9DBCA285-D906-45C0-8DB5-CACC44844C0B}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJStipendi\P077PCOMServer.dproj">
+            <ProjectGuid>{FAF3EED0-5D78-4767-B121-C0352A38E065}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B015PScaricoGiustificativi.dproj">
+            <ProjectGuid>{A73A43A9-FA92-4B11-B2C7-F63F95EF0D0A}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B016PSetup.dproj">
+            <ProjectGuid>{BB5C39E7-6471-412F-AA78-6D1CA5BD1292}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJCalcolatrice\PCalcolatrice.dproj">
+            <ProjectGuid>{22B2D241-C798-4F3D-B868-0F6FE12EC177}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B022PUtilityGestDocumentale.dproj">
+            <ProjectGuid>{0A199927-2CAF-49A1-896A-8F7B02B7A062}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJServizi\B005PAggIris.dproj">
+            <ProjectGuid>{EB27706E-E140-45DC-9DA1-996447DE5DA0}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="PJX_Utenti\X004PIntegrazioneNBS.dproj">
+            <ProjectGuid>{6D77CB09-C213-4D4B-84A5-3FC40C543197}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
+</Project>
