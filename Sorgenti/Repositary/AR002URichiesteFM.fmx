@@ -1,0 +1,474 @@
+inherited AR002FRichiesteFM: TAR002FRichiesteFM
+  inherited pnlMain: TPanel
+    object tabMain: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 570.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = Top
+      OnChange = tabMainChange
+      Sizes = (
+        320s
+        565s
+        320s
+        565s
+        320s
+        565s
+        320s
+        565s)
+      object tabElenco: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Height = 5.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Elenco'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object tlbElenco: TToolBar
+          Position.Y = 80.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lblNumRichieste: TLabel
+            Align = Contents
+            StyledSettings = [Family, Style]
+            Size.Width = 320.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.899999618530270000
+            TextSettings.HorzAlign = Center
+            TabOrder = 1
+          end
+        end
+        object lstRichieste: TListView
+          ItemAppearanceClassName = 'TDynamicAppearance'
+          ItemEditAppearanceClassName = 'TDynamicAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 445.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'AccessoryArrow'
+              AppearanceClassName = 'TAccessoryObjectAppearance'
+              Appearance.Width = 30.000000000000000000
+              Appearance.Height = 44.000000000000000000
+              Appearance.Align = Trailing
+              Appearance.VertAlign = Center
+            end>
+          ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Text1'
+              AppearanceClassName = 'TTextObjectAppearance'
+            end>
+          CanSwipeDelete = False
+          OnItemClick = lstRichiesteItemClick
+          OnPullRefresh = lstRichiestePullRefresh
+          ShowSelection = False
+          PullToRefresh = True
+        end
+        object pnlFiltriRichieste: TPanel
+          Align = Top
+          Size.Width = 320.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object pnlTipoRichieste: TPanel
+            Align = Top
+            Size.Width = 320.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object rbnDaAutorizzare: TRadioButton
+              Align = Left
+              StyledSettings = [Family, Style, FontColor]
+              GroupName = 'rgpFiltroRichieste'
+              IsChecked = True
+              Size.Width = 140.000000000000000000
+              Size.Height = 45.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Da autorizzare'
+              TextSettings.Font.Size = 12.899999618530270000
+              OnClick = rbnDaAutorizzareClick
+            end
+            object rbnAutorizzate: TRadioButton
+              Align = Left
+              StyledSettings = [Family, Style, FontColor]
+              GroupName = 'rgpFiltroRichieste'
+              Position.X = 140.000000000000000000
+              Size.Width = 120.000000000000000000
+              Size.Height = 45.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Autorizzate'
+              TextSettings.Font.Size = 12.899999618530270000
+              OnClick = rbnDaAutorizzareClick
+            end
+            object rbnNegate: TRadioButton
+              Align = Left
+              StyledSettings = [Family, Style, FontColor]
+              GroupName = 'rgpFiltroRichieste'
+              Position.X = 260.000000000000000000
+              Size.Width = 110.000000000000000000
+              Size.Height = 45.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Negate'
+              TextSettings.Font.Size = 12.899999618530270000
+              OnClick = rbnDaAutorizzareClick
+            end
+          end
+          object lytFiltroPeriodo: TFlowLayout
+            Align = Top
+            Position.Y = 45.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Justify = Center
+            JustifyLastLine = Center
+            FlowDirection = LeftToRight
+            object edtPeriodoDa: TDateEdit
+              Date = 40544.000000000000000000
+              Format = 'dd/mm/yyyy'
+              OnClosePicker = edtPeriodoDaClosePicker
+              Position.X = 12.500000000000000000
+              Size.Width = 135.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'dateeditstyle'
+              StyledSettings = [Family, Style, FontColor]
+              TabOrder = 4
+              TextSettings.Font.Size = 12.899999618530270000
+              ParentShowHint = False
+              ShowHint = False
+            end
+            object Label1: TLabel
+              Position.X = 147.500000000000000000
+              Size.Width = 25.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              Text = '-'
+            end
+            object edtPeriodoA: TDateEdit
+              Date = 42248.000000000000000000
+              Format = 'dd/mm/yyyy'
+              OnClosePicker = edtPeriodoAClosePicker
+              Position.X = 172.500000000000000000
+              Size.Width = 135.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, Style, FontColor]
+              TabOrder = 6
+              TextSettings.Font.Size = 12.899999618530270000
+              ParentShowHint = False
+              ShowHint = False
+            end
+          end
+        end
+      end
+      object tabDettaglio: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Height = 5.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Dettaglio'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object tlbDettaglio: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object btnGotoElenco: TSpeedButton
+            Action = ChangeTabAction1
+            Align = Left
+            Enabled = True
+            StyledSettings = [Style]
+            ImageIndex = -1
+            Size.Width = 48.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            Text = '<'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+          end
+          object lblRichiestaNum: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 192.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.899999618530270000
+            Text = 'Richiesta x di n'
+          end
+          object btnRichiestaPrec: TSpeedButton
+            Align = Right
+            StyledSettings = [Style]
+            Position.X = 240.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            Text = 'Prec'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            OnClick = btnRichiestaPrecClick
+          end
+          object btnRichiestaSucc: TSpeedButton
+            Align = Right
+            StyledSettings = [Style]
+            Position.X = 280.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            Text = 'Succ'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            OnClick = btnRichiestaSuccClick
+          end
+        end
+        object lstDettaglio: TListView
+          ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+          ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdateObjects = lstDettaglioUpdateObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 525.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          ItemAppearanceObjects.ItemObjects.Text.Font.Size = 12.899999618530270000
+          ItemAppearanceObjects.ItemObjects.Text.TextColor = claCadetblue
+          ItemAppearanceObjects.ItemObjects.Text.Height = 44.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Accessory.Width = 30.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Accessory.Height = 44.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 12.899999618530270000
+          ItemAppearanceObjects.ItemObjects.Detail.TextAlign = Leading
+          ItemAppearanceObjects.ItemObjects.Detail.TextColor = claBlack
+          ItemAppearanceObjects.ItemObjects.Detail.Height = 44.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Detail.Align = Leading
+          ItemAppearanceObjects.ItemObjects.Detail.VertAlign = Center
+          ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = 138.000000000000000000
+          CanSwipeDelete = False
+          OnItemClick = lstDettaglioItemClick
+          ShowSelection = False
+        end
+      end
+      object tabNote: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Height = 5.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Note'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object tlbNote: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object btnGotoDettaglio: TSpeedButton
+            Action = ChangeTabAction2
+            Align = Left
+            Enabled = True
+            StyledSettings = [Style]
+            ImageIndex = -1
+            Size.Width = 48.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            Text = '<'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+          end
+          object lblTabNote: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 272.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.899999618530270000
+            Text = 'Note richiesta'
+          end
+        end
+        object lstNote: TListView
+          ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+          ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          OnUpdateObjects = lstNoteUpdateObjects
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 525.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ItemAppearance.ItemHeight = 64
+          ItemAppearance.ItemEditHeight = 64
+          ItemAppearanceObjects.ItemObjects.Text.Font.Size = 12.899999618530270000
+          ItemAppearanceObjects.ItemObjects.Text.TextColor = claBlack
+          ItemAppearanceObjects.ItemObjects.Text.Width = 151.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Text.Height = 64.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Accessory.Width = 30.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Accessory.Height = 44.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Detail.Font.Family = 'FontAwesome'
+          ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 12.899999618530270000
+          ItemAppearanceObjects.ItemObjects.Detail.TextColor = claBlack
+          ItemAppearanceObjects.ItemObjects.Detail.Width = 116.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Detail.Height = 64.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = -32.000000000000000000
+          CanSwipeDelete = False
+          OnItemClick = lstNoteItemClick
+          ShowSelection = False
+        end
+      end
+      object tabNoteDett: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Height = 5.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Dettaglio note'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object tlbDettaglioNote: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnGotoNote: TSpeedButton
+            Action = ChangeTabAction3
+            Align = Left
+            Enabled = True
+            StyledSettings = [Style]
+            ImageIndex = -1
+            Size.Width = 48.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            Text = '<'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+          end
+          object lblNoteInfoLivello: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 208.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 12.899999618530270000
+            Text = 'Nota selezionata'
+          end
+          object btnSalvaNote: TSpeedButton
+            Align = Right
+            StyledSettings = [Style]
+            Position.X = 256.000000000000000000
+            Size.Width = 64.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'donetoolbutton'
+            Text = 'Salva'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.FontColor = claWhite
+            OnClick = btnSalvaNoteClick
+          end
+        end
+        object lblNoteNominativo: TLabel
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 40.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 12.899999618530270000
+          Text = 'Note di xxx'
+          TabOrder = 2
+        end
+        object memNoteTesto: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          CheckSpelling = True
+          DataDetectorTypes = []
+          MaxLength = 2000
+          StyledSettings = [Family, Style, FontColor]
+          TextSettings.Font.Size = 12.899999618530270000
+          OnChangeTracking = memNoteTestoChangeTracking
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 493.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 493.000000000000000000
+        end
+      end
+    end
+  end
+  object fmtRichieste: TFDMemTable
+    AfterScroll = fmtRichiesteAfterScroll
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvDataSnapCompatibility]
+    FormatOptions.DataSnapCompatibility = True
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 176
+    Top = 232
+  end
+  object FDStanStorageBinLink1: TFDStanStorageBinLink
+    Left = 176
+    Top = 296
+  end
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 176
+    Top = 352
+  end
+  object ActionList1: TActionList
+    Left = 176
+    Top = 169
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabElenco
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabDettaglio
+    end
+    object ChangeTabAction3: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabNote
+    end
+  end
+end

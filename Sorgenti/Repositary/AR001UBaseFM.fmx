@@ -1,0 +1,12 @@
+object AR001FBaseFM: TAR001FBaseFM
+  Size.Width = 320.000000000000000000
+  Size.Height = 570.000000000000000000
+  Size.PlatformDefault = False
+  object pnlMain: TPanel
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

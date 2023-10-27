@@ -1,0 +1,177 @@
+inherited AR004FAutRichiesteFM: TAR004FAutRichiesteFM
+  inherited pnlMain: TPanel
+    inherited tabMain: TTabControl
+      Sizes = (
+        320s
+        544s
+        320s
+        544s
+        320s
+        544s
+        320s
+        544s)
+      inherited tabElenco: TTabItem
+        Size.Width = 55.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited lstRichieste: TListView
+          Size.Height = 424.000000000000000000
+        end
+        inherited pnlFiltriRichieste: TPanel
+          inherited pnlTipoRichieste: TPanel
+            inherited rbnDaAutorizzare: TRadioButton
+              StyledSettings = [Family, Size, Style]
+            end
+          end
+        end
+      end
+      inherited tabDettaglio: TTabItem
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbDettaglio: TToolBar
+          inherited btnRichiestaPrec: TSpeedButton
+            Text = '<'
+          end
+          inherited btnRichiestaSucc: TSpeedButton
+            Text = '>'
+          end
+        end
+        inherited lstDettaglio: TListView
+          Size.Height = 424.000000000000000000
+        end
+        object pnlAutorizzazione: TPanel
+          Align = Bottom
+          Position.Y = 464.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          object lytAutorizzazione: TGridPanelLayout
+            Align = Client
+            Size.Width = 320.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = btnAutorizza
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = btnNega
+                Row = 0
+              end>
+            RowCollection = <
+              item
+                Value = 100.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object btnAutorizza: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 160.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'cornerbuttonstyle'
+              Text = 'Autorizza'
+              TextSettings.FontColor = claGreen
+              OnClick = btnAutorizzaClick
+              object lblbtnAutorizza: TLabel
+                Align = Left
+                StyledSettings = [Style]
+                Size.Width = 50.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'FontAwesome'
+                TextSettings.Font.Size = 22.000000000000000000
+                TextSettings.FontColor = claGreen
+                TextSettings.HorzAlign = Center
+              end
+            end
+            object btnNega: TSpeedButton
+              Align = Client
+              StyledSettings = [Family, Size, Style]
+              Size.Width = 160.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'cornerbuttonstyle'
+              Text = 'Nega'
+              TextSettings.FontColor = claRed
+              OnClick = btnAutorizzaClick
+              object lblbtnNega: TLabel
+                Align = Left
+                StyledSettings = [Style]
+                Size.Width = 50.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'FontAwesome'
+                TextSettings.Font.Size = 22.000000000000000000
+                TextSettings.FontColor = claRed
+                TextSettings.HorzAlign = Center
+              end
+            end
+          end
+          object lblLivello: TLabel
+            Align = Top
+            Size.Width = 320.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblLivello'
+            TabOrder = 1
+          end
+        end
+      end
+      inherited tabNote: TTabItem
+        Size.Width = 47.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited lstNote: TListView
+          Size.Height = 504.000000000000000000
+        end
+      end
+      inherited tabNoteDett: TTabItem
+        Size.Width = 97.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbDettaglioNote: TToolBar
+          inherited btnSalvaNote: TSpeedButton
+            StyleLookup = 'speedbuttonstyle'
+          end
+        end
+        inherited memNoteTesto: TMemo
+          Size.Height = 472.000000000000000000
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 472.000000000000000000
+        end
+      end
+    end
+  end
+  object fmtI096: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 256
+    Top = 232
+  end
+end

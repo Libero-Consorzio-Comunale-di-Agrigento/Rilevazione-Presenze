@@ -1,0 +1,262 @@
+inherited AR003FGestRichiesteFM: TAR003FGestRichiesteFM
+  Size.Width = 428.000000000000000000
+  Size.Height = 617.000000000000000000
+  inherited pnlMain: TPanel
+    Size.Width = 428.000000000000000000
+    Size.Height = 617.000000000000000000
+    inherited tabMain: TTabControl
+      Size.Width = 428.000000000000000000
+      Size.Height = 617.000000000000000000
+      Sizes = (
+        428s
+        591s
+        428s
+        591s
+        428s
+        591s
+        428s
+        591s
+        428s
+        591s)
+      inherited tabElenco: TTabItem
+        Size.Width = 55.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbElenco: TToolBar
+          Size.Width = 428.000000000000000000
+          inherited lblNumRichieste: TLabel
+            Size.Width = 428.000000000000000000
+          end
+          object btnNuovaRichiesta: TSpeedButton
+            Align = Right
+            StyledSettings = [Style]
+            Position.X = 380.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = '+'
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            OnClick = btnNuovaRichiestaClick
+          end
+        end
+        inherited lstRichieste: TListView
+          Size.Width = 428.000000000000000000
+          Size.Height = 471.000000000000000000
+        end
+        inherited pnlFiltriRichieste: TPanel
+          Size.Width = 428.000000000000000000
+          inherited pnlTipoRichieste: TPanel
+            Size.Width = 428.000000000000000000
+          end
+          inherited lytFiltroPeriodo: TFlowLayout
+            Size.Width = 428.000000000000000000
+            inherited edtPeriodoDa: TDateEdit
+              Position.X = 66.500000000000000000
+            end
+            inherited Label1: TLabel
+              Position.X = 201.500000000000000000
+            end
+            inherited edtPeriodoA: TDateEdit
+              Position.X = 226.500000000000000000
+            end
+          end
+        end
+      end
+      inherited tabDettaglio: TTabItem
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbDettaglio: TToolBar
+          Size.Width = 428.000000000000000000
+          inherited lblRichiestaNum: TLabel
+            Size.Width = 300.000000000000000000
+          end
+          inherited btnRichiestaPrec: TSpeedButton
+            Position.X = 348.000000000000000000
+          end
+          inherited btnRichiestaSucc: TSpeedButton
+            Position.X = 388.000000000000000000
+          end
+        end
+        inherited lstDettaglio: TListView
+          Size.Width = 428.000000000000000000
+          Size.Height = 455.000000000000000000
+        end
+        object btnEliminaRichiesta: TSpeedButton
+          Align = Top
+          Position.Y = 40.000000000000000000
+          Size.Width = 428.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'buttonstyle'
+          Text = 'Elimina richiesta'
+          OnClick = btnEliminaRichiestaClick
+          object lblbtnEliminaRichiesta: TLabel
+            Align = Left
+            StyledSettings = [Style, FontColor]
+            Size.Width = 50.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.HorzAlign = Center
+          end
+        end
+        object btnRevocaRichiesta: TSpeedButton
+          Align = Top
+          Position.Y = 88.000000000000000000
+          Size.Width = 428.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'buttonstyle'
+          Text = 'Revoca richiesta'
+          OnClick = btnRevocaRichiestaClick
+          object lblbtnRevocaRichiesta: TLabel
+            Align = Left
+            StyledSettings = [Style, FontColor]
+            Size.Width = 50.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'FontAwesome'
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.HorzAlign = Center
+          end
+        end
+      end
+      inherited tabNote: TTabItem
+        Size.Width = 47.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbNote: TToolBar
+          Size.Width = 428.000000000000000000
+          inherited lblTabNote: TLabel
+            Size.Width = 380.000000000000000000
+          end
+        end
+        inherited lstNote: TListView
+          Size.Width = 428.000000000000000000
+          Size.Height = 551.000000000000000000
+        end
+      end
+      inherited tabNoteDett: TTabItem
+        Size.Width = 97.000000000000000000
+        Size.Height = 26.000000000000000000
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited tlbDettaglioNote: TToolBar
+          Size.Width = 428.000000000000000000
+          inherited lblNoteInfoLivello: TLabel
+            Size.Width = 316.000000000000000000
+          end
+          inherited btnSalvaNote: TSpeedButton
+            Position.X = 364.000000000000000000
+            TextSettings.FontColor = claBlack
+          end
+        end
+        inherited lblNoteNominativo: TLabel
+          Size.Width = 428.000000000000000000
+        end
+        inherited memNoteTesto: TMemo
+          Size.Width = 428.000000000000000000
+          Size.Height = 519.000000000000000000
+          Viewport.Width = 428.000000000000000000
+          Viewport.Height = 519.000000000000000000
+        end
+      end
+      object tabNuovaRichiesta: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Nuova richiesta'
+        ExplicitSize.cx = 0.000000000000000000
+        ExplicitSize.cy = 5.000000000000000000
+        object lytGestRichiesta: TGridPanelLayout
+          Align = Bottom
+          Position.Y = 543.000000000000000000
+          Size.Width = 428.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = btnSalvaRichiesta
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = btnAnnullaRichiesta
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object btnSalvaRichiesta: TSpeedButton
+            Align = Client
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 214.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'cornerbuttonstyle'
+            Text = 'OK'
+            TextSettings.FontColor = claGreen
+            OnClick = btnSalvaRichiestaClick
+            object lblbtnSalvaRichiesta: TLabel
+              Align = Left
+              StyledSettings = [Style, FontColor]
+              Size.Width = 50.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'FontAwesome'
+              TextSettings.Font.Size = 22.000000000000000000
+              TextSettings.FontColor = claGreen
+              TextSettings.HorzAlign = Center
+            end
+          end
+          object btnAnnullaRichiesta: TSpeedButton
+            Align = Client
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 214.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'cornerbuttonstyle'
+            Text = 'Annulla'
+            TextSettings.FontColor = claRed
+            OnClick = btnAnnullaRichiestaClick
+            object lblbtnAnnullaRichiesta: TLabel
+              Align = Left
+              StyledSettings = [Style, FontColor]
+              Size.Width = 50.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'FontAwesome'
+              TextSettings.Font.Size = 22.000000000000000000
+              TextSettings.FontColor = claRed
+              TextSettings.HorzAlign = Center
+            end
+          end
+        end
+      end
+    end
+  end
+end

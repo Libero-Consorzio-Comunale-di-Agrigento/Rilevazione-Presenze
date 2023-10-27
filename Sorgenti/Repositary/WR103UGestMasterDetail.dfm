@@ -1,0 +1,47 @@
+inherited WR103FGestMasterDetail: TWR103FGestMasterDetail
+  Height = 422
+  ExplicitHeight = 422
+  DesignLeft = 8
+  DesignTop = 8
+  object grdDetailTabControl: TmedpIWTabControl [15]
+    Left = 16
+    Top = 368
+    Width = 300
+    Height = 33
+    Css = 'gridTabControl'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    BorderColors.Color = clWebWHITE
+    BorderColors.Light = clWebWHITE
+    BorderColors.Dark = clWebWHITE
+    BGColor = clNone
+    BorderSize = 0
+    BorderStyle = tfVoid
+    CellPadding = 0
+    CellSpacing = 0
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FrameBuffer = 40
+    Lines = tlAll
+    UseFrame = False
+    UseSize = False
+    HeaderRowCount = 0
+    CellRenderOptions = []
+    FriendlyName = 'grdTabControl'
+    ColumnCount = 1
+    RowCount = 1
+    ShowEmptyCells = True
+    ShowInvisibleRows = True
+    ScrollToCurrentRow = False
+    CssTabHeaders = 'medpTabControl'
+    OnTabControlChange = grdDetailTabControlTabControlChange
+  end
+end
