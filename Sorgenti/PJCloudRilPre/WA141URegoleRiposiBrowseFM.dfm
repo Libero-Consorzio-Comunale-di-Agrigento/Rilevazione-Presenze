@@ -1,0 +1,2 @@
+inherited WA141FRegoleRiposiBrowseFM: TWA141FRegoleRiposiBrowseFM
+end

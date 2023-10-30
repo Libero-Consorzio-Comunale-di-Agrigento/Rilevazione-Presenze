@@ -1,0 +1,2 @@
+inherited WA143FMedicineLegaliBrowseFM: TWA143FMedicineLegaliBrowseFM
+end
