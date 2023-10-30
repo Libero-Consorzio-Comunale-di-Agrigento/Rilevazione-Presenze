@@ -1,0 +1,2 @@
+inherited P680FMacrocategorieFondiMW: TP680FMacrocategorieFondiMW
+end

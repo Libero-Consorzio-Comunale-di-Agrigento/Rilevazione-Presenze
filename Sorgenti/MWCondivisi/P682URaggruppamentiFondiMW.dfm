@@ -1,0 +1,2 @@
+inherited P682FRaggruppamentiFondiMW: TP682FRaggruppamentiFondiMW
+end
