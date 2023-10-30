@@ -1,0 +1,2 @@
+inherited WA084FTipoRapportoBrowseFM: TWA084FTipoRapportoBrowseFM
+end
