@@ -1,0 +1,2 @@
+inherited WA135FTimbratureScartateBrowseFM: TWA135FTimbratureScartateBrowseFM
+end

@@ -1,0 +1,2 @@
+inherited WA132FMagazzinoBuoniPastoBrowseFM: TWA132FMagazzinoBuoniPastoBrowseFM
+end
