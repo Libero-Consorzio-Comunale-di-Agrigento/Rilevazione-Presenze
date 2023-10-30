@@ -1,0 +1,155 @@
+inherited W045FCambioAzienda: TW045FCambioAzienda
+  Tag = 453
+  Height = 367
+  HelpType = htKeyword
+  HelpKeyword = 'W045P0'
+  ExplicitHeight = 367
+  DesignLeft = 8
+  DesignTop = 8
+  object lblAziendaCorrente: TmeIWLabel [8]
+    Left = 99
+    Top = 196
+    Width = 102
+    Height = 16
+    Css = 'intestazione'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    ForControl = edtAziendaCorrente
+    HasTabOrder = False
+    FriendlyName = 'lblAziendaCorrente'
+    Caption = 'Azienda attuale:'
+    Enabled = True
+  end
+  object edtAziendaCorrente: TmeIWEdit [9]
+    Left = 264
+    Top = 196
+    Width = 210
+    Height = 21
+    Css = 'input30'
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Editable = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'edtAziendaCorrente'
+    SubmitOnAsyncEvent = True
+    TabOrder = 6
+    Enabled = False
+  end
+  object lblAziendaNuova: TmeIWLabel [10]
+    Left = 99
+    Top = 244
+    Width = 96
+    Height = 16
+    Css = 'intestazione'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    ForControl = cmbAziendaNuova
+    HasTabOrder = False
+    FriendlyName = 'lblProfiloAttuale'
+    Caption = 'Nuova azienda:'
+    Enabled = True
+  end
+  object cmbAziendaNuova: TmeIWComboBox [11]
+    Left = 248
+    Top = 244
+    Width = 210
+    Height = 21
+    Css = 'select30'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    UseSize = False
+    NonEditableAsLabel = True
+    TabOrder = 7
+    ItemIndex = -1
+    FriendlyName = 'cmbAziendaNuova'
+    NoSelectionText = '-- No Selection --'
+  end
+  object btnConferma: TmeIWButton [12]
+    Left = 192
+    Top = 304
+    Width = 87
+    Height = 25
+    Css = 'pulsante'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Caption = 'Conferma'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'btnConferma'
+    TabOrder = 8
+    OnAsyncClick = btnConfermaAsyncClick
+    medpDownloadButton = False
+  end
+  object btnAnnulla: TmeIWButton [13]
+    Left = 296
+    Top = 304
+    Width = 87
+    Height = 25
+    Css = 'pulsante'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    Caption = 'Annulla'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'btnConferma'
+    TabOrder = 9
+    OnClick = btnAnnullaClick
+    medpDownloadButton = False
+  end
+end
