@@ -1,0 +1,101 @@
+package uniGUI_Medp_Mobile;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  uniGUI25,
+  uniGUI25Core,
+  uniTools25,
+  uIndy25,
+  soaprtl,
+  dbrtl,
+  xmlrtl,
+  inet,
+  vclie,
+  vcldb,
+  vclimg,
+  VclSmp,
+  vclx,
+  vclactnband,
+  uniGUI25m,
+  uniGUI25Chart,
+  uniGUI25mCore,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  dsnap;
+
+contains
+  MedpUnimLabel in 'MedpUnimLabel.pas',
+  MedpUnimLabelIcon in 'MedpUnimLabelIcon.pas',
+  MedpUnimDatePicker in 'MedpUnimDatePicker.pas',
+  MedpUnimPanelDataDaA in 'MedpUnimPanelDataDaA.pas',
+  MedpUnimPanelListaElem in 'MedpUnimPanelListaElem.pas',
+  MedpUnimTypes in 'MedpUnimTypes.pas',
+  MedpUnimPanelDisclosure in 'MedpUnimPanelDisclosure.pas',
+  MedpUnimPanel2Labels in 'MedpUnimPanel2Labels.pas',
+  MedpUnimPanelBase in 'MedpUnimPanelBase.pas',
+  MedpUnimPanel4Labels in 'MedpUnimPanel4Labels.pas',
+  MedpUnimPanelHeaderDett in 'MedpUnimPanelHeaderDett.pas',
+  MedpUnimPanelNota in 'MedpUnimPanelNota.pas',
+  MedpUnimTabPanelBase in 'MedpUnimTabPanelBase.pas',
+  MedpUnimPanelNumElem in 'MedpUnimPanelNumElem.pas',
+  MedpUnimRadioIcon in 'MedpUnimRadioIcon.pas',
+  MedpUnimRadioButton in 'MedpUnimRadioButton.pas',
+  MedpUnimRadioGroup in 'MedpUnimRadioGroup.pas',
+  MedpUnimPanel2Button in 'MedpUnimPanel2Button.pas',
+  MedpUnimButton in 'MedpUnimButton.pas',
+  MedpUnimEdit in 'MedpUnimEdit.pas',
+  MedpUnimTimePicker in 'MedpUnimTimePicker.pas',
+  MedpUnimSelect in 'MedpUnimSelect.pas',
+  MedpUnimMemo in 'MedpUnimMemo.pas',
+  MedpUnimPanelListaDettaglio in 'MedpUnimPanelListaDettaglio.pas',
+  MedpUnimPanelListaDisclosure in 'MedpUnimPanelListaDisclosure.pas',
+  MedpUnimPanelOraDaA in 'MedpUnimPanelOraDaA.pas',
+  MedpUnimPanelIconLabel in 'MedpUnimPanelIconLabel.pas',
+  MedpUnimPanelSlideUp in 'MedpUnimPanelSlideUp.pas',
+  MedpUnimPanelAllegato in 'MedpUnimPanelAllegato.pas',
+  MedpUnimPanelEditIcons in 'MedpUnimPanelEditIcons.pas',
+  MedpUnimPanelDownload in 'MedpUnimPanelDownload.pas',
+  MedpUnimPanel4LabelsIcon in 'MedpUnimPanel4LabelsIcon.pas',
+  MedpUnimPanelMessaggio in 'MedpUnimPanelMessaggio.pas',
+  MedpUnimCheckBox in 'MedpUnimCheckBox.pas',
+  MedpUnimPanelCheckBox in 'MedpUnimPanelCheckBox.pas',
+  MedpUnimPanelSelect in 'MedpUnimPanelSelect.pas',
+  MedpUnimPanelEdit in 'MedpUnimPanelEdit.pas',
+  MedpUnimPanelMemo in 'MedpUnimPanelMemo.pas',
+  MedpUnimNumberEdit in 'MedpUnimNumberEdit.pas',
+  MedpUnimPanelNumberEdit in 'MedpUnimPanelNumberEdit.pas',
+  MedpUnimPanelDatePicker in 'MedpUnimPanelDatePicker.pas',
+  MedpUnimMainMenu in 'MedpUnimMainMenu.pas',
+  MedpUnimHTMLFrame in 'MedpUnimHTMLFrame.pas',
+  MedpUnimReCAPTCHA in 'MedpUnimReCAPTCHA.pas';
+
+end.

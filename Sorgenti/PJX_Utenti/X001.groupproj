@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{781d7b5b-9f21-4a6b-8b8d-d96ad70bf19c}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="X001PCentriCostoTOHM.dproj" />
+    <Projects Include="X001PCentriCostoTOHM_IIS.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="X001PCentriCostoTOHM">
+    <MSBuild Projects="X001PCentriCostoTOHM.dproj" Targets="" />
+  </Target>
+  <Target Name="X001PCentriCostoTOHM:Clean">
+    <MSBuild Projects="X001PCentriCostoTOHM.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="X001PCentriCostoTOHM:Make">
+    <MSBuild Projects="X001PCentriCostoTOHM.dproj" Targets="Make" />
+  </Target>
+  <Target Name="X001PCentriCostoTOHM_IIS">
+    <MSBuild Projects="X001PCentriCostoTOHM_IIS.dproj" Targets="" />
+  </Target>
+  <Target Name="X001PCentriCostoTOHM_IIS:Clean">
+    <MSBuild Projects="X001PCentriCostoTOHM_IIS.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="X001PCentriCostoTOHM_IIS:Make">
+    <MSBuild Projects="X001PCentriCostoTOHM_IIS.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="X001PCentriCostoTOHM;X001PCentriCostoTOHM_IIS" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="X001PCentriCostoTOHM:Clean;X001PCentriCostoTOHM_IIS:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="X001PCentriCostoTOHM:Make;X001PCentriCostoTOHM_IIS:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
