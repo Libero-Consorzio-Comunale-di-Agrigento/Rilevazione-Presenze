@@ -1,0 +1,2 @@
+inherited B110FAutorizzazioneRichiesteTimbDM: TB110FAutorizzazioneRichiesteTimbDM
+end
