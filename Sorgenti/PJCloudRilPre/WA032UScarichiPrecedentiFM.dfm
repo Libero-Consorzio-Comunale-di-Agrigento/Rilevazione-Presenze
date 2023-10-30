@@ -1,0 +1,2 @@
+inherited WA032FScarichiPrecedentiFM: TWA032FScarichiPrecedentiFM
+end
