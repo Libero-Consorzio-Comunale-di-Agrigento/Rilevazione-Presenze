@@ -1,0 +1,115 @@
+inherited WP651FRelazioniTabelle: TWP651FRelazioniTabelle
+  Tag = 299
+  Height = 495
+  ExplicitHeight = 495
+  DesignLeft = 8
+  DesignTop = 8
+  object memoControlli: TmeIWMemo [15]
+    Left = 17
+    Top = 344
+    Width = 593
+    Height = 113
+    Cursor = crAuto
+    Css = 'textarea_anomalie'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    BGColor = clNone
+    Editable = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    ScriptEvents = <>
+    InvisibleBorder = False
+    HorizScrollBar = False
+    VertScrollBar = True
+    Required = False
+    TabOrder = 7
+    SubmitOnAsyncEvent = True
+    FriendlyName = 'memoControlli'
+  end
+  object cmbTipologia: TmeIWComboBox [16]
+    Left = 311
+    Top = 303
+    Width = 121
+    Height = 21
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FocusColor = clNone
+    AutoHideOnMenuActivation = False
+    ItemsHaveValues = False
+    NoSelectionText = ' '
+    Required = False
+    RequireSelection = True
+    ScriptEvents = <>
+    OnChange = cmbTipologiaChange
+    UseSize = False
+    Style = stNormal
+    ButtonColor = clBtnFace
+    Editable = True
+    NonEditableAsLabel = True
+    SubmitOnAsyncEvent = True
+    TabOrder = 8
+    ItemIndex = -1
+    Sorted = False
+    FriendlyName = 'cmbTipologia'
+  end
+  object lblTipologia: TmeIWLabel [17]
+    Left = 248
+    Top = 303
+    Width = 57
+    Height = 16
+    Cursor = crAuto
+    Css = 'intestazione'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'lblTipologia'
+    Caption = 'Tipologia'
+    RawText = False
+    Enabled = True
+  end
+  inherited actlstNavigatorBar: TActionList
+    inherited actCopiaSu: TAction
+      Visible = False
+    end
+  end
+end
