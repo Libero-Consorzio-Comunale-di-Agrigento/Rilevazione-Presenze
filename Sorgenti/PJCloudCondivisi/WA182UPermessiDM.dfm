@@ -1,0 +1,508 @@
+inherited WA182FPermessiDM: TWA182FPermessiDM
+  Height = 236
+  Width = 419
+  inherited selTabella: TOracleDataSet
+    SQL.Strings = (
+      'SELECT I071.*,ROWID '
+      '  FROM MONDOEDP.I071_PERMESSI I071'
+      ' :ORDERBY')
+    ReadBuffer = 50
+    QBEDefinition.QBEFieldDefs = {
+      05000000300000000E000000500052004F00460049004C004F00010000000000
+      26000000430041004E00430045004C004C0041005F00540049004D0042005200
+      410054005500520045000100000000002A0000004100420049004C0049005400
+      41005F005300430048004500440045005F004300480049005500530045000100
+      000000001000000054003100300030005F004F00520041000100000000001E00
+      000054003100300030005F00520049004C0045005600410054004F0052004500
+      0100000000001800000054003100300030005F00430041005500530041004C00
+      45000100000000001400000041003000320039005F00530041004C0044004900
+      0100000000001C00000041003000320039005F0049004E00440045004E004E00
+      4900540041000100000000002400000041003000320039005F00530054005200
+      41004F005200440049004E004100520049004F00010000000000200000004100
+      3000320039005F00430041005500500052004500530045004E005A0041000100
+      00000000280000004C004900510055004900440041005A0049004F004E004500
+      5F0046004F0052005A004100540041000100000000002A00000049004E005300
+      4500520049004D0045004E0054004F005F004D00410054005200490043004F00
+      4C0045000100000000001E000000530054004F0052004900430049005A005A00
+      41005A0049004F004E0045000100000000000C0000004C00410059004F005500
+      540001000000000026000000520049005000520049005300540049004E004F00
+      5F00540049004D0042005F004F00520049000100000000002400000043004100
+      4E00430045004C004C0041005A0049004F004E0045005F004400410054004900
+      010000000000280000004D004F004E00490054004F0052005F0049004E005400
+      45004700520041004E0041004700520041000100000000002400000045004C00
+      49004D0049004E0041005F0044004100540041005F0043004100530053004100
+      010000000000280000005200490043005200450041005F005300430041005200
+      490043004F005F00500041004700480045000100000000002600000043003700
+      300030005F00530041004C0056004100530045004C0045005A0049004F004E00
+      49000100000000001C00000041003000350038005F004F005000450052004100
+      54004900560041000100000000002200000041003000350038005F004E004F00
+      4E004F0050004500520041005400490056004100010000000000120000004100
+      3000390034005F004D0045005300450001000000000012000000410030003900
+      34005F0041004E004E004F000100000000001400000041003000390034005F00
+      52004100470047005200010000000000240000004400450046005F0054004900
+      50004F005F0050004500520053004F004E0041004C0045000100000000002A00
+      00004D004F0044005F0050004500520053004F004E0041004C0045005F004500
+      53005400450052004E004F000100000000002C00000041003100330031005F00
+      41004E0054004900430049005000490047004500530054004900420049004C00
+      49000100000000000E00000041005A00490045004E0044004100010000000000
+      2800000049004E0053004500520049005300430049005F00540049004D004200
+      5200410054005500520045000100000000002000000054003000340030005F00
+      560041004C004900440041005A0049004F004E00450001000000000022000000
+      530045005200560049005A0049005F0043004F004D0041004E00440041005400
+      49000100000000001C000000530045005200560049005A0049005F0042004C00
+      4F00430043004F000100000000001E000000530045005200560049005A004900
+      5F00530042004C004F00430043004F0001000000000010000000440041005400
+      49004300370030003000010000000000260000005700450042005F0049005400
+      45005200540049004D0042005F00470047005000520045004300010000000000
+      240000005700450042005F0049005400450052004100530053005F0047004700
+      5000520045004300010000000000240000005700450042005F00490054004500
+      52004100530053005F004700470053005500430043000100000000002C000000
+      5700450042005F00430041005200540045004C004C0049004E0049005F004400
+      4100540041004D0049004E000100000000002A0000005700450042005F004300
+      41005200540045004C004C0049004E0049005F004D004D005000520045004300
+      0100000000002A0000005700450042005F00430041005200540045004C004C00
+      49004E0049005F004D004D0053005500430043000100000000002A0000005700
+      450042005F00430041005200540045004C004C0049004E0049005F0043004800
+      4900550053004900010000000000280000005700450042005F00430045004400
+      4F004C0049004E0049005F0044004100540041004D0049004E00010000000000
+      260000005700450042005F004300450044004F004C0049004E0049005F004D00
+      4D005000520045004300010000000000280000005700450042005F0043004500
+      44004F004C0049004E0049005F004700470045004D0049005300530001000000
+      00002A00000053003700310030005F0053005500500045005200560049005300
+      4F0052004500560041004C00550054000100000000002C0000004D004F004400
+      490046004900430041005F0044004100540049005F00500052004F0054004500
+      5400540049000100000000001E00000045004C0049004D0049004E0041005F00
+      530054004F005200490043004900010000000000}
+    AfterOpen = selTabellaAfterOpen
+    object selTabellaAZIENDA: TStringField
+      DisplayLabel = 'Azienda'
+      FieldName = 'AZIENDA'
+      Required = True
+      Size = 30
+    end
+    object selTabellaPROFILO: TStringField
+      DisplayLabel = 'Profilo'
+      FieldName = 'PROFILO'
+      Required = True
+    end
+    object selTabellaLAYOUT: TStringField
+      DisplayLabel = 'Layout'
+      FieldName = 'LAYOUT'
+      Size = 30
+    end
+    object selTabellaABILITA_SCHEDE_CHIUSE: TStringField
+      DisplayLabel = 'Eludi blocco riepiloghi'
+      FieldName = 'ABILITA_SCHEDE_CHIUSE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaMODIFICA_DATI_PROTETTI: TStringField
+      DisplayLabel = 'Modifica dati prottti'
+      FieldName = 'MODIFICA_DATI_PROTETTI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaDEF_TIPO_PERSONALE: TStringField
+      DisplayLabel = 'Tipo personale'
+      FieldName = 'DEF_TIPO_PERSONALE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaINSERIMENTO_MATRICOLE: TStringField
+      DisplayLabel = 'Ins. anagr. Gen.'
+      FieldName = 'INSERIMENTO_MATRICOLE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaINSERIMENTO_MATRICOLE_P430: TStringField
+      DisplayLabel = 'Ins. anagr. Stip.'
+      FieldName = 'INSERIMENTO_MATRICOLE_P430'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSTORICIZZAZIONE: TStringField
+      DisplayLabel = 'Storiciz. dati Gen.'
+      FieldName = 'STORICIZZAZIONE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSTORICIZZAZIONE_P430: TStringField
+      DisplayLabel = 'Storiciz. dati Stip.'
+      FieldName = 'STORICIZZAZIONE_P430'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaMODIFICA_DECORRENZA: TStringField
+      DisplayLabel = 'Mod. decor. Gen.'
+      FieldName = 'MODIFICA_DECORRENZA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaMODIFICA_DECORRENZA_P430: TStringField
+      DisplayLabel = 'Mod. decor. Stip.'
+      FieldName = 'MODIFICA_DECORRENZA_P430'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaELIMINA_STORICI: TStringField
+      DisplayLabel = 'Canc. storici Gen.'
+      FieldName = 'ELIMINA_STORICI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaELIMINA_STORICI_P430: TStringField
+      DisplayLabel = 'Canc. storici Stip.'
+      FieldName = 'ELIMINA_STORICI_P430'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSTORIA_INIZIO_FINE: TStringField
+      DisplayLabel = 'Storia dato con servizio'
+      FieldName = 'STORIA_INIZIO_FINE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaCANCELLAZIONE_DATI: TStringField
+      DisplayLabel = 'Manipolazione dati'
+      FieldName = 'CANCELLAZIONE_DATI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaDATIC700: TStringField
+      DisplayLabel = 'Dati selezione anagrafe'
+      FieldName = 'DATIC700'
+      Visible = False
+      Size = 200
+    end
+    object selTabellaCANCELLA_TIMBRATURE: TStringField
+      FieldName = 'CANCELLA_TIMBRATURE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaT100_ORA: TStringField
+      FieldName = 'T100_ORA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaT100_RILEVATORE: TStringField
+      FieldName = 'T100_RILEVATORE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaT100_CAUSALE: TStringField
+      FieldName = 'T100_CAUSALE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA029_SALDI: TStringField
+      FieldName = 'A029_SALDI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA029_INDENNITA: TStringField
+      FieldName = 'A029_INDENNITA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA029_STRAORDINARIO: TStringField
+      FieldName = 'A029_STRAORDINARIO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA029_CAUPRESENZA: TStringField
+      FieldName = 'A029_CAUPRESENZA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaLIQUIDAZIONE_FORZATA: TStringField
+      FieldName = 'LIQUIDAZIONE_FORZATA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaRIPRISTINO_TIMB_ORI: TStringField
+      FieldName = 'RIPRISTINO_TIMB_ORI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaMONITOR_INTEGRANAGRA: TStringField
+      FieldName = 'MONITOR_INTEGRANAGRA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaELIMINA_DATA_CASSA: TStringField
+      FieldName = 'ELIMINA_DATA_CASSA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaRICREA_SCARICO_PAGHE: TStringField
+      FieldName = 'RICREA_SCARICO_PAGHE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaC700_SALVASELEZIONI: TStringField
+      FieldName = 'C700_SALVASELEZIONI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA058_OPERATIVA: TStringField
+      FieldName = 'A058_OPERATIVA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA058_NONOPERATIVA: TStringField
+      FieldName = 'A058_NONOPERATIVA'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA094_MESE: TStringField
+      FieldName = 'A094_MESE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA094_ANNO: TStringField
+      FieldName = 'A094_ANNO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA094_RAGGR: TStringField
+      FieldName = 'A094_RAGGR'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaMOD_PERSONALE_ESTERNO: TStringField
+      FieldName = 'MOD_PERSONALE_ESTERNO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaA131_ANTICIPIGESTIBILI: TStringField
+      FieldName = 'A131_ANTICIPIGESTIBILI'
+      Visible = False
+      Size = 15
+    end
+    object selTabellaINSERISCI_TIMBRATURE: TStringField
+      FieldName = 'INSERISCI_TIMBRATURE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaT040_VALIDAZIONE: TStringField
+      FieldName = 'T040_VALIDAZIONE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSERVIZI_COMANDATI: TStringField
+      FieldName = 'SERVIZI_COMANDATI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSERVIZI_BLOCCO: TStringField
+      FieldName = 'SERVIZI_BLOCCO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaSERVIZI_SBLOCCO: TStringField
+      FieldName = 'SERVIZI_SBLOCCO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaWEB_ITERTIMB_GGPREC: TIntegerField
+      FieldName = 'WEB_ITERTIMB_GGPREC'
+      Visible = False
+    end
+    object selTabellaWEB_ITERASS_GGPREC: TIntegerField
+      FieldName = 'WEB_ITERASS_GGPREC'
+      Visible = False
+    end
+    object selTabellaWEB_ITERASS_GGSUCC: TIntegerField
+      FieldName = 'WEB_ITERASS_GGSUCC'
+      Visible = False
+    end
+    object selTabellaWEB_CARTELLINI_DATAMIN: TDateTimeField
+      FieldName = 'WEB_CARTELLINI_DATAMIN'
+      Visible = False
+    end
+    object selTabellaWEB_CARTELLINI_MMPREC: TIntegerField
+      FieldName = 'WEB_CARTELLINI_MMPREC'
+      Visible = False
+    end
+    object selTabellaWEB_CARTELLINI_MMSUCC: TIntegerField
+      FieldName = 'WEB_CARTELLINI_MMSUCC'
+      Visible = False
+    end
+    object selTabellaWEB_CARTELLINI_CHIUSI: TStringField
+      FieldName = 'WEB_CARTELLINI_CHIUSI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaWEB_CEDOLINI_DATAMIN: TDateTimeField
+      FieldName = 'WEB_CEDOLINI_DATAMIN'
+      Visible = False
+    end
+    object selTabellaWEB_CEDOLINI_MMPREC: TIntegerField
+      FieldName = 'WEB_CEDOLINI_MMPREC'
+      Visible = False
+    end
+    object selTabellaWEB_CEDOLINI_GGEMISS: TIntegerField
+      FieldName = 'WEB_CEDOLINI_GGEMISS'
+      Visible = False
+    end
+    object selTabellaT100_CANC_ORIGINALI: TStringField
+      FieldName = 'T100_CANC_ORIGINALI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaWEB_CEDOLINI_FILEPDF: TStringField
+      DisplayLabel = 'Cedolini da archivio PDF'
+      FieldName = 'WEB_CEDOLINI_FILEPDF'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaWEB_RICHIESTA_CONSEGNA_CED: TStringField
+      DisplayLabel = 'Richiesta presa visione'
+      FieldName = 'WEB_RICHIESTA_CONSEGNA_CED'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaS710_SUPERVISOREVALUT: TStringField
+      FieldName = 'S710_SUPERVISOREVALUT'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaS710_MOD_VALUTATORE: TStringField
+      FieldName = 'S710_MOD_VALUTATORE'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaS710_STATI_ABILITATI: TStringField
+      FieldName = 'S710_STATI_ABILITATI'
+      Visible = False
+      Size = 200
+    end
+    object selTabellaWEB_RICHIESTA_CONSEGNA_VAL: TStringField
+      DisplayLabel = 'Registrazione presa visione'
+      FieldName = 'WEB_RICHIESTA_CONSEGNA_VAL'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaS710_VALIDA_STATO: TStringField
+      FieldName = 'S710_VALIDA_STATO'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaI060_PASSWORD: TStringField
+      FieldName = 'I060_PASSWORD'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaI070_PASSWORD: TStringField
+      FieldName = 'I070_PASSWORD'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaACCESSIBILITA_NONVEDENTI: TStringField
+      FieldName = 'ACCESSIBILITA_NONVEDENTI'
+      Visible = False
+      Size = 1
+    end
+    object selTabellaDOWNLOAD_MASSIVO: TStringField
+      FieldName = 'DOWNLOAD_MASSIVO'
+      Size = 1
+    end
+  end
+  object DbIris008B: TOracleSession
+    LogonUsername = 'MONDOEDP'
+    LogonPassword = 'TIMOTEO'
+    LogonDatabase = 'IRIS9.WORLD'
+    Preferences.ConvertUTF = cuUTF8ToUTF16
+    Preferences.TrimStringFields = False
+    Preferences.ZeroDateIsNull = False
+    NullValue = nvNull
+    Left = 278
+    Top = 114
+  end
+  object selT033: TOracleDataSet
+    SQL.Strings = (
+      'SELECT DISTINCT NOME FROM T033_LAYOUT')
+    Optimize = False
+    Session = DbIris008B
+    Left = 338
+    Top = 114
+  end
+  object dsrT033: TDataSource
+    DataSet = selT033
+    Left = 338
+    Top = 163
+  end
+  object QI090: TOracleDataSet
+    SQL.Strings = (
+      'SELECT AZIENDA,UTENTE,PAROLACHIAVE'
+      '  FROM MONDOEDP.I090_ENTI I090'
+      ' ORDER BY AZIENDA')
+    ReadBuffer = 5
+    Optimize = False
+    OracleDictionary.DefaultValues = True
+    QBEDefinition.QBEFieldDefs = {
+      05000000170000000E00000041005A00490045004E0044004100010000000000
+      0A00000041004C00490041005300010000000000160000004400450053004300
+      520049005A0049004F004E0045000100000000001200000049004E0044004900
+      520049005A005A004F000100000000001A0000005400490050004F0043004F00
+      4E00540045004700470049004F0001000000000020000000530054004F005200
+      4900410049004E00540045005200560045004E0054004F000100000000002000
+      000041005A005A004500520041004D0045004E0054004F00530041004C004400
+      4F00010000000000160000004500430043004600410053004300450053005400
+      52000100000000000C0000005500540045004E00540045000100000000001800
+      00005000410052004F004C004100430048004900410056004500010000000000
+      10000000540053004C00410056004F0052004F00010000000000100000005400
+      530049004E0044004900430049000100000000001A0000004600520041005A00
+      49004F004E0041004E004F005400540045000100000000001C00000054004900
+      4D0042004F005200490047005F0056004500520053004F000100000000002000
+      0000540049004D0042004F005200490047005F00430041005500530041004C00
+      45000100000000001E00000052004100470049004F004E0045005F0053004F00
+      4300490041004C00450001000000000014000000560045005200530049004F00
+      4E004500440042000100000000002600000043004F0044004900430045005F00
+      49004E00540045004700520041005A0049004F004E0045000100000000001A00
+      00004C0055004E0047005F00500041005300530057004F005200440001000000
+      00001C000000560041004C00490044005F00500041005300530057004F005200
+      440001000000000018000000560041004C00490044005F005500540045004E00
+      540045000100000000000E000000500041005400430048004400420001000000
+      0000180000005400530041005500530049004C0049004100520049004F000100
+      00000000}
+    Left = 31
+    Top = 116
+  end
+  object D090: TDataSource
+    DataSet = QI090
+    Left = 32
+    Top = 163
+  end
+  object selPermessi: TOracleDataSet
+    SQL.Strings = (
+      'select UTENTE from MONDOEDP.I070_UTENTI'
+      'where AZIENDA = :AZIENDA '
+      'and PERMESSI = :PROFILO'
+      'union all'
+      'select NOME_UTENTE from MONDOEDP.I061_PROFILI_DIPENDENTE'
+      'where AZIENDA = :AZIENDA '
+      'and PERMESSI = :PROFILO')
+    Optimize = False
+    Variables.Data = {
+      0400000002000000100000003A0041005A00490045004E004400410005000000
+      0000000000000000100000003A00500052004F00460049004C004F0005000000
+      0000000000000000}
+    Left = 91
+    Top = 116
+  end
+  object selSG746: TOracleDataSet
+    SQL.Strings = (
+      'SELECT CODREGOLA, CODICE, DESCRIZIONE'
+      'FROM SG746_STATI_AVANZAMENTO S1'
+      'WHERE DECORRENZA = (SELECT MAX(DECORRENZA)'
+      '                    FROM SG746_STATI_AVANZAMENTO S2'
+      '                    WHERE S2.CODREGOLA = S1.CODREGOLA'
+      '                    AND S2.CODICE = S1.CODICE)'
+      'ORDER BY CODREGOLA, CODICE, DESCRIZIONE')
+    Optimize = False
+    CountAllRecords = True
+    Left = 182
+    Top = 124
+  end
+end

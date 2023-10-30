@@ -1,0 +1,84 @@
+inherited WA179FProfiliIterAut: TWA179FProfiliIterAut
+  Tag = 80
+  DesignLeft = 8
+  DesignTop = 8
+  object cmbAzienda: TMedpIWMultiColumnComboBox [15]
+    Left = 16
+    Top = 293
+    Width = 121
+    Height = 21
+    Cursor = crAuto
+    Css = 'medpMultiColumnCombo'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    Alignment = taLeftJustify
+    BGColor = clNone
+    FocusColor = clNone
+    Editable = True
+    NonEditableAsLabel = False
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'cmbAzienda'
+    MaxLength = 0
+    ReadOnly = False
+    Required = False
+    ScriptEvents = <>
+    SubmitOnAsyncEvent = True
+    TabOrder = 7
+    PopUpHeight = 15
+    Text = ''
+    ColCount = 1
+    Items = <>
+    ColumnTitles.Visible = False
+    OnChange = cmbAziendaChange
+    medpAutoResetItems = True
+    LookupColumn = 0
+    CodeColumn = 0
+  end
+  object lblAzienda: TmeIWLabel [16]
+    Left = 16
+    Top = 271
+    Width = 49
+    Height = 16
+    Cursor = crAuto
+    Css = 'intestazione'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Enabled = False
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'lblPermesso'
+    Caption = 'Azienda'
+    RawText = False
+    Enabled = True
+  end
+  inherited actlstNavigatorBar: TActionList
+    inherited actEstrai: TAction
+      Enabled = False
+      Visible = False
+    end
+  end
+end
