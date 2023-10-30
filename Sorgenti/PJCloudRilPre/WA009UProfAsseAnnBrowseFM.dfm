@@ -1,0 +1,2 @@
+inherited WA009FProfAsseAnnBrowseFM: TWA009FProfAsseAnnBrowseFM
+end
