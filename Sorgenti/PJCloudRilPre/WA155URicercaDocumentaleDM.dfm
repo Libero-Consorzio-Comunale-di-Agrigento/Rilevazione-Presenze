@@ -1,0 +1,2 @@
+inherited WA155FRicercaDocumentaleDM: TWA155FRicercaDocumentaleDM
+end
