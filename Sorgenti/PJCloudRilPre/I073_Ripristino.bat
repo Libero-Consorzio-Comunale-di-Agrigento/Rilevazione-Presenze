@@ -1,0 +1,1 @@
+sqlplus mondoedp/timoteo@iris9 @Z:\Sviluppo\_WEBProject\i073_ripristino.sql

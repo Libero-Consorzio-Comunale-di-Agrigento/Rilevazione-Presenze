@@ -1,0 +1,288 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{30D54231-C548-4460-ACA0-63908AC015E8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="S700PAreeValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS700PAreeValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S706PValutatoriDipendente.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S715PStampaValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS715PStampaValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S720PProfiliAree.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS720PProfiliAree.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S730PPunteggiValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS730PPunteggiValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S735PPunteggiFasceIncentivi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS735PPunteggiFasceIncentivi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S740PRegoleValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS740PRegoleValutazioni.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S746PStatiAvanzamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS746PStatiAvanzamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="S750PParProtocollo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudCondivisi\WS750PParProtocollo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJRilPre\A077PGeneratoreStampe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJCloudRilPre\WA077PGeneratoreStampe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJServizi\B028PPrintServer_COM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="A008POperatori.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJIrisWEB\W000PIrisWEB.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="S700PAreeValutazioni">
+        <MSBuild Projects="S700PAreeValutazioni.dproj"/>
+    </Target>
+    <Target Name="S700PAreeValutazioni:Clean">
+        <MSBuild Projects="S700PAreeValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S700PAreeValutazioni:Make">
+        <MSBuild Projects="S700PAreeValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS700PAreeValutazioni">
+        <MSBuild Projects="..\PJCloudCondivisi\WS700PAreeValutazioni.dproj"/>
+    </Target>
+    <Target Name="WS700PAreeValutazioni:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS700PAreeValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS700PAreeValutazioni:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS700PAreeValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S706PValutatoriDipendente">
+        <MSBuild Projects="S706PValutatoriDipendente.dproj"/>
+    </Target>
+    <Target Name="S706PValutatoriDipendente:Clean">
+        <MSBuild Projects="S706PValutatoriDipendente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S706PValutatoriDipendente:Make">
+        <MSBuild Projects="S706PValutatoriDipendente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S715PStampaValutazioni">
+        <MSBuild Projects="S715PStampaValutazioni.dproj"/>
+    </Target>
+    <Target Name="S715PStampaValutazioni:Clean">
+        <MSBuild Projects="S715PStampaValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S715PStampaValutazioni:Make">
+        <MSBuild Projects="S715PStampaValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS715PStampaValutazioni">
+        <MSBuild Projects="..\PJCloudCondivisi\WS715PStampaValutazioni.dproj"/>
+    </Target>
+    <Target Name="WS715PStampaValutazioni:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS715PStampaValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS715PStampaValutazioni:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS715PStampaValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S720PProfiliAree">
+        <MSBuild Projects="S720PProfiliAree.dproj"/>
+    </Target>
+    <Target Name="S720PProfiliAree:Clean">
+        <MSBuild Projects="S720PProfiliAree.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S720PProfiliAree:Make">
+        <MSBuild Projects="S720PProfiliAree.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS720PProfiliAree">
+        <MSBuild Projects="..\PJCloudCondivisi\WS720PProfiliAree.dproj"/>
+    </Target>
+    <Target Name="WS720PProfiliAree:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS720PProfiliAree.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS720PProfiliAree:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS720PProfiliAree.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S730PPunteggiValutazioni">
+        <MSBuild Projects="S730PPunteggiValutazioni.dproj"/>
+    </Target>
+    <Target Name="S730PPunteggiValutazioni:Clean">
+        <MSBuild Projects="S730PPunteggiValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S730PPunteggiValutazioni:Make">
+        <MSBuild Projects="S730PPunteggiValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS730PPunteggiValutazioni">
+        <MSBuild Projects="..\PJCloudCondivisi\WS730PPunteggiValutazioni.dproj"/>
+    </Target>
+    <Target Name="WS730PPunteggiValutazioni:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS730PPunteggiValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS730PPunteggiValutazioni:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS730PPunteggiValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S735PPunteggiFasceIncentivi">
+        <MSBuild Projects="S735PPunteggiFasceIncentivi.dproj"/>
+    </Target>
+    <Target Name="S735PPunteggiFasceIncentivi:Clean">
+        <MSBuild Projects="S735PPunteggiFasceIncentivi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S735PPunteggiFasceIncentivi:Make">
+        <MSBuild Projects="S735PPunteggiFasceIncentivi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS735PPunteggiFasceIncentivi">
+        <MSBuild Projects="..\PJCloudCondivisi\WS735PPunteggiFasceIncentivi.dproj"/>
+    </Target>
+    <Target Name="WS735PPunteggiFasceIncentivi:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS735PPunteggiFasceIncentivi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS735PPunteggiFasceIncentivi:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS735PPunteggiFasceIncentivi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S740PRegoleValutazioni">
+        <MSBuild Projects="S740PRegoleValutazioni.dproj"/>
+    </Target>
+    <Target Name="S740PRegoleValutazioni:Clean">
+        <MSBuild Projects="S740PRegoleValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S740PRegoleValutazioni:Make">
+        <MSBuild Projects="S740PRegoleValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS740PRegoleValutazioni">
+        <MSBuild Projects="..\PJCloudCondivisi\WS740PRegoleValutazioni.dproj"/>
+    </Target>
+    <Target Name="WS740PRegoleValutazioni:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS740PRegoleValutazioni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS740PRegoleValutazioni:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS740PRegoleValutazioni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S746PStatiAvanzamento">
+        <MSBuild Projects="S746PStatiAvanzamento.dproj"/>
+    </Target>
+    <Target Name="S746PStatiAvanzamento:Clean">
+        <MSBuild Projects="S746PStatiAvanzamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S746PStatiAvanzamento:Make">
+        <MSBuild Projects="S746PStatiAvanzamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS746PStatiAvanzamento">
+        <MSBuild Projects="..\PJCloudCondivisi\WS746PStatiAvanzamento.dproj"/>
+    </Target>
+    <Target Name="WS746PStatiAvanzamento:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS746PStatiAvanzamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS746PStatiAvanzamento:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS746PStatiAvanzamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S750PParProtocollo">
+        <MSBuild Projects="S750PParProtocollo.dproj"/>
+    </Target>
+    <Target Name="S750PParProtocollo:Clean">
+        <MSBuild Projects="S750PParProtocollo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S750PParProtocollo:Make">
+        <MSBuild Projects="S750PParProtocollo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WS750PParProtocollo">
+        <MSBuild Projects="..\PJCloudCondivisi\WS750PParProtocollo.dproj"/>
+    </Target>
+    <Target Name="WS750PParProtocollo:Clean">
+        <MSBuild Projects="..\PJCloudCondivisi\WS750PParProtocollo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WS750PParProtocollo:Make">
+        <MSBuild Projects="..\PJCloudCondivisi\WS750PParProtocollo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A077PGeneratoreStampe">
+        <MSBuild Projects="..\PJRilPre\A077PGeneratoreStampe.dproj"/>
+    </Target>
+    <Target Name="A077PGeneratoreStampe:Clean">
+        <MSBuild Projects="..\PJRilPre\A077PGeneratoreStampe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A077PGeneratoreStampe:Make">
+        <MSBuild Projects="..\PJRilPre\A077PGeneratoreStampe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WA077PGeneratoreStampe">
+        <MSBuild Projects="..\PJCloudRilPre\WA077PGeneratoreStampe.dproj"/>
+    </Target>
+    <Target Name="WA077PGeneratoreStampe:Clean">
+        <MSBuild Projects="..\PJCloudRilPre\WA077PGeneratoreStampe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WA077PGeneratoreStampe:Make">
+        <MSBuild Projects="..\PJCloudRilPre\WA077PGeneratoreStampe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Clean">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Make">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A008POperatori">
+        <MSBuild Projects="A008POperatori.dproj"/>
+    </Target>
+    <Target Name="A008POperatori:Clean">
+        <MSBuild Projects="A008POperatori.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A008POperatori:Make">
+        <MSBuild Projects="A008POperatori.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="W000PIrisWEB">
+        <MSBuild Projects="..\PJIrisWEB\W000PIrisWEB.dproj"/>
+    </Target>
+    <Target Name="W000PIrisWEB:Clean">
+        <MSBuild Projects="..\PJIrisWEB\W000PIrisWEB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="W000PIrisWEB:Make">
+        <MSBuild Projects="..\PJIrisWEB\W000PIrisWEB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="S700PAreeValutazioni;WS700PAreeValutazioni;S706PValutatoriDipendente;S715PStampaValutazioni;WS715PStampaValutazioni;S720PProfiliAree;WS720PProfiliAree;S730PPunteggiValutazioni;WS730PPunteggiValutazioni;S735PPunteggiFasceIncentivi;WS735PPunteggiFasceIncentivi;S740PRegoleValutazioni;WS740PRegoleValutazioni;S746PStatiAvanzamento;WS746PStatiAvanzamento;S750PParProtocollo;WS750PParProtocollo;A077PGeneratoreStampe;WA077PGeneratoreStampe;B028PPrintServer_COM;A008POperatori;W000PIrisWEB"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="S700PAreeValutazioni:Clean;WS700PAreeValutazioni:Clean;S706PValutatoriDipendente:Clean;S715PStampaValutazioni:Clean;WS715PStampaValutazioni:Clean;S720PProfiliAree:Clean;WS720PProfiliAree:Clean;S730PPunteggiValutazioni:Clean;WS730PPunteggiValutazioni:Clean;S735PPunteggiFasceIncentivi:Clean;WS735PPunteggiFasceIncentivi:Clean;S740PRegoleValutazioni:Clean;WS740PRegoleValutazioni:Clean;S746PStatiAvanzamento:Clean;WS746PStatiAvanzamento:Clean;S750PParProtocollo:Clean;WS750PParProtocollo:Clean;A077PGeneratoreStampe:Clean;WA077PGeneratoreStampe:Clean;B028PPrintServer_COM:Clean;A008POperatori:Clean;W000PIrisWEB:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="S700PAreeValutazioni:Make;WS700PAreeValutazioni:Make;S706PValutatoriDipendente:Make;S715PStampaValutazioni:Make;WS715PStampaValutazioni:Make;S720PProfiliAree:Make;WS720PProfiliAree:Make;S730PPunteggiValutazioni:Make;WS730PPunteggiValutazioni:Make;S735PPunteggiFasceIncentivi:Make;WS735PPunteggiFasceIncentivi:Make;S740PRegoleValutazioni:Make;WS740PRegoleValutazioni:Make;S746PStatiAvanzamento:Make;WS746PStatiAvanzamento:Make;S750PParProtocollo:Make;WS750PParProtocollo:Make;A077PGeneratoreStampe:Make;WA077PGeneratoreStampe:Make;B028PPrintServer_COM:Make;A008POperatori:Make;W000PIrisWEB:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

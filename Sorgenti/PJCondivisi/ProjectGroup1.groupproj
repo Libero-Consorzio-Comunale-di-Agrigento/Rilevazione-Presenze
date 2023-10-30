@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E59A31B0-A0D5-4AFA-9FE6-2705EEC12469}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="P656PElaborazioneFLUPER.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="P652PINPDAPMMRegole.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="P656PElaborazioneFLUPER">
+        <MSBuild Projects="P656PElaborazioneFLUPER.dproj"/>
+    </Target>
+    <Target Name="P656PElaborazioneFLUPER:Clean">
+        <MSBuild Projects="P656PElaborazioneFLUPER.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P656PElaborazioneFLUPER:Make">
+        <MSBuild Projects="P656PElaborazioneFLUPER.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P652PINPDAPMMRegole">
+        <MSBuild Projects="P652PINPDAPMMRegole.dproj"/>
+    </Target>
+    <Target Name="P652PINPDAPMMRegole:Clean">
+        <MSBuild Projects="P652PINPDAPMMRegole.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P652PINPDAPMMRegole:Make">
+        <MSBuild Projects="P652PINPDAPMMRegole.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="P656PElaborazioneFLUPER;P652PINPDAPMMRegole"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="P656PElaborazioneFLUPER:Clean;P652PINPDAPMMRegole:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="P656PElaborazioneFLUPER:Make;P652PINPDAPMMRegole:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

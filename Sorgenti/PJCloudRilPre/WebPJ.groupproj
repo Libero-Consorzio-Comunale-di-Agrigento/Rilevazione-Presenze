@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3ECA5167-31CF-49A4-BE77-87F9DCBA0F37}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\PJRilPre\A090PAssenzeAnno.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WA090PAssenzeAnno.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJServizi\B028PPrintServer_COM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJRilPre\A040PPianifRep.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJRilPre\A058PPianifTurni.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="A090PAssenzeAnno">
+        <MSBuild Projects="..\PJRilPre\A090PAssenzeAnno.dproj"/>
+    </Target>
+    <Target Name="A090PAssenzeAnno:Clean">
+        <MSBuild Projects="..\PJRilPre\A090PAssenzeAnno.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A090PAssenzeAnno:Make">
+        <MSBuild Projects="..\PJRilPre\A090PAssenzeAnno.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WA090PAssenzeAnno">
+        <MSBuild Projects="WA090PAssenzeAnno.dproj"/>
+    </Target>
+    <Target Name="WA090PAssenzeAnno:Clean">
+        <MSBuild Projects="WA090PAssenzeAnno.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WA090PAssenzeAnno:Make">
+        <MSBuild Projects="WA090PAssenzeAnno.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Clean">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B028PPrintServer_COM:Make">
+        <MSBuild Projects="..\PJServizi\B028PPrintServer_COM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A040PPianifRep">
+        <MSBuild Projects="..\PJRilPre\A040PPianifRep.dproj"/>
+    </Target>
+    <Target Name="A040PPianifRep:Clean">
+        <MSBuild Projects="..\PJRilPre\A040PPianifRep.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A040PPianifRep:Make">
+        <MSBuild Projects="..\PJRilPre\A040PPianifRep.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A058PPianifTurni">
+        <MSBuild Projects="..\PJRilPre\A058PPianifTurni.dproj"/>
+    </Target>
+    <Target Name="A058PPianifTurni:Clean">
+        <MSBuild Projects="..\PJRilPre\A058PPianifTurni.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A058PPianifTurni:Make">
+        <MSBuild Projects="..\PJRilPre\A058PPianifTurni.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="A090PAssenzeAnno;WA090PAssenzeAnno;B028PPrintServer_COM;A040PPianifRep;A058PPianifTurni"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="A090PAssenzeAnno:Clean;WA090PAssenzeAnno:Clean;B028PPrintServer_COM:Clean;A040PPianifRep:Clean;A058PPianifTurni:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="A090PAssenzeAnno:Make;WA090PAssenzeAnno:Make;B028PPrintServer_COM:Make;A040PPianifRep:Make;A058PPianifTurni:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
