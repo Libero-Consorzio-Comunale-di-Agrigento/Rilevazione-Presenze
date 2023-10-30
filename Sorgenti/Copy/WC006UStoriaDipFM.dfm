@@ -1,0 +1,102 @@
+inherited WC006FStoriaDipFM: TWC006FStoriaDipFM
+  Width = 525
+  Height = 333
+  ExplicitWidth = 525
+  ExplicitHeight = 333
+  inherited IWFrameRegion: TIWRegion
+    Width = 525
+    Height = 333
+    ExplicitWidth = 525
+    ExplicitHeight = 333
+    object grdStoria: TmeIWDBGrid
+      Left = 32
+      Top = 56
+      Width = 449
+      Height = 217
+      Css = 'grid'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      BorderColors.Color = clNone
+      BorderColors.Light = clNone
+      BorderColors.Dark = clNone
+      BGColor = clNone
+      BorderSize = 0
+      BorderStyle = tfVoid
+      CellPadding = 0
+      CellSpacing = 0
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      FrameBuffer = 40
+      Lines = tlNone
+      OnRenderCell = grdStoriaRenderCell
+      Summary = 'Situazione storica'
+      UseFrame = False
+      UseSize = False
+      HeaderRowCount = 0
+      CellRenderOptions = []
+      ScrollToCurrentRow = False
+      Columns = <>
+      FooterRowCount = 0
+      FriendlyName = 'grdStoria'
+      FromStart = True
+      HighlightColor = clNone
+      HighlightRows = True
+      Options = [dgShowTitles]
+      RefreshMode = rmAutomatic
+      RowLimit = 0
+      RollOver = False
+      RowClick = True
+      RollOverColor = clNone
+      RowHeaderColor = clNone
+      RowAlternateColor = clNone
+      RowCurrentColor = clNone
+      TabOrder = -1
+      medpFixedColumns = 0
+    end
+    object btnChiudi: TmeIWButton
+      Left = 432
+      Top = 305
+      Width = 75
+      Height = 25
+      Css = 'pulsante'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Caption = 'Chiudi'
+      Color = clBtnFace
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      FriendlyName = 'btnChiudi'
+      TabOrder = 0
+      OnClick = btnChiudiClick
+      medpDownloadButton = False
+    end
+  end
+  inherited TemplateProcessor: TIWTemplateProcessorHTML
+    Templates.Default = 'WC006FStoriaDipFM.html'
+  end
+  object pmnGrigliaDati: TPopupMenu
+    Left = 424
+    Top = 24
+    object mnuSpostaStorico: TMenuItem
+      Caption = 'Posiziona sul periodo selezionato'
+      Hint = 'submit'
+      OnClick = mnuSpostaStoricoClick
+    end
+  end
+end
