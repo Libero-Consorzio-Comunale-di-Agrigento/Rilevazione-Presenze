@@ -1,0 +1,2 @@
+inherited WA176FRiepilogoIterAutorizzativiDM: TWA176FRiepilogoIterAutorizzativiDM
+end
