@@ -1,0 +1,2 @@
+inherited WS715FStampaValurazioniDM: TWS715FStampaValurazioniDM
+end
