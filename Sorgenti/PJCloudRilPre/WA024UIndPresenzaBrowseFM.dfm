@@ -1,0 +1,2 @@
+inherited WA024FIndPresenzaBrowseFM: TWA024FIndPresenzaBrowseFM
+end
