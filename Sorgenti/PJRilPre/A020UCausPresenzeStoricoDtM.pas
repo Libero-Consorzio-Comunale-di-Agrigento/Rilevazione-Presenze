@@ -1,0 +1,99 @@
+unit A020UCausPresenzeStoricoDtM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, R004UGestStoricoDTM, Data.DB, OracleData,
+  A020UCausPresenzeStoricoMW, C180FunzioniGenerali, Oracle;
+
+type
+  TA020FCausPresenzeStoricoDtM = class(TR004FGestStoricoDtM)
+    selT235: TOracleDataSet;
+    selT235ID: TIntegerField;
+    selT235DECORRENZA: TDateTimeField;
+    selT235DECORRENZA_FINE: TDateTimeField;
+    selT235DESCRIZIONE: TStringField;
+    selT235NONABILITATA_ELIMINATIMB: TStringField;
+    selT235NONACCOPPIATA_ANOMBLOCC: TStringField;
+    selT235CODICE: TStringField;
+    selT235DESC_CAUSALE: TStringField;
+    selT235CAUSCOMP_DEBITOGG: TStringField;
+    selT235DETRAZ_RIEPPR_SEQ: TIntegerField;
+    selT235GIUST_DAA_RECUP_FLEX: TStringField;
+    selT235ITER_AUTSTR_ARROT_LIQ: TStringField;
+    selT235ITER_AUTSTR_ARROT_LIQ_FASCE: TStringField;
+    selT235CONTEGGIO_TIMB_INTERNA: TStringField;
+    selT235MATURAMENSA: TStringField;
+    selT235TIMB_PM: TStringField;
+    selT235TIMB_PM_DETRAZ: TStringField;
+    selT235TIMB_PM_H: TStringField;
+    selT235INTERSEZIONE_TIMBRATURE: TStringField;
+    selT235AUTOCOMPLETAMENTO_UE: TStringField;
+    selT235SEPARA_CAUSALI_UE: TStringField;
+    selT235SPEZZ_STRAORD: TStringField;
+    selT235RICONOSCIMENTO_TURNO: TStringField;
+    selT235CONDIZIONE_ABILITAZIONE: TStringField;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure selT235ITER_AUTSTR_ARROT_LIQValidate(Sender: TField);
+    procedure BeforePost(DataSet: TDataSet); override;
+  private
+    IdCausale:Integer;
+  public
+    A020FCausPresenzeStoricoMW:TA020FCausPresenzeStoricoMW;
+    constructor Create(AOwner: TComponent; IdCausale:Integer); overload;
+  end;
+
+var
+  A020FCausPresenzeStoricoDtM: TA020FCausPresenzeStoricoDtM;
+
+implementation
+
+uses A020UCausPresenzeStorico;
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TA020FCausPresenzeStoricoDtM.BeforePost(DataSet: TDataSet);
+begin
+  inherited;
+  A020FCausPresenzeStoricoMW.ValidazioneQueryCdzAbilitazione(selT235.FieldByName('CONDIZIONE_ABILITAZIONE').AsString);
+end;
+
+constructor TA020FCausPresenzeStoricoDtM.Create(AOwner: TComponent; IdCausale:Integer);
+begin
+  Self.IdCausale:=IdCausale;
+  A020FCausPresenzeStoricoMW:=TA020FCausPresenzeStoricoMW.Create(Self);
+  A020FCausPresenzeStoricoMW.Inizializza(IdCausale);
+  A020FCausPresenzeStoricoMW.ApriT275;
+  inherited Create(AOwner);
+end;
+
+procedure TA020FCausPresenzeStoricoDtM.DataModuleCreate(Sender: TObject);
+begin
+  inherited;
+  selT235.SetVariable('ID',IdCausale);
+  InterfacciaR004:=A020FCausPresStorico.InterfacciaR004;
+  InizializzaDataSet(selT235,[evBeforeEdit,
+                              evBeforeInsert,
+                              evBeforePost,
+                              evBeforeDelete,
+                              evAfterDelete,
+                              evAfterPost,
+                              evOnNewRecord,
+                              evOnTranslateMessage]);
+  A020FCausPresStorico.DButton.DataSet:=selT235;
+  InterfacciaR004.OttimizzaStorico:=False;
+
+  selT235CODICE.LookupDataSet:=A020FCausPresenzeStoricoMW.selT275;
+  selT235DESC_CAUSALE.LookupDataSet:=A020FCausPresenzeStoricoMW.selT275;
+  selT235.Open;
+end;
+
+procedure TA020FCausPresenzeStoricoDtM.selT235ITER_AUTSTR_ARROT_LIQValidate(Sender: TField);
+begin
+  if not Sender.IsNull then
+    OreMinutiValidate(Sender.AsString);
+end;
+
+end.
