@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CEF40115-5D65-4DFF-A293-F8B89EC7ADC5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="B021PIrisRestSvc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B021PIrisRestSvc_IIS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B021PIrisRestSvc_SRV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B021PTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="B021PIrisRestSvc">
+        <MSBuild Projects="B021PIrisRestSvc.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc:Clean">
+        <MSBuild Projects="B021PIrisRestSvc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc:Make">
+        <MSBuild Projects="B021PIrisRestSvc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS">
+        <MSBuild Projects="B021PIrisRestSvc_IIS.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS:Clean">
+        <MSBuild Projects="B021PIrisRestSvc_IIS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_IIS:Make">
+        <MSBuild Projects="B021PIrisRestSvc_IIS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV">
+        <MSBuild Projects="B021PIrisRestSvc_SRV.dproj"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV:Clean">
+        <MSBuild Projects="B021PIrisRestSvc_SRV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PIrisRestSvc_SRV:Make">
+        <MSBuild Projects="B021PIrisRestSvc_SRV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B021PTest">
+        <MSBuild Projects="B021PTest.dproj"/>
+    </Target>
+    <Target Name="B021PTest:Clean">
+        <MSBuild Projects="B021PTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B021PTest:Make">
+        <MSBuild Projects="B021PTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="B021PIrisRestSvc;B021PIrisRestSvc_IIS;B021PIrisRestSvc_SRV;B021PTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="B021PIrisRestSvc:Clean;B021PIrisRestSvc_IIS:Clean;B021PIrisRestSvc_SRV:Clean;B021PTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="B021PIrisRestSvc:Make;B021PIrisRestSvc_IIS:Make;B021PIrisRestSvc_SRV:Make;B021PTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

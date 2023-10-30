@@ -1,0 +1,18 @@
+[Project]
+Directory=C:\SVN\Sviluppo\PJServizi\
+
+;you can have multiple WSDL sections. Repeat WSDL sections must be name 
+;WSDL.N. You do not need to number sections sequentially, but repeat WSDL 
+;sections will be ignored unless a WSDL section exists
+[WSDL]
+Source=file://C:\SVN\Sviluppo\PJServizi\B024ADScatanzaro.wsdl
+;Proxy= http proxy details if required (address:port)
+;Auth= authentication details for http if required (username:password)
+Pascal=B024UADSCatanzaroIntf
+;Exclude=; a comma delimited list of types to ignore when building the pascal 
+;        ; (for types repeated in multiple WSDL files). Format is {namespace}name
+;Uses=; a comma delimited list of units to add to the uses clause of the generated pascal unit
+Factory=0
+PrependTypes=0
+MakeITIBin=0
+MakeITIRes=0

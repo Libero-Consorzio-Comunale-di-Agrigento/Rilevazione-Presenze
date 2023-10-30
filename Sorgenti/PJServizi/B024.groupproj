@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F81C83C2-D4CF-442B-8298-BEE066552BF3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="B024PADSCatanzaro.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B024PADSCatanzaro_Vcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="B024PTestClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="B024PADSCatanzaro">
+        <MSBuild Projects="B024PADSCatanzaro.dproj"/>
+    </Target>
+    <Target Name="B024PADSCatanzaro:Clean">
+        <MSBuild Projects="B024PADSCatanzaro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B024PADSCatanzaro:Make">
+        <MSBuild Projects="B024PADSCatanzaro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B024PADSCatanzaro_Vcl">
+        <MSBuild Projects="B024PADSCatanzaro_Vcl.dproj"/>
+    </Target>
+    <Target Name="B024PADSCatanzaro_Vcl:Clean">
+        <MSBuild Projects="B024PADSCatanzaro_Vcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B024PADSCatanzaro_Vcl:Make">
+        <MSBuild Projects="B024PADSCatanzaro_Vcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B024PTestClient">
+        <MSBuild Projects="B024PTestClient.dproj"/>
+    </Target>
+    <Target Name="B024PTestClient:Clean">
+        <MSBuild Projects="B024PTestClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B024PTestClient:Make">
+        <MSBuild Projects="B024PTestClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="B024PADSCatanzaro;B024PADSCatanzaro_Vcl;B024PTestClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="B024PADSCatanzaro:Clean;B024PADSCatanzaro_Vcl:Clean;B024PTestClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="B024PADSCatanzaro:Make;B024PADSCatanzaro_Vcl:Make;B024PTestClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

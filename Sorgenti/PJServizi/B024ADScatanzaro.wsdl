@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5. -->
+<wsdl:definitions
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:tns="it.finmatica.gestioneautorizzazioni"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:ns1="http://schemas.xmlsoap.org/soap/http"
+  name="ProfilazioneUtenteService"
+  targetNamespace="it.finmatica.gestioneautorizzazioni">
+  <wsdl:types>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="it.finmatica.gestioneautorizzazioni" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="it.finmatica.gestioneautorizzazioni">
+      <xs:element name="getAbilitazioniSoggetto" type="tns:getAbilitazioniSoggetto"/>
+      <xs:element name="getAbilitazioniSoggettoResponse" type="tns:getAbilitazioniSoggettoResponse"/>
+      <xs:element name="getListaApplicativiUtente" type="tns:getListaApplicativiUtente"/>
+      <xs:element name="getListaApplicativiUtenteResponse" type="tns:getListaApplicativiUtenteResponse"/>
+      <xs:element name="getListaRuoli" type="tns:getListaRuoli"/>
+      <xs:element name="getListaRuoliResponse" type="tns:getListaRuoliResponse"/>
+      <xs:element name="getListaUnita" type="tns:getListaUnita"/>
+      <xs:element name="getListaUnitaResponse" type="tns:getListaUnitaResponse"/>
+      <xs:element name="setAbilitazioniSoggetto" type="tns:setAbilitazioniSoggetto"/>
+      <xs:element name="setAbilitazioniSoggettoResponse" type="tns:setAbilitazioniSoggettoResponse"/>
+      <xs:element name="modificaAnagrafica" type="tns:modificaAnagrafica"/>
+      <xs:element name="modificaAnagraficaResponse" type="tns:modificaAnagraficaResponse"/>
+      <xs:complexType name="modificaAnagrafica">
+        <xs:sequence>
+          <xs:element name="oldSoggetto" type="tns:WSSoggetto"/>
+          <xs:element name="newSoggetto" type="tns:WSSoggetto"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSSoggetto">
+        <xs:sequence>
+          <xs:element name="cognome" type="xs:string"/>
+          <xs:element name="nome" type="xs:string"/>
+          <xs:element name="codiceFiscale" type="xs:string"/>
+          <xs:element name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="telefono" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="modificaAnagraficaResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="getListaRuoli">
+        <xs:sequence>
+          <xs:element name="filtri" type="tns:listaRuoliRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaRuoliRequest">
+        <xs:sequence>
+          <xs:element name="codiceComponente" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListaRuoliResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="ruolo" type="tns:listaRuoliResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaRuoliResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="areeAccessibili" type="xs:string"/>
+          <xs:element minOccurs="0" name="codiceRuolo" type="xs:string"/>
+          <xs:element minOccurs="0" name="descrizioneRuolo" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAbilitazioniSoggetto">
+        <xs:sequence>
+          <xs:element name="filtri" type="tns:abilitazioniSoggettoGetRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abilitazioniSoggettoGetRequest">
+        <xs:sequence>
+          <xs:element name="codFiscaleSoggettoDaAbilitare" type="xs:string"/>
+          <xs:element name="codiceAmministrazione" type="xs:string"/>
+          <xs:element name="codiceComponente" type="xs:string"/>
+          <xs:element name="codiceSistema" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAbilitazioniSoggettoResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="abilitazione" type="tns:abilitazioniSoggettoGetResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abilitazioniSoggettoGetResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codiceRuolo" type="xs:string"/>
+          <xs:element minOccurs="0" name="codiceTipoAutorizzazione" type="xs:int"/>
+          <xs:element minOccurs="0" name="codiceUnita" type="xs:string"/>
+          <xs:element minOccurs="0" name="dataDecorrenza" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="dataScadenza" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="descrizioneRuolo" type="xs:string"/>
+          <xs:element minOccurs="0" name="descrizioneUnita" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListaApplicativiUtente">
+        <xs:sequence>
+          <xs:element name="filtri" type="tns:listaApplicativiUtenteGetRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaApplicativiUtenteGetRequest">
+        <xs:sequence>
+          <xs:element name="codiceAmministrazione" type="xs:string"/>
+          <xs:element name="identificativoUtente" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListaApplicativiUtenteResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="getListaApplicativiUtenteResult" type="tns:listaApplicativiUtenteGetResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaApplicativiUtenteGetResponse">
+        <xs:sequence>
+          <xs:element name="codice" type="xs:string"/>
+          <xs:element name="descrizione" type="xs:string"/>
+          <xs:element name="url" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListaUnita">
+        <xs:sequence>
+          <xs:element name="filtri" type="tns:listaUnitaRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaUnitaRequest">
+        <xs:sequence>
+          <xs:element name="codiceAmministrazione" type="xs:string"/>
+          <xs:element name="codiceRuolo" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListaUnitaResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="unita" type="tns:listaUnitaResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listaUnitaResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codiceUnita" type="xs:string"/>
+          <xs:element minOccurs="0" name="descrizioneUnita" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setAbilitazioniSoggetto">
+        <xs:sequence>
+          <xs:element name="abilitazione" type="tns:abilitazioniSoggettoSetRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abilitazioniSoggettoSetRequest">
+        <xs:sequence>
+          <xs:element name="codiceFiscale" type="xs:string"/>
+          <xs:element name="cognome" type="xs:string"/>
+          <xs:element name="email" type="xs:string"/>
+          <xs:element name="nome" type="xs:string"/>
+          <xs:element name="profilo" type="tns:profiloRequest"/>
+          <xs:element name="telefono" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="profiloRequest">
+        <xs:sequence>
+          <xs:element name="codiceAmministrazione" type="xs:string"/>
+          <xs:element name="codiceComponente" type="xs:string"/>
+          <xs:element name="codiceRuolo" type="xs:string"/>
+          <xs:element name="codiceSistema" type="xs:string"/>
+          <xs:element name="codiceTipoAutorizzazione" type="xs:int"/>
+          <xs:element name="codiceUnita" type="xs:string"/>
+          <xs:element name="dataDecorrenzaORevoca" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setAbilitazioniSoggettoResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="ApplicationException" type="tns:ApplicationException"/>
+      <xs:complexType name="ApplicationException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string"/>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ApplicationException">
+    <wsdl:part element="tns:ApplicationException" name="ApplicationException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaRuoli">
+    <wsdl:part element="tns:getListaRuoli" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAbilitazioniSoggettoResponse">
+    <wsdl:part element="tns:getAbilitazioniSoggettoResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaApplicativiUtenteResponse">
+    <wsdl:part element="tns:getListaApplicativiUtenteResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaUnitaResponse">
+    <wsdl:part element="tns:getListaUnitaResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaRuoliResponse">
+    <wsdl:part element="tns:getListaRuoliResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAbilitazioniSoggetto">
+    <wsdl:part element="tns:getAbilitazioniSoggetto" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaApplicativiUtente">
+    <wsdl:part element="tns:getListaApplicativiUtente" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAbilitazioniSoggettoResponse">
+    <wsdl:part element="tns:setAbilitazioniSoggettoResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListaUnita">
+    <wsdl:part element="tns:getListaUnita" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAbilitazioniSoggetto">
+    <wsdl:part element="tns:setAbilitazioniSoggetto" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modificaAnagraficaResponse">
+    <wsdl:part element="tns:modificaAnagraficaResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modificaAnagrafica">
+    <wsdl:part element="tns:modificaAnagrafica" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ProfilazioneUtente">
+    <wsdl:operation name="getListaRuoli">
+      <wsdl:input message="tns:getListaRuoli" name="getListaRuoli"></wsdl:input>
+      <wsdl:output message="tns:getListaRuoliResponse" name="getListaRuoliResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAbilitazioniSoggetto">
+      <wsdl:input message="tns:getAbilitazioniSoggetto" name="getAbilitazioniSoggetto"></wsdl:input>
+      <wsdl:output message="tns:getAbilitazioniSoggettoResponse" name="getAbilitazioniSoggettoResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListaApplicativiUtente">
+      <wsdl:input message="tns:getListaApplicativiUtente" name="getListaApplicativiUtente"></wsdl:input>
+      <wsdl:output message="tns:getListaApplicativiUtenteResponse" name="getListaApplicativiUtenteResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListaUnita">
+      <wsdl:input message="tns:getListaUnita" name="getListaUnita"></wsdl:input>
+      <wsdl:output message="tns:getListaUnitaResponse" name="getListaUnitaResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setAbilitazioniSoggetto">
+      <wsdl:input message="tns:setAbilitazioniSoggetto" name="setAbilitazioniSoggetto"></wsdl:input>
+      <wsdl:output message="tns:setAbilitazioniSoggettoResponse" name="setAbilitazioniSoggettoResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="modificaAnagrafica">
+      <wsdl:input message="tns:modificaAnagrafica" name="modificaAnagrafica"></wsdl:input>
+      <wsdl:output message="tns:modificaAnagraficaResponse" name="modificaAnagraficaResponse"></wsdl:output>
+      <wsdl:fault message="tns:ApplicationException" name="ApplicationException"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProfilazioneUtenteServiceSoapBinding" type="tns:ProfilazioneUtente">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getListaRuoli">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListaRuoli">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListaRuoliResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAbilitazioniSoggetto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAbilitazioniSoggetto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAbilitazioniSoggettoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListaApplicativiUtente">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListaApplicativiUtente">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListaApplicativiUtenteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListaUnita">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListaUnita">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListaUnitaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setAbilitazioniSoggetto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setAbilitazioniSoggetto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setAbilitazioniSoggettoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="modificaAnagrafica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modificaAnagrafica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modificaAnagraficaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ApplicationException">
+        <soap:fault name="ApplicationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProfilazioneUtenteService">
+    <wsdl:port binding="tns:ProfilazioneUtenteServiceSoapBinding" name="ProfilazioneUtentePort">
+      <soap:address location="http://servername/ProfilazioneUtenteService/ProfilazioneUtenteService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
