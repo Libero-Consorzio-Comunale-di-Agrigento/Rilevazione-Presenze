@@ -1,0 +1,355 @@
+inherited WA062FRisultatiFM: TWA062FRisultatiFM
+  Width = 631
+  Height = 431
+  ExplicitWidth = 631
+  ExplicitHeight = 431
+  inherited IWFrameRegion: TIWRegion
+    Width = 631
+    Height = 431
+    OnRender = IWFrameRegionRender
+    ExplicitWidth = 631
+    ExplicitHeight = 431
+    object grdRisultati: TmedpIWDBGrid
+      Left = 11
+      Top = 208
+      Width = 604
+      Height = 121
+      Css = 'grigliaDati grid'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderBorder = False
+      BorderColors.Color = clWebWHITE
+      BorderColors.Light = clWebWHITE
+      BorderColors.Dark = clWebWHITE
+      BGColor = clNone
+      BorderSize = 0
+      BorderStyle = tfVoid
+      CellPadding = 0
+      CellSpacing = 0
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      FrameBuffer = 40
+      Lines = tlAll
+      OnRenderCell = grdRisultatiRenderCell
+      Summary = 'Tabella dei risultati dell'#39'interrogazione'
+      UseFrame = False
+      UseSize = False
+      HeaderRowCount = 0
+      CellRenderOptions = []
+      ScrollToCurrentRow = False
+      Columns = <>
+      FooterRowCount = 0
+      FriendlyName = 'grdVariabili'
+      FromStart = True
+      HighlightColor = clNone
+      HighlightRows = False
+      Options = [dgShowTitles]
+      RefreshMode = rmAutomatic
+      RowLimit = 0
+      RollOver = False
+      RowClick = True
+      RollOverColor = clNone
+      RowHeaderColor = clNone
+      RowAlternateColor = clNone
+      RowCurrentColor = clNone
+      TabOrder = -1
+      medpContextMenu = pmnAzioni
+      medpTipoContatore = 'P'
+      medpRighePagina = -1
+      medpBrowse = True
+      medpRowSelect = True
+      medpEditMultiplo = False
+      medpFixedColumns = 0
+      medpComandiCustom = False
+      medpComandiEdit = False
+      medpComandiInsert = False
+      medpComandoDelete = False
+    end
+    object lblSalvataggioRisultato: TmeIWLabel
+      Left = 11
+      Top = 104
+      Width = 127
+      Height = 16
+      Css = 'intestazione'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblSalvataggioRisultato'
+      Caption = 'Salvataggio risultato'
+      Enabled = True
+    end
+    object chkIntestazione: TmeIWCheckBox
+      Left = 279
+      Top = 126
+      Width = 166
+      Height = 21
+      Css = 'intestazione'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Caption = 'Con intestazione colonne'
+      Editable = True
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      SubmitOnAsyncEvent = True
+      Style = stNormal
+      TabOrder = 0
+      Checked = False
+      FriendlyName = 'chkIntestazione'
+    end
+    object chkNoRitornoACapo: TmeIWCheckBox
+      Left = 473
+      Top = 126
+      Width = 142
+      Height = 21
+      Css = 'intestazione spazio_sx'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Caption = 'Senza ritorno a capo'
+      Editable = True
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      SubmitOnAsyncEvent = True
+      Style = stNormal
+      TabOrder = 1
+      Checked = False
+      FriendlyName = 'meIWCheckBox1'
+    end
+    object btnEsportaFile: TmedpIWImageButton
+      Left = 20
+      Top = 126
+      Width = 65
+      Height = 24
+      Css = 'width15chr'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      BorderOptions.Width = 0
+      TabOrder = -1
+      UseSize = False
+      OnClick = btnEsportaFileClick
+      Cacheable = True
+      FriendlyName = 'btnEsportaFile'
+      ImageFile.Filename = 'img\btnSalva.png'
+      medpDownloadButton = True
+      Caption = 'Esporta su file'
+    end
+    object lblNomeTabella: TmeIWLabel
+      Left = 107
+      Top = 170
+      Width = 124
+      Height = 16
+      Css = 'intestazione spazio_sx'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblNomeTabella'
+      Caption = 'Nome tabella: T921'
+      Enabled = True
+    end
+    object edtNomeTab: TmeIWEdit
+      Left = 256
+      Top = 170
+      Width = 121
+      Height = 21
+      Css = 'width40chr spazio_sx03'
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      FriendlyName = 'edtNomeTab'
+      SubmitOnAsyncEvent = True
+      TabOrder = 2
+      OnAsyncChange = edtNomeTabAsyncChange
+    end
+    object btnCartellino: TmedpIWImageButton
+      Left = 550
+      Top = 162
+      Width = 65
+      Height = 24
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      BorderOptions.Width = 0
+      TabOrder = -1
+      UseSize = False
+      OnClick = btnCartellinoClick
+      Cacheable = True
+      FriendlyName = 'btnCartellino'
+      ImageFile.Filename = 'img\btnCartellino.png'
+      medpDownloadButton = False
+      Caption = 'Cartellino'
+    end
+    object btnCreaTab: TmedpIWImageButton
+      Left = 20
+      Top = 162
+      Width = 65
+      Height = 24
+      Css = 'width15chr'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      BorderOptions.Width = 0
+      TabOrder = -1
+      UseSize = False
+      OnClick = btnCreaTabClick
+      Cacheable = True
+      FriendlyName = 'btnCreaTab'
+      ImageFile.Filename = 'img\btnCreaTabella.png'
+      medpDownloadButton = False
+      Caption = 'Crea Tabella'
+    end
+    object lblInfo: TmeIWLabel
+      Left = 11
+      Top = 78
+      Width = 101
+      Height = 20
+      Css = 'esclamazione'
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      AutoSize = False
+      FriendlyName = 'lblInfo'
+      Enabled = True
+    end
+    object lblFormatoFile: TmeIWLabel
+      Left = 144
+      Top = 109
+      Width = 75
+      Height = 16
+      Css = 'intestazione'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblFormatoFile'
+      Caption = 'Formato file'
+      Enabled = True
+    end
+    object rgpFormatoFile: TmeIWRadioGroup
+      Left = 149
+      Top = 131
+      Width = 124
+      Height = 21
+      Cursor = crDefault
+      Css = 'intestazione'
+      RenderSize = False
+      StyleRenderOptions.RenderSize = False
+      StyleRenderOptions.RenderPosition = False
+      StyleRenderOptions.RenderFont = False
+      StyleRenderOptions.RenderZIndex = False
+      StyleRenderOptions.RenderAbsolute = False
+      StyleRenderOptions.RenderPadding = False
+      StyleRenderOptions.RenderBorder = False
+      SubmitOnAsyncEvent = True
+      RawText = False
+      Editable = True
+      Font.Color = clNone
+      Font.Enabled = False
+      Font.Size = 10
+      Font.Style = []
+      FriendlyName = 'rgpFormatoFile'
+      ItemIndex = 0
+      Items.Strings = (
+        'xlsx'
+        'txt'
+        'csv')
+      Layout = glHorizontal
+      TabOrder = 3
+    end
+  end
+  object pmnAzioni: TPopupMenu
+    Left = 176
+    Top = 8
+    object actEsportaExcel: TMenuItem
+      Caption = 'Scarica in Excel'
+      Hint = 'file_xls'
+      OnClick = actEsportaExcelClick
+    end
+    object actEsportaCSV: TMenuItem
+      Caption = 'Scarica in CSV'
+      Hint = 'file_csv'
+      OnClick = actEsportaCSVClick
+    end
+  end
+end
