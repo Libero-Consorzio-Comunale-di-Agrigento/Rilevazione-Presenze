@@ -1,0 +1,17 @@
+# ripetere questo modello di sezione per tutti i servizi da monitorare
+# il nome della sezione è libero
+
+[Servizio1]
+# Url
+#   endpoint del servizio web da monitorare
+Url=http://www.google.com
+# PollingInterval
+#   intervallo di polling (espresso in secondi)
+PollingInterval=10
+# Timeout
+#   timeout risposta (espresso in millisecondi)
+#   se viene superato, il servizio esegue la corrispondente TimeoutAction
+Timeout=10000
+# TimeoutAction
+#   comando da eseguire in caso di timeout
+TimeoutAction=c:\google\restart_google.bat
