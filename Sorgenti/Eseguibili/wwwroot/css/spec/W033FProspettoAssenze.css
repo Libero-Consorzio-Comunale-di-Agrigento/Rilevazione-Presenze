@@ -1,0 +1,50 @@
+/*------------------------------
+    Prospetto assenze - JQGrid
+--------------------------------*/
+
+#W033_DivWarning{ 
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+#W033_DivContent{
+  margin: 5px;
+}
+
+#tabella_jqgrid a{
+  color: blue;
+}
+
+.ui-jqgrid .ui-jqgrid-htable .ui-th-div{
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  font-weight: bold;
+  height: 32px;
+}
+
+.ui-jqgrid tr.jqgrow td{
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.W033_cella_sfondo_bianco{
+  background-color: #FFFFFF;
+}
+
+#W033_jqgrid-div-raggr-corrente{
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#W033_jqgrid-div-container{
+  position: relative;
+  width:100%;
+  background-color: transparent;
+}
+
+.cella_riga_vuota{
+  background-color: #f2f5f7;
+}

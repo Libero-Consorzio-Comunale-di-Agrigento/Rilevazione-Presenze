@@ -1,0 +1,235 @@
+/* Ridefinizione classi di JQuery UI */
+
+
+/************************************* WIDGET ************************************/
+.ui-widget {
+  /* font dei widget in generale */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+  /*z-index: 5001 !important;*/
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ui-widget-content a {
+  color: inherit;
+}
+
+.ui-widget-overlay {
+  /* sfondo del dialog modale */
+  background: #444444;
+  opacity: 0.6;
+  filter: alpha(opacity = 60);
+}
+
+/*
+.ui-widget-shadow {
+  margin: -8px 0 0 -8px;
+  padding: 8px;
+  background: #aaaaaa url(images/aaaaaa_40x100_textures_01_flat_0.png) 50% 50% repeat-x;
+  opacity: .30;filter:Alpha(Opacity=30);
+  border-radius: 8px;
+}
+*/
+
+
+/********************************** MODAL DIALOG *********************************/
+/*
+.ui-dialog {
+  z-index: 5000;
+}
+*/
+
+.ui-dialog-titlebar {
+  /* font del titolo del dialog */
+  /*font-size: 0.95em;*/
+  color: #000080;
+  font-weight:bold;
+  font-variant:small-caps;
+  background: #DDEBF4;                                                /* browser vecchi */
+  background: -webkit-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* IE10+ */
+  background:         linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C5D5EB', endColorstr='#DDEBF4',GradientType=0 ); /* IE6-9 */  
+}
+
+/* rimozione pulsante chiusura per dialog Jquery UI*/
+.no-closeButton .ui-dialog-titlebar-close {
+  display: none;
+}
+
+
+/* pulsanti */
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none; /**/
+  text-align: center; /***/
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante {
+  box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+  background: #C6E1E0;                                                /* browser vecchi */
+  background: -webkit-linear-gradient(top, #F9F9F9 5%, #C5D5EB 100%); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient(top, #F9F9F9 5%, #C5D5EB 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(top, #F9F9F9 5%, #C5D5EB 100%); /* IE10+ */
+  background:         linear-gradient(top, #F9F9F9 5%, #C5D5EB 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#C5D5EB',GradientType=0 ); /* IE6-9 */
+  color: #000080;
+  border: 1px solid #B3C0E0;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 12px;
+  height: 2em;
+  padding: 0em 1em;
+  text-shadow: 1px 1px 0px #CFE0E8;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante:hover {
+  box-shadow: 0px 0px 3px #000080;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante:active {
+  box-shadow: 0 0 9px #000080 inset;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante:focus {
+  box-shadow: 0 0 9px #000080 inset;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante[disabled] {
+  border: 1px solid #DEDEDE;
+  background: #F0F0F0;
+  color: GrayText;
+  filter: 0;
+  text-shadow: #CCCCCC 1px 1px 0;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante[disabled]:hover {
+  background: #F0F0F0;
+  color: GrayText;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante[disabled]:active {
+  position: inherit !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.pulsante[disabled]:focus {
+  border: inherit;
+  background-color: #F0F0F0;
+  color: GrayText;
+}
+
+
+/************************************** TABS *************************************/
+.ui-tabs {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+/************************************* EFFETTI ***********************************/
+.ui-effects-transfer {
+  border: 2px dotted #FF0000;
+}
+
+
+/*********************************** DATEPICKER ***********************************/
+
+.ui-datepicker {
+  /* impostazioni del datepicker */
+  font-size: 0.85em;        /* ridotto in modo da ottenere una dimensione ottimale */
+  z-index: 9999 !important; /* valore elevato in modo da risultare al di sopra di tutti gli altri elementi*/
+}
+
+/* impostazioni calendario per sabato e domenica 
+.ui-datepicker-week-end {
+  color: #FF0000 !important;
+}
+*/
+
+.ui-priority-secondary {
+   opacity: 1 !important;
+   font-weight:bold !important;
+}
+
+
+/*********************************** AUTOCOMPLETE ***********************************/
+.ui-autocomplete {
+  max-height: 14em;
+  overflow-y: auto;
+  padding-right: 20px; /* padding per tenere conto della scrollbar verticale */
+  z-index: 9999 !important;
+  font-family: "Courier New", Courier, mono;
+}
+
+/* IE 6 non supporta max-height
+ * viene utilizzata proprietà height
+ * notare che in questo modo il menu avrà però sempre quest'altezza
+ */
+* html .ui-autocomplete {
+  height: 14em;
+}
+
+/* combobox - novità 02.05.2012 */
+.ui-autocomplete-input {
+  margin: 0;
+  padding: 0.4em;
+}
+
+ul.ui-autocomplete {
+  overflow-x: hidden;
+}
+
+.ui-combobox {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.ui-combobox .ui-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  padding: 0;
+  /* adjust styles for IE 6/7 */
+  *height: 1.7em;
+  *top: 0.1em;
+}
+
+.ui-combobox-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  padding: 0;
+  /* adjust styles for IE 6/7 */
+  *height: 1.7em;
+  *top: 0.1em;
+}
+/* combobox.fine */
+
+
+/************************************* SPINNER *************************************/
+.ui-spinner.ui-widget input[type="text"] {
+  border: 0 none;
+  padding: 1px;
+  box-shadow: none ;
+}
+
+
+/************************************** ICONE **************************************/
+table td a.ui-icon {
+  display: inline-block;
+  vertical-align: bottom;
+}

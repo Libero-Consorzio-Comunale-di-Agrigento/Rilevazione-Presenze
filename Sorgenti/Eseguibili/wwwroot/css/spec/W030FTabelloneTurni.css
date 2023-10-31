@@ -1,0 +1,101 @@
+/*------------------------------
+    Tabellone turni - JQGrid
+--------------------------------*/
+
+#WA058_DivPulsanti{
+  position: relative;
+  height: 2em;
+}
+
+#WA058_DivPulsanti #WA058_DivPulsantiLeft{
+  position:absolute;
+}
+
+#WA058_DivPulsanti #WA058_DivPulsantiRight{
+  position:absolute;
+  right: 0px;
+}
+
+#WA058_SpanAnnulla input[type="button"]{
+  color:#FF0000;
+}
+
+#jqgrid-div-container .ui-jqgrid .ui-jqgrid-htable .ui-th-div{
+  height: 30px;
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#jqgrid-div-container .ui-jqgrid tr.jqgrow td, tr.footrow-ltr td{
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+}
+
+#jqgrid-div-container .bordo_festivo{    
+  border-left: 1px solid #ff0000;
+  border-right: 1px solid #ff0000 !important;
+}
+
+#jqgrid-div-container .cella_modificabile{  
+  cursor: pointer;
+}
+
+#jqgrid-div-container .cella_turno{
+  vertical-align:top;
+  border-right: 1px solid #c0c0c0; 
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#jqgrid-div-container .cella_sfondo_bianco{
+  background-color: #FFFFFF;	
+}
+
+#jqgrid-div-container .assenza{
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+#jqgrid-div-container .reperibilita{
+  background-color: #0000FF;
+  color: #FFFF00;
+}
+
+#jqgrid-div-container .antincendio{
+  background-color: #FFA500;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#WA058_DivDettTurno select,#WA058_DivDettTurno input[type="checkbox"]{
+  margin: 0px;  
+}
+
+.WA058-tooltip-table{
+  border-spacing: 8px 3px;
+  border-collapse: separate;
+}
+
+.WA058-tooltip-table td{
+  vertical-align: top;
+}
+
+#WA058_DivAvvisi{ 
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+#WA058_DivLegenda .WA058_DivLegenda_Table td{
+  padding: 5px;  
+}
+
+.WA058_DivLegenda{
+  min-width: 60px;
+  min-height: 46px; 
+  vertical-align: top; 
+  border: 1px solid black;
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  padding: 2px;  
+}
