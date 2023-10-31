@@ -1,0 +1,39 @@
+{%DocType%}
+<html>
+  <body>
+  {%T000Intestazione%}
+
+  <div class="FloatSinistra">
+    <div class="groupbox fs100 height3">
+      <fieldset>
+        <legend>{%lblPeriodo%}</legend>
+          <span>{%imgPeriodoPrec%} {%edtPeriodoDal%}</span>
+          <span>{%edtPeriodoAl%} {%imgPeriodoSucc%}</span> 
+        </fieldset>
+    </div>  
+    <div class="groupbox fs100 height3">
+      <fieldset>
+        <legend>{%lblAnomalie%}</legend>
+          <span>{%chkLivello1%}</span>
+          <span>{%chkLivello2%}</span>
+          <span>{%chkLivello3%}</span>
+      </fieldset>
+    </div>  
+    <table>
+    	<tr><td>{%chkConsideraRichiesteIter%}</td></tr>
+      <tr><td><div class="pulsanti">{%btnEsegui%}&nbsp;&nbsp;{%btnEsportaInExcel%}&nbsp;&nbsp;{%btnEsportaInCSV%}</div></td></tr>     
+    </table>
+  </div>
+  <div>&nbsp;</div>
+
+  <div class="RigaBase">&nbsp;</div>
+
+  <div class="grigliaDati">
+  {%grdAnomalie%}
+  </div>
+
+  {%<frm>WC012FVisualizzaFileFM</frm>%}
+
+  </body>
+</html>
+

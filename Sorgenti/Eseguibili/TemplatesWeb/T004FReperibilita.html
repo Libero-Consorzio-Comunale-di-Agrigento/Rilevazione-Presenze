@@ -1,0 +1,71 @@
+{%DocType%}
+<html>
+  <head>
+     <style type="text/css">
+     .info_dipendente table td {
+       font-size: 10px;
+       line-height: 10px;
+     }
+     </style>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    <div class="dipendente">{%lnkDipendentiDisponibili%} {%cmbDipendentiDisponibili%}</div>
+
+    <table class="height6">
+      <tr>
+        <td>
+          {%rgpTipologia%} 
+        </td>
+        <td>
+          <div class="groupbox fs100 width30chr height4">		  
+            <fieldset>
+              <legend>{%lblPeriodo%}</legend>
+              <table>
+                <tbody>
+                <tr>
+                  <td>{%imgPeriodoPrec%}</td>
+                  <td>{%edtPeriodoDal%}</td>
+                  <td>{%edtPeriodoAl%}</td>
+                  <td>{%imgPeriodoSucc%}</td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </div>
+        </td>
+        <td>
+          {%rgpOrdinamento%}{%rgpNumTurni%}
+        </td>
+		<td>
+		  <div id="rgpVisTurnoOrario" class="groupbox fs100 height4">
+		    <fieldset>
+			  <legend>{%lblVisTurnoOrario%}</legend>
+		      {%rgpVisTurnoOrario%}
+		    </fieldset>
+		  </div>
+		</td>
+        <td id="pulsantiAzione">
+          <br>
+          {%btnEsegui%}
+          <span style="float:right">{%lnkLegendaColoriGiorni%}</span>
+		  <br>
+          {%chkNonContDipPian%} 
+		  <br>
+		  {%chkSoloSelAnagrafe%}
+        </td>
+      </tr>
+    </table>
+
+    {%tabReperibilita%}
+    <div>{%W004DettaglioRG%} {%W004ProspettoRG%} {%W004GestioneMensileRG%} {%WA040FDialogStampaFM%}</div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+    {%<frm>WC013FCheckListFM</frm>%}
+    {%<frm>W002FModificaDatiFM</frm>%}
+    {%<frm>W004FModificaTabelloneFM</frm>%}
+    {%<frm>W004FLegendaColoriFM</frm>%}
+	{%<frm>W004FModificaRecapitiFM</frm>%}
+  </body>
+</html>

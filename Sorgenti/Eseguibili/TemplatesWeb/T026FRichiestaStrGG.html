@@ -1,0 +1,122 @@
+{%DocType%}
+<html>
+  <head>
+    <style type="text/css">
+     .w026_entrata {
+       /*background: rgba(0, 255, 0, 0.1);*/
+     }
+     .w026_uscita {
+       /*background: rgba(255, 0, 0, 0.1);*/
+     }
+     </style>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+    <!-- filtri visualizzazione -->
+    <div class="FloatSinistra">
+    <table id="filtriIter">
+      <tr>
+        <td id="filtroVis">
+          <div class="groupbox">
+            <fieldset>
+              <legend>{%lblFiltroVis%}</legend>
+              {%grdFiltroVis%}
+            </fieldset>
+          </div>
+        </td>
+        <td id="filtroStruttura">
+          <div class="groupbox fs100">
+            <fieldset>
+              <legend>{%lblFiltroStruttura%}</legend>
+              {%cmbFiltroStruttura%}
+            </fieldset>
+          </div>
+        </td>
+        <td id="filtroPeriodo">
+          <div class="groupbox fs100">
+            <fieldset>
+              <legend>{%lblPeriodo%}</legend>
+              {%rgpPeriodo%}
+              <table style="display: inline-block">
+                <tbody>
+                <tr>
+                  <td>{%lblPeriodoDal%}</td>
+                  <td>{%edtPeriodoDal%}</td>
+                  <td>{%lblPeriodoAl%}</td>
+                  <td>{%edtPeriodoAl%}</td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </div>
+        </td>
+        <td id="pulsantiAzione">
+          {%btnFiltra%} {%btnEseguiConteggi%} {%btnModificaTutti%} {%btnAnnullaTutti%} {%btnRichiestaCumulativa%} {%btnTuttiSi%} {%btnTuttiNo%}  {%btnConfermaAut%}
+        </td>
+      </tr>
+    </table>
+		<table id="filtriAllegati">	
+			<tr>
+				<td id="filtroPresAllegati">
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblAllegati%}</legend>
+							{%rgAllegati%}
+						</fieldset>
+					</div>				
+				</td>
+				<td id="filtroRichAllegati" colspan="5">
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblCondizAllegato%}</legend>
+							{%rgCondizAllegato%}
+						</fieldset>
+					</div>				
+				</td>
+			</tr>
+    </table>		
+    </div>
+
+    <div class="FloatDestra" style="margin-top: 5px; width: 30em;">
+      <!-- saldo mensile -->
+      <div style="float: left;">
+        <div id="divGrdSaldoMese" class="grid nascosto">
+          <table>
+            <thead>
+              <th class="riga_intestazione">{%lblSaldoMese%}</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{%lblSaldoMeseDisp%}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- tabella riepilogo annuale -->
+      <div id="divGrdRiepilogo" style="float: right;">
+        {%edtRiepilogo%}
+        {%grdRiepilogo%}
+      </div>
+    </div>
+
+    <!-- elenco richieste -->
+    <div class="clearDiv spazio_verticale"></div>
+
+    <div class="grigliaDatiNav">
+      {%PagNavBarRichieste%}
+    </div>
+    <div class="grigliaDati">
+      {%grdRichieste%}
+    </div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+    {%<frm>WC018FRiepilogoIterFM</frm>%}
+    {%<frm>WC026FAllegatiIterFM</frm>%}
+
+  </body>
+</html>

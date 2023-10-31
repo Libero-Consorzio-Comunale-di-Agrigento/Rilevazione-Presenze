@@ -1,0 +1,55 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+    {%lblOraCorrente%}
+    
+    <div style="position:relative;width:370px;margin:2em auto 1em;">
+      <table style="width: 100%;">
+        <tr class="medpNoMarginLeft">
+          <td>{%lblCausale%}</td>
+          <td>{%cmbCausale%}</td>
+        </tr>
+      </table>
+    </div>
+    
+    <table style="width: 25%; margin: 0 auto;">
+      <tbody>
+        <tr>
+          <td style="width: 25%; min-width:15em">
+            <table>
+              <tbody>
+                <tr><td>
+				  <h2 class="invisibile_accessibile">Entrata</h2>
+				  {%lblEntrata%}
+				</td></tr>
+                <tr><td class="align_center">{%lblOraEntrata%}</td></tr>
+              </tbody>
+            </table>
+          </td>
+          <td style="width: 50%;">
+		    {%lblClock%}
+          </td>
+          <td style="width: 25%; min-width:15em">
+            <table>
+              <tbody>
+                <tr><td>
+				  <h2 class="invisibile_accessibile">Uscita</h2>
+				  {%lblUscita%}</td></tr>
+                <tr><td class="align_center">{%lblOraUscita%}</td></tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="gradiente"/>
+
+    {%<frm>W005FCartellinoFM</frm>%}
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}    
+    {%<frm>WC027FInfoDatiFM</frm>%}
+    {%<frm>WC028FRichiesteInCorsoFM</frm>%}
+  </body>
+</html>

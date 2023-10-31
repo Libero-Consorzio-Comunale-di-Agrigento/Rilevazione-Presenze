@@ -1,0 +1,77 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+
+    <div class="width100pc height12 RigaDatiColorata">
+      <div class="groupbox fs100 width50chr" style="padding-left: 1em;text-align: left">
+	      <fieldset style="margin-bottom: 1em;">
+	        <legend>{%lblPeriodo%}</legend>
+	        <table>
+	          <tbody>
+							<tr>
+								<td></td>
+								<td>{%lblPeriodoDal%}</td>
+								<td>{%lblPeriodoAl%}</td>
+								<td></td>
+								<td></td>
+							</tr>
+	            <tr>
+	              <td>{%imgPeriodoPrec%}</td>
+	              <td>{%edtPeriodoDal%}</td>
+	              <td>{%edtPeriodoAl%}</td>
+	              <td>{%imgPeriodoSucc%}</td>
+	              <td></td>
+	            </tr>
+							<tr>
+								<td></td>
+								<td>{%lblOraDalle%}</td>
+								<td>{%lblOraAlle%}</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>{%edtOraDalle%}</td>
+								<td>{%edtOraAlle%}</td>
+								<td></td>
+								<td>{%btnEsegui%}</td>
+							</tr>							
+	          </tbody>
+	        </table>
+	      </fieldset>
+	    </div>
+	  </div>
+		
+		<div class="Riepilogo">
+			<div id="filtroDati" class="groupbox fs100 width50chr" style="padding-left: 1em; line-height:2.1em">
+				<fieldset style="margin-bottom: 1em;">
+					<legend>{%lblLegendaFiltri%}</legend>
+					<table>
+						<tbody>
+							<tr>
+								<td>{%lblFiltroDato1%}</td>
+								<td>{%cmbFiltroDato1%}</td>
+								<td>{%lblFiltroDato1Desc%}</td>                
+							</tr>
+							<tr>
+								<td>{%lblFiltroDato2%}</td>
+								<td>{%cmbFiltroDato2%}</td>
+								<td>{%lblFiltroDato2Desc%}</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+			</div>
+		</div>		
+		
+    <div class="grigliaDati">
+    {%grdReperibili%}
+    </div>
+ 
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+
+  </body>
+</html>
+

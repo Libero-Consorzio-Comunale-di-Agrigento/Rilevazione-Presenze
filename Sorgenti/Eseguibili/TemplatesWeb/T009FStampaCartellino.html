@@ -1,0 +1,138 @@
+{%DocType%}
+<html>
+  <style>
+    .w009_cmbNominativo {
+      width: 23%;
+      font-family: "Courier New", Courier, mono;
+    }
+  </style>
+  <body>
+    {%T000Intestazione%}
+	
+	<div id="WC020FInputDataOreFM">{%WC020FInputDataOreFM%}</div>
+
+    <h2 class="invisibile_accessibile">Nominativo</h2>
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+    <div class="RigaBase">{%lblNominativoDa%} {%cmbNominativoDa%} {%lblNominativoA%} {%cmbNominativoA%}</div>
+	<h3 class="invisibile_accessibile">Parametrizzazione del cartellino</h3>
+    <div class="RigaDatiColorata">{%lblParametrizzazione%} {%cmbParametrizzazione%}</div>
+    <div class="RigaBase" style="width:100%;float:right;">
+    	<table style="float:right;">
+    		<tr><td align="left">{%chkAutoGiustificazione%}</td><td align="left">{%chkAggiornamentoScheda%}</td></tr>
+    		<tr><td></td><td align="left">{%chkAggiornamentoBuoniPasto%}</td></tr>
+    		<tr><td></td><td align="left">{%chkAggiornamentoAccessiMensa%}</td></tr>
+    		<tr><td></td><td align="left">{%chkInserimentoRiposi%}</td></tr>
+      </table>	
+    </div>
+    <!--
+    <div class="RigaBase">{%chkAutoGiustificazione%} {%chkAggiornamentoScheda%}</div>
+    <div class="RigaBase">{%chkAggiornamentoBuoniPasto%}</div>
+    <div class="RigaBase">{%chkAggiornamentoAccessiMensa%}</div>
+    <div class="RigaBase">{%chkInserimentoRiposi%}</div>
+    -->
+	<h5 class="invisibile_accessibile">Periodo e produzione cartellino</h5>
+    <div class="RigaDatiColorata" style="width:100%;float:right;">
+      <table style="float:right;" class="RigaDatiColorata">
+        <tbody>
+          <tr>
+            <td>{%lblElabDal%}</td>
+            <td>{%imgPeriodoPrec%}</td>
+            <td>{%edtDal%}</td>
+            <td>{%edtAl%}</td>
+            <td>{%imgPeriodoSucc%}</td>
+            <td>{%btnAggiornamento%}</td>
+            <td>{%btnStampa%}</td>
+            <td>{%chkVisRiepiloghi%}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+	<h6 class="invisibile_accessibile">Dati anagrafici</h6>
+	<div class="clearDiv spazio_verticale"></div>
+	<div class="grigliaDati">{%grdCartellinoAnagrafico%}</div>
+	<h6 class="invisibile_accessibile">Dati giornalieri</h6>
+	<div class="clearDiv spazio_verticale"></div>
+	<div class="grigliaDati">{%grdCartellinoDettaglio%}</div>
+    <h6 class="invisibile_accessibile">Dati riepilogativi</h6>
+	<div class="clearDiv spazio_verticale"></div>
+	<div class="grigliaDati">{%grdCartellinoRiepilogo%}</div>
+	<h6 class="invisibile_accessibile">Riepilogo presenze</h6>
+	<div class="clearDiv spazio_verticale"></div>
+	<div class="grigliaDati">{%grdCartellinoPresenze%}</div>
+	<h6 class="invisibile_accessibile">Riepilogo assenze</h6>
+	<div class="clearDiv spazio_verticale"></div>
+	<div class="grigliaDati">{%grdCartellinoAssenze%}</div>
+
+    <div id="iterT860" class="invisibile">
+      <table id="filtriIter">
+      <tr>
+        <td id="filtroVis">
+          <div class="groupbox">
+            <fieldset>
+              <legend>{%lblFiltroVis%}</legend>
+              {%grdFiltroVis%}
+            </fieldset>
+          </div>
+        </td>
+        <td id="filtroStruttura">
+          <div class="groupbox fs100">
+            <fieldset>
+              <legend>{%lblFiltroStruttura%}</legend>
+              {%cmbFiltroStruttura%}
+            </fieldset>
+          </div>
+        </td>
+        <td id="filtroPeriodo">
+          <div class="groupbox fs100">
+            <fieldset>
+              <legend>{%lblPeriodo%}</legend>
+              {%rgpPeriodo%} {%lblPeriodoDal%} {%edtPeriodoDal%} {%lblPeriodoAl%} {%edtPeriodoAl%}
+            </fieldset> 
+          </div>
+        </td>
+        <td id="pulsantiAzione">
+          {%btnFiltra%} {%btnTuttiSi%} 
+        </td>
+      </tr>
+      </table>
+			<table id="filtriAllegati">	
+				<tr>
+					<td id="filtroPresAllegati">
+						<div class="groupbox">
+							<fieldset>
+								<legend>{%lblAllegati%}</legend>
+								{%rgAllegati%}
+							</fieldset>
+						</div>				
+					</td>
+					<td id="filtroRichAllegati" colspan="5">
+						<div class="groupbox">
+							<fieldset>
+								<legend>{%lblCondizAllegato%}</legend>
+								{%rgCondizAllegato%}
+							</fieldset>
+						</div>				
+					</td>
+				</tr>
+			</table>
+			
+      <!-- elenco richieste -->
+      <a id="contenuto_pagina_5" class="font_nascosto">Tabella di visualizzazione delle richieste e validazioni della stampa cartellino</a>
+      <div class="clearDiv spazio_verticale"></div>
+      <div class="grigliaDatiNav">
+        {%PagNavBarRichieste%}
+      </div>
+      <div class="grigliaDati">
+        {%grdRichieste%}
+      </div>
+	  
+    </div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+    {%<frm>WC018FRiepilogoIterFM</frm>%}
+    {%<frm>WC026FAllegatiIterFM</frm>%}
+  </body>
+</html>

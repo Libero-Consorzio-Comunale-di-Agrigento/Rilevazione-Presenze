@@ -1,0 +1,87 @@
+{%DocType%}
+<html>
+  <head>
+    <style>
+      .W043DivDipendente {
+        line-height: 2em;
+        background: #8affc5;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    {%T000Intestazione%}
+
+    <div class="groupbox fs100" style="width: 27em;">
+      <fieldset>
+        <legend>{%lblDataPianificazione%}</legend>
+        <div class="displayBlock">
+          {%lblIndicareData%} {%edtDataPianificazione%}
+        </div>
+        <div class="displayBlock" style="margin-top: 5px;">
+          {%lblInfoLimitiData%}
+        </div>
+      </fieldset>
+    </div>
+
+    <div id="filtroDati" class="groupbox fs100 width50chr">
+      <fieldset>
+        <legend>{%lblLegendaFiltri%}</legend>
+        <table>
+          <tbody>
+            <tr>
+              <td>{%lblFiltroDato1%}</td>
+              <td>{%cmbFiltroDato1%}</td>
+              <td>{%lblFiltroDato1Desc%}</td>
+              <td>&nbsp;</td>
+              <td>{%lblFiltroAreaSquadra%}</td>
+              <td>{%cmbFiltroAreaSquadra%}</td>
+              <td>{%lblFiltroAreaSquadraDesc%}</td>
+             </tr>
+            <tr>
+              <td>{%lblFiltroDato2%}</td>
+              <td>{%cmbFiltroDato2%}</td>
+              <td>{%lblFiltroDato2Desc%}</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </div>
+    {%btnVisualizza%}
+
+    <div class="clearDiv"></div>
+
+    <br />
+
+    <div class="W043DivDipendente">
+      {%lblDipendente1%} {%cmbDipendente1%} {%imgAggiornaDip1%}
+    </div>
+
+    <div class="grigliaDatiNav">
+      {%PagNavBarTurniDip1%}
+    </div>
+    <div class="grigliaDati">
+      {%grdTurniDip1%}
+    </div>
+
+    <br />
+
+    <div class="W043DivDipendente" style="margin-top: 15px">
+      {%lblDipendente2%} {%cmbDipendente2%} {%imgAggiornaDip2%}
+    </div>
+
+    <div class="grigliaDatiNav">
+      {%PagNavBarTurniDip2%}
+    </div>
+    <div class="grigliaDati">
+      {%grdTurniDip2%}
+    </div>
+
+    <div class="invisibile">
+      {%btnHdnLeggiPianif%}
+    </div>
+    {%<frm>WC002FDatiAnagraficiFM</frm>%} {%<frm>WC012FVisualizzaFileFM</frm>%}
+    {%<frm>W004FModificaRecapitiFM</frm>%}
+  </body>
+</html>

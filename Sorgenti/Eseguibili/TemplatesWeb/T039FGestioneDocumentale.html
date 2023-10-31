@@ -1,0 +1,81 @@
+{%DocType%}
+<html>
+  <body>
+    <style type="text/css">
+      #filtri {
+        padding: 1em 0;
+        overflow: auto;
+      }
+
+      .tbLabel {
+        width: 12em;
+        vertical-align: top;
+      }
+    </style>
+
+    {%T000Intestazione%}
+
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+    <div id="filtri">
+      <div class="groupbox fs100" style="height: 17.5em; width: 41em;">
+        <fieldset>
+        <legend>{%lblFiltri%}</legend>
+        <table class="width100pc">
+          <tbody>
+            <tr>
+              <td class="tbLabel">{%lblNomeFile%}</td>
+              <td colspan="3">{%edtNomeFile%}</td>
+            </tr>
+            <tr>
+              <td>{%lblEstensione%}</td>
+              <td colspan="3">{%cmbEstensione%}</td>
+            </tr>
+            <tr>
+              <td class="tbLabel">{%lblPeriodoDal%}</td>
+              <td>{%edtPeriodoDal%}</td>
+              <td>{%lblPeriodoAl%}</td>
+              <td>{%edtPeriodoAl%}</td>
+            </tr>
+            <tr>
+              <td class="tbLabel">{%lblDataCreazioneDal%}</td>
+              <td>{%edtDataCreazioneDal%}</td>
+              <td>{%lblDataCreazioneAl%}</td>
+              <td>{%edtDataCreazioneAl%}</td>
+            </tr>
+            <tr>
+              <td class="tbLabel">{%lblFamiliare%}</td>
+              <td colspan="3">{%edtFamiliare%}</td>
+            </tr>
+            <tr>
+              <td class="tbLabel">{%lblNote%}</td>
+              <td colspan="3">{%edtNote%}</td>
+            </tr>
+            <tr>
+              <td>{%lblTipologia%}</td>
+              <td colspan="3">{%cmbTipologia%}</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div style="display: inline-block; margin-top: 0.5em; margin-left: 0; width: 13em;">{%imgAggiorna%}</div>
+                <div style="display: inline-block; width: 13em;">{%imgPulisci%}</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="spazio_verticale"></div>
+    <div class="grigliaDatiNav">
+      {%PagNavBarDocumenti%}
+    </div>
+    <div class="grigliaDati">
+      {%grdDocumenti%}
+    </div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+  </body>
+</html>

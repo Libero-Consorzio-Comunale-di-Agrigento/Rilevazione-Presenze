@@ -1,0 +1,76 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+	  {%T000Intestazione%}
+	  <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+  	<div class="medpTabRegion" style="position:relative;height: 50em;">
+		<div class="RigaDatiColorata">
+		  <span>{%lblDataI%} {%edtDataI%} {%lblDataF%} {%edtDataF%} {%btnStampa%}</span>
+		</div>			
+		
+		<div class="grigliaDatiNav">		  
+			<div class="PAGNAVBARRIEPILOGOCSS" id="PAGNAVBARRIEPILOGO" style="">
+				<table cellpadding="0" cellspacing="0" id="TBLPAGNAVBARRIEPILOGO" style="left: 0px; top: 0px;">
+					<thead></thead>
+					<tbody>
+						<tr>
+							<td style="white-space: nowrap; width: 99%; ">
+								<span class="tblCaption" id="LBLPAGNAVBARRIEPILOGOCAPTION" name="LBLPAGNAVBARRIEPILOGOCAPTION">Riepilogo</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<script type="text/javascript">IW.$("TBLPAGNAVBARRIEPILOGO").style.cssText += IW.$("PAGNAVBARRIEPILOGO").style.cssText;IW.$("TBLPAGNAVBARRIEPILOGO").style.left = 0;IW.$("TBLPAGNAVBARRIEPILOGO").style.top = 0;</script>
+			</div>
+		</div>	
+				
+		<div class="grigliaDati">{%grdRiepilogo%}</div>
+		
+		<div class="RigaDatiColorata align_left" style="width:100%; padding-right:0">
+			<div style="line-height:1em">&nbsp;</div>
+		</div>			
+		
+		<div class="grigliaDatiNav">
+			{%PagNavBarDatiGiuridici%}
+		</div>		
+		<div class="grigliaDati">{%grdDatiGiuridici%}</div>
+		
+		<div class="RigaDatiColorata align_left" style="width:100%; padding-right:0">
+			<div style="line-height:1em">&nbsp;</div>
+		</div>		
+
+		<div class="grigliaDatiNav">
+		  {%PagNavBarPeriodiAspettativa%}
+		</div>		
+		<div class="grigliaDati">{%grdPeriodiAspettativa%}</div>
+		
+		<div class="RigaDatiColorata align_left" style="width:100%; padding-right:0">
+			<div style="line-height:1em">&nbsp;</div>
+		</div>		
+		
+		<div class="grigliaDatiNav">
+			{%PagNavBarRapportiEnte%}
+		</div>			
+		<div class="grigliaDati">{%grdRapportiEnte%}</div>		
+
+		<div class="RigaDatiColorata align_left" style="width:100%; padding-right:0">
+			<div style="line-height:1em">&nbsp;</div>
+		</div>	
+		
+		<div class="grigliaDatiNav">
+			{%PagNavBarPeriodiAspettativaArchivio%}
+		</div>			
+		<div class="grigliaDati">{%grdPeriodiAspettativaArchivio%}</div>	
+		
+	</div>		
+	{%<frm>WC002FDatiAnagraficiFM</frm>%}
+	{%<frm>W049FCaricamentoFM</frm>%}
+	{%<frm>W049FCaricamentoAspettativaFM</frm>%}
+	{%<frm>WC015FSelEditGridFM</frm>%}
+	{%<frm>WC015FSelEditGrid2FM</frm>%}
+  </body>
+</html>
+

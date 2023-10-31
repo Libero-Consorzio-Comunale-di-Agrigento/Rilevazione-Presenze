@@ -1,0 +1,22 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+    <!-- elenco richieste -->
+	<h5 class="invisibile_accessibile">visualizzazione e gestione delle richieste di acquisto ticket</h5>
+    <a id="contenuto_pagina_5" class="font_nascosto">Griglia per la visualizzazione e gestione delle richieste di acquisto ticket</a>
+    <div class="clearDiv spazio_verticale"></div>
+    <div class="grigliaDatiNav">
+      {%PagNavBarAcquistoTicket%}
+    </div>
+    <div class="grigliaDati">
+      {%grdAcquistoTicket%}
+    </div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}
+    {%<frm>WC012FVisualizzaFileFM</frm>%}
+    {%<frm>W005FCartellinoFM</frm>%}
+  </body>
+</html>
