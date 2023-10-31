@@ -1,0 +1,113 @@
+{%DocType%}
+<html>
+	<head> 
+	</head>
+	<body>
+	<div class="medpDettaglioFM" style="position:relative;height:38em;">
+		<div style="position: absolute; top: 1em; left: 1em;">
+			{%lblDTipoDocumento%}
+		</div>	  
+		<div style="position: absolute; top: 2.2em; left: 1em;">
+			{%dedtDTipoDocumento%}
+		</div>
+		<div class="groupbox" style="position:absolute;top:1em;left:15em;">
+			<fieldset style="width:10em;height:2.5em;">
+				<legend>{%lblTipoMetadati%}</legend>
+				{%rgpTipoMetadati%}
+			</fieldset>
+		</div>
+		<div id="tabs" class="ui-tabs" style="position:absolute; top:5em; left:1em; height:33em;width:42em;">
+			<ul>
+				<li><a href="#ArchiviazioneLocale">{%lblTabHeaderLocale%}</a></li>
+				<li><a href="#ArchiviazioneRemota">{%lblTabHeaderRemota%}</a></li>
+			</ul>
+			<div class="ui-tabs-hide" id="ArchiviazioneLocale">
+				<div>
+					<div style="position: absolute; top: 5em; left: 1em;">
+						{%lblPathFile%}
+					</div>
+					<div style="position: absolute; top: 6.2em; left: 1em;">
+						{%dedtPathFile%}
+					</div>
+					<div style="position: absolute; top: 9em; left: 1em;">
+						{%lblFilePdf%}
+					</div>
+					<div style="position: absolute; top: 10.2em; left: 1em;">
+						{%dedtFilePdf%}
+					</div>
+					<div style="position: absolute; top: 13em; left: 1em;">
+						{%lblFileXml%}
+					</div>
+					<div style="position: absolute; top: 14.2em; left: 1em;">
+						{%dedtFileXml%}
+					</div>
+					<div style="position: absolute; top: 17em; left: 1em;">
+						{%lblCampiXml%}
+					</div>
+					<div style="position: absolute; top: 18.2em; left: 1em;">
+						{%dedtCampiXml%}
+					</div>
+					<div style="position: absolute; top: 21em; left: 1em;">
+						{%lblBucketId%}
+					</div>
+					<div style="position: absolute; top: 22.2em; left: 1em;">
+						{%dedtBucketId%}
+					</div>
+					<div style="position: absolute; top: 25em; left: 1em;">
+						{%lblTipologiaDocumenti%}
+					</div>
+					<div style="position: absolute; top: 26.2em; left: 1em;">
+						{%dcmbTipologiaDocumenti%}
+					</div>
+					<div style="position: absolute; top: 29em; left: 1em;">
+						{%lblDataUltimaArch%}
+					</div>
+					<div style="position: absolute; top: 30.2em; left: 1em;">
+						{%dedtDataRifUltimaElab%}
+					</div>
+					<div style="position: absolute; top: 29em; left: 26em;">
+						{%dchkSvuotaCartella%}
+					</div> 	
+					<div style="position: absolute; top: 31em; left: 26em;">
+						{%dchkSostituzioneFile%}
+					</div> 	
+				</div>	
+			</div>
+			<div class="ui-tabs-hide" id="ArchiviazioneRemota">
+				<div>					
+					<div style="position: absolute; top: 5em; left: 1em;">
+						{%lblServerSFTP%}
+					</div>
+					<div style="position: absolute; top: 6.2em; left: 1em;">
+						{%dedtServerSFTP%}
+					</div>
+					<div style="position: absolute; top: 9em; left: 1em;">
+						{%lblUsername%}
+					</div>
+					<div style="position: absolute; top: 10.2em; left: 1em;">
+						{%dedtUsername%}
+					</div>
+					<div style="position: absolute; top: 13em; left: 1em;">
+						{%lblPassword%}
+					</div>
+					<div style="position: absolute; top: 14.2em; left: 1em;">
+						{%dedtPassword%}
+					</div>
+					<div style="position: absolute; top: 17em; left: 1em;">
+						{%lblDirArch%}
+					</div>
+					<div style="position: absolute; top: 18.2em; left: 1em;">
+						{%dedtDirArch%}
+					</div>
+					<div style="position: absolute; top: 21em; left: 1em;">
+						{%lblPathPSCP%}
+					</div> 	
+					<div style="position: absolute; top: 22.2em; left: 1em;">
+						{%dedtPathPSCP%}
+					</div> 	
+				</div>				
+			</div>
+		</div>
+    </div>
+  </body>
+</html>

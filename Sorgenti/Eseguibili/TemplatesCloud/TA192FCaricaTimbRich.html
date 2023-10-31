@@ -1,0 +1,55 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    {%T000Intestazione%} {%ContenutoDinamico%}
+    <div class="medpElaborazioneFM" style="position:relative; height:36em;">
+      <table style="height: 7em; ">
+        <tbody>
+          <tr>
+            <td>
+              <div class="groupbox fs100 width40chr height4">
+                <fieldset>
+                  <legend>{%lblModalita%}</legend>
+                  {%rgpModalita%}
+                </fieldset>
+              </div>
+            </td>
+            <td>
+              <div class="groupbox fs100 width40chr height4">
+                <fieldset>
+                  <legend>{%lblPeriodo%}</legend>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>{%lblPeriodoDal%}</td>
+                        <td>{%edtPeriodoDal%}</td>
+                        <td>{%lblPeriodoAl%}</td>
+                        <td>{%edtPeriodoAl%}</td>
+                        <td>{%imgRefreshDati%}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </div>
+            </td>
+            <td style="padding-left: 1em; ">
+              <div style="width: 14em; margin-top: 1.5em; margin-bottom: 0.5em;">
+                {%imgImporta%}
+              </div>
+              <div style="width: 14em;">{%imgVisualizzaLog%}</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="grigliaDatiNav">
+        {%PagNavBarRichieste%}
+      </div>
+      <div style="position:relative;height:31em;width:100%;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+        {%grdRichieste%}
+      </div>
+    </div>
+
+  </body>
+</html>

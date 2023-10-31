@@ -1,0 +1,42 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="medpTabRegion">
+      {%grdDetailNavBar%}      
+      <div class="grigliaDatiNav" >
+      {%PagNavBarTabella%}
+      </div>
+      <div id="divscrollableWR203" class="grigliaDati gridTabellaHeight" style="position:relative" {%SCROLLWR203%}>
+       {%grdTabella%}
+      </div>
+			
+			<!-- Campi per inserimento profili assenza -->			
+			<div class="medpTabRegion" style="padding-top:0.7em; box-shadow:none">
+				<div class="grid">
+					<table cellpadding="0" cellspacing="0" style="left:0px; top:0px; width:100%">
+						<tr align="left">
+							<th class="riga_intestazione" style="white-space: nowrap;" title="Calcolo del triennio: (gg 1095)">Calcolo del triennio: (gg 1095)</th>
+							<th class="riga_intestazione" style="white-space: nowrap;" title="Scadenza">Scadenza</th>
+							<th class="riga_intestazione" style="white-space: nowrap;" title="Esegui storicizzazione dal">Esegui storicizzazione dal</th>
+							<th class="riga_intestazione" style="white-space: nowrap;" title="al">al</th>
+							<th class="riga_intestazione" style="white-space: nowrap;" colspan="2" title="Profilo assenze">Profilo assenze</th>	
+							<th class="riga_intestazione" style="white-space: nowrap;"></th>						
+						</tr>
+						<tr align="left">
+							<td style="white-space: nowrap;">{%edtGG%}</td>
+							<td style="white-space: nowrap;">{%edtScadenza%}</td>
+							<td style="white-space: nowrap;">{%edtDecorrenza%}</td>
+							<td style="white-space: nowrap;">{%edtFine%}</td>
+							<td style="white-space: nowrap;">{%cmbPAssenze%}</td>
+							<td style="white-space: nowrap;">{%lblDescrizione%}</td>
+							<td style="white-space: nowrap;">{%btnApplica%}</td>
+						</tr>				
+					</table>
+				</div>		
+			</div>	
+				
+    </div>
+  </body>
+</html>

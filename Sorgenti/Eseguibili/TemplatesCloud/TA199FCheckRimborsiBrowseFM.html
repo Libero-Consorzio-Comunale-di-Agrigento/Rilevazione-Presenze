@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="medpTabRegion">
+
+      <table id="filtriIter">
+        <tr>
+          <td id="filtroPeriodo">
+            <div class="groupbox fs100">
+              <fieldset>
+                <legend>{%lblPeriodo%}</legend>
+                {%lblPeriodoDal%} {%edtPeriodoDal%} {%lblPeriodoAl%} {%edtPeriodoAl%}
+              </fieldset> 
+            </div>
+          </td>
+          <td id="filtroRimborsi">
+            {%rgpRimborsi%}
+          </td>
+          <td id="filtroStato">
+            {%rgpStato%}
+          </td>
+        </tr>
+      </table>
+
+      <div class="grigliaDatiNav">
+      {%PagNavBarTabella%}
+      </div>
+      <div class="grigliaDati">
+      {%grdTabella%}
+      </div>
+
+    </div>
+  </body> 
+</html>

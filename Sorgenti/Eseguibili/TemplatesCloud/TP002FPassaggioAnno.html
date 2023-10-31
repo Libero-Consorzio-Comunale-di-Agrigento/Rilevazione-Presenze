@@ -1,0 +1,46 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}		
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:47.5em;">		
+			<div style="position:relative;margin-left:1em;margin-top:1em;">
+				<table>
+					<tr style="height: 3em;">
+						<td style="padding-left:0.5em;"><table><tr><td>{%lblAnno%}</td><td>{%edtAnno%}</td></tr></table></td>
+						<td><table><tr><td>{%btnAutomatismo%}</td></tr></table></td>
+					</tr>
+					<tr style="height: 3em;">
+						<td>{%chkRedditiAnnuali%}</td>
+					</tr>
+					<tr style="height: 3em;">
+						<td>{%chkEliminaRedditi%}</td>
+					</tr>
+					<tr style="height: 3em;">
+						<td>{%chkEliminaTabelle%}</td>
+					</tr>
+					<tr style="height: 3em;">
+						<td style="padding-left:0.5em;"><table><tr><td>{%lblTabAnnuali%}</td></tr></table></td>
+					</tr>
+				</table>
+			</div>
+			<div style="position:relative;margin-left:1.5em; width: 80em; overflow: auto;">
+        <div class="checkGroupDin" style="height: 27.5em; width: 99%; min-width: 17em;">
+          {%clbTabAnnuali%}
+        </div>
+      </div>
+			<div style="position:relative;margin-top:1em;margin-left:1.5em;">
+				<table>
+					<tr>
+						<td>{%btnEsegui%}</td>	
+  					<td>{%btnAnomalie%}</td>									
+					</tr>
+				</table>
+			</div>
+    </div>		
+  </body>
+</html>
+

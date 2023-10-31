@@ -1,0 +1,134 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	<div class="medpTabRegion" style="height: 37em; ">
+
+		<table id="wa186_pnlAnagAzienda" class="medpTableContainer" style="position: absolute; top: 1em; ">
+			<tr>
+				<td>{%imgC700SelezioneAnagrafe%}</td>
+				<td style="padding-left: 4em;">{%lblAzienda%}</td>
+				<td>{%dcmbAzienda%}</td>
+				<td>{%lblDescAzienda%}</td>
+			</tr>
+		</table>
+
+		<div id="tabs" class="ui-tabs" style="position: absolute; top: 5em; height: 31em; width: 99%; ">
+			<ul>
+				<li><a href="#Home">Elenco Login</a></li>
+				<li><a href="#GestLogin">Gestione Login</a></li>
+				<li><a href="#DizEspressioni">Dizionario espressioni</a></li>
+			</ul>
+			<div id="Home" class="ui-tabs-hide">
+				<div class="grigliaDatiNav">{%PagNavBarTabella%}</div>
+				<div class="grigliaDati" style="height: 26em; overflow-y: auto; ">{%grdTabella%}</div>
+			</div>
+			<div id="GestLogin" class="ui-tabs-hide">
+				<!-- Generazione massiva login -->
+				<div class="groupbox" style="position:absolute; top: 4em; left: 2em;">
+					<fieldset style="height: 19em">
+						<legend>{%lblBoxGenMassivaLogin%}</legend>
+						<table>
+							<tr>
+								<td>{%lblUtente%}</td>
+								<td>{%cmbExprUtente%}</td>
+							</tr>
+							<tr>
+								<td>{%lblPassword%}</td>
+								<td>{%cmbExprPassword%}</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>{%chkForzaCambioPwd%}</td>
+							</tr>
+						</table>
+
+						<table>
+							<tr>
+								<td>{%imbModificaPassword%}</td>
+							</tr>
+							<tr>
+								<td>{%imbInserisciLogin%}</td>
+							</tr>
+							<tr>
+								<td>{%imbCancellaLogin%}</td>
+							</tr>
+							<tr>
+								<td>{%imbImpostaDatiDaDominio%}</td>
+							</tr>
+							<tr>
+								<td>{%imbAnomalie%}</td>
+							</tr>
+						</table>
+
+					</fieldset>
+				</div>
+				<!-- Generazione massiva login -->
+				<div class="groupbox" style="position:absolute; top: 4em; left: 28em;">
+					<fieldset style="width: 45em; height: 19em">
+						<legend>{%lblBoxImpProfili%}</legend>
+						<table style="position:absolute; left: 1em;">
+							<tr>
+								<td>{%lblNomeProfilo%}</td>
+								<td>{%cmbNomeProfilo%}</td>
+							</tr>
+							<tr>
+								<td>{%lblPermessi%}</td>
+								<td>{%cmbPermessi%}</td>
+								<td>{%imgAggPermessi%}</td>
+							</tr>
+							<tr>
+								<td>{%lblFiltroAnagrafe%}</td>
+								<td>{%cmbFiltroAnagrafe%}</td>
+								<td>{%imgAggAnagrafe%}</td>
+							</tr>
+							<tr>
+								<td>{%lblFiltroFunzioni%}</td>
+								<td>{%cmbFiltroFunzioni%}</td>
+								<td>{%imgAggFunzioni%}</td>
+							</tr>
+							<tr>
+								<td>{%lblIterAutor%}</td>
+								<td>{%cmbIterAutor%}</td>
+								<td>{%imgAggIter%}</td>
+							</tr>
+							<tr>
+								<td>{%lblFiltroDizionario%}</td>
+								<td>{%cmbFiltroDizionario%}</td>
+								<td>{%imgAggDizionario%}</td>
+							</tr>
+						</table>
+						<div class="groupbox" style="position:relative;left: 30em;">
+							<fieldset>
+								<legend>{%lblBoxAzioni%}</legend>
+								<table>
+									<tr>
+										<td>{%chkApplicaFiltro%}</td>
+									</tr>
+									<tr>
+										<td>{%btnDefault%}</td>
+									</tr>
+									<tr>
+										<td>{%btnTrigger%}</td>
+									</tr>
+									<tr>
+										<td>{%btnCancellaProfili%}</td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<div id="DizEspressioni" class="ui-tabs-hide">
+				<div class="grigliaDati" style="height: 26em; overflow-y: auto; ">{%grdExrAccount%}</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

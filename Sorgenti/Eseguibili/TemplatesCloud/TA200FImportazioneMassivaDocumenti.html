@@ -1,0 +1,68 @@
+{%DocType%}
+<html>
+  <head>
+    <style type="text/css">
+      .WA200RadioGroup input {margin-top: 0.35em !important; margin-bottom: 0.35em !important;} /*per spaziare gli elementi di rgpImpNomeFileOut e rgpImpAzioneDocTip*/
+    </style>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:53em;">
+
+      <div style="position:absolute;top: 1.25em; left: 2em   ;">{%lblmpPath%}</div>
+      <div style="position:absolute;top: 1em   ; left:18em   ;">{%edtImpPath%}</div>
+
+      <div style="position:absolute;top: 3.25em; left: 2em   ;">{%lblImpFiltro%}</div>
+      <div style="position:absolute;top: 3em   ; left:18em   ;">{%edtImpFiltro%}</div>
+
+      <div style="position:absolute;top: 5.25em; left: 2em   ;">{%lblImpFormato%}</div>
+      <div style="position:absolute;top: 5.25em; left:18em   ;">{%lblImpSeparatore%}</div>
+      <div style="position:absolute;top: 5em   ; left:26.5em ;">{%edtImpSeparatore%}</div>
+      <div style="position:absolute;top: 7.25em; left:18em   ;">{%lblImpNomeFile%}</div>
+      <div style="position:absolute;top: 7em   ; left:26.5em ;">{%edtImpNomeFile%}</div>
+      <div style="position:absolute;top: 9.25em; left:18em   ;">{%lblInfoHelp%}</div>
+
+      <div style="position:absolute;top:11.25em; left: 2em   ;">{%lblImpNomeFileOut%}</div>
+      <div style="position:absolute;top:11em   ; left:17.5em ;">{%rgpImpNomeFileOut%}</div>
+      <div style="position:absolute;top:12.75em; left:26.5em ;">{%edtImpNomeFileOutPred%}{%lblImpNomeFileExt%}</div>
+
+      <div style="position:absolute;top:17.25em; left: 2em   ;">{%lblImpTipologia%}</div>
+      <div style="position:absolute;top:17em   ; left:18em   ;">{%dcmbImpTipologia%}</div>
+      <div style="position:absolute;top:19em   ; left:18em   ;" class="groupbox">
+        <fieldset>
+          <legend>{%lblImpAzioneDocTip%}</legend>
+          {%rgpImpAzioneDocTip%}
+        </fieldset>
+      </div>
+
+      <div style="position:absolute;top:25.25em; left: 2em   ;">{%lblImpUfficio%}</div>
+      <div style="position:absolute;top:25em   ; left:18em   ;">{%dcmbImpUfficio%}</div>
+
+      <div style="position:absolute;top:27.25em; left: 2em   ;">{%lblImpRiferitiDal%}</div>
+      <div style="position:absolute;top:27em   ; left:18em   ;">{%edtImpPeriodoDal%}{%lblImpRiferitiAl%}{%edtImpPeriodoAl%}</div>
+
+      <div style="position:absolute;top:29.25em; left: 2em   ;">{%lblImpNote%}</div>
+      <div style="position:absolute;top:29em   ; left:18em   ;">{%memNote%}</div>
+
+      <div style="position:absolute;top:35.1em ; left: 2em   ;">{%lblImpVisualIrisWeb%}</div>
+      <div style="position:absolute;top:35em   ; left:17.5em ;">{%chkImpVisualIrisWeb%}</div>
+
+      <div style="position:absolute;top:37em   ; left: 2em   ;">{%btnImpAnalizza%}</div>
+
+      <div style="position:absolute;top:40em   ; left: 2em   ;">{%lblImpDocDaImportare%}</div>
+      <div style="position:absolute;top:41.5em ; left: 2em   ; width:28em; height:7em" class="checkGroupDin">{%lstImpDocDaImportare%}</div>
+      
+      <div style="position:absolute;top:40em   ; left:31.5em ;">{%lblImpDocIgnorati%}</div>
+      <div style="position:absolute;top:41.5em ; left:31.5em ; width:28em; height:7em" class="checkGroupDin">{%lstImpDocIgnorati%}</div>
+
+      <div style="position:absolute;top:50em   ; left: 2em   ;">{%btnEsegui%}</div>
+      <div style="position:absolute;top:50em   ; left:11em   ;">{%btnAnomalie%}</div>
+      <div style="position:absolute;top:50.65em; left:33em   ;">{%lblImpFilesSelezionati%}</div>
+      <div style="position:absolute;top:50.65em; left:46em   ;">{%lblImpDimensTotale%}</div>
+
+    </div>
+  </body>
+</html>
+

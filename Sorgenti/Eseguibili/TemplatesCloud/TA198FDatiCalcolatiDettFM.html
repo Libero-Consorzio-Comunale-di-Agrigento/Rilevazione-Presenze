@@ -1,0 +1,54 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>   
+  <div class="medpDettaglioFM" style="position:relative; height:34em;">
+		<div style="position:relative;margin-top:1em;margin-left:1em;">
+			<table class="grigliaPadded">
+				<tr>
+					<td>{%lblSerbatoio%}</td>
+					<td>{%dcmbSerbatoi%}</td>
+					<td style="padding-left:2em;">{%lblStampa%}</td>
+					<td>{%dcmbStampa%}</td>					
+				</tr>
+				<tr>
+					<td>{%lblNome%}</td>
+					<td colspan="3">{%dedtNome%}</td>
+				</tr>
+			</table>
+		</div>
+		<div style="position:relative;margin-top:-0.5em;margin-left:1em;" class="groupbox">
+			<fieldset>
+				<legend>{%lblFormato%}</legend>
+				{%drgpFormato%}
+			</fieldset>						
+		</div>
+		<div class="clearDiv"></div>	
+		<div style="position:relative;margin-top:0.5em;margin-left:1em;">{%lblEspressione%}</div>		
+		<div style="position:relative;margin-left:1em;width:43.5em;">{%dmemEspressione%}</div>
+		<table style="position:relative;margin-left:1em;">
+			<tr>
+				<td>
+					<div class="groupbox" style="position:relative;">
+						<fieldset style="height:14em;">
+							<legend>{%lblDatiDisponibili%}</legend>
+							{%lstDatiDisponibili%}
+						</fieldset>
+					</div>			
+				</td>
+				<td style="padding-left:3em;">
+					<div class="groupbox" style="position:relative">
+						<fieldset style="height:14em">
+							<legend>{%lblFunzioniDisponibili%}</legend>
+							{%lstFunzioniDisponibili%}
+						</fieldset>					
+					</div>			
+				</td>
+			</tr>
+		</table>		
+		<div style="display:none">{%edtCaretPosition%}</div>
+	</div>
+  </body> 
+</html>
+

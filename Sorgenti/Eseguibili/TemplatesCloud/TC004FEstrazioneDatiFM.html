@@ -1,0 +1,281 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  
+  <body>
+  <style type="text/css">
+    #wc004_parametri,
+    #wc004_risultati {
+      overflow-x: auto;
+    }
+
+    #wc004_standard {
+      height: 32em;
+    }
+
+    #wc004_parametri_1 {
+      margin-bottom: 0.2em;
+      height: 3em;
+    }
+
+    #wc004_config {
+      float: left;
+      padding: 2px;
+      border: 1px solid #B3B3B3;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+    }
+
+    #wc004_parametri_2 {
+      border: 1px solid #B3B3B3;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      height: 16em;
+      width: 100%;
+      padding: 4px;
+      overflow-y: auto;
+      margin-bottom: 1em;
+    }
+
+    #wc004_parametri_3 {
+      border: 1px solid #B3B3B3;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      height: 12.5em;
+      width: 100%;
+      padding: 0.5em;
+    }
+
+    .wc004_list {
+      float: left;
+      height: 98%;
+      width: 46%;
+    }
+
+    .wc004_list select {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    .wc004_list_int {
+      text-align: center;
+    }
+    
+    .wc004_list_int input{
+      font-size: 95%;
+      width: 3em;
+      margin: 0 1px 1px 0;
+      padding: 0;
+      cursor: pointer;
+      border: 1px solid #B3B3B3;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+
+    .wc004_list_int input:hover {
+      background: #DEEDF7;
+    }
+
+    .wc004_list_int input:active {
+      background: #DEEDF7; 
+      margin: 1px 0 0 1px;
+    }
+
+    .campi {
+      width: 12em;
+      margin: 0 1px 1px 0;
+      padding: 0;
+      cursor: pointer;
+      border: 1px solid #B3B3B3;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+
+    .campi:hover {
+      background: #DEEDF7;
+      color: #000000;
+    }
+
+    .campi:active {
+      background: #DEEDF7; 
+      margin: 1px 0 0 1px;
+    }
+
+    .campi.sel {
+      background: #5EB9E6;
+      color: #FFFFFF;
+    }
+
+    .campi.sel:hover {
+      background: #DEEDF7;
+      color: #000000;
+    }
+    
+    .campiOrd {
+      width: 2em;
+      margin: 0 1px 1px 0;
+      padding: 0;
+      cursor: pointer;
+      border: 1px solid #B3B3B3;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+
+    .campiOrd:hover {
+      background: #DEEDF7;
+    }
+
+    .campiOrd:active {
+      background: #DEEDF7; 
+      margin: 1px 0 0 1px;
+    }
+
+    .campiAlias {
+      width: 12em;
+      margin-left: 4px;
+      border: 1px solid #6F9DB9;
+      background: #FFFFFF;
+    }
+
+    .campiOperatore {
+      width: 8em;
+      margin-left: 4px;
+      border: 1px solid #6F9DB9;
+      background: #FFFFFF;
+    }
+
+    .campiValore {
+      width: 7em;
+      margin-left: 4px;
+      border: 1px solid #6F9DB9;
+      background: #FFFFFF;
+    }
+
+    #wc004_sql {
+      width: 98%;
+      padding: 0.5em;
+      border: 1px solid #B3B3B3;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+    }
+
+    #wc004_tab_ris {
+      margin-top: 4px;
+      border: 1px solid #B3B3B3;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      width: 100%;
+      height: 35em;
+      overflow-y: auto;
+    }
+
+    .wc004_query {
+      font-family: "Courier New", Courier, mono !important;
+      width: 99%;
+      height: 28em;
+    }
+
+    .wc004_pulsanti {
+      height:3.2em; 
+      background: #DDEBF4;                                                /* browser vecchi */
+      background: -webkit-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* Chrome10+,Safari5.1+ */
+      background:    -moz-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* FF3.6+ */
+      background:     -ms-linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* IE10+ */
+      background:         linear-gradient(top, #C5D5EB 0%, #DDEBF4 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C5D5EB', endColorstr='#DDEBF4',GradientType=0 ); /* IE6-9 */  
+      padding: 0.5em 0.5em 0 0.5em;
+      border-radius: 0 0 4px 4px;
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      border: 1px solid #CECECE;
+    }
+  </style>
+
+    <!-- contenitore principale -->
+    <div id="wc004_container">
+
+     <div id="wc004_parametri_1">
+       <div id="wc004_config">
+         {%rgpModalita%} &nbsp; {%edtStampe%} {%btnCarica%} {%btnSalva%} {%btnElimina%} {%btnPulisci%}
+       </div>
+     </div>
+
+      <!-- tab di ricerca ed estrazione -->
+      <div id="tabs" class="ui-tabs" >
+        <ul>
+          <li><a href="#wc004_parametri">Parametri</a></li>
+          <li><a href="#wc004_risultati">Risultati</a></li>
+        </ul>
+        <!-- parametri estrazione -->
+        <div id="wc004_parametri" class="ui-tabs-hide">
+          <!-- modalita standard -->
+          <div id="wc004_standard">
+            <div id="wc004_parametri_2">
+            {%grdCampiSelA%}
+            </div>
+
+            <div id="wc004_parametri_3">
+              <table class="wc004_list">
+                <tr class="wc004_list_int">
+                  <td width="2.5em">{%btnSelAddAll%}</td>
+                  <td width="2.5em">{%btnSelRemAll%}</td>
+                  <td>{%lblSelezione%}</td>
+                </tr>
+                <tr>
+                  <td colspan="3">{%lbCampiSelB%}</td>
+                </tr>
+              </table>
+
+              <table class="wc004_list" style="margin-left: 3em;">
+                <tr class="wc004_list_int">
+                  <td width="2.5em">{%btnOrdRemAll%}</td>
+                  <td>{%lblOrdinamento%}</td>
+                </tr>
+                <tr>
+                  <td colspan="2">{%lbCampiOrdB%}</td>
+                </tr>
+              </table>
+              <div class="clearDiv"></div>
+            </div>
+          </div>
+
+          <!-- modalita avanzata SQL -->
+          <div id="wc004_sql" >
+            <div class="align_center">{%lblQuery%}</div>
+            <div>{%memQuery%}</div>
+          </div>
+
+        </div>
+
+        <!-- tabella risultati -->
+        <div id="wc004_risultati" class="ui-tabs-hide">
+          <div id="wc004_tab_ris">
+            <div>{%PagNavBarEsportazione%}</div>
+            <div class="GrigliaDati">
+            {%grdEsportazione%}
+            </div>
+          </div>
+        </div>
+
+        <!-- pulsanti di gestione -->
+        <div class="wc004_pulsanti">
+          <div class="align_left" style="float: left; width: 42%; margin-top: 0.6em;">{%lblInfo%}</div>
+          <div class="align_right"  style="float: right; width: 55%; margin-top: 0.4em;">{%btnEsegui%} {%btnEsportaInExcel%} {%btnEsportaInCSV%} {%btnChiudi%}</div>
+          <div class="clearDiv"/>
+        </div>
+
+      </div> <!-- tabs.end-->
+
+    </div>
+  </body> 
+</html>

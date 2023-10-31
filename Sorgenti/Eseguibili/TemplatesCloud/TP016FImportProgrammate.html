@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}		
+    <div class="medpElaborazioneFM" style="position:relative; height:20em;">		
+			<div style="position:relative;margin-top:1em;margin-left:1em;">
+
+				<table class="medpTableContainer" style="position:absolute;top:1em;left:0em;">
+		  		<tr>
+						<td>{%lblNomeFileInput%}</td>
+  					<td colspan="2">
+							<div>
+								{%fileUpload%}
+							</div>
+						</td>							
+		  		</tr>
+					<tr>
+						<td>{%lblFileScelto%}</td>
+						<td colspan="2">{%lblFileSceltoDescr%}</td>
+					</tr>
+				</table>			
+
+			<table class="medpTableContainer" style="position:absolute;top:11em;left:0em;">
+	  		<tr><td>{%chkChiusuraAutomatica%}</td></tr>
+			</table>			
+
+			</div>
+			<div style="position:absolute;top:18em;left:1em;">
+				<table>
+					<tr>
+						<td>{%btnEsegui%}</td>	
+						<td>&nbsp;</td>						
+						<td>{%btnVisualizzaFile%}</td>	
+						<td>&nbsp;</td>						
+						<td>{%btnAnomalie%}</td>
+					</tr>
+				</table>
+			</div>
+    </div>		
+  </body>
+</html>
+

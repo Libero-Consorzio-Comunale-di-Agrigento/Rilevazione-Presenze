@@ -1,0 +1,171 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+  <div class="medpDettaglioFM" style="position:relative;height:50em;">
+    
+    <table class="medpTableContainer" style="position:absolute;top: 1.5em; left: 2em;">
+      <tr><td>{%lblAzienda%}</td></tr><tr><td>{%dcmbAzienda%}</td></tr>
+    </table>
+    <table class="medpTableContainer" style="position:absolute;top: 1.5em; left: 20em;">
+      <tr><td>{%lblPermesso%}</td></tr><tr><td>{%dedtPermesso%}</td></tr>
+    </table>        
+
+    <div id="tabs" class="ui-tabs" style="position:absolute;top:6em;height:43em;width:99%;">
+      <ul>
+        <li><a href="#ModuliBase">Moduli Base</a></li>
+        <li><a href="#ModuliAccessori">Moduli Accessori</a></li>
+      </ul>
+
+      <!-- Moduli Base -->
+      <div id="ModuliBase" class="ui-tabs-hide" >   
+        <div class="groupbox" style="position:absolute;top: 4em; left: 2em;">
+          <fieldset style="width:20em">
+            <legend>{%lblAnagrafico%}</legend> 
+            <span>{%lblSchedaAnagr%}</span><br>
+            <span>{%dcmbSchedaAnagr%}</span><br><br>
+            <span>{%lblAnagP430%}</span><span>{%lblAnag%}</span><br>
+            <span>{%dchkInserimentoMatricoleP430%}</span><span class="spazio_sx">{%dchkInserimentoMatricole%}</span><br>
+            <span>{%dchkStoricizzazioneP430%}</span><span class="spazio_sx">{%dchkStoricizzazione%}</span><br>
+            <span>{%dchkModificaDecorrenzaP430%}</span><span class="spazio_sx">{%dchkModificaDecorrenza%}</span><br>
+            <span>{%dchkEliminaStoriciP430%}</span><span class="spazio_sx">{%dchkEliminaStorici%}</span><br>
+            <span style="margin-left:2.5em">{%dchkStoriaInizioFine%}</span><br>
+            <span style="margin-left:2.5em">{%dchkModificaPersonaleEsterno%}</span><br>
+            <div class="groupbox" style="margin-top:0.3em">
+              <fieldset style="width:16em">
+                <legend>{%lblDefaultTipoPersonale%}</legend> 
+                <span>{%drgpDefaultTipoPersonale%}</span>       
+              </fieldset> 
+            </div>
+          </fieldset>
+        </div>
+        <div class="groupbox" style="position:absolute;top: 25em; left: 2em;">
+          <fieldset style="width:20em">
+            <legend>{%lblTimbrature%}</legend>                  
+            <span>{%dchkRipristinoTimbratureOriginali%}</span><br>
+            <span>{%dchkInserisciTimbrature%}</span><br>
+            <span>{%dchkCancellaTimbrature%}</span><br>
+            <span>{%chkCancTimbOrig%}</span><br>
+            <span>{%dchkModificaOra%}</span><br>          
+            <span>{%dchkModificaRilevatore%}</span><br>
+            <span>{%dchkModificaCausale%}</span><br>
+          </fieldset>
+        </div>
+        <div class="groupbox" style="position:absolute;top: 38.5em; left: 2em;">
+          <fieldset style="width:20em">
+            <legend>{%lblRegistrazioneSelAnagr%}</legend> 
+            <span>{%drgpRegistrazioneSelAnagr%}</span>        
+          </fieldset> 
+        </div>
+        <div class="groupbox" style="position:absolute;top: 4em; left: 24em;">
+          <fieldset style="width:19em">
+            <legend>{%lblSchedaRiepilogativa%}</legend>                 
+            <span>{%dchkSaldi%}</span><br>
+            <span>{%dchkIndennita%}</span><br>
+            <span>{%dchkStraordinario%}</span><br>
+            <span>{%dchkRiepilogoPresenze%}</span><br>          
+            <span>{%dchkLiquidazioneOreNonDisponibili%}</span><br>
+          </fieldset>
+        </div>
+        <div class="groupbox" style="position:absolute;top: 14em; left: 24em;">
+          <fieldset style="width:19em">
+            <legend>{%lblVariazioneLimiti%}</legend>                  
+            <span>{%dchkLimitiMensili%}</span><br>
+            <span>{%dchkLimitiAnnuali%}</span><br>
+            <span>{%dchkLimitiRaggruppamento%}</span><br>
+          </fieldset>         
+        </div>
+        <table style="position:absolute;top: 21.5em; left: 24em;">
+          <tr><td colspan="2">{%lblDatiAnagraficiIntestazione%}</td></tr>
+          <tr><td>{%dedtDatiAnagraficiIntestazione%}</td><td>{%btnDatiAnagraficiIntestazione%}</td></tr>
+        </table>
+        <div style="position:absolute;top: 25.5em; left: 24em;">{%dchkUtilityAggiornamento%}</div>
+        <div style="position:absolute;top: 27.5em; left: 24em;">{%dchkEludiBlocchiRiepiloghi%}</div>
+        <div style="position:absolute;top: 29.5em; left: 24em;">{%dchkRicreazioneFilePaghe%}</div>
+        <div style="position:absolute;top: 31.5em; left: 24em;">{%dchkEliminaVoci%}</div>
+        <div style="position:absolute;top: 33.5em; left: 24em;">{%dchkModificaDatiProtetti%}</div>  
+        <div style="position:absolute;top: 35.5em; left: 24em;">{%dchkPasswordDipendenti%}</div>
+        <div style="position:absolute;top: 37.5em; left: 24em;">{%dchkPasswordOperatori%}</div>  
+        <div style="position:absolute;top: 39.5em; left: 24em;">{%dChkDownloadMassivo%}</div>  				
+				<div style="position:absolute;top: 41.5em; left: 24em;">{%dchkAccessibilitaNonVedenti%}</div>  				
+      </div>
+
+      <!-- Moduli Accessori -->
+      <div id="ModuliAccessori" class="ui-tabs-hide" >
+        <div class="groupbox" style="position:absolute;top: 4em; left: 2em;">
+          <fieldset style="width:18em">
+            <legend>{%lblPianificazioneOrariOperativa%}</legend> 
+            <span>{%drgpPianificazioneOrariOperativa%}</span> 
+          </fieldset>         
+        </div>  
+        <div class="groupbox" style="position:absolute;top: 11em; left: 2em;">
+          <fieldset style="width:18em">
+            <legend>{%lblPianificazioneOrariNonOperativa%}</legend> 
+            <span>{%drgpPianificazioneOrariNonOperativa%}</span>  
+          </fieldset>         
+        </div>
+        <!--<div class="groupbox" style="position:absolute;top: 17em; left: 2em;">
+          <fieldset>
+            <legend>{%lblPianificazioneServizi%}</legend> 
+            <table>
+              <tr><td>{%dchkBloccoServizi%}</td></tr>
+              <tr><td>{%dchkSbloccoServizi%}</td></tr>
+              <tr><td>{%lblTipiTurnoAccessibili%}</td><td style="padding-left: 2em">{%dcmbTipiTurnoAccessibili%}</td></tr>
+            </table> 
+          </fieldset>
+        </div>-->
+        <div style="position:absolute;top: 18.5em; left: 2em;">{%dchkValidazioneAssenze%}</div>
+        <table style="position:absolute;top: 20.5em; left: 2em;">
+          <tr><td colspan="2">{%lblGestioneTrasferteAnticipi%}</td></tr>
+          <tr><td>{%dedtGestioneTrasferteAnticipi%}</td><td>{%btnGestioneTrasferteAnticipi%}</td></tr>  
+        </table>    
+        <div class="groupbox" style="position:absolute;top: 4em; left: 22em;">
+          <fieldset style="width:22.5em">
+            <legend>{%lblIrisWebStampaCartellino%}</legend> 
+            <table>         
+              <tr><td>{%lblDisponibileMeseCartellino%}</td><td>{%dedtDisponibileMeseCartellino%}</td></tr>
+              <tr><td>{%lblMesiIndietroCartellino%}</td><td align="right">{%dedtMesiIndietroCartellino%}</td></tr>            
+              <tr><td>{%lblMesiSuccessiviCartellino%}</td><td align="right">{%dedtMesiSuccessiviCartellino%}</td></tr>
+              <tr><td>{%dchkSoloCartelliniRegistrati%}</td></tr>
+            </table> 
+          </fieldset>
+        </div>
+        <div class="groupbox" style="position:absolute;top: 14em; left: 22em;">
+          <fieldset style="width:22.5em">
+            <legend>{%lblIrisWebStampaCedolino%}</legend> 
+            <table>         
+              <tr><td>{%lblDisponibileMeseCedolino%}</td><td>{%dedtDisponibileMeseCedolino%}</td></tr>
+              <tr><td>{%lblMesiIndietroCedolino%}</td><td align="right">{%dedtMesiIndietroCedolino%}</td></tr>            
+              <tr><td>{%lblGiorniDopoDataEmissione%}</td><td align="right">{%dedtGiorniDopoDataEmissione%}</td></tr>
+              <tr><td colspan="2">{%dchkWebRichiestaConsegnaCed%}</td></tr>
+              <tr><td colspan="2">{%dchkWebCedoliniFilePDF%}</td></tr>              
+            </table>
+          </fieldset> 
+        </div>
+        <div class="groupbox" style="position:absolute;top: 26em; left: 22em;">
+          <fieldset style="width:22.5em">
+            <legend>{%lblIrisWebValutazioni%}</legend> 
+            <table>         
+              <tr><td colspan="2">{%dchkSupervisoreValutazioni%}</td></tr>
+              <tr><td colspan="2">{%dchkValidaStato%}</td></tr>
+              <tr><td colspan="2">{%dchkRiassegnazioneValutazioni%}</td></tr>             
+            </table>
+            <div class="groupbox" style="margin-top:0.2em">
+              <fieldset>
+                <legend>{%lblWebRegistraConsegnaVal%}</legend> 
+                <span>{%drgpWebRegistraConsegnaVal%}</span>       
+              </fieldset> 
+            </div>
+            <table>
+              <tr><td colspan="2">{%lblStatiAvanzamentoVal%}</td></tr>
+              <tr><td>{%dedtStatiAvanzamentoVal%}</td><td>{%btnStatiAvanzamentoVal%}</td></tr>  
+            </table>    
+          </fieldset> 
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  </body> 
+</html>

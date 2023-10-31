@@ -1,0 +1,84 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+  {%T000Intestazione%}
+  {%ContenutoDinamico%}
+
+  <div style="position:relative; height: 14em;" class="medpTabRegion">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <div class="groupbox fs100 width40chr">
+              <fieldset>
+                <legend>{%lblModalita%}</legend>
+                {%rgpModalita%}
+              </fieldset>
+            </div>
+            <div>{%chkAnomalie%}</div>
+          </td>
+          <td>
+            <div class="groupbox fs100 width40chr">
+              <fieldset>
+                <legend>{%lblPeriodo%}</legend>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>{%lblPeriodoDal%}</td>
+                      <td>{%edtPeriodoDal%}</td>
+                      <td>{%lblPeriodoAl%}</td>
+                      <td>{%edtPeriodoAl%}</td>
+                    </tr>
+                    <tr>
+                      <td>{%lblInizioDal%}</td>
+                      <td>{%edtInizioDal%}</td>
+                      <td>{%lblInizioAl%}</td>
+                      <td>{%edtInizioAl%}</td>
+                    </tr>
+                    <tr>
+                      <td>{%lblFineDal%}</td>
+                      <td>{%edtFineDal%}</td>
+                      <td>{%lblFineAl%}</td>
+                      <td>{%edtFineAl%}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+            </div>
+          </td>
+          <td>
+            <div style="width: 14em; margin-bottom: 0.5em;">{%btnImporta%}</div>
+            <div style="width: 14em;">{%btnVisualizzaLog%}</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top; padding-top: 1em">
+            <div class="groupbox width40chr">
+              <fieldset>
+                <legend>{%lblAllegato%}</legend>
+                {%rgpAllegato%}
+              </fieldset>
+            </div>
+          </td>
+          <td style="vertical-align:top; padding-top: 1em" colspan="2">
+            <div class="groupbox">
+              <fieldset>
+                <legend>{%lblCondizAllegato%}</legend>
+                {%rgpCondizAllegato%}
+              </fieldset>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="width:100%">{%WA193FCaricaGiustRichBrowseFM%}</div>  
+	<div id="WC027FInfoDatiFM">{%WC027FInfoDatiFM%}</div>
+</body>
+
+</html>

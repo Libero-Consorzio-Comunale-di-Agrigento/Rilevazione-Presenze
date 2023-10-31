@@ -1,0 +1,189 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 33em;">
+		<!-- <div>Fine decorrenza: {%dedtDecorrenzaFine%}</div> -->
+		<table style="width:50em" class="align_left">
+			<tr>
+				<td style="width:6em">
+					<!-- Dato -->
+					<table style="width:100%" class="align_left">
+						<tr>
+							<td>{%lblDato%}</td>
+						</tr>
+						<tr>
+							<td>{%dedtDato%}</td>
+						</tr>
+					</table>				
+				</td>
+				<td style="width:15em">
+					<!-- Descrizione -->
+					<table style="width:100%" class="align_left">
+						<tr>
+							<td >{%lblDescrizione%}</td>
+						</tr>
+						<tr>
+							<td>{%desdDesc%}</td>
+						</tr>
+					</table>				
+				</td>
+				<td rowspan="2" style="width:5em">
+					<!-- Tipo -->
+					<div class="groupbox">
+						<fieldset style="width:10em">
+						<legend>{%lblTipo%}</legend>
+							{%drgpTipo%}
+						</fieldset> 
+					</div>
+				</td>				
+			</tr>
+			<tr>
+				<td>
+					<!-- Codice voce + ordinamento -->
+					<table style="width:100%" class="align_left">
+						<tr>
+							<td style="width:50%">{%lblCodiceVoce%}</td>
+							<td style="width:50%">{%lblOrdinamento%}</td>
+						</tr>
+						<tr>
+							<td style="width:50%">{%cmbVocePaghe%}</td>
+							<td style="width:50%">{%dedtOrdinamento%}</td>
+						</tr>
+						<tr>
+							<td colspan="2">{%lblDescVocePaghe%}</td>
+						</tr>
+					</table>				
+				</td>
+				<td>
+					<!-- Espressione -->
+					<table style="width:100%" class="align_left">
+						<tr>
+							<td colspan>{%lblEspressione%}</td>
+						</tr>
+						<tr>
+							<td>{%dmemoEspressione%}</td>
+						</tr>			
+					</table>
+				</td>				
+			</tr>
+			<tr>
+				<td colspan="3">
+					<!-- Selezione anagrafiche -->
+					<table style="width:100%" class="align_left">
+						<tr>
+							<td colspan="2">{%lblSelezioniAnagrafiche%}</td>
+						</tr>
+						<tr>
+							<td>{%dedtSelezioneAnagrafiche%}</td>
+							<td>{%imgApplicaAnagrafiche%}</td>
+						</tr>
+					</table>				
+				</td>			
+			</tr>			
+		</table>	
+		
+		
+<!-- 		<!-- Dato ->
+		<table style="width:20em" class="align_left">
+			<tr>
+				<td>{%lblDato%}</td>
+			</tr>
+			<tr>
+				<td>{%dedtDato%}</td>
+			</tr>
+		</table>
+		<!-- Descrizione ->
+		<table style="width:20em" class="align_left">
+			<tr>
+				<td>{%lblDescrizione%}</td>
+			</tr>
+			<tr>
+				<td>{%desdDesc%}</td>
+			</tr>
+		</table>
+		<!-- Tipo ->
+		<div class="groupbox">
+			<fieldset style="width:10em">
+			<legend>{%lblTipo%}</legend>
+				{%drgpTipo%}
+			</fieldset> 
+		</div>		
+
+		<!-- Codice voce + ordinamento ->
+		<table style="width:20em" class="align_left">
+			<tr>
+				<td>{%lblCodiceVoce%}</td>
+				<td>{%lblOrdinamento%}</td>
+			</tr>
+			<tr>
+				<td>{%cmbVocePaghe%}</td>
+				<td>{%dedtOrdinamento%}</td>
+			</tr>
+			<tr>
+				<td colspan="2">{%lblDescVocePaghe%}</td>
+			</tr>
+		</table>		
+		
+		<!-- Espressione ->
+		<table style="width:20em" class="align_left">
+			<tr>
+				<td colspan>{%lblEspressione%}</td>
+			</tr>
+			<tr>
+				<td>{%dmemoEspressione%}</td>
+			</tr>			
+		</table>
+		
+		<!-- Selezione anagrafiche ->
+		<table style="width:20em" class="align_left">
+			<tr>
+				<td colspan="2">{%lblSelezioniAnagrafiche%}</td>
+			</tr>
+			<tr>
+				<td>{%dedtSelezioneAnagrafiche%}</td>
+				<td>{%imgApplicaAnagrafiche%}</td>
+			</tr>
+		</table> --> 		
+		
+		<!-- <table style="width:70em" class="align_left">
+			<tr>
+				<td colspan="2">{%lbDato%}</td>
+				<td>{%lbDescrizione%}</td>
+				<td rowspan="5" colspan="2">
+					<div class="groupbox">
+						<fieldset style="width:10em">
+						<legend>{%lblTipo%}</legend>
+							{%drgpTipo%}
+						</fieldset> 
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">{%dedtDato%}</td>
+				<td colspan="2">{%desdDesc%}</td>
+			</tr>
+			<tr>
+				<td>{%lbCodiceVoce%}</td>
+				<td>{%lbOrdinamento%}</td>
+				<td colspan = "2">{%lblEspressione%}</td>
+			</tr>
+			<tr style="vertical-align:top">
+				<td>{%cmbVocePaghe%}</td>
+				<td>{%dedtOrdinamento%}</td>
+				<td colspan="2" rowspan="2">{%dmemoEspressione%}</td>
+			</tr>	
+			<tr>
+				<td colspan="3">{%lblDescVocePaghe%} LBL</td>
+			</tr>	
+			<tr>
+				<td colspan="5">{%lblSelezioniAnagrafiche%}</td>
+			</tr>	
+			<tr>
+				<td colspan="4">{%dedtSelezioneAnagrafiche%}</td>
+				<td>{%imgApplicaAnagrafiche%}</td>
+			</tr>	
+		</table> -->      
+    </div>
+  </body>
+</html>

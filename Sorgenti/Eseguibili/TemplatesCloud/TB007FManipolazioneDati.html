@@ -1,0 +1,44 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:40em;">
+      <div style="position:relative;margin-bottom:1em;">
+        <table>
+          <tr>
+            <td>{%lblDallaData%}</td>
+            <td>{%edtDallaData%}</td>
+            <td style="padding-left:5em;">{%lblAllaData%}</td>
+            <td>{%edtAllaData%}</td>
+            <td style="padding-left:5em;">{%lblAzione%}</td>
+            <td>{%cmbAzione%}</td>
+          </tr>
+        </table>
+      </div>
+      <div style="width: 100%;margin-top:3em;">
+        {%WB007StoricizzazioneRG%}
+        {%WB007CancellazioneRG%}
+        {%WB007CancellazioneGiustRG%}
+        {%WB007RicodificaGiustRG%}
+        {%WB007RiallineamentoGiustRG%}
+        {%WB007UnificazioneMatrRG%}
+        {%WB007EsecuzioneScriptRG%}
+        {%WB007CestinoRG%}
+        {%WB007AllineaTimbRG%}</div>
+      <div style="position:relative;margin-top:7em;">
+        <table>
+          <tr>
+            <td>{%btnEsegui%}</td>
+            <td>{%btnLog%}</td>
+            <td>{%btnAnomalie%}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
