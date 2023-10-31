@@ -1,0 +1,50 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="TabRichieste" class="medpTabRegion" style="position:relative; height: 45em;">
+			<table id="filtriIter"> <!-- class="Riepilogo">-->
+				<tbody>
+					<tr>
+						<td id="filtroVis">
+							<div class="groupbox">
+								<fieldset>
+									<legend>{%lblFiltroVis%}</legend>
+									{%grdFiltroVis%}
+								</fieldset>
+							</div>
+						</td>
+						<td id="filtroStruttura">
+							<div class="groupbox fs100">
+								<fieldset>
+									<legend>{%lblFiltroStruttura%}</legend>
+									{%cmbFiltroStruttura%}
+								</fieldset>
+							</div>
+						</td>
+						<td id="filtroPeriodo">
+							<div class="groupbox fs100">
+								<fieldset>
+									<legend>{%lblPeriodo%}</legend>
+									{%rgpPeriodo%} {%lblPeriodoDal%} {%edtPeriodoDal%} {%lblPeriodoAl%} {%edtPeriodoAl%}
+								</fieldset> 
+							</div>
+						</td>
+						<td id="pulsantiAzione">
+							{%btnFiltra%} {%btnTuttiSi%} {%btnTuttiNo%}
+						</td>				
+					</tr>
+				</tbody>
+			</table>		
+			
+			<div class="grigliaDatiNav">
+				{%PagNavBarRichieste%}
+			</div>
+
+			<div class="grigliaDati">
+				{%grdRichieste%}
+			</div>
+    </div>	
+  </body>
+</html>

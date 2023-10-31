@@ -1,0 +1,30 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+
+    <div class="dipendente">{%lnkDipendente%} {%cmbDipendentiDisponibili%}</div>
+
+    
+    <table style="margin-top:1em;margin-bottom:1em">
+      <tr>
+        <td>{%lblMese%}</td>
+        <td>{%lblDato%}</td>
+        <td>&nbsp;</td>
+        <td rowspan="2">{%btnGenera%}</td>
+        <td rowspan="2">{%btnApplica%}</td>
+      </tr>
+      <tr>
+        <td>{%edtMese%}</td>
+        <td>{%cmbCodDato%}</td>
+        <td style="min-width:30em">{%lblDescDato%}</td>
+      </tr>
+    </table>
+
+    <div class="grigliaDati">
+      {%dgrdDettaglio%}
+    </div>
+
+    {%<frm>WC002FDatiAnagraficiFM</frm>%}    
+  </body>
+</html>
