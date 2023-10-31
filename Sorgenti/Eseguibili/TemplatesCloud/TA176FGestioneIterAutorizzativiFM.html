@@ -1,0 +1,56 @@
+{%DocType%}
+<html>
+  <body>
+  <div id="#WA176FGestioneIterAutorizzativiFM">
+  <div>
+  {%dGrdDettIter%}
+  </div>
+  <table id="pnlAzioni">
+	<tr>
+		<td style="vertical-align:top; padding-top: 1em">
+			<div class="groupbox">
+				<fieldset>
+					<legend>{%lblAzioni%}</legend>
+					{%rgpAzioni%}
+				</fieldset>
+			</div>
+		</td>
+		<td style="vertical-align:top; padding-top: 1.5em">		
+			<div id="rgpAutorizzaNega" class="groupbox">
+				<fieldset>
+					{%rgpAutorizzaNega%}
+				</fieldset>
+			</div>
+		</td>
+		<td style="vertical-align:top;padding-top: 1.5em">
+			<div>
+				<table>
+					<tr>
+						<td colspan="2">
+							{%chkEliminaDato%}{%lblStruttura%}{%edtStruttura%}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span style="padding-left:0.5em">{%lblLivello%}</span>
+						</td>
+						<td>						
+							{%cmbLivello%}{%lblNuovaStruttura%}{%cmbNuovaStruttura%}
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							{%btnEsegui%}
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+  </table>
+  <div class="area_pulsanti">
+		<div class="FloatDestra" style="text-align: right; margin-top: 0.4em;">{%btnChiudi%}</div>
+  </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{%DocType%}
+<html>
+  <body> 	
+    <div class="medpNoMarginLeft" style="position:relative;">	
+			<div style="position:relative;margin-bottom:0.5em;">
+				<table class="grigliaPadded">
+					<tr>
+						<td>{%lblDecorrenza%}</td>
+						<td colspan="2">{%edtDecorrenza%}</td>						
+					</tr>
+					<tr>
+						<td>{%lblTipoQuota%}</td>
+						<td style="width:13em">{%cmbTipoQuota%}</td>						
+						<td>{%lblDescTipoQuota%}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="groupbox" style="position:relative;float:none !important; margin-bottom:0.5em">
+				<fieldset>
+					<legend>{%lblVariazione%}</legend>
+					{%rgpVariazione%}
+				</fieldset>
+			</div>	
+			<div style="position:relative;margin-bottom:0.5em;">
+				<table>
+					<tr>
+						<td>{%lblPercentuale%}</td>
+						<td style="padding-left:2em">{%lblImporto%}</td>
+					</tr>
+					<tr>
+						<td>{%edtPercentuale%}</td>
+						<td style="padding-left:2em">{%edtImporto%}</td>
+					</tr>
+				</table>				
+			</div>			
+			<div class="area_pulsanti">
+				<div class="FloatSinistra" style="text-align: right; margin-top: 0.4em;">
+					<div style="margin-right:1em;display:inline-block">{%btnAnomalie%}</div>
+					<div style="margin-right:1em;display:inline-block">{%btnEsegui%}</div>
+				</div>				
+        <div class="FloatDestra" style="text-align: right; margin-top: 0.4em;">{%btnChiudi%}</div>
+        <div class="clearDiv"></div>
+    	</div>
+    </div>     
+  </body> 
+</html>

@@ -1,0 +1,132 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <div class="medpElaborazioneFM" style="position:relative; height:45em;">		
+			<div style="position:relative;display:inline-block;margin-left:1em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td>{%lblDaData%}</td>	
+					</tr>
+					<tr>				
+						<td>{%edtDaData%}</td>
+					</tr>					
+				</table>
+			</div>
+			<div style="position:relative;display:inline-block;margin-left:4em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td>{%lblAData%}</td>					
+					</tr>
+					<tr>				
+						<td>{%edtAData%}</td>
+					</tr>					
+				</table>
+			</div>			
+			<div style="position:relative;display:inline-block;margin-left:4em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td>{%lblMeseCompMax%}</td>					
+					</tr>
+					<tr>				
+						<td>{%edtMeseCompMax%}</td>
+					</tr>					
+				</table>
+			</div>			
+			<div style="position:relative;margin-left:1em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td>{%lblTipoCalcolo%}</td>					
+					</tr>
+					<tr>				
+						<td>{%cmbTipoCalcolo%}</td>
+					</tr>					
+				</table>
+			</div>						
+			<div style="position:relative;margin-left:1em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td colspan="2">
+							{%lblQuote%}
+						</td>
+					</tr>
+          <tr>
+            <td>{%edtQuote%}</td>
+            <td>{%btnQuote%}</td>          
+          </tr>
+      	</table>
+      </div>        
+			<div style="position:relative;margin-left:1em;margin-top:1em;">
+				<table class="noMarginLeftInput">
+					<tr>
+						<td colspan="2">
+							{%chkCalcolaImportiSaldoAnnoCorr%}
+						</td>
+					</tr>
+      	</table>
+      </div>        
+      <div class="groupbox" style="margin-left:1em;margin-top:1em;">           
+      	<fieldset>
+      		<legend>{%lblImpostazioni%}</legend>
+      		<table>
+      			<tr>
+      				<td colspan="3">{%lblCampoAnag%}</td>      				
+      			</tr>
+      			<tr>
+      				<td>{%cmbCampoAnag%}</td>
+      				<td style="padding-left:3em;">{%chkSaltoPagina%}</td>
+      				<td style="padding-left:3em;">{%chkDettaglio%}</td>
+      			</tr>
+      		</table>
+      		<table>
+      			<tr>
+      				<td>
+		      			<div class="groupbox" style="position:relative;">
+									<fieldset>
+				  					<legend>{%lblTipoDati%}</legend>
+			  	  				{%rgpTipoDati%}
+									</fieldset>
+			    			</div>
+      				</td>
+      				<td>      					
+      					<div class="groupbox">
+      						<fieldset>
+      							<legend>{%lblColonne%}</legend>
+      							<div class="checkGroupDin" style="display: table; position:relative; height:6.5em;">
+      					 		{%cgpColonne%}
+      							</div>
+      						</fieldset>
+      					</div>
+      				</td>
+      			</tr>
+      		</table>
+      		
+      	</fieldset>
+      </div>
+      <div style="position:absolute;top:2em;left:59em">
+      	<table class="grigliaPadded">
+      		<tr>
+      			<td>{%chkAggiorna%}</td>
+      		</tr>
+					<tr>
+      			<td>{%chkAnnulla%}</td>
+      		</tr>      		
+					<tr>
+      			<td>{%btnGeneraPDF%}</td>
+      		</tr>      		
+					<tr>
+      			<td>{%btnAggiornamento%}</td>
+      		</tr>      		
+					<tr>
+      			<td>{%btnAnomalie%}</td>
+      		</tr>      		
+      	</table>
+      </div>
+      	
+    </div>	 
+  </body>
+</html>

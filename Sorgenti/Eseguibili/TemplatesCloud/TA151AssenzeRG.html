@@ -1,0 +1,44 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:absolute;height:25em;width:95%">
+
+		  <div style="position:absolute;top:1em; left:1em; width:95%; height:10em;">{%lstAssenze%}</div>
+		  
+		  <div style="position:absolute;top:12em; left:1em">{%dchkAssenzaGGLav%}</div>
+		  
+		  <div style="position:absolute;top:13.5em; left:1em">{%dchkAssenzaGGInt%}</div>
+			<div class="groupbox" style="position:absolute;top: 11em; left: 31em;">
+				<fieldset style="width:14em">
+					<legend>{%lblDebitoGGInt%}</legend>
+					<div>{%drdgDebitoGGInt%}</div>
+				</fieldset>
+			</div>		
+			
+		  <div style="position:absolute;top:15em; left:1em">{%dchkAssenzaQM%}</div>
+		  
+		  <div style="position:absolute;top:16.5em; left:1em">{%dchkDettaglioGiustificativi%}</div>
+		  <div style="position:absolute;top:16.5em; left:15em">{%dchkDettaglioFamiliari%}</div>
+		  
+			<div class="groupbox" style="position:absolute;top: 18em; left: 1em;">
+				<fieldset>
+					<legend>{%lblFruizione%}</legend>
+					<div>{%dchkFruizGG%}{%dchkFruizMG%}{%dchkFruizHH%}{%dchkFruizDH%}</div>
+				</fieldset>
+			</div>		
+			<table class="medpTableContainer" style="position:absolute;top: 19.55em; left: 28.5em;">
+				<tr><td>{%lblMaxGG%}</td><td>{%dedtMaxGG%}</td></tr>	
+			</table>
+			
+			<div class="groupbox" style="position:absolute;top: 22em; left: 1em; width:45em">
+				<fieldset style="width:95%">
+					<legend>{%lblAssenzaArrot%}</legend>
+					<div>{%drdgAssenzaArrot%}</div>
+				</fieldset>
+			</div>		
+
+		</div>
+	</body>
+</html>

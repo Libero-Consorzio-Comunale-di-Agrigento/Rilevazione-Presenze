@@ -1,0 +1,83 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+
+  <body>
+    <style type="text/css">
+      #filtri {
+        border-bottom: 1px solid #819091;
+        padding: 1em 0.5em;
+        overflow: auto;
+      }
+
+      .tbLabel {
+        width: 12em;
+        vertical-align: top;
+      }
+    </style>
+
+    {%T000Intestazione%}
+
+    {%ContenutoDinamico%}
+
+    <div id="filtri">
+      <table style="width: 40em">
+        <tbody>
+          <tr>
+            <td class="tbLabel">{%lblNomeFile%}</td>
+            <td colspan="3">{%edtNomeFile%}</td>
+          </tr>
+          <tr>
+            <td class="tbLabel">{%lblDimensioneDa%}</td>
+            <td>{%edtDimensioneDa%} {%lblKBDa%}</td>
+            <td>{%lblDimensioneA%}</td>
+            <td>{%edtDimensioneA%} {%lblKBA%}</td>
+          </tr>
+          <tr>
+            <td class="tbLabel">{%lblPeriodoDal%}</td>
+            <td>{%edtPeriodoDal%}</td>
+            <td>{%lblPeriodoAl%}</td>
+            <td>{%edtPeriodoAl%}</td>
+          </tr>
+          <tr>
+            <td class="tbLabel">{%lblDataCreazioneDal%}</td>
+            <td>{%edtDataCreazioneDal%}</td>
+            <td>{%lblDataCreazioneAl%}</td>
+            <td>{%edtDataCreazioneAl%}</td>
+          </tr>
+          <tr>
+            <td class="tbLabel">{%lblFamiliare%}</td>
+            <td colspan="3">{%edtFamiliare%}</td>
+          </tr>
+          <tr>
+            <td class="tbLabel">{%lblNote%}</td>
+            <td colspan="3">{%edtNote%}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <tbody>
+          <tr>
+            <td>{%lblEstensioni%}</td>
+            <td>{%lblTipologia%} </td>
+            <td>{%lblUfficio%} </td>
+            <td>{%lblUtente%}</td>
+          </tr>
+          <tr>
+            <td>{%lstEstensioni%}</td>
+            <td>{%lstTipologie%}</td>
+            <td>{%lstUffici%} </td>
+            <td>{%lstUtenti%}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="scrollable" onscroll="onscrollDivWR010(this,'HIDDEN_WA155DIVSCROLLABLESCROLLTOP','HIDDEN_WA155DIVSCROLLABLESCROLLLEFT')">
+    {%WA155FRicercaDocumentaleBrowseFM%}
+    </div>
+
+  </body>
+</html>

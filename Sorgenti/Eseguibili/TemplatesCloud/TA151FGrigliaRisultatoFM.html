@@ -1,0 +1,34 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:40em;">
+		
+	  <div style="position:absolute;top:1em; left:1em; width:95%; height:25em; overflow-x:auto;overflow-y:auto">{%dgrdRisultato%}</div>
+	
+		<div class="groupbox" style="position:absolute;top: 27em; left: 1em;">
+			<fieldset style="position:relative;width:35em; height:11.5em">
+				<legend>{%lblEsportazioneXML%}</legend>
+				<div>
+					<table class="medpTableContainer" style="position:absolute;top: 1em; left: 0.5em;">
+						<tr><td>{%lblIdMittente%}</td><td>{%cmbIdMittente%}</td><td>{%lblDescIdMittente%}</td></tr>	
+						<tr><td>{%lblIdUfficio%}</td><td>{%cmbIdUfficio%}</td><td>{%lblDescIdUfficio%}</td></tr>	
+					</table>
+					
+					<table class="medpTableContainer" style="position:absolute;top: 1em; left: 0.5em;">
+						<tr><td>{%lblUsername%}</td><td>{%edtUsername%}</td></tr>	
+						<tr><td>{%lblCodiceEnte%}</td><td>{%edtCodiceEnte%}</td></tr>	
+						<tr><td>{%lblURLWS%}</td><td>{%edtURLWS%}</td></tr>	
+					</table>
+
+					<div style="position:absolute; top:8em;left:5em">{%btnEsegui%}</div>
+					<div style="position:absolute; top:8em;left:23em">{%btnAnomalie%}</div>
+
+				</div>
+			</fieldset>
+		</div>
+
+	</div>
+  </body> 
+</html>

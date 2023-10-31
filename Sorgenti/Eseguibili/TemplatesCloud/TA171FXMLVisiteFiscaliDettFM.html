@@ -1,0 +1,79 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative;height:25em;">
+      <div style="position: absolute;left:1em;top:1em">{%lblNominativo%}</div>
+      <div class="groupbox" style="position:absolute;left:1em;top:3em">
+        <fieldset>
+          <legend>{%grpDettaglioVisita%}</legend>
+          <table>
+            <tr>
+              <td>
+                {%lblDataRichiesta%} {%dEdtDataRichiesta%} {%lblOraRichiesta%}
+                {%dEdtOraRichiesta%}
+              </td>
+              <td>{%dChkElaborato%}</td>
+            </tr>
+            <tr>
+              <td>{%dRgpTipoAmbDom%}</td>
+              <td>{%lblDataVisita%} {%dEdtDataVisita%}</td>
+            </tr>
+            <tr>
+              <td>{%dChkConfermaAmb%}</td>
+              <td>{%dChkAccettaAttiMed%}</td>
+            </tr>
+            <tr>
+              <td>{%dRgpOrarioVisita%}</td>
+              <td>{%dRgpObbligoOrario%}</td>
+            </tr>
+          </table>
+
+          <div style="display:inline-block;width:12em">{%btnCopiaConfig%}</div>
+        </fieldset>
+      </div>
+      <div style="position:absolute;left:1em;top:20em">
+        {%lblInizioMal%} {%dEdtInizioMal%} {%lblFineMal%} {%dedtFineMal%}
+        {%dChkMalattiaFerie%}
+      </div>
+      <div class="groupbox fs100 width40chr" style="position:absolute;left:47em;top:3em">
+        <fieldset>
+          <legend>{%grpDettAgg%}</legend>
+          <table>
+            <tr>
+              <td class="width15chr">{%lblTelefono%}</td>
+              <td>{%dedtTelefono%}</td>
+            </tr>
+            <tr>
+              <td>{%lblDettagliIndirizzo%}</td>
+              <td>{%dedtDettagliIndirizzo%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      <div class="groupbox fs100 width40chr" style="position:absolute;left:47em;top:10em">
+        <fieldset>
+          <legend>{%grpReperibilita%}</legend>
+          <table>
+            <tr>
+              <td class="width15chr">{%lblRepComune%}</td>
+              <td>{%dCmbRepComune%}</td>
+            </tr>
+            <tr>
+              <td>{%lblRepCAP%}</td>
+              <td>{%dEdtRepCAP%}</td>
+            </tr>
+            <tr>
+              <td>{%lblRepIndirizzo%}</td>
+              <td>{%dEdtRepIndirizzo%}</td>
+            </tr>
+            <tr>
+              <td>{%lblRepCognome%}</td>
+              <td>{%dEdtRepCognome%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

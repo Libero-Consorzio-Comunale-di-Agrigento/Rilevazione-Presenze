@@ -1,0 +1,118 @@
+{%DocType%}
+<html>
+  <head> 	
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative;height:30em;">
+		<div style="position:relative;margin-top:1em;margin-left:1em">
+			<table class="grigliaPadded">
+				<tr>
+					<td>{%lblDato1%}</td>
+					<td>{%cmbDato1%}</td>	
+					<td>{%lblDescDato1%}</td>								
+				</tr>
+				<tr>
+					<td>{%lblDato2%}</td>
+					<td>{%cmbDato2%}</td>	
+					<td>{%lblDescDato2%}</td>								
+				</tr>
+				<tr>
+					<td>{%lblDato3%}</td>
+					<td>{%cmbDato3%}</td>	
+					<td>{%lblDescDato3%}</td>								
+				</tr>
+				<tr>
+					<td>{%lblCodTipoQuota%}</td>
+					<td>{%cmbCodTipoQuota%}</td>	
+					<td>{%lblDescTipoQuota%}</td>								
+				</tr>
+			</table>
+		</div>
+		<div style="position:absolute;top:13em;left:1em; width:40em;">
+			<table>
+				<tr>
+					<td colspan="2">{%lnkTipoAccorp%}</td>
+				</tr>
+				<tr>
+					<td>{%cmbTipoAccorpCausali%}</td>	
+					<td style="padding-left:0.5em">{%dlblDescTipoAccorp%}</td>								
+				</tr>				
+				<tr>
+					<td colspan="2" style="padding-top:0.5em">{%lnkTipoAbbattimento%}</td>
+				</tr>
+				<tr>
+					<td>{%cmbTipoAbbattimento%}</td>	
+					<td style="padding-left:0.5em">{%dlblDescTipoAbbatt%}</td>								
+				</tr>													
+			</table>					
+		</div>							
+		<div style="position:absolute;top:13em;left:25em; width:40em;">
+			<table>
+				<tr>
+					<td colspan="2">{%lnkCodAccorp%}</td>
+				</tr>
+				<tr>
+					<td>{%cmbCodiciAccorpCausali%}</td>	
+					<td style="padding-left:0.5em">{%dlblDescCodAccorp%}</td>								
+				</tr>				
+			</table>					
+		</div>							
+		<div style="position:absolute;top:13em;left:50em; width:40em;">
+			<table>
+				<tr>
+					<td colspan="2">{%lblCausale%}</td>
+				</tr>
+				<tr>
+					<td>{%cmbCausale%}</td>	
+					<td style="padding-left:0.5em">{%dlblDescCausale%}</td>								
+				</tr>				
+				<tr>
+					<td colspan="2" style="padding-top:2em">{%dchkFruitoOre%}</td>					
+				</tr>				
+				<tr>
+					<td colspan="2" style="padding-top:0.5em">{%dchkAbbGGInt%}</td>					
+				</tr>
+				<tr>
+					<td colspan="2" style="padding-top:0.5em">{%dchkSoloGGInt%}</td>					
+				</tr>
+			</table>					
+		</div>	
+		<div style="position:absolute;top:25.5em;left:50em;">
+			<table>
+				<tr>
+					<td>{%lblPercAbbFranc%}</td>
+					<td>{%lblPercAbb%}</td>					
+				</tr>
+				<tr>
+					<td>{%dedtPercAbbFranc%}</td>
+					<td>{%dedtPercAbb%}</td>					
+				</tr>				
+			</table>							
+		</div>														
+		<div style="position:absolute;top:18.5em;left:31em;">
+			{%lblRisparmio%}
+		</div>
+		<div class="groupbox" style="position:absolute;top:21em;left:1em;">
+			<fieldset>
+				<legend>{%lblGestioneFranchigia%}</legend>
+				{%drdgGestioneFranchigia%}			
+			</fieldset>		
+		</div>
+		<div style="position:absolute;top:25.5em;left:1em;">
+			<table>
+				<tr>
+					<td>{%lblFranchigia%}</td>
+					<td style="padding-left:2em">{%lblAssenzeAgg%}</td>					
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>{%dedtFranchigia%}</td>
+					<td style="padding-left:2em">{%dedtAssenzeAgg%}{%btnAssenzeAgg%}</td>					
+					<td style="padding-left:2em">{%dchkPropFranchigia%}</td>
+				</tr>				
+			</table>					
+		</div>
+	</div>
+  </body> 
+</html>
+

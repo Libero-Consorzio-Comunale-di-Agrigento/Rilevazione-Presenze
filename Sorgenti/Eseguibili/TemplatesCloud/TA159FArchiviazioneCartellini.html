@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+	<div style="position:absolute;top:11em;left:2em">{%lblPathPDF%}</div><div style="position:absolute;top:11em;left:15em">{%edtPathPDF%}</div>
+	<div style="position:absolute;top:13em;left:2em">{%lblFilePDF%}</div><div style="position:absolute;top:13em;left:15em"> {%edtFilePDf%}</div>
+	<div style="position:absolute;top:15em;left:2em">{%chkSovrascrivi%}</div><div style="position:absolute;top:15em;left:52.5em">{%btnImpostazioniAziendali%}</div>
+	<div class="groupbox">
+	  <fieldset style="position:absolute;top:17em;left:2em;height:4em">
+	  <legend>{%lblParametrizzazione%}</legend>
+	  <div>{%cmbParametrizzazione%}</div>
+	  <div>{%chkParametrizzazioniTipoCartellino%}</div>
+	  </fieldset>
+	</div>
+	<div class="groupbox">
+	  <fieldset style="position:absolute;top:17em;left:25em;height:4em">
+	  <legend>{%lblPeriodo%}</legend>
+	  <div>{%lblPeriodoDal%} {%edtPeriodoDal%}</div>
+	  <div>{%lblPeriodoAl%} {%edtperiodoAl%}</div>	
+	  </fieldset>
+	</div>
+	<div class="groupbox">
+	  <fieldset style="position:absolute;top:17em;left:44em;height:4em">
+	  <legend>{%lblGenerazionePDF%}</legend>
+	  <div>{%rgpGenerazionePDF%}</div>
+	  </fieldset>
+	</div>
+	<div style="position:absolute;top:23em;left:2em;width:40em">{%chkAggSchedaRiep%}</div>
+	<div style="position:absolute;top:25em;left:2em;width:40em">{%chkInviaRegistro%}</div>
+	<div style="position:absolute;top:23.5em;left:22em;width:40em">{%lblElencoRegistri%}</div>
+	<div style="position:absolute;top:25em;left:21.5em;width:40em">{%cmbElencoRegistri%}</div>
+	<div class="groupbox">
+		<fieldset style="position:absolute;top:27em;left:2em">
+			<legend>{%lblAnomalie%}</legend>
+			<div class="checkGroupDin" style="overflow-x:auto;width:50em;height:22em; display: block">{%lstAnomalie%}</div>	
+		</fieldset>
+	</div>
+	<span style="position:absolute;top:24.5em;left:45em">{%btnStart%}</span>
+	<span style="position:absolute;top:24.5em;left:48em">{%btnLeggiLog%}</span>
+  </body>
+</html>
+

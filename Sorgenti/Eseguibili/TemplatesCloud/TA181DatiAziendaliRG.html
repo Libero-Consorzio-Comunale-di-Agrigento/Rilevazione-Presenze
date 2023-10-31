@@ -1,0 +1,57 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:31em;">
+			<div class="groupbox" style="position:absolute;top: 2em; left: 2em;">
+	   			<fieldset>
+	  	  		<legend>{%lblGestioneSicurezza%}</legend> 
+	    			<table cellpadding="1">
+	  	  			<tr><td>{%lblPeriodoValidita%}</td><td>{%dedtPeriodoValidita%}</td></tr>  
+	  	  			<tr><td>{%lblPeriodoScadenza%}</td><td>{%dedtPeriodoScadenza%}</td></tr> 	
+	  	  			<tr><td>{%lblLunghezzaMinima%}</td><td>{%dedtLunghezzaMinima%}</td></tr>
+							<tr><td>{%lblValidCifre%}</td><td>{%dedtValidCifre%}</td></tr> 	
+							<tr><td>{%lblValidMaiuscole%}</td><td>{%dedtValidMaiuscole%}</td></tr> 	
+							<tr><td>{%lblValidCarattSpeciali%}</td><td>{%dedtValidCarattSpeciali%}</td></tr> 	
+	        	</table> 
+	    		</fieldset> 
+				</div>
+				
+				<div class="groupbox" style="position:absolute;top: 2em; left: 34em;">
+	   			<fieldset>
+	  	  		<legend>{%lblParametriConnessione%}</legend> 
+	    			<table cellpadding="1">
+	  	  			<tr><td>{%lblUsername%}</td><td>{%lblPassword%}</td> </tr>
+							<tr><td>{%dedtUsername%}</td><td>{%dedtPassword%}</td></tr>  
+							<tr><td>{%lblTablespaceTabelle%}</td><td>{%lblTablespaceIndici%}</td></tr> 
+							<tr><td>{%dedtTablespaceTabelle%}</td><td>{%dedtTablespaceIndici%}</td></tr> 
+							<tr><td>{%lblTablespaceAusiliario%}</td></tr> 
+							<tr><td>{%dedtTablespaceAusiliario%}</td> </tr> 
+	         	</table> 
+	    		</fieldset> 
+				</div>	
+				
+				<div class="groupbox" style="position:absolute;top: 2em; left: 66em;">
+	   			<fieldset>
+	  	  		<legend>{%lblControlloTimbrature%}</legend> 
+	    			<span>{%dchkTimbraturaVerso%}</span><br>
+	    			<span>{%dchkTimbraturaCausale%}</span>        	  			
+	    		</fieldset> 
+				</div>
+
+				<table style="position:absolute;top: 17.5em; left: 2em;">
+					<tr><td>{%lblGruppoBadge%}</td><td>{%dedtGruppoBadge%}</td></tr>
+				</table>
+
+		
+				<table style="position:absolute;top: 19.5em; left: 2em;">
+					<tr><td>{%lblDominioIrisWeb%}</td><td>{%dedtDominioIrisWeb%}</td><td>{%dcmbDominioIrisWeb%}</td></tr>
+					<tr><td>{%lblDominioApplicativi%}</td><td>{%dedtDominioApplicativi%}</td><td>{%dcmbDominioApplicativi%}</td></tr>
+					<tr><td>{%lblSuffissoLDAP%}</td><td colspan="2">{%dEdtSuffissoLDAP%}</td></tr>
+					<tr><td>{%lblDominioLdapDn%}</td><td colspan="2">{%dedtDominioLdapDn%}</td></tr>
+				</table>
+					
+		</div>
+	</body>
+</html>

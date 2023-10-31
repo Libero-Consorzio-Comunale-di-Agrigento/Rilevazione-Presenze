@@ -1,0 +1,100 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 33em;">
+      <div style="position:absolute;top: 1em; left: 2em;">{%lblAzienda%}</div>
+      <div style="position:absolute;top: 1em; left: 9em;">{%dcmbAzienda%}</div>
+      <div style="position:absolute;top: 1em; left: 25em;">
+        {%lblDescAzienda%}
+      </div>
+      <div style="position:absolute;top: 3em; left: 2em;">{%lblOperatore%}</div>
+      <div style="position:absolute;top: 3em; left: 9em;">
+        {%dedtOperatore%}
+      </div>
+      <div style="position:absolute;top: 3em; left: 25em;">
+        {%lblScadenzaAccesso%}
+      </div>
+      <div style="position:absolute;top: 3em; left: 35em;">
+        {%dlblScadenzaAccesso%}
+      </div>
+      <div style="position:absolute;top: 5em; left: 2em;">{%lblPassword%}</div>
+      <div style="position:absolute;top: 5em; left: 9em;">{%dedtPassword%}</div>
+      <div style="position:absolute;top: 5em; left: 25em;">
+        {%lblScadenzaPassword%}
+      </div>
+      <div style="position:absolute;top: 5em; left: 35em;">
+        {%dlblScadenzaPassword%}
+      </div>
+      <div style="position:absolute;top: 7em; left: 2em;">{%dchkOccupato%}</div>
+      <div style="position:absolute;top: 7em; left: 12em;">{%dchkSblocco%}</div>
+      <div style="position:absolute;top: 7em; left: 22em;">
+        {%dchkNuovaPassword%}
+      </div>
+      <div style="position:absolute;top: 9em; left: 2em;">
+        {%lblVisualizzaCessati%}
+      </div>
+      <div style="position:absolute;top: 9em; left: 17em;">
+        {%dedtVisualizzaCessati%}
+      </div>
+      <div style="position:absolute;top: 9em; left: 22em;">
+        {%dchkIntegrazioneAnagrafica%}
+      </div>
+      <div style="position:absolute; top: 12em; left: 2em;">
+        <div id="grpAnagraficoRiferimento" class="groupbox fs100 width55chr" style="margin-bottom: 1em;">
+          <fieldset>
+            <legend>{%lblAnagraficoRiferimento%}</legend>
+            <table>
+              <!-- <colgroup>
+              <col span="1" style="width: 20%;" />
+              <col span="1" style="width: 80%;" />
+            </colgroup> -->
+              <tbody>
+                <tr>
+                  <td style="width: 25%;">{%lblMatricola%}</td>
+                  <td>{%edtMatricola%}</td>
+                  <td>
+                    {%imgC700SelezioneAnagrafe%}
+                    {%imgC700PulisciSelezione%}
+                    {%imgC700RicercaAnagrafe%}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{%lblNominativo%}</td>
+                  <td colspan="3">{%edtNominativo%}</td>
+                </tr>
+                <tr>
+                  <td>{%lblCodFiscale%}</td>
+                  <td colspan="3">{%edtCodFiscale%}</td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </div>
+        <div class="clearDiv groupbox fs100 width55chr">
+          <fieldset>
+            <legend>{%lblProfiliAssegnati%}</legend>
+            <table cellpadding="5">
+              <tr class="align_left">
+                <td style="width: 20%;">{%lnkPermessi%}</td>
+                <td>{%dcmbPermessi%}</td>
+              </tr>
+              <tr class="align_left">
+                <td>{%lnkFiltroAnagrafe%}</td>
+                <td>{%dcmbFiltroAnagrafe%}</td>
+              </tr>
+              <tr class="align_left">
+                <td>{%lnkFiltroFunzioni%}</td>
+                <td>{%dcmbFiltroFunzioni%}</td>
+              </tr>
+              <tr class="align_left">
+                <td>{%lnkFiltroDizionario%}</td>
+                <td>{%dcmbFiltroDizionario%}</td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

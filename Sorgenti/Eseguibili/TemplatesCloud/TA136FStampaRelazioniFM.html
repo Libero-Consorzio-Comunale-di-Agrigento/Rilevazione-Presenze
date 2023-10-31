@@ -1,0 +1,70 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <div class="medpDettaglioFM" style="position:relative; height:39em">
+      <div style="position:absolute;top: 2em; left: 2em;">{%lblDataStampa%}</div>  	
+      <div style="position:absolute;top: 3.5em; left: 2em;">{%edtDataStampa%}</div>	
+      <div style="position:absolute;top: 6em; left: 2em;">{%imbEsegui%}</div>	
+      <div class="groupbox" style="position:absolute;top: 2em; left: 14.5em;">
+				<fieldset style="height:10em">
+				  <legend>{%lblStruttura%}</legend>
+			      <table style="height:96%">
+					    <tr>
+					      <td>{%lblTabella%}</td>
+				  	    <td>{%cmbTabella%}</td>	
+					    </tr>
+					    <tr>
+					      <td>{%lblColonnaPartenza%}</td>
+				   	    <td>{%cmbColonnaPartenza%}</td>	
+					    </tr>
+					    <tr>
+					      <td>{%lblColonnaArrivo%}</td>
+				   	    <td>{%cmbColonnaArrivo%}</td>	
+					    </tr>
+					    <tr>
+					      <td>{%lblLivelli%}</td>
+				   	    <td>{%edtLivelliDaEstrarre%}</td>	
+				      </tr>
+				   </table>
+				</fieldset>	
+      </div>
+      <div class="groupbox" style="position:absolute;top: 2em; left: 39.5em;">
+				<fieldset style="height:10em">
+				  <legend>{%lblTipoRelazione%}</legend>
+				  <table style="height:96%">
+				    <tr>
+				      <td>{%chkTipoRelS%}</td>		
+				    </tr>
+				    <tr>
+			   	      <td>{%chkTipoRelL%}</td>	
+				    </tr>
+				  </table>
+				</fieldset>	
+      </div>
+      <div class="groupbox" style="position:absolute;top: 2em; left: 59em;">
+				<fieldset style="height:10em">
+				  <legend>{%lblColonne%}</legend>
+				  <table style="height:96%">
+				    <tr>
+				      <td>{%chkDecorrenza%}</td>		
+				    </tr>
+				    <tr>
+				      <td>{%chkNomeCampo%}</td>		
+				    </tr>
+				    <tr>
+				      <td>{%chkCodice%}</td>		
+				    </tr>
+				    <tr>
+				      <td>{%chkDescrizione%}</td>		
+				    </tr>
+				  </table>
+				</fieldset>	
+      </div>
+      <div style="position:absolute;top: 14em; left: 2em" >{%lblEstrazioneRelazioni%}</div>	
+      <div style="position:absolute;top: 15.5em; left: 2em;height:23em;width:68em;overflow-y:auto;" >{%grdStampaRelazioni%}</div>	
+
+  </body> 
+</html>
+

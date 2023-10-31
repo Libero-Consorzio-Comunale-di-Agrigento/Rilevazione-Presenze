@@ -1,0 +1,91 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative;height: 45em;">
+
+	<table cellpadding="15px;" border="0" width="700px">
+		<tr>
+			<td colspan=3>				
+				<table>
+					<tr>
+						<td>
+							{%lblCodice%}
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{%dCmbCodice%}
+						</td>
+						<td>
+							&nbsp;{%dLblInterfaccia%}
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>		
+				<fieldset style="border: 1px solid silver">
+	  			<legend>Tipo di calcolo</legend>		
+						{%drdgTipoCalcolo%}
+				</fieldset>
+			</td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 valign="top">
+				<fieldset style="border: 1px solid silver">
+	  			<legend>Proporzione incentivi</legend>				
+					{%drdgPropInc%}
+				</fieldset>
+			</td>
+			<td valign="top" width="461px">
+				{%dchkPartTime%}<br/>
+				{%dchkScaglioniGgEff%}
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				{%lblAbbattimento%}<br/>
+				{%dedtAbbMax%}
+			</td>
+			<td colspan=2 valign="top">
+				<!--
+				<fieldset style="border: 1px solid silver">
+	  			<legend>{%lblQuoteQuant%}</legend>
+						{%drdgQuoteQuant%}
+				</fieldset>
+				-->
+				{%lblQuoteQuant%}
+				{%drdgQuoteQuant%}
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 valign="top">
+				{%lblLivelli%}<br/>
+				{%dedtLivelli%}
+				{%btnLivelli%}
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 valign="top">
+				{%lblFileIstruzioni%}<br/>
+				{%dedtFileIstruzioni%}
+			</td>
+		</tr>
+	</table>						
+	
+				
+				
+				
+	</div>
+	</body> 
+</html>
+

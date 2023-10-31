@@ -1,0 +1,26 @@
+{%DocType%}
+<html>
+<head> 
+</head>
+  <body> 
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}    
+    <div class="medpElaborazioneFM" style="position:relative; height:52em;">   
+		<div style="position:relative; width: 100%;">
+			{%grdTabDetail%}
+			<div style="width:100%;">{%WA145VisiteFiscaliRG%}{%WA145EsenzioniRG%}</div>
+		</div>
+		<div style="position:relative; width: 100%;">
+			<table>
+				<tr>
+					<td style="padding-right:1em;">{%btnGeneraPDF%}</td>
+					<td style="padding-right:1em;">{%btnEsegui%}</td>					
+					<td>{%btnEsenzioni%}</td>					
+				</tr>
+			</table>
+		</div>	
+    </div>
+	{%<frm>WA145FDettaglioAssenzeFM</frm>%}
+  </body> 
+</html>
+

@@ -1,0 +1,112 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>   	
+  <div class="medpDettaglioFM" style="position:relative; height:22em">
+	<div style="position:absolute;top:1em;left:1em">
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblAnno%}</td>
+				<td>{%dedtAnno%}</td>
+			</tr>
+			<tr>
+				<td>{%lblDataRif%}</td>
+				<td>{%dedtDataRif%}</td>	
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute;top:1em;left:16em">
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblCodice%}</td>
+				<td>{%dedtCodice%}</td>			
+			</tr>
+			<tr>				
+				<td colspan="2">{%lblStato%}</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute;top:1em;left:34.5em">
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblDescrizione%}</td>
+				<td>{%dedtDescrizione%}</td>			
+			</tr>
+			<tr>
+				<td>{%lblTipoQuota%}</td>
+				<td><table><tr><td>{%cmbTipoQuota%}</td><td>{%lblDescTipoQuota%}</td></tr></table></td>				
+			</tr>
+		</table>
+	</div>		
+	<div style="position:absolute;top:7em;left:1em">
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblFiltroAnagrafe%}</td>
+				<td>{%dedtFiltroAnagrafe%}</td>
+				<td>{%imgC700SelezioneAnagrafe%}</td>
+			</tr>
+		</table>
+	</div>	
+	<div style="position:absolute;top:10em;left:1em">		
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblTolleranza%}</td>
+				<td>{%dedtTolleranza%}</td>
+			</tr>
+			<tr>
+				<td>{%dchkSupervisore%}</td>
+				<td>{%dcmbSupervisore%}</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute;top:10em;left:18em">		
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblNumOreTotale%}</td>
+				<td>{%edtNumOreTotale%}</td>
+			</tr>			
+			<tr>
+				<td>{%lblImpTotale%}</td>
+				<td>{%edtImpTotale%}</td>
+			</tr>			
+		</table>
+	</div>		
+	<div style="position:absolute;top:10em;left:36em">		
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblTotOreAssegn%}</td>
+				<td>{%edtMaxOre%}</td>
+			</tr>			
+			<tr>
+				<td>{%lblTotAssegn%}</td>
+				<td>{%edtMaxImp%}</td>
+			</tr>			
+		</table>
+	</div>		 
+	<div style="position:absolute;top:10em;left:54.5em">		
+		<table class="grigliaPadded">
+			<tr>
+				<td>{%lblTotOreAccett%}</td>
+				<td>{%edtTotOreAccett%}</td>
+			</tr>			
+			<tr>
+				<td>{%lblTotAccett%}</td>
+				<td>{%edtTotAccett%}</td>
+			</tr>			
+		</table>
+	</div>		 
+	<div class="groupbox" style="position:absolute;top:15em;left:1em;">
+		<fieldset >
+			<legend>{%lblPagamenti%}</legend>
+			<div style="position:relative;">
+				{%grdPagamenti%}    	      
+			</div>	    
+		</fieldset>
+	</div>	
+	<div style="position:absolute;top:20.5em;left:71em">		
+		{%btnAnomalie%}
+	</div>
+  </div>
+  </body> 
+</html>

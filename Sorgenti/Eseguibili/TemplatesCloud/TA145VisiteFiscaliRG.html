@@ -1,0 +1,101 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+   <div class="medpDettaglioFM" style="position:relative; height:45em;"> 
+		<div style="position:relative;margin-top:1em;margin-left:1em;">
+			<table>
+				<tr>
+					<td>{%lblDataElaborazione%}</td>
+					<td>{%lblMedicineLegali%}</td>					
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>{%edtDataElaborazione%}</td>
+					<td>{%cmbMedicineLegali%}</td>					
+					<td>{%lblDescMedicineLegali%}</td>					
+				</tr>
+			</table>
+		</div>
+		<div class="groupbox" style="position:absolute;top:6em;left:1.5em;">
+			<fieldset>
+				<legend>{%lblRegistrazioni%}</legend>
+				<table>
+					<tr><td>{%chkIns%}</td></tr>
+					<tr><td>{%chkProl%}</td></tr>
+					<tr><td>{%chkSoloCont%}</td></tr>
+					<tr><td>{%chkCanc%}</td></tr>
+				</table>
+			</fieldset>
+			<table style="margin-top:1em;margin-left:1em">
+				<tr><td>{%chkAggiorna%}</td></tr>
+				<tr><td>{%chkAnnulla%}</td></tr>				
+			</table>			
+		</div>								
+		<div class="groupbox" style="position:absolute;top:6em;left:21em;">
+			<fieldset style="height:12.5em;">
+				<legend>{%lblOpzioniEsenzione%}</legend>
+				<table class="grigliaPadded">
+					<tr><td style="padding-bottom: 1em;" colspan="2">{%chkEsenzioneAutomatica%}</td></tr>
+					<tr><td style="padding-bottom: 1em;">{%lblNumeroMinimoEventi%}</td><td style="padding-bottom: 1em;">{%edtNumeroMinimoEventi%}</td></tr>
+					<tr><td style="padding-bottom: 1em;">{%lblMaxGiorniContinuativi%}</td><td style="padding-bottom: 1em;">{%edtMaxGiorniContinuativi%}</td></tr>
+					<tr><td style="padding-bottom: 1em;">{%lblMesiVerificaEventi%}</td><td style="padding-bottom: 1em;">{%edtMesiVerificaEventi%}</td></tr>
+				</table>
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top:6em;left:39em;">	
+			<fieldset style="height:12.5em;">
+				<legend>{%lblOpzioniStampa%}</legend>
+				<table>
+					<tr>
+						<td>{%rgpTipoStampa%}</td>
+					</tr>
+					<tr>
+						<td>{%chkPeriodiComunicati%}</td>
+					</tr>
+					<tr>
+						<td>{%chkFiltroDataComun%}</td>
+					</tr>									
+				</table>
+				<table>
+					<tr><td>{%lblDataDa%}</td><td>{%edtDataDa%}</td><td>{%lblDataA%}</td><td>{%edtDataA%}</td></tr>
+				</table>
+				<table>
+					<tr>
+						<td>{%chkStampaAssMal%}</td>
+						<td>{%chkNote%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div id="divElenco" class="groupbox" style="position:absolute;top:21em;left:1.5em;">	
+			<fieldset style="width:57.5em;">
+				<legend>{%lblDatiAnagrafici%}</legend>				
+				<table>
+					<tr>
+						<td style="padding-right:1.5em;"><table><tr><td>{%lblDisponibili%}</td></tr><tr><td>{%lstElementiDettaglio%}</td></tr></table></td>
+						<td><table><tr><td>{%imgAggiungi%}</td></tr><tr><td>{%imgRimuovi%}</td></tr></table></td>						
+						<td style="padding-left:1.5em;"><table><tr><td>{%lblSelezionati%}</td></tr><tr><td>{%lstElementiDettaglioSelezionati%}</td></tr></table></td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div id="divIndividuale" class="groupbox" style="position:absolute;top:21em;left:1.5em;">	
+			<fieldset style="width:57.5em;">
+				<legend>{%lblDatiAnagrafici%}</legend>				
+				<table>
+					<tr><td>{%chkLogo%}</td><td colspan="3">{%edtLogoLarg%}</td></tr>
+					<tr><td>{%chkNumProt%}</td><td>{%edtNumProt%}</td><td>{%chkLuogo%}</td><td>{%edtLuogo%}</td></tr>
+				</table>				
+				<table>
+					<tr><td>{%lblDato1%}</td><td>{%memDato1%}</td></tr>
+					<tr><td>{%lblDato2%}</td><td>{%memDato2%}</td></tr>					
+					<tr><td>{%lblFirma%}</td><td>{%memFirma%}</td></tr>
+				</table>				
+			</fieldset>
+		</div>
+   </div>	
+  </body>
+</html>
+

@@ -1,0 +1,174 @@
+{%DocType%}
+<html>
+  <head> 	
+  </head>
+  <body> 
+  	  <style type='text/css'>
+        #raggruppamento{
+            min-height:14.45em;
+        }
+	      @-moz-document url-prefix() {
+          #raggruppamento{
+          min-height:13.60em;
+	      	}
+	      }
+			</style> 
+	<div class="medpDettaglioFM" style="position:relative;height:30 em;">
+	
+		
+		<table border="0" cellpadding="4">
+			<tr>
+				<td valign="top">
+					<table border="0" cellpadding="4">
+						<tr>
+							<td>
+								{%Label1%}
+							</td>
+							<td>
+								{%Label2%}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{%dedtCodice%}
+							</td>
+							<td>
+								{%dedtDescrizione%}
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<!--<fieldset style="border: 1px solid silver; padding-top:0.64em;">-->
+								<fieldset id="raggruppamento" class="altezzaMinima" style="border: 1px solid silver;">
+	  							<legend>Tipologia</legend>
+										{%drdgTipologia%}	
+								</fieldset>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					
+						<fieldset style="border: 1px solid silver">
+	  					<legend>Voci paghe</legend>
+								<table border="0" cellpadding="4">
+									<tr>
+										<td>
+											{%lblVPIntera%}
+										</td>
+										<td>
+											{%dedtVPIntera%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPProporzionata%}
+										</td>
+										<td>
+											{%dedtVPProporzionata%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPNetta%}
+										</td>
+										<td>
+											{%dedtVPNetta%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPNettaRisp%}
+										</td>
+										<td>
+											{%dedtVPNettaRisp%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPRisparmio%}
+										</td>
+										<td>
+											{%dedtVPRisparmio%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPNoRisp%}
+										</td>
+										<td>
+											{%dedtVPNoRisp%}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{%lblVPQuantitativa%}
+										</td>
+										<td>
+											{%dedtVPQuantitativa%}
+										</td>
+									</tr>
+								</table>
+							</fieldset>
+						
+				</td>
+			</tr>
+		</table>
+		
+		<table border="0" cellpadding="4">
+			<tr>				
+				<td>
+					<table>
+						<tr>
+							<td colspan="2">			
+								{%lblAcconti%}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{%dedtAcconti%}
+							</td>
+							<td>
+								{%btnAcconti%}&nbsp;
+							</td>
+						</tr>
+					</table>
+				</td>									
+				<td>
+					<table style="width: 29em;">
+						<tr>
+							<td colspan="2">			
+								{%lblCausale%}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{%dcmbCausale%}
+							</td>
+							<td style="min-width: 17em">
+								{%dlblCausale%}{%dchkImpostaMeseCompMax%}{%dchkRifSaldoAnnoCorr%}
+							</td>
+						</tr>
+					</table>
+				</td>			
+				<td>
+					<table>
+						<tr>
+							<td>			
+								{%lblGiorniMese%}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{%dedtGiorniMese%}
+							</td>
+						</tr>
+					</table>
+				</td>									
+			</tr>
+		</table>
+		
+	</div>
+  </body> 
+</html>
+

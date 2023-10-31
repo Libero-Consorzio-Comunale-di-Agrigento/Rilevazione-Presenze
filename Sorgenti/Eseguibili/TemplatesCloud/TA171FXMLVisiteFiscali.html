@@ -1,0 +1,38 @@
+{%DocType%}
+<html>
+<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+	{%grdTabControl%}
+	<div>{%WA171FXMLVisiteFiscaliBrowseFM%}{%WA171FXMLVisiteFiscaliDettFM%}</div>
+	<div style="position:relative;top:1em">
+		<div class="groupbox" style="position:relative;left:1em;top:1em">
+			{%rdgFiltroElaborato%}
+		</div>
+		<div style="position:absolute;left:30em;top:2.5em">
+			{%lblFiltroPeriodoDa%} {%edtFiltroPeriodoDa%}</td><td>{%lblFiltroPeriodoA%} {%edtFiltroPeriodoA%}
+		</div>
+		<div class="groupbox" style="position:absolute;left:1em;top:5em">
+			<fieldset>
+			<legend>{%grpInfoRichiedente%}</legend>
+				<table>
+					<tr>
+						<td>{%lblRichiedenteCognome%}</td><td>{%lblRichiedenteNome%}</td><td>{%lblRichiedenteCodFiscale%}</td><td>{%lblEMail%}</td><td>{%lblTelefono%}</td>
+					</tr>
+					<tr>
+						<td>{%edtRichiedenteCognome%}</td><td>{%edtRichiedenteNome%}</td><td>{%edtRichiedenteCodFiscale%}</td><td>{%edtEMail%}</td><td>{%edtTelefono%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div style="position:absolute;left:60em;top:2em;">
+			{%btnAnomalie%}
+		</div>
+		<div style="position:absolute;left:68em;top:2em;">
+			{%btnGeneraXML%}
+		</div>
+	</div>
+  </body>
+</html>

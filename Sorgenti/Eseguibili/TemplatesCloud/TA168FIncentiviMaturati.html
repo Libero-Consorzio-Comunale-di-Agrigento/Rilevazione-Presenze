@@ -1,0 +1,40 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+    
+   
+   	
+    
+    <!-- creazione dinamica componenti onBeforeProcess del templateProcessor WR100-->	
+     
+    {%ContenutoDinamico%}   	
+   	 <div style="position:relative;">
+      <div style="position:absolute;top: 1.2em; left: 1em;">
+      	<fieldset style="border: 1px solid #D0D0D0;">
+  				<legend style="color:#000080;">Visualizzazione:</legend>
+	      	<table>
+	      		<tr>
+	      			<td>{%chkVisIntere%}</td>
+	      			<td>{%chkVisProporzionate%}</td>
+	      			<td>{%chkVisNette%}</td>
+	      			<td>{%chkVisNetteRisp%}</td>
+	      			<td>{%chkVisQuantitative%}</td>
+	      			<td>{%chkVisAssenze%}</td>
+	      			<td><span style="color:blue; padding-left:40px;">{%Quote%}</span>{%edtQuote%}{%btnQuote%}</td>
+	      		</tr>
+	      	</table>
+	      </fieldset>      				
+     </div>
+    </div> 
+    
+    
+    <br><br><br><br><br>
+    {%WA168FIncentiviMaturatiBrowseFM%}
+   
+    
+    
+    <div style="width:100%">{%WA168FAbbattimentiFM%}</div>
+
+</body>
+</html>

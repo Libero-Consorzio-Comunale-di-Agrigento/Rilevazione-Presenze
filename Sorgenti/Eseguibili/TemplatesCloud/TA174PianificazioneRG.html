@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:43em;">
+			<div class="groupbox" style="position:absolute;top: 2em; left: 2em;">
+	 			<fieldset style="width:15em">
+		  		<legend>{%lblModLavoro%}</legend> 
+		  		{%drgpModLavoro%}
+	  		</fieldset> 
+			</div>
+  		<div class="groupbox" style="position:absolute;top: 2em; left: 19em;">
+	 		<fieldset style="width:30em;height:8em">
+		  		<legend>{%lblPianifOrd%}</legend> 
+				<table>
+					<tr>
+					<td style="vertical-align:top">{%lstElencoOrd%}</td>
+					<td style="vertical-align:top">{%grdOrdinamento%}</td>
+					</tr>
+				</table>
+	  		    </fieldset> 
+			</div>
+  		<div class="groupbox" style="position:absolute;top: 11.5em; left: 2em;">
+	 		<fieldset style="width:47em">
+		  		<legend>{%lblOpzioniPianif%}</legend> 
+		  		<table>
+		  			<tr><td>{%dChkPianifGGFest%}</td><td>{%dChkPinifSoloTurnista%}</td></tr>
+		  			<tr><td>{%dChkPianifGGAss%}</td><td>{%dChkGiustifOpe%}</td></tr>
+		  		</table>
+	  		</fieldset> 
+			</div>
+  		<div class="groupbox" id="grpBoxProgressiva" style="position:absolute;top: 18em; left: 2em;">
+	 		<fieldset style="width:47em">
+		  		<legend>{%lblProgressiva%}</legend> 
+		  		<table>
+		  			<tr><td>{%dchkGenera%}</td><td>{%dchkIniziale%}</td><td>{%dchkCorrente%}</td></tr>		  			
+					<tr><td>{%dChkRendiOper%}</td><td></td><td></td></tr>		  								
+		  		</table>
+	  		</fieldset> 
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <div class="medpElaborazioneFM" style="position:relative; height:35em;">
+	    <div style="position:absolute;top:2em; left: 2em;">{%lblNomeFileInput%}</div>
+	    <div style="position:absolute;top:3.5em; left: 2em;">{%fileUpload%}</div>
+	
+			<div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+		 		<fieldset style="height:3em;width:33em">
+			 		<legend>{%lblTipoImportazione%}</legend> 
+		  		{%rgpTipoImportazione%}
+		  	</fieldset> 
+			</div>	
+	
+			<div class="groupbox" style="position:absolute;top: 14em; left: 2em;">
+		 		<fieldset style="height:3em;width:33em">
+			 		<legend>{%lblTipoOperazione%}</legend> 
+		  		{%rgpTipoOperazione%}
+		  	</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top: 19em; left: 2em;">
+		 		<fieldset style="height:3em;width:33em">
+			 		<legend>{%lblIntervento%}</legend> 
+		  		{%rgpIntervento%}
+		  	</fieldset> 
+			</div>			
+			
+			<div class="groupbox" style="position:absolute;top: 24em; left: 2em;">
+		 		<fieldset style="height:3em;width:33em">
+			 		<legend>{%lblIdDipendente%}</legend> 
+		  		{%rgpIdDipendente%}
+		  	</fieldset> 
+			</div>			
+			
+			<div style="position:absolute;top: 29em; left: 18em;">{%chkCercaCessati%}</div>
+	
+	    <div style="position:absolute;top:32em; left: 2em; width:7em">{%btnEsegui%}</div>
+	    <div style="position:absolute;top:32em; left: 11em; width:7em">{%btnAnomalie%}</div>
+    </div>
+  </body>
+</html>

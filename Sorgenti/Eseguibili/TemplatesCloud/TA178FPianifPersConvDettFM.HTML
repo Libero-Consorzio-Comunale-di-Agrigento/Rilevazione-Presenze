@@ -1,0 +1,38 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <div class="medpDettaglioFM" style="position:relative;height:20em;">
+  		<div class="groupbox" style="position:absolute;top:1em;left:2em;">
+    		<fieldset style="height:2.5em;width:19em;">
+      		<legend>{%lblTipoAggregazione%}</legend>
+      		<span>{%rgpTipoAggregazione%}</span>
+    		</fieldset>
+  		</div>
+  		<div class="groupbox" style="position:absolute;top:1em;left:25em;">
+    		<fieldset style="height:2.5em;width:27em;">
+      		<legend>{%lblImportoColonna%}</legend>
+      		<span>{%drgrImportoColonna%}</span>
+    		</fieldset>
+  		</div>
+			<table class="medpTableContainer" style="position:absolute;top:5em;left:2em;">
+	  		<tr><td>{%lnkContratto%}</td></tr><tr><td>{%cmbCodContratto%}</td><td style="position:absolute;top:1.5em;left:7em;">{%dlblDescContratto%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top:8.5em;left:2em;">
+	  		<tr><td>{%lblCodVoce%}</td><td>{%lblCodVoceSpeciale%}</td></tr>
+	  		<tr><td>{%dedtCodVoce%}</td><td>{%dedtCodVoceSpeciale%}</td><td>{%btnSceltaVoci%}</td><td>{%lblDescVoce%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top:12.5em;left:2em;">
+	  		<tr><td>{%lblPercentuale%}</td></tr>
+	  		<tr><td>{%dedtPercentualeCumulo%}</td></tr>
+			</table>
+  		<div class="groupbox" style="position:absolute;top:16.5em;left:2em;">
+    		<fieldset style="height:2.5em;width:50em;">
+      		<span style="position:absolute;top:1em;left:12em;">{%chkIncludiDatoBase%}</span>
+  				<span style="position:absolute;top:0.5em;left:1em;">{%btnFiltroVoci%}</span>
+    		</fieldset>
+  		</div>
+    </div>
+  </body> 
+</html>

@@ -1,0 +1,42 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:25em;"> 			
+		<div style="position:realtive;margin-left:1em;margin-top:1em">
+			<table class="grigliaPadded">
+				<tr>
+					<td>{%chkChiusuraSchede%}</td>
+					<td style="padding-left:4em">{%lblAnnoSchede%}</td>
+					<td>{%edtAnnoSchede%}</td>				
+				</tr>
+				<tr>
+					<td>{%chkAperturaSchede%}</td>
+					<td style="padding-left:4em">{%lblQuotaSchede%}</td>
+					<td><table><tr><td>{%cmbQuotaSchede%}</td><td>{%lblDescQuotaSchede%}</td></tr></table></td>
+				</tr>
+				<tr>
+					<td>{%chkAggiornaSchede%}</td>				
+					<td style="padding-left:4em">{%lblGruppiSchede%}</td>
+					<td><table><tr><td>{%edtGruppiSchede%}</td><td>{%btnGruppiSchede%}</td></tr></table></td>
+				</tr>
+				<tr>
+					<td>{%chkPassaggioAnnoSchede%}</td>				
+					<td style="padding-left:4em">{%lblDataRifSchede%}</td>
+					<td>{%edtDataRifSchede%}</td>
+				</tr>			
+			</table>
+		</div>		
+		<div id="groupboxpagamenti" class="groupbox" style="position:relative;margin-left:1em;">
+			<fieldset >
+				<legend>{%lblPagamenti%}</legend>
+				<div style="position:realtive;">
+					{%grdPagamenti%}    	      
+				</div>	    
+			</fieldset>
+		</div>
+	 
+	</div>
+  </body> 
+</html>

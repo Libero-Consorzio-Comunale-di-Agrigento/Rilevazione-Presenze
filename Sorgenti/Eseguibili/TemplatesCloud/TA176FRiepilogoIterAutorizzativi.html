@@ -1,0 +1,75 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	{%T000Intestazione%}
+
+	{%ContenutoDinamico%}
+
+	<div class="medpTabRegion" style="border-top: 0; border-bottom: 0;">
+		<table>
+			<tr>
+				<td style="padding:0.5em">
+					{%lblTipoIter%}{%cmbTipoIter%}
+				</td>
+				<td>
+					<div class="groupbox">
+						<fieldset >
+							<legend>{%lblDataInserimento%}</legend>
+							<table>
+								<tr>
+									<td>{%lblDataDa%} {%edtDataDa%}</td>
+									<td>{%lblDataA%} {%edtDataA%}</td>
+								</tr>
+							</table>		
+						</fieldset>	
+					</div>				
+				</td>
+				<td style="vertical-align:top">
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblAllegato%}</legend>
+							{%rgpAllegato%}
+						</fieldset>
+					</div>
+				</td>			
+			</tr>		
+			<tr>				
+				<td style="padding:0.5em">
+					{%lblCausale%}{%cmbCausale%}{%lblDescCausale%}
+				</td>				
+				<td>
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblPeriodoRichiesto%}</legend>
+							<table>
+								<tr>
+									<td>{%lblPeriodoDa%} {%edtPeriodoDa%}</td>
+									<td>{%lblPeriodoA%} {%edtPeriodoA%}</td>
+								</tr>
+							</table>		
+						</fieldset>	
+					</div>				
+				</td>
+				<td style="vertical-align:top">
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblCondizAllegato%}</legend>
+							{%rgpCondizAllegato%}
+						</fieldset>
+					</div>
+				</td>				
+			</tr>		
+
+		</table>
+	</div>
+	
+	<div style="width:100%">{%WA176FRiepilogoIterAutorizzativiBrowseFM%}</div>
+	<div id="WA176FGestioneIterAutorizzativiFM">{%WA176FGestioneIterAutorizzativiFM%}</div>
+	<div id="WC027FInfoDatiFM">{%WC027FInfoDatiFM%}</div>
+</body>
+
+</html>

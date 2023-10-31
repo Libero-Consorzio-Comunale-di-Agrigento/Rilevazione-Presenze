@@ -1,0 +1,73 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:43em;">
+			<table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+				<tr><td>{%lblTitolo%}</td></tr><tr><td>{%dedtTitolo%}</td>					
+				</tr>
+			</table>
+			<div class="groupbox" style="position:absolute;top: 4.5em; left: 2em;">
+	 			<fieldset style="width:17em">
+		  		<legend>{%lblTipoStampa%}</legend> 
+		  		{%drgpTipoStampa%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 10em; left: 2em;">
+	 			<fieldset style="width:17em">
+		  		<legend>{%lblDettStampa%}</legend> 
+		  		{%drgpDettStampa%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 4.5em; left: 21em;">
+	 			<fieldset style="width:26em;height:7.8em">
+		  		<legend>{%lblOrdinamento%}</legend> 
+		  			<table>
+							<tr>
+								<td style="vertical-align:top">{%lstElencoOrdStampa%}</td>
+								<td style="vertical-align:top">{%grdOrdinamentoStampa%}</td>
+							</tr>
+					</table>
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 14em; left: 2em;">
+	 			<fieldset style="width:45em">
+		  		<legend>{%lblLayout%}</legend> 
+		  		<table>
+		  			<tr><td>{%dchkRiduciRigheDip%}</td><td style="width:9em">&nbsp;</td><td style="width:11.5em">{%lblMarginesx%}</td><td>{%dedtMgSx%}</td></tr>
+		  			<tr><td>{%dchkRigheNome%}</td><td>&nbsp;</td><td>{%lblNumGG%}</td><td>{%dedtNumGG%}</td></tr>
+		  			<tr><td>{%dchkSeparatoreCol%}</td><td>&nbsp;</td><td>{%lblDimFont%}</td><td>{%dedtDimFont%}</td></tr>
+		  			<tr><td>{%dchkSepratoreRighe%}</td><td>&nbsp;</td><td>{%lblOPagina%}</td><td>{%dcmbOPagina%}</td></tr>
+		  		</table>
+	  		</fieldset> 
+			</div>
+			<table class="medpTableContainer" style="position:absolute;top: 24.5em; left: 2em;">
+				<tr><td>{%lblCauEsclusione%}</td><td>{%dEdtEcludiCaus%}</td><td>{%btnCaus%}</td></tr>
+			</table>
+			<div class="groupbox" style="position:absolute;top: 27.25em; left: 2em;">
+	 			<fieldset style="width:45em">
+		  		<legend>{%lblDatiOpzionali%}</legend> 
+		  		<table>
+		  			<tr><td style="width:11.5em">{%dchkSaldiOre%}</td><td style="width:11.5em">{%dchkTotLiquid%}</td><td>{%dchkDettOrari%}</td><td>{%dChkRiepNote%}</td></tr>
+		  			<tr><td>{%dChkToTurnitMese%}</td><td>{%dchkTotTurni%}</td><td>{%dchkAssenze%}</td></tr>
+		  			<tr><td>{%dChkVisOrario%}</td><td>{%dchkTotTurnoOpe%}</td><td colspan="2">{%lblDatoAnag%}</td></tr>
+		  			<tr><td>{%dChkStampaReperibilita%}</td><td>{%dchkTotCopertura%}</td><td colspan="2">{%dcmbDatoAnag%}</td></tr>
+		  		</table>
+	  		</fieldset> 
+			</div>
+			<table class="medpTableContainer" style="position:absolute;top: 36.5em; left: 2em;">
+				<tr><td>{%lblNotePagina%}</td></tr><tr><td>{%dedtNotePagina%}</td>					
+				</tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top: 40.25em; left: 2em;">
+				<tr><td>{%lblDesc1%}</td></tr><tr><td>{%dedtDesc1%}</td>					
+				</tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top: 40.25em; left: 26.6em;">
+				<tr><td>{%lblDesc2%}</td></tr><tr><td>{%dedtDesc2%}</td>					
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
