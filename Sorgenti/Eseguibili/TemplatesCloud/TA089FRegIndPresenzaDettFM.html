@@ -1,0 +1,160 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  
+  <body> 
+  
+  <div class="medpDettaglioFM" style="position:relative; height:29em">
+		
+		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+			<tr><td>{%lblCodice%}</td><td>{%dedtCodice%}</td></tr>
+	  </table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 15em;">
+			<tr><td>{%lblDescrizione%}</td><td>{%dedtDescrizione%}</td></tr>			
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 3.7em; left: 2em;">
+			 <tr><td>{%lblPriorita%}</td><td>{%dedtPriorita%}</td></tr>
+		</table>	
+			
+		<table class="medpTableContainer" style="position:absolute;top: 3.7em; left: 12.5em">
+			<tr><td>{%lblIncompatibile%}</td><td>{%dedtIncompatibile%}</td><td>{%btnIncompatibile%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 6.2em; left: 2em;">
+			<tr><td>{%lblImporto%}</td><td>{%dedtImporto%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 6.2em; left: 16em;">
+			<tr><td>{%lblVocePaghe%}</td><td>{%dedtVocePaghe%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 6.2em; left: 32em;">
+			<tr><td>{%dchkMaturazPropDebitoGG%}</td></tr>
+			<tr><td>{%dchkMaturazPropIgnoraScostNeg%}</td></tr>  <!-- gc: 11/09/19 -->
+			<tr><td>{%dchkIndennitaSupplementare%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 8.5em; left: 2em;">
+			<tr><td>{%lblTipoMaturazione%}</td><td>{%dcmbTipoMaturazione%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 10.7em; left: 2em;">
+			<tr><td style="width:11em">{%lblAssenzeCheMaturano%}</td><td>{%dedtAssenzeCheMaturano%}</td><td>{%btnAssenzeCheMaturano%}</td></tr>
+		</table>
+
+		
+		<table class="medpTableContainer" style="position:absolute;top: 15.2em; left: 2em;">
+			<tr><td style="width:11em">{%lblAssenzeEscluse%}</td><td>{%dedtAssenzeEscluse%}</td><td>{%btnAssenzeEscluse%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 12.8em; left: 2em;">
+		<!--<table class="medpTableContainer" style="position:absolute;top: 17em; left: 2em;">-->
+			<tr><td>{%lnkCausaleRiepilogo%}</td><td>{%cmbCausaleRiepilogo%}</td><td>{%lblDescCausaleRiepilogo%}</td></tr>
+		</table>
+	
+		<div id="grpGGRiferimento" name="grpGGRiferimento" class="groupbox" style="position:absolute;top: 17em; left: 2em;">
+			<fieldset>
+				<legend>{%lblGGRiferimento%}</legend>
+				<div>{%drgpGGRiferimento%}</div>
+			</fieldset>
+			<table style="position:absolute;top:2em ;left:20em">
+				<tr><td>{%dchkesclfestivi%}</td></tr>
+			</table>
+		</div>
+	
+		
+		<div id="grpTminIndOra" name="grpTminIndOra" class="groupbox" style="position:absolute;top: 19.3em; left: 2em;">		
+			<table class="medpTableContainer" style="position:absolute;top: 1em;">
+				<tr><td>{%lblMaturaSabato%}</td></tr><tr><td>{%dCmbMaturaSabato%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top: 1em; left: 16em;">
+				<tr><td>{%lblOffsetGGPrec%}</td></tr><tr><td>{%dedtOffsetGGPrec%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top: 1em; left: 32em;">
+				<tr><td>{%lblOffSetMetaDebito%}</td></tr><tr><td>{%dEdtOffSetMetaDebito%}</td></tr>
+			</table>
+			<div style="position:absolute;top: 3em; left: 50em;width:20em;">{%lnkSoglieGiornaliere%}</div>
+			<table class="medpTableContainer" style="position:absolute;top: 5em;">
+				<tr><td>{%lblMinTPrioritari%}</td></tr><tr><td>{%dEdtMinTPrioritari%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top: 5em; left: 16em;">
+				<tr><td>{%lblMinTurniSec%}</td></tr><tr><td>{%dEdtMinTurniSec%}</td></tr>
+			</table>
+			<div style="position:absolute;top: 6.5em; left: 32em;width:20em;">{%dChkPianifNOOP%}</div>
+		</div>
+		
+	
+		<table class="medpTableContainer" style="position:absolute;top: 19.3em; left: 2em;">
+		<!--<table class="medpTableContainer" style="position:absolute;top: 15.3em; left: 2em;">	-->
+			<tr><td>{%lblTurniMinimi%}</td></tr><tr><td>{%dedtTurniMinimi%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 17.8em; left: 2em;">
+			<tr><td>{%lblCoeffIndennita%}</td></tr><tr><td>{%dedtCoeffIndennita%}</td></tr>
+		</table>
+		<table class="medpTableContainer" style="position:absolute;top: 17.8em; left: 11em;">
+			<tr><td>{%lblCoeffRiposiComp%}</td></tr><tr><td>{%dedtCoeffRiposiComp%}{%lblPercCoeffRiposiComp%}</td></tr>
+		</table>
+		
+		<table  class="medpTableContainer"style="position:absolute;top: 17.8em; left: 20em;">
+			<tr><td>{%lblNumMaxTurniPrestati%}</td></tr><tr><td>{%dedtNumMaxTurniPrestati%}</td></tr>
+		</table>
+		
+		<div id="grpTurnoDaConsiderare" class="groupbox" style="position:absolute;top: 17.8em; left: 32em;">
+			<fieldset>
+				<legend>{%lblTurno%}</legend>
+				<table>
+					<tr><td>{%lblTipo%}</td><td>{%dcmbTipo%}</td><td>{%lblNumMax%}</td><td>{%dedtNumMax%}</td></tr>
+				</table>
+			</fieldset> 
+		</div>
+	
+		<div id="grpTurni" name="grpTurni" class="groupbox" style="position:absolute;top: 18.3em; left: 24em;">
+		<!--<div id="grpTurni" name="grpTurni" class="groupbox" style="position:absolute;top: 17.3em; left: 24em;">-->
+			<fieldset>
+				<legend>{%lblTurniRichiesti%}</legend>
+				<table>
+					<tr>
+						<td colspan="2">{%chkPrimoTurno%}{%lblPrimoTurno%}</td>
+						<td colspan="2">{%chkSecondoTurno%}{%lblSecondoTurno%}</td>
+						<td colspan="2">{%chkTerzoTurno%}{%lblTerzoTurno%}</td>
+						<td colspan="2">{%chkQuartoTurno%}{%lblQuartoTurno%}</td>
+						<td>{%chkTurniInMinoranza%}</td>
+					</tr>
+					<tr>
+						<td>{%dedtPrimoTurno%}</td>
+						<td>{%lblPercPrimoTurno%}</td>
+						<td>{%dedtSecondoTurno%}</td>
+						<td>{%lblPercSecondoTurno%}</td>
+						<td>{%dedtTerzoTurno%}</td>
+						<td>{%lblPercTerzoTurno%}</td>
+						<td>{%dedtQuartoTurno%}</td>
+						<td>{%lblPercQuartoTurno%}</td>
+						<td>{%lblArrotondamento%}</td>
+						<td>{%dcmbArrotondamento%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		
+		<div id="grpPeriodoTurni" name="grpPeriodoTurni" class="groupbox" style="position:absolute;top: 13.3em; left: 2em;">
+		<!--<div id="grpPeriodoTurni" name="grpPeriodoTurni" class="groupbox" style="position:absolute;top: 19.3em; left: 2em;">-->
+			<fieldset>
+				<legend>{%lblPeriodoEquilibrioTurni%}</legend>
+				<div>{%drgpPeriodoEquilibrioTurni%}</div>
+			</fieldset>
+			<table class="medpTableContainer">
+				<tr><td>{%dchkConguaglioTurni%}</td></tr>
+			</table>
+		</div>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 24.3em; left: 2em;">
+			<tr><td>{%lblIndennitaAlternativa%}</td><td>{%cmbIndennitaAlternativa%}</td><td>{%lblDescRegIndennita%}</td></tr>
+		</table>
+		
+  </div>
+  </body> 
+</html>

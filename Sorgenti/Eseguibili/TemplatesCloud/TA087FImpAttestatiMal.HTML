@@ -1,0 +1,61 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    <!-- creazione dinamica componenti onBeforeProcess del templateProcessor WR100-->	
+    {%ContenutoDinamico%}
+		
+    <div class="medpElaborazioneFM" style="position:relative; height:52em;">
+
+			<div class="grigliaDatiNav" style="position:absolute;top: 1em;left: 2em;width:90.8%;">
+       <table style="width:100%"><tr><td style="width:40%;"></td><td>{%lblProfili%}</td><td></td></tr></table>
+      </div>
+			<div class="medpElaborazioneFM grigliaDati" style="position:absolute;top: 3.3em; left: 2em; width: 90%;overflow-y:auto;overflow-x:auto;height:13em">{%grdProfili%}</div>    	
+
+			
+			<table class="medpTableContainer" style="position:absolute;top: 19em; left: 2em;">
+				<tr>
+					<td colspan="3">
+						{%chkEsenzione%}
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" style="padding-top:0.5em">
+						{%lblPercorsoFile%}
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 430px;">
+						{%fileUpload%}
+					</td>
+					<td>
+						{%btnUpload%}
+					</td>
+					<td>
+						{%btnVisualizzaFile%}
+					</td>
+				</tr>	
+				<tr>
+					<td colspan="3">
+						{%lbFileScelto%}&nbsp;&nbsp;{%lblFileSceltoDescr%}
+					</td>
+				</tr>		
+			</table>
+
+			<div style="position:absolute;top: 28.8em;left: 2em">{%chkAnomalie%}</div>
+			<div style="position:absolute;top: 28.8em;left: 15em">{%chkInserimento%}</div>												
+
+			<div style="position:absolute;top: 31.3em;left: 2em">{%btnEsegui%}</div>
+			<div style="position:absolute;top: 31.3em;left: 10em">{%btnAnomalie%}</div>
+			<div style="position:absolute;top: 31.3em;left: 19em">{%btnDipEsclusi%}</div>
+			
+			<div class="grigliaDatiNav" style="position:absolute;top: 35em;left: 2em;width:90.8%;">
+       <table style="width:100%"><tr><td style="width:40%;"></td><td>{%lblCertificati%}</td><td></td></tr></table>
+      </div>
+			<div class="medpElaborazioneFM grigliaDati" style="position:absolute;top: 37.3em; left: 2em; width: 90%;overflow-y:auto;overflow-x:auto;height:14em">{%grdPreview%}</div>    	
+			
+    </div>
+  </body>
+</html>

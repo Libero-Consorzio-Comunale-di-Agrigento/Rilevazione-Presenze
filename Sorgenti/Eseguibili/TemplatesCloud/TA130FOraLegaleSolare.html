@@ -1,0 +1,61 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:40em;">
+    	<table class="medpTableContainer" style="position:absolute; top:2em; left: 2em;">
+				<tr><td>{%lblDaData%}</td></tr>
+				<tr><td>{%edtDaData%}</td></tr>
+			</table>	
+    
+    	<table class="medpTableContainer" style="position:absolute; top:2em; left: 10em;">
+				<tr><td>{%lblDaOre%}</td></tr>
+				<tr><td>{%edtDaOre%}</td></tr>
+			</table>	
+			
+			 <table class="medpTableContainer" style="position:absolute; top:2em; left: 15em;">
+				<tr><td>{%lblOrologi%}</td></tr>
+				<tr><td>{%edtOrologi%}{%btnOrologi%}</td></tr>
+			</table>	
+
+    	<table class="medpTableContainer" style="position:absolute; top:6em; left: 2em;">
+				<tr><td>{%lblAData%}</td></tr>
+				<tr><td>{%edtAData%}</td></tr>
+			</table>	
+
+    	<table class="medpTableContainer" style="position:absolute; top:6em; left: 10em;">
+				<tr><td>{%lblAOre%}</td></tr>
+				<tr><td>{%edtAOre%}</td></tr>
+			</table>
+			
+			<div class="groupbox" style="position:absolute;top: 6.5em; left: 15em;">
+				<fieldset>
+					<legend></legend>	
+					{%rgpPresMens%}		
+				</fieldset>
+			</div>	
+			
+			<div class="groupbox" style="position:absolute;top: 2em; left: 32em;">
+				<fieldset>
+					<legend>{%lblModificaRichiesta%}</legend>	
+					{%rgpLegsol%}		
+				</fieldset>
+			</div>	
+			
+			
+			<div style="position:absolute;top: 11em; left: 2em;">{%btnVisualizza%}</div>
+			<div style="position:absolute;top: 11em; left: 10em;">{%btnModifica%}</div>
+			<div style="position:absolute;top: 11em; left: 19em;">{%btnSalvaSuFile%}</div>
+			<div class="grigliaDati" style="position:absolute;top: 14em; left: 2em;width:60em">
+				<div class="grigliaDatiNav">{%PagNavBarRisultati%}</div>
+				{%grdRisultati%}
+			</div>
+
+
+    </div>
+  </body>
+</html>

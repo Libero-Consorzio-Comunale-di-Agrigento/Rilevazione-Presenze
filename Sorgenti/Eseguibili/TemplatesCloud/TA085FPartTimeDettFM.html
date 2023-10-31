@@ -1,0 +1,44 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+
+	<div class="medpDettaglioFM" style="position:relative; height:25em;">
+	  <div style="position:absolute;top: 1em; left: 2em;">{%lblCodice%}</div>
+	  <div style="position:absolute;top: 1em; left: 10.5em;">{%lblDescrizione%}</div>
+	  <div style="position:absolute;top: 2.5em; left: 2em;">{%dedtCodice%}</div>
+	  <div style="position:absolute;top: 2.5em; left: 10.5em;">{%dedtDescrizione%}</div>
+	  <div style="position:absolute;top: 5em; left: 2em;">{%lblDescrizioneEstesa%}</div>
+	  <div style="position:absolute;top: 6.5em; left: 2em;">{%dedtDescrizioneEstesa%}</div>
+
+	  <div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+			<fieldset>
+			  <legend>{%lblTipo%}</legend>
+			  <span>{%drgpTipo%}</span>
+			</fieldset>
+	  </div>
+
+	  <div class="groupbox" style="position:absolute;top: 13.5em; left: 2em;">
+      <fieldset>
+        <legend>{%lblPercentuali%}</legend> 
+        <table cellpadding="5">
+          <tr class="align_left">
+            <td>{%lblPianta%}<br/>{%dedtPianta%}</td>
+            <td>{%lblIndPres%}<br/>{%dedtIndPres%}</td>
+            <td>{%lblIndFest%}<br/>{%dedtIndFest%}</td>
+            <td>{%lblIncentivi%}<br/>{%dedtIncentivi%}</td>
+          </tr>
+          <tr class="align_left">
+            <td>{%lblAssenzeGg%}<br/>{%dedtAssenzeGg%}</td>
+            <td>{%lblAssenzeHh%}<br/>{%dedtAssenzeHh%}</td> 
+			<td>{%lblValorizGG%}<br/>{%dedtValorizGG%}</td> 
+            <td>{%lblDebitoAgg%}<br/>{%dedtDebitoAgg%}</td> 
+          </tr>
+        </table> 
+      </fieldset> 
+    </div>
+  </div> 
+
+  </body> 
+</html>

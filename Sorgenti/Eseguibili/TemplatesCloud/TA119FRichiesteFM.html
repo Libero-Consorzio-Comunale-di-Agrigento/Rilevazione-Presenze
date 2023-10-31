@@ -1,0 +1,33 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="medpTabRegion">
+      <table class="Riepilogo">
+        <tbody>
+        <tr>
+          <td>
+            <div>{%rgpAutorizzate%}</div>
+          </td>
+          <td>
+            <div>{%rgpBloccate%}</div>
+          </td>
+          <td>
+            <div>{%btnImporta%}</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      {%grdDetailNavBar%} 
+      <br>
+      <div class="grigliaDatiNav" >
+      {%PagNavBarTabella%}
+      </div>
+      <div class="grigliaDati" style="position:relative">
+      {%grdTabella%}
+      </div>
+    </div>
+  </body> 
+</html>

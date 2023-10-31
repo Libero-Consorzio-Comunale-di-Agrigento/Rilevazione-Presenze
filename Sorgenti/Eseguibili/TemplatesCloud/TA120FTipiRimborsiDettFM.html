@@ -1,0 +1,111 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	<div class="medpDettaglioFM" style="position:relative; height: 44em">
+		<div style="position: relative; margin-left: 2em; margin-top: 1em;">
+			<table class="grigliaPadded" style="width: 90em;">
+				<tr>
+					<td style="width: 16em;">
+						<table>
+							<tr>
+								<td>{%lblCodice%}</td>
+								<td>{%dedtCodice%}</td>
+							</tr>
+							<tr>
+								<td colspan="2">{%dChkAnticipo%}</td>
+							</tr>
+							<tr>
+								<td colspan="2">{%dchkScaricoPaghe%}</td>
+							</tr>
+							<tr>
+								<td>{%lblCategRimborsi%}</td>
+								<td>{%dCmbCategRimborso%}</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td>{%lblDescrizione%}</td>
+								<td>{%dedtDescrizione%}</td>
+							</tr>
+							<tr>
+								<td>{%lblTipoRimb%}</td>
+								<td>{%dcmbTipoRimb%}</td>
+							</tr>
+							<tr>
+								<td>{%LblCodiceVociPaghe%}</td>
+								<td>{%dedtCodiceVociPaghe%}</td>
+							</tr>
+							<tr>
+								<td>{%lblImportoMax%}</td>
+								<td>{%dEdtImportoMax%}</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="groupbox" style="position: relative; width:96%; margin-left: 2em;">
+			<fieldset style="width: 56.5em;">
+				<legend>{%lblIterMissioniOnLine%}</legend>
+				<table class="grigliaPadded">
+					<tr>
+						<td>{%lblTipoQuantita%}</td>
+						<td>{%dcmbTipoQuantita%}</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>{%lblPercentualeanticipo%}</td>
+						<td>{%dedtPercAnticipo%}{%lblDescPct%}</td>
+					</tr>
+					<tr>
+						<td>{%lblNoteFisse%}</td>
+						<td>{%dedtNoteFisse%}</td>
+					</tr>
+					<tr>
+						<td>{%lblFasiCompetenza%}</td>
+						<td>{%dedtFasiCompetenza%} {%btnFasiCompetenza%}</td>	
+					</tr>
+					<tr>
+						<td colspan="2">{%dchkFlagMotivazione%}</td>
+					</tr>
+					<tr>
+						<td colspan="2">{%dchkFlagTarga%}</td>
+					</tr>
+					<tr>
+						<td colspan="2">{%dchkFlagMezzoProprio%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position: relative; width: 96%; margin-left: 2em; margin-top: 1em;">
+			<fieldset style="width: 56.5em;">
+				<legend>{%lblIndennitaSupplementare%}</legend>
+				<table class="grigliaPadded">
+					<tr>
+						<td colspan="2">{%dchkEsistenza%}</td>
+						<td colspan="2" style="padding-left: 3em;">{%dchkScarico%}</td>
+					</tr>
+					<tr>
+						<td>{%LblCodiceVociPagheIndennitaSupplementare%}</td>
+						<td>{%dedtCodiceVociPagheIndennitaSupplementare%}</td>
+						<td style="padding-left: 3em;">{%LblPercentualePerIndennitaSupplementare%}</td>
+						<td>{%dedtPercentualePerIndennitaSupplementare%}</td>
+					</tr>
+					<tr>
+						<td>{%LnkArrotondamentoPerIndennitaSupplementare%}</td>
+						<td>{%cmbArrotondamentoPerIndennitaSupplementare%}</td>
+						<td>{%dLblArrotondamentoPerIndennitaSupplementare%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+	</div>
+</body>
+
+</html>

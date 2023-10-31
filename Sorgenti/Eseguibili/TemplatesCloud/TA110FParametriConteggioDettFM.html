@@ -1,0 +1,113 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+  	
+  <div class="medpDettaglioFM" style="position:relative; height:46em">	
+    <div style="position:relative;">
+	<table style="width:85em;margin-bottom:1em;"> 
+	  <tr>
+	    <td style="width:7em;text-align:right">{%lblCodice%}</td>
+	    <td style="width:6em;">{%cmbCodice%}</td>
+	    <td style="width:27.5em;padding-right:1em;">{%dlblDescCodice%}</td>
+	    <td style="width:7em;text-align:right">{%lblTipoMissione%}</td>
+	    <td style="width:6em;">{%cmbTipoMissione%}</td>
+	    <td>{%dlblDescTipoMissione%}</td>
+	  </tr>
+	</table>
+	<table style="width:85em;margin-bottom:1em;"> 
+	  <tr>
+	    <td style="width:7em;text-align:right">{%lblDescrizione%}</td>
+	    <td style="width:47.5em;">{%dedtDescrizione%}</td>
+	    <td>{%dChkTabTariff%}</td>
+	  </tr>
+	</table>
+    </div>    
+    <div style="position:relative;">
+	<table style="width:98%;margin-left:2em;margin-bottom:1em;"> 
+ 	  <tr>
+	   <td style="width:16em;">
+	     <div class="groupbox" style="position:relative;">
+		<fieldset>
+		  <legend>{%lblArrotondamentoOre%}</legend>
+	 	  <table>
+		   <tr>
+			<td>{%lblValore%}</td>
+			<td>{%dedtArrotondamentoOre%}</td>
+			<td> 
+			  <fieldset>
+			    <legend>{%lblTipo%}</legend>
+				{%dRgpTipoArrotondamento%}
+			  </fieldset>
+	                </td>	
+		   </tr>	
+		 </table>
+		</fieldset>
+	     </div>
+	   </td>
+           <td>
+		<table>
+		  <tr>
+		    <td>{%LnkArrTotaleImportiPerDatiPaghe%}</td><td>{%cmbArrTotaleImportiPerDatiPaghe%}</td><td>{%dLblArrTotaleImportiPerDatiPaghe%}</td>
+                  </tr>
+		  <tr>
+		    <td>{%lblNMaxRimb%}</td><td>{%DEdtNMaxRimb%}</td><td>&nbsp;</td>
+                  </tr>
+		  <tr>
+		    <td>{%lnkTariffaDopoRiduzione%}</td><td>{%cmbArrTariffaDopoRiduzione%}</td><td>{%dLblTariffaDopoRiduzione%}</td>
+                  </tr>
+                </table>
+	   </td>
+	  </tr>
+	</table>	
+   </div>	
+   <div class="groupbox" style="position:relative;width:96%;margin-left:2em;margin-bottom:1em;">
+     <fieldset style="width:52em;">
+      <legend>{%lblGiustificazioneAutomatica%}</legend>
+	<table style="width:98%;"> 
+ 	  <tr>
+	   <td style="width:16em;">
+	     <div class="groupbox" style="position:relative;">
+		<fieldset>
+		  <legend>{%lblTipoCausale%}</legend>
+	  	  {%rgpCausali%}
+		</fieldset>
+	     </div>
+	   </td>   
+	   <td><table><tr><td>{%lblCausale%}</td><td>{%cmbCausale%}</td><td>{%dlblCalcCausale%}</td></tr></table></td>	        	   	        	   	        
+	  </tr>
+ 	  <tr>
+	    <td><table><tr><td>{%lblGiustifOreMaxGg%}</td><td>{%dedtGiustifOreMaxGg%}</td></tr></table></td>
+	    <td>{%dchkGiustifCopreDebitoGg%}</td>
+	  </tr>
+	</table>	
+     </fieldset>	
+   </div>
+   <div class="groupbox" style="position:relative;width:96%;margin-left:2em;margin-bottom:1em;">
+     <fieldset style="width:52em;">
+	<legend>{%lblIndennitaTrasfertaIntera%}</legend>
+	<table style="width:98%;"> 
+ 	  <tr>
+	   <td><table><tr><td>{%lblTariffaIndennita%}</td><td>{%dedtTariffaIntera%}</td></tr></table></td>   	      
+	   <td><table><tr><td>{%lblOreMinimePerIndennita%}</td><td>{%dedtOreMinimePerIndennita%}</td></tr></table></td>   	      
+	   <td><div class="groupbox" style="position:relative;">
+		<fieldset>
+		  <legend>{%lblTipoIndennita%}</legend>
+	  	  {%drgpTipoIndennita%}
+		</fieldset>
+	     </div>
+	   </td>
+	  </tr>
+	</table>	
+     </fieldset>
+   </div>
+   <div class="clearDiv" style="position:relative;width:54em;margin-left:2em;">
+     {%grdTabDetail%}
+     <div style="width:100%;">{%WA110IndennitaOrarieRG%} {%WA110RimborsoPastoRG%} {%WA110IndennitaKmRG%} {%WA110CodiciVociPagheRG%}</div>
+   </div>	  		
+
+
+  </div>
+  </body> 
+</html>

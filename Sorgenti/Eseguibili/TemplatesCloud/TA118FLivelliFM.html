@@ -1,0 +1,34 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+  <div class="medpTabRegion">
+    {%grdDetailNavBar%}
+    <br>
+    <div class="grigliaDatiNav">
+      {%PagNavBarTabella%}
+    </div>
+    <div id="divscrollableWR203" class="grigliaDati gridTabellaHeight" style="position:relative" {%SCROLLWR203%}>
+      {%grdTabella%}
+    </div>
+  </div>
+
+  <div class="medpTabRegion">
+    <div style="margin: 1em 0;">
+      {%lblCampi%}
+    </div>
+    {%grdCampiNavBar%}
+    <br>
+    <div class="grigliaDatiNav">
+      {%PagNavBarCampi%}
+    </div>
+    <div class="grigliaDati">
+      {%grdCampi%}
+    </div>
+  </div>
+</body>
+
+</html>

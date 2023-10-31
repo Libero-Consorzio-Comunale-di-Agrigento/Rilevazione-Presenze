@@ -1,0 +1,98 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	<div class="medpDettaglioFM" style="position: relative; height: 48em;">
+		<div style="position:absolute; top: 2em; left: 2em">{%lblAnno%}</div>
+		<div style="position:absolute; top: 3.5em; left: 2em">{%edtAnno%}</div>
+
+		<div style="position:absolute; top: 2em; left: 8em">{%lblMeseDa%}</div>
+		<div style="position:absolute; top: 3.5em; left: 8em">{%cmbMeseDa%}</div>
+
+		<div style="position:absolute; top: 2em; left: 18em">{%lblMeseA%}</div>
+		<div style="position:absolute; top: 3.5em; left: 18em">{%cmbMeseA%}</div>
+
+		<div style="position:absolute; top: 6em; left: 2em">{%lblCausale%}</div>
+		<div style="position:absolute; top: 7.5em; left: 2em">{%edtCausale%}{%btnCausali%}</div>
+
+		<div class="groupbox fs100" style="position: absolute; top: 10em; left: 2em; height: 5em;">
+			<fieldset>
+				<legend>{%lblLiquidazione%}</legend>
+				<table>
+					<tr>
+						<td>{%lblArrotLiq%}</td>
+						<td>{%edtArrotLiq%}</td>
+					</tr>
+					<tr>
+						<td>{%lblMaxLiq%}</td>
+						<td>{%edtMaxLiq%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+
+		<div class="groupbox" style="position:absolute; top: 10em; left: 18em">
+			<fieldset style="height:5em">
+				<legend>{%lblCompensazione%}</legend>
+				<table>
+					<tr>
+						<td>{%lblArrotComp%}</td>
+						<td>{%edtArrotComp%}</td>
+					</tr>
+					<tr>
+						<td>{%lblMaxComp%}</td>
+						<td>{%edtMaxComp%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+
+		<div class="groupbox" style="position:absolute; top: 10em; left: 34em">
+			<fieldset style="height:5em">
+				<legend>{%lblDisponibilita%}</legend>
+				{%rgpDisponibilita%}
+			</fieldset>
+		</div>
+
+		<div class="groupbox" style="position:absolute; top: 17.5em; left: 2em">
+			<table>
+				<tr>
+					<td>{%chkAggiornamento%}</td>
+				</tr>
+				<tr>
+					<td>{%chkAnnullaLiquidazione%}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 1.5em;">{%chkLiquidazioni%}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 1.5em;">{%chkCompensazioni%}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 1.5em;">{%lblMessaggio%}</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="position:absolute; top: 17.5em; left: 33.5em; width: 12em;">{%imgAnteprima%}</div>
+		<div style="position:absolute; top: 20.5em; left: 33.5em; width: 12em;">{%imgSoloAggiornamento%}</div>
+		<div style="position:absolute; top: 23.5em; left: 33.5em; width: 12em;">{%imgAnomalie%}</div>
+
+		<table class="medpTableContainer" style="position:absolute;top: 27em; left: 2em;">
+			<tr>
+				<td>{%lblDettaglio%}</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="checkGroupDin" style="position:absolute; width: 25em; height: 19em;">{%cgpDettaglio%}</div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+
+</html>

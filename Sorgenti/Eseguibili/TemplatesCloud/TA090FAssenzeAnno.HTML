@@ -1,0 +1,80 @@
+{%DocType%}
+<html>
+  <body> 
+    {%T000Intestazione%}
+  	{%ContenutoDinamico%}
+		<div class="medpDettaglioFM" style="position:relative; height:47em;">
+
+			<div class="groupbox" style="position:absolute;top:2em; left: 2em;">
+	 			<fieldset style="width:30em">
+		  		<legend>{%lblSelPeriodo%}</legend> 
+						<table>
+							<tr>
+								<td>{%lblDaAnno%}</td><td>{%edtDaAnno%}</td>
+							  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>{%lblDaMese%}</td><td>{%edtDaMese%}</td>
+  							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>{%lblAMese%}</td><td>{%edtAMese%}</td>
+							</tr>
+						</table>				  			
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top:7.8em; left: 2em;">
+	 			<fieldset style="width:30em">
+		  		<legend>{%lblOpzioniStampa%}</legend> 
+			  		<table>
+				  		<tr><td>{%chkSegnalazPresenza%}</td></tr>
+			  		</table>
+						<table>
+							<tr><td>{%lblCaratteri%}</td><td>{%edtCaratteri%}</td></tr>
+						</table>
+						<table>
+							<tr><td>{%chkSecCausaleAss%}</td></tr>
+							<tr><td>{%chkRigaValoriz%}</td></tr>
+							<tr><td>{%chkTotIndiv%}</td></tr>				  			
+							<tr><td>{%chkRiepilogoCompetenze%}</td></tr>				  			
+							<tr><td>{%chkSaltoPag%}</td></tr>
+							<tr><td>{%chkStampaAllDip%}</td></tr>
+							<tr><td>{%chkGGSett%}</td></tr>	
+							<tr><td>{%rgpRichiesteIrisWEB%}</td></tr>	
+						</table>					
+						<div class="groupbox" style="margin-top:0.7em; margin-bottom:0.7em">
+				 			<fieldset>
+					  		<legend>{%chkIntestazione%}</legend>
+					  		<table>
+						  		<tr><td>{%chkData%}</td></tr>
+						  		<tr><td>{%chkNumPagina%}</td></tr> 
+						  		<tr><td>{%chkAzienda%}</td></tr>	
+					  		</table>
+								<table>
+									<tr><td>{%lblTitolo%}</td><td>{%edtTitolo%}</td></tr>
+								</table>					  		
+								<div class="groupbox" style="margin-top:0.7em">
+						 			<fieldset>
+							  		<legend>{%lblLogo%}</legend>
+										<table>
+											<tr><td>{%lblLarghezza%}</td><td>{%edtLogoLarghezza%}</td><td>{%lblAltezza%}</td><td>{%edtLogoAltezza%}</td></tr>
+										</table>					  		
+									</fieldset> 
+								</div>												
+							</fieldset> 
+						</div>												
+						<table>
+							<tr><td>{%lblFirma%}</td><td>{%edtFirma%}</td></tr>
+						</table>					  		
+	  		</fieldset> 
+			</div>
+
+
+ 			<div style="position:absolute;top: 2em; left: 35em;">{%lblListaAnagr%}</div>
+			<div class="checkGroupDin" style="position:absolute;top: 3.5em; left: 35em;width: 25em;height:18em;">{%CgpListaAnagr%}</div>
+
+ 			<div style="position:absolute;top: 22.5em; left: 35em;">{%lblListaCausali%}</div>
+			<div class="checkGroupDin" style="position:absolute;top: 24em; left: 35em;width: 25em;height:18em;">{%CgpListaCausali%}</div>
+
+
+			<div style="position:absolute;top: 44em; left: 2em;">{%btnGeneraPDF%}</div>
+		</div>	
+  </body> 
+</html>

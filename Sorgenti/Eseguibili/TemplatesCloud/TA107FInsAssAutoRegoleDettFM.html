@@ -1,0 +1,32 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative;height: 28em;">
+		
+    <div style="position:absolute; top:2em; left:2em;">{%lblCausaliUtilizzabili%}</div>
+		<div style="position:absolute; top:4em; left:2em; overflow-x:hidden; overflow-y:auto">{%lstCausali%}</div>				
+
+    <div style="position:absolute; top:9em; left:12em;">{%imgSpostaSx%}</div>
+    <div style="position:absolute; top:12em; left:12em;">{%imgSpostaDx%}</div>
+
+    <div style="position:absolute; top:2em; left:15em;">{%lblCausaliDisponibili%}</div>
+		<div style="position:absolute; top:4em; left:15em; overflow-x:hidden; overflow-y:auto">{%lstCausaliDisponibili%}</div>
+		
+		<div class="groupbox" style="position:absolute; top:21em; left:2em;">
+			<fieldset style="width:12em">
+				<legend>{%lblDebito%}</legend> 
+				{%drgpDebito%}
+			</fieldset> 
+		</div>
+		
+		<div style="position:absolute; top: 21em; left: 32em;">{%dchkEliminaGiustificativi%}</div>
+		<div style="position:absolute; top: 23em; left: 32em;">{%dchkGiorniVuoti%}</div>
+		<table class="medpTableContainer" style="position:absolute; top:25em; left:32em; width:17em">
+			<tr><td>{%lblOreMax%}</td><td>{%dedtOreMax%}</td></tr>
+	  </table>
+
+	</div>
+	</body> 
+</html>

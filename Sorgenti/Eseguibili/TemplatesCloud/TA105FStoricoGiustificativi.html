@@ -1,0 +1,64 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:43em;">
+
+		  <div id="tabs" class="ui-tabs" style="position:absolute;top:1em;height:42em;width:26em;">
+				<ul>
+				  <li><a href="#Stampa">Stampa</a></li>
+				  <li><a href="#Allineamento">Allineamento</a></li>  
+				</ul>	
+				<div id="Stampa" class="ui-tabs-hide" style="position:relative">
+					<div style="position:absolute;top: 1.3em; left: 1.5em;">{%lblDaData%}</div>
+					<div style="position:absolute;top: 1em; left: 6em;">{%edtDaData%}</div>
+					<div style="position:absolute;top: 3.3em; left: 1.5em;">{%lblAData%}</div>
+					<div style="position:absolute;top: 3em; left: 6em;">{%edtAData%}</div>
+					<div style="position:absolute;top: 6.5em; left: 1.5em;">{%lblCampo%}</div>
+					<div style="position:absolute;top: 8em; left: 1em;">{%cmbCampo%}</div>
+					<div style="position:absolute;top: 11em; left: 1.5em;">{%btnStatoElab%}</div>
+					<div style="position:absolute;top: 11.3em; left: 4em;">{%lblStatoElab%}</div>
+					<div style="position:absolute;top: 13em; left: 1em;">{%chkRecordFisici%}</div>
+					<div style="position:absolute;top: 15em; left: 1em;">{%chkAssenzeInserite%}</div>
+					<div style="position:absolute;top: 17em; left: 1em;">{%chkAssenzeCancellate%}</div>
+					<div style="position:absolute;top: 19em; left: 1em;">{%chkDettaglioGiornaliero%}</div>
+					<div style="position:absolute;top: 21em; left: 1em;">{%chkDettaglioPeriodico%}</div>
+					<div style="position:absolute;top: 23em; left: 1em;">{%chkDatiIndividuali%}</div>
+					<div style="position:absolute;top: 25em; left: 1em;">{%chkSaltoPaginaIndividuale%}</div>
+					<div style="position:absolute;top: 27em; left: 1em;">{%chkSaltoPaginaRaggr%}</div>
+					<div style="position:absolute;top: 29em; left: 1em;">{%chkTotaliIndividuali%}</div>
+					<div style="position:absolute;top: 31em; left: 1em;">{%chkTotaliRaggr%}</div>
+					<div style="position:absolute;top: 33em; left: 1em;">{%chkTotaliGenerali%}</div>
+					<div style="position:absolute;top: 36em; left: 1em;">{%btnGeneraPDF%}</div>
+	   		</div>
+				<div id="Allineamento" class="ui-tabs-hide" style="position:relative">
+		    	<div class="groupbox" style="position:absolute;top: 1em; left: 1em;">
+		   			<fieldset style="width:23em;height:6em">
+		  	  		<legend>{%lblDefinizionePeriodo%}</legend> 
+								<div style="position:absolute;top: 2.3em; left: 1.5em;">{%lblPeriodoDal%}</div>
+								<div style="position:absolute;top: 2em; left: 6em;">{%edtPeriodoDal%}</div>
+								<div style="position:absolute;top: 4.3em; left: 1.5em;">{%lblPeriodoAl%}</div>
+								<div style="position:absolute;top: 4em; left: 6em;">{%edtPeriodoAl%}</div>
+		    		</fieldset> 
+					</div>	
+					<div style="position:absolute;top: 13em; left: 1em;">{%chkDefinizioneDataRegistrazione%}</div>
+					<div style="position:absolute;top: 15em; left: 1em;">{%chkImpostaAssElab%}</div>
+					<div style="position:absolute;top: 17.3em; left: 1.5em;">{%lblDataRegistrazione%}</div>
+					<div style="position:absolute;top: 17em; left: 15em;">{%edtDataRegistrazione%}</div>
+					<div style="position:absolute;top: 19em; left: 1em;">{%chkRegistrazioneInserimenti%}</div>
+					<div style="position:absolute;top: 21em; left: 1em;">{%chkRegistrazioneCancellazioni%}</div>
+					<div style="position:absolute;top: 23em; left: 1em;">{%chkEliminazioneAssenze%}</div>
+					<div style="position:absolute;top: 36em; left: 1em;">{%btnEsegui%}</div>
+	   		</div>
+	   	</div>
+
+			<div style="position:absolute;top:1.5em;left:28em;">{%lblCausali%}</div>
+			<div style="position:absolute;top:3em;left:28em;width:35em; height:40em; overflow-x:auto;overflow-y:auto">{%clbCausali%}</div>
+    
+    </div>
+  </body>
+</html>

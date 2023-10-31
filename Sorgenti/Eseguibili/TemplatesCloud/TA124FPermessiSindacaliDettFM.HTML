@@ -1,0 +1,80 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative;height: 40em;">							
+
+			<div class="groupbox" style="position:absolute;top: 1em; left: 2em;">
+				<fieldset style="width:16.5em">
+					<legend>{%lblTipoPermesso%}</legend>
+					{%drgpTipoPermesso%}
+				</fieldset>
+			</div>
+			<div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+				<fieldset style="width:16.5em">
+					<legend>{%lblProtocollo%}</legend>
+					<table>
+						<tr><td>{%lblNumProt%}</td><td style="padding-left:2em">{%lblDataProt%}</td></tr>
+						<tr><td>{%dedtNumProt%}</td><td style="padding-left:2em">{%dedtDataProt%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+			<div class="groupbox" style="position:absolute;top: 15.5em; left: 2em;">
+				<fieldset style="width:16.5em; height:9em">
+					<legend>{%lblProtMod%}</legend>
+					<table>
+						<tr><td>{%lblNumProtMod%}</td><td style="padding-left:2em">{%lblDataProtMod%}</td></tr>
+						<tr><td>{%dedtNumProtMod%}</td><td style="padding-left:2em">{%dedtDataProtMod%}</td></tr>
+					</table>
+					<table class="medpTableContainer" style="position:relative;top: 1.5em">
+						<tr><td>{%lblStato%}</td><td style="width:7em">{%lblStatoDescr%}</td><td>{%btnElimina%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+
+
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 22em;">
+				<tr><td>{%lblDataDa%}</td><td style="padding-left:0.5em">{%lblData%}</td><td style="padding-left:0.5em">{%lblDalle%}</td><td style="padding-left:0.5em">{%lblAlle%}</td><td style="padding-left:0.5em">{%lblOre%}</td><td></td></tr>
+				<tr><td>{%dedtDataDa%}</td><td style="padding-left:0.5em">{%dedtData%}</td><td style="padding-left:0.5em">{%dedtDalle%}</td><td style="padding-left:0.5em">{%dedtAlle%}</td><td style="padding-left:0.5em">{%dedtOre%}</td><td style="padding-left:0.8em">{%dChkAbbatte%}</td></tr>
+			</table>			
+			<table style="position:absolute;top: 6em; left: 22em;">
+				<tr><td style="width:6em">{%lnkOrganismo%}</td><td></td></tr>
+				<tr><td style="width:6em">{%cmbOrganismo%}</td><td style="padding-left:0.5em">{%dlblDOrganismo%}</td></tr>
+			</table>	
+			<table style="position:absolute;top: 10em; left: 22em;">
+				<tr><td style="width:6em">{%lnkSindacato%}</td><td></td></tr>
+				<tr><td style="width:6em">{%cmbSindacato%}</td><td style="padding-left:0.5em">{%dlblDSindacato%}</td></tr>
+			</table>	
+			<div class="groupbox" style="position:absolute;top: 15.5em; left: 22em;">
+				<fieldset style="width:36em; height:9em">
+					<div style="position:absolute;top: 1.8em;">{%lblCompetenze%}</div>
+					<div style="position:absolute;top: 1.5em; left: 24.5em;">{%btnCompetenze%}</div>
+					<div class="grigliaDati" style="position:absolute;top: 3.5em; width:36em;overflow:auto">{%grdCompetenze%}</div>
+				</fieldset>
+			</div>
+			
+			<!--
+			<div class="groupbox" style="position:absolute;top: 1em; left: 57em;">
+				<fieldset>					
+					{%rgpModalita%}
+				</fieldset>
+			</div>
+			-->
+			<div class="groupbox" style="position:absolute;top: 1em; left: 49em;">
+				<fieldset style="width:9em; height:12em">
+					<legend>{%lblGEDAP%}</legend>
+					<table>
+						<tr style="height: 2em"><td class="align_center">{%dlblSiglaGedap%}</td></tr>
+						<tr><td>{%dchkRetribuito%}</td></tr>
+						<tr><td>{%dchkStatutario%}</td></tr>
+						<tr><td>{%dchkAbbatteCompetenzeOrg%}</td></tr>
+						<tr><td>{%dchkRsu%}</td></tr>
+						<tr><td>{%dchkRaggruppamento%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+			
+	</div>
+	</body> 
+</html>

@@ -1,0 +1,79 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+  <div class="medpDettaglioFM" style="position:relative; height:48em;">
+    
+    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+      <tr><td>{%lblNomeScarico%}</td></tr>
+      <tr><td>{%dedtNomeScarico%}</td></tr>
+    </table>
+    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 17em;">
+      <tr><td>{%lblAzienda%}</td><td></td></tr>
+      <tr><td>{%dcmbAzienda%}</td><td style="padding-left:7em">{%dchkScaricoAutomatico%}</td></tr>
+    </table>
+	
+    <div style="position:absolute;top: 6em; left: 2em;">{%lblCampiSeparatiDa%}</div>
+    <div style="position:absolute;top: 6em; left: 12em;">{%lblFormatoData%}</div>
+    <div style="position:absolute;top: 7.5em; left: 2em;">{%dedtCampiSeparatiDa%}</div>
+    <div style="position:absolute;top: 7.5em; left: 12em;">{%dcmbFormatoData%}</div>
+    <div style="position:absolute;top: 6em; left: 27em;">{%dchkMatricolaNumerica%}</div>
+    <div style="position:absolute;top: 7.5em; left: 27em;">{%dchkRiconoscimentoCausale%}</div>
+    <div style="position:absolute;top: 9em; left: 27em;">{%dchkAnnullamentoPeriodo%}</div>
+   
+   <div style="position:absolute;top: 9.5em; left: 2em;">{%rgpStrutturaDati%}</div>
+    <div id="divFile" class="groupbox" style="position:absolute;top: 11em; left: 19em;">
+      <fieldset style="width:30em">
+        <legend>{%lblParametriFile%}</legend>
+        <div>{%lblNomeFile%}</div><br>
+        <div>{%dedtNomeFile%}</div>
+      </fieldset>
+    </div>
+	
+	<div style="position:absolute;top: 18em; left: 2em;">{%dchkOraclePrima%}</div>
+    <div style="position:absolute;top: 18em; left: 35.5em;">{%dchkOracleDopo%}</div>
+
+    <div id="divGiustificativi" class="groupbox" style="position:absolute;top: 20em; left: 2em;">
+      <fieldset style="width:50.5em">
+        <legend>{%lblCodiciTipi%}</legend>
+        <table>
+        <tr>
+          <td>{%lblGiustifGiornInt%}</td>
+          <td>&nbsp;</td>
+          <td>{%dedtGiustifGiornInt%}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>{%lblGiustifDaA%}</td>
+          <td>&nbsp;</td>
+          <td>{%dedtGiustifDaA%}</td>
+        </tr>
+        <tr>
+          <td>{%lblGiustifMezzaGiorn%}</td>
+          <td>&nbsp;</td>
+          <td>{%dedtGiustifMezzaGiorn%}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>{%lblGiustifNumOre%}</td>
+          <td>&nbsp;</td>
+          <td>{%dedtGiustifNumOre%}</td>
+        </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div id="divChiave" class="groupbox" style="position:absolute;top: 27em; left: 2em;">
+      <fieldset>
+        <legend>{%chkExprChiave%}</legend>
+        <div>{%dmemExprChiave%}</div>
+      </fieldset>
+    </div>
+
+    <div id="divMappatura" class="groupbox" style="position:absolute;top: 41em; left: 2em;overflow-x:auto;width:83em">
+      <fieldset>
+        <legend>{%lblMappatura%}</legend>
+        {%grdMappatura%}
+      </fieldset>
+    </div>
+
+  </div>
+  </body> 
+</html>

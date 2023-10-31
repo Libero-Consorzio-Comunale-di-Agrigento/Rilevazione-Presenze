@@ -1,0 +1,61 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <style type="text/css">
+	.grdIntera
+	{
+		width:100%;		
+		overflow-x:auto;
+		overflow-y: auto;
+	}
+	
+	.grdMetaDestra
+	{
+		float:right;
+		width:49%;
+		overflow-x:auto;
+		overflow-y: auto;
+	}
+
+	.grdMetaSinistra
+	{
+		float:left;
+		width:49%;
+		overflow-x:auto;
+		overflow-y: auto;
+	}	
+	
+    </style>
+
+    <div class="medpDettaglioFM" style="height:50em;">
+      <div>      
+	<div class="grigliaDatiNav">
+                {%PagNavBarAnagra%}
+        </div>	
+      	<div class="grigliaDati">
+      		{%grdAnagra%}
+      	</div>
+      </div>
+      <div>
+      	
+       <br/>
+      <div id="WA093_risultati">
+				<div class="grigliaDatiNav">
+        {%PagNavBarRisultati%}
+        </div>	 
+        <div class="grigliaDati">
+         {%grdRisultati%}
+        </div>
+      </div>
+      
+      <div id="WA093_dettaglio">					         
+        <div class="grigliaDati" style="height:47em;overflow-y:scroll">
+  				{%grdDettaglio%}
+  			</div>
+      </div>
+    </div>
+  </body> 
+</html>
+

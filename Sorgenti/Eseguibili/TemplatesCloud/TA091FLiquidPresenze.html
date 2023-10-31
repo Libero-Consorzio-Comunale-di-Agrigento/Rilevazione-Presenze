@@ -1,0 +1,27 @@
+{%DocType%}
+<html>
+
+<head>
+  <style type="text/css">
+    .A091messaggio {
+      width: 29em;
+      display: inline-block;
+      word-break: break-word;
+      white-space: normal;
+    }
+  </style>
+</head>
+
+<body>
+  {%T000Intestazione%}
+  {%ContenutoDinamico%}
+  <div style="position:relative; height:41em;">
+    <div style="position:absolute;top: 0em; left: 0em; width: 100%;">
+      {%grdTabDetail%}
+      <div style="width: 100%;">{%WA091ParametriRG%}{%WA091RisultatiRG%}</div>
+    </div>
+  </div>
+  {%<frm>WA091FAnnullaLiquidazioneFM</frm>%}
+</body>
+
+</html>

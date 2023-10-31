@@ -1,0 +1,170 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+  <div class="medpDettaglioFM" style="position:relative; height:29em">
+    <div style="position:absolute;top:2em;left:2em">{%lblMeseScarico%}</div>
+    <div style="position:absolute;top:3.5em;left:2em">{%dedtPeriodo%}</div>
+
+    <div style="position:absolute;top:2em;left:10em">{%lblDalGiorno%}</div>
+    <div style="position:absolute;top:3.5em;left:10em">{%dedtDataDa%}</div>
+
+    <div style="position:absolute;top:2em;left:17em">{%lblAlGiorno%}</div>
+    <div style="position:absolute;top:3.5em;left:17em">{%dedtDataA%}</div>
+
+    <div style="position:absolute;top:2em;left:25em">{%lblTotGiorni%}</div>
+    <div style="position:absolute;top:3.5em;left:25em">{%dedtTotaleGiorni%}</div>
+
+    <div style="position:absolute;top:2em;left:32em">{%lblOraDa%}</div>
+    <div style="position:absolute;top:3.5em;left:32em">{%dedtOraDa%}</div>
+
+    <div style="position:absolute;top:2em;left:38em">{%lblOraA%}</div>
+    <div style="position:absolute;top:3.5em;left:38em">{%dedtOraA%}</div>
+
+    <div style="position:absolute;top:2em;left:44em">{%lblTotaleOre%}</div>
+    <div style="position:absolute;top:3.5em;left:44em">{%dedtTotaleOre%}</div>
+
+    <div style="position:absolute;top:6em;left:2em">
+      <table class="grigliaPadded">
+        <tr>
+          <td>{%lblTipologia%}</td>
+          <td>{%cmbTipoMissione%}</td>
+          <td>{%dlblDescTipoMissione%}</td>
+        </tr>
+        <tr>
+          <td>{%lnkCodiceTariffa%}</td>
+          <td>{%cmbCodiceTariffa%}</td>
+          <td>{%lblDescCodiceTariffa%}</td>
+        </tr>
+        <tr>
+          <td>{%lnkCodiceRiduzione%}</td>
+          <td>{%cmbCodiceRiduzione%}</td>
+          <td>{%lblDescCodiceRiduzione%}</td>
+        </tr>
+      </table>
+    </div>
+    <div id="divRichiestaWeb" class="groupbox" style="position:absolute;top:6em;left:33em">
+      <fieldset>
+        <legend>{%lblDatiRichiestaWeb%}</legend>
+        <table>
+          <tr>
+            <td>
+              <div class="groupbox">
+                <fieldset>
+                  {%drgpFlagDetinazione%}
+                </fieldset>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>{%dChkIspettiva%} {%dchkMissioneRiaperta%}</td>
+          </tr>
+          <tr>
+            <td>{%dlblAnnullata%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div style="position:absolute;top:15em;left:2em">{%lblCommessa%}</div>
+    <div style="position:absolute;top:16.5em;left:2em">{%cmbCommessa%}</div>
+    <div style="position:absolute;top:18.5em;left:2em">{%dlblDescCommessa%}</div>
+
+    <div style="position:absolute;top:15em;left:17em">{%lblProtocollo%}</div>
+    <div style="position:absolute;top:16.5em;left:17em">{%dedtProtocollo%}</div>
+    <div style="position:absolute;top:15em;left:30em">{%chkIndennitaSupMaxGG%}</div>
+    <div style="position:absolute;top:17em;left:30em">{%dChkModifica%}</div>
+
+    <div class="groupbox" style="position:absolute;top:2em; left:50em;">
+      <fieldset>
+        <legend>{%lblDatiTrasferta%}</legend>
+        <table style="margin-bottom:05.em">
+          <tr>
+            <td>{%lblTarIndOr%}</td>
+            <td>{%lblTarQuotaEsente%}</td>
+          </tr>
+        </table>
+        <table class="grigliaPadded griglialeftPadded">
+          <tr>
+            <td style="width:20em">&nbsp;</td>
+            <td>{%lblTariffa%}</td>
+            <td>{%lblOreGiorni%}</td>
+            <td>{%lblTotale%}</td>
+          </tr>
+          <tr>
+            <td>{%lblIndTrasfInt%}</td>
+            <td>{%dedtTariffaIndennitaTrasfertaIntera%}</td>
+            <td>{%dedtOreIndennitaTrasfertaIntera%}</td>
+            <td>{%dedtTotaleIndennitaTrasfertaIntera%}</td>
+          </tr>
+          <tr>
+            <td>{%lblSupOreMasRimbPasto%}</td>
+            <td>{%dedtTariffaSuperoOreMassime%}</td>
+            <td>{%dedtOreSuperoOreMassime%}</td>
+            <td>{%dedtTotaleSuperoOreMassime%}</td>
+          </tr>
+          <tr>
+            <td>{%lblSuperoMaxGiorniMese%}</td>
+            <td>{%dedtTariffaSuperoGiorniMese%}</td>
+            <td>{%dedtOreSuperoGiorniMese%}</td>
+            <td>{%dedtTotaleSuperoGiorniMese%}</td>
+          </tr>
+          <tr>
+            <td>{%lblSuperoMaxOreGiorni%}</td>
+            <td>{%dedtTariffaSuperoOreGiorni%}</td>
+            <td>{%dedtOreSuperoOreGiorni%}</td>
+            <td>{%dedtTotaleSuperoOreGiorni%}</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>{%lblTotaleA%}</td>
+            <td>{%dedtOreTotaliIndennita%}</td>
+            <td>{%dedtTotaleIndennita%}</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>{%lblPartenza%}</td>
+            <td>{%cmbPartenza%}</td>
+            <td style="text-align:left;width:90%">{%dlblDescPartenza%}</td>
+          </tr>
+          <tr>
+            <td>{%lblDestinazione%}</td>
+            <td colspan="2">{%cmbDestinazione%}</td>
+          </tr>
+          <tr>
+            <td colspan="3">{%btnDettaglioPercorso%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div style="position:absolute;top:20em;left:2em">
+      <table>
+        <tr>
+          <td>{%lblStatoMissione%}</td>
+          <td>{%DCmbStato%}</td>
+        </tr>
+      </table>
+    </div>
+    <div style="position:absolute;top:19em;left:22em">
+      <table>
+        <tr>
+          <td style="text-align:right;">{%lblTotaleMissione%}</td>
+          <td>{%dedtTotaleMissione%}</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">{%lblCostoMissione%}</td>
+          <td>{%dedtCostoMissione%}</td>
+        </tr>
+      </table>
+    </div>
+    <div style="position:absolute;top:22em;left:2em">{%lblNoteRimborsi%}</div>
+    <div style="position:absolute;top:23em;left:2em;width:46em;"> {%memNoteRimborsi%}</div>
+
+  </div>
+</body>
+
+</html>

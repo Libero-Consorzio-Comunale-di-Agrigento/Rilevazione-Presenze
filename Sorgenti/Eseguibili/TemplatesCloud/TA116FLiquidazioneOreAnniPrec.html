@@ -1,0 +1,53 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <div class="medpElaborazioneFM" style="position:relative; height:45em;">		
+			<table class="medpTableContainer" style="position:absolute;top:2em; left:2em; width:23em">
+				<tr><td>{%lblAnno%}</td><td>{%edtAnno%}</td></tr>
+		  </table>
+		  
+			<table class="medpTableContainer" style="position:absolute;top:4.5em; left:2em; width:23.5em">
+				<tr><td>{%lblData%}</td><td>{%edtData%}</td></tr>
+		  </table>
+
+			<div class="groupbox" style="position:absolute;top:7.5em; left:2em;">
+	 			<fieldset>
+		  		<legend>{%lblParametriLiquidazione%}</legend> 
+						<table class="medpTableContainer">
+							<tr>
+								<td>{%lblLimiteOreLiquidabili%}</td>
+								<td>{%edtMaxLiq%}</td>
+								<td>{%lblArrotondamento%}</td>
+								<td>{%edtArrotLiq%}</td>
+							</tr>
+							<tr>
+								<td colspan="4">{%chkAbbattimentoOre%}</td>
+							</tr>
+					  </table>
+	  		</fieldset> 
+			</div>
+
+	    <div style="position:absolute;top:16em; left:2em;">{%lblIntestazione%}</div>
+			<div class="checkGroupDin" style="position:absolute;top:18em; left:2em; width:30em; height:25em; overflow-x:auto;overflow-y:auto">{%cgpIntestazione%}</div>				
+
+	    <div style="position:absolute;top:16em; left:34em;">{%lblDettaglio%}</div>
+			<div class="checkGroupDin" style="position:absolute;top:18em; left:34em; width:30em; height:25em; overflow-x:auto;overflow-y:auto">{%cgpDettaglio%}</div>				
+
+	    <div style="position:absolute;top:6em; left:33em;">{%chkSaltoPag%}</div>
+	    <div style="position:absolute;top:8em; left:33em;">{%chkTotaliRaggr%}</div>
+	    <div style="position:absolute;top:10em; left:33em;">{%chkTotaliGen%}</div>
+	    <div style="position:absolute;top:12em; left:33em;">{%chkCessati%}</div>
+
+	    <div style="position:absolute;top:2em; left:50em; width:14em;">{%btnGeneraPDF%}</div>
+	    <div style="position:absolute;top:5em; left:50em; width:14em;">{%btnSoloAggiornamento%}</div>
+	    <div style="position:absolute;top:8em; left:50em; width:14em;">{%btnCancella%}</div>
+	    <div style="position:absolute;top:11em; left:50em; width:14em;">{%btnAnomalie%}</div>
+    </div>	
+  
+  </body>
+</html>

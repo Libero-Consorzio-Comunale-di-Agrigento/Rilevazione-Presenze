@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+  <head>
+ </head>
+  <body>  	
+  <style type="text/css">
+    .wa131_list select {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  </style> 
+  <div class="medpDettaglioFM" style="position:relative; height:30em">	 
+   <div style="position:absolute;top:2em;left:1em">{%lblAnticipiSospesi%}</div>
+   <div class="wa131_list" style="position:absolute;top:3.5em;left:1em;height:5em;width:24em;">{%lstAnticipi%}</div>
+   <div style="position:absolute;top:3.5em;left:26em">{%btnElencoAnticipi%}</div>
+   <div style="position:absolute;top:10em;left:2em">
+	<table>
+	<tr><td>{%lblDataMiss%}</td><td>{%lblValDataMiss%}</td></tr>
+	<tr><td>{%lblCassa%}</td><td>{%lblValCassa%}</td></tr>
+	<tr><td>{%lblAnnoMov%}</td><td>{%lblValAnnoMov%}</td></tr>
+	<tr><td>{%lblNumMov%}</td><td>{%lblValNumMov%}</td></tr>
+	<tr><td>{%lblCodVoce%}</td><td>{%lblValCodVoce%}</td></tr>
+	</table>
+   </div>
+   <div style="position:absolute;top:2em;left:38em">{%lblMissioniDaLiquidare%}</div>
+   <div style="position:absolute;top:3.5em;left:38em">{%cmbMissioni%}</div>
+   <div style="position:absolute;top:10em;left:38em">
+	<table>
+	<tr><td>{%lblDataDa%}</td><td>{%lblValDataDa%}</td></tr>
+	<tr><td>{%lblProtocollo%}</td><td>{%lblValProtocollo%}</td></tr>
+	<tr><td>{%lblMeseScarico%}</td><td>{%lblValMeseScarico%}</td></tr>
+	<tr><td>{%lblMeseCompetenza%}</td><td>{%lblValMeseCompetenza%}</td></tr>
+	</table>
+   </div>
+   <div style="position:absolute; top:11em; left:26em;">
+	{%imgCollega%}
+   </div>
+
+   <div style="position:absolute; top:18em; left:1em;">{%lblRimborsi%}</div>
+   <div style="position:absolute; top:19.5em; left:1em;width: 51em;height: 10.5em; overflow-y:auto; overflow-x:auto; background-color: transparent;">
+     {%grdAnticipiMissioni%}
+   </div>
+  </body> 
+</html>

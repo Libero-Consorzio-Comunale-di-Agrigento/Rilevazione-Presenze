@@ -1,0 +1,78 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+
+  <body>
+    <style type="text/css">
+      .btn input {
+         width: 15em;
+      }
+
+      .mem textarea {
+         width: 100%;
+         height: 8em;
+      }
+    </style>
+
+    {%T000Intestazione%}
+
+    <!-- creazione dinamica componenti onBeforeProcess del templateProcessor WR100-->	
+    {%ContenutoDinamico%}  
+	    <div id="tabs" class="ui-tabs" style="position:absolute;top:9em;height:40em;width:96%;">
+				<ul>
+				  <li><a href="#TabelleIndici">Tabelle/Indici</a></li>
+				  <li><a href="#OggettiDB">Oggetti del DB</a></li>
+				  <li><a href="#QuerySupporto">Query di supporto</a></li>
+				</ul>
+	
+				<div class="ui-tabs-hide" id="TabelleIndici">
+					<div style="position:absolute;top: 4em; left: 1em;">{%rgpSelezioneTabelle%}</div>
+					<div class="checkGroupDin" style="position:absolute;top: 13em; left: 1em;width: 59em;height:25em;">{%cgpTabelle%}</div>
+					<div class="btn" style="position:absolute;top: 13em; left: 62em;">{%btnTableNoParallel%}</div>
+					<div class="btn" style="position:absolute;top: 15em; left: 62em;">{%btnIndexNoParallel%}</div>
+					<div class="btn" style="position:absolute;top: 18em; left: 62em;">{%btnDeleteSchemaStats%}</div>
+					<div class="btn" style="position:absolute;top: 20em; left: 62em;">{%btnGatherSchemaStats%}</div>
+					<div class="btn" style="position:absolute;top: 22em; left: 62em;">{%btnGatherTableStats%}</div>
+					<div class="btn" style="position:absolute;top: 25em; left: 62em;">{%btnMoveTablespace%}</div>
+					<div class="btn" style="position:absolute;top: 27em; left: 62em;">{%btnRebuildIndexes%}</div>
+					<div class="btn" style="position:absolute;top: 30em; left: 62em;">{%btnShrinkTable%}</div>
+					<div class="btn" style="position:absolute;top: 32em; left: 62em;">{%btnDeleteStatistics%}</div>
+					<div class="btn" style="position:absolute;top: 34em; left: 62em;">{%btnAnalyzeTable%}</div>
+					<div class="btn" style="position:absolute;top: 36em; left: 62em;">{%btnAnalyzeColumns%}</div>
+					<div class="btn" style="position:absolute;top: 38em; left: 62em;">{%btnAnalyzeIndexes%}</div>
+					
+				</div>
+	
+				<!-- Oggetti del DB -->
+				<div class="ui-tabs-hide" id="OggettiDB">
+					<div style="position:absolute;top: 4em; left: 1em;border: 1px solid #6F9DB9;width: 59em;height:34em;overflow-y: auto;overflow-x: auto; background-color: white;">{%trvOggettiDB%}</div>
+					<div style="position:absolute;top: 6em; left: 62em;">{%lblOggettoSelezionato%}</div>
+					<div style="position:absolute;top: 8em; left: 62em;">{%lblSelezionato%}</div>
+					<div class="btn" style="position:absolute;top: 10em; left: 62em;">{%btnRicompilaSelezionato%}</div>
+					<div class="btn" style="position:absolute;top: 13em; left: 62em;">{%btnV430Storico%}</div>
+					<div class="btn" style="position:absolute;top: 16em; left: 62em;">{%btnRicompilaTutto%}</div>
+					<div class="btn" style="position:absolute;top: 19em; left: 62em;">{%btnRicompilaInvalidi%}</div>
+					<div class="groupbox" style="position:absolute;top: 22em; left: 63em;">
+		          			<fieldset>
+					  	<legend>{%lblParametriCompilazione%}</legend>
+		          			<span>{%chkDebug%}</span><br>
+						<span>{%chkCodeTypeInterpreted%}</span><br>
+						<span>{%chkCodeTypeNative%}</span><br>
+						<span>{%chkReuseSettings%}</span>
+			  			</fieldset>
+					</div>
+				</div>
+	
+				<!-- Query di supporto -->
+				<div class="ui-tabs-hide" id="QuerySupporto">
+				  <div style="position:absolute;top: 4em; left: 1em;">{%rgpQuerySupporto%}</div>
+				  <div style="position:absolute;top: 5em; left: 40em;">{%btnEsegui%}</div>
+				  <div style="position:absolute;top: 7.5em; left: 40em;">{%btnCopiaTestoQuery%}</div>
+				  <div style="position:absolute;top: 12em; left: 1em;width: 59em;height: 30em;overflow-y: auto;overflow-x: auto;">{%grdQuerySupporto%}</div>
+				</div>
+	    </div>
+	    <div class="mem" style="position:absolute;top: 50em; left: 2em;width: 95%;">{%memResult%}</div>  
+  </body>
+</html>
+
