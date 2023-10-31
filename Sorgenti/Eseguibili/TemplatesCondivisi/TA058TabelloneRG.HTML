@@ -1,0 +1,389 @@
+{%DocType%}
+<html>
+	<head>
+	</head>
+	<body>
+		<div class="medpTabRegion" style="position: relative; height: 51em;">
+			<div id="WA058_DivAvvisi" class="invisibile">
+			</div>
+			<div id="WA058_DivPulsanti">
+				<div id="WA058_DivPulsantiLeft">
+					<span id="WA058_SpanBtnSalva" style="padding-right:1em" class="invisibile">
+						{%btnSalva%}
+					</span>
+					<span id="WA058_SpanBtnCancella" style="padding-right:1em" class="invisibile">
+						{%btnCancella%}
+					</span>
+					<span id="WA058_SpanBtnOperativa" style="padding-right:1em" class="invisibile">
+						{%btnOperativa%}
+					</span>
+					<span id="WA058_SpanBtnBlocca" style="padding-right:1em">
+						{%btnBlocca%}
+					</span>
+					<span id="WA058_SpanBtnSblocca" style="padding-right:1em">
+						{%btnSblocca%}
+					</span>
+					<button id="WA058_BtnDatiOpzionali" style="padding-right:1em" class="ui-state-default pulsante invisibile" data-jq-dropdown="#WA058_DivVisDatiOpz">
+						<span class="ui-icon ui-icon-triangle-1-s" style="display: inherit;"></span>
+						Visualizzazione dati opzionali
+					</button>
+					<span style="padding-left: 3em;" id="WA058_SpanRicercaAnomalie" class="invisibile">	
+						{%btnRicercaAnomalie%}
+						{%chkElaborazioneAnnuale%}
+						<span style="padding-left:1em">
+							{%btnFiltroAnomalie%}
+						</span>
+					</span>
+				</div>
+				<div id="WA058_DivPulsantiRight" class="invisibile">
+					<input type="button" class="pulsante" onclick="apriDialogLegenda();" value="?" title="Legenda">
+					<span id="WA058_SpanAnnulla" style="padding-right: 1em;">
+						{%btnChiudi%}
+					</span>
+				</div>
+			</div>
+			<br>
+			<div id="jqgrid-div-container" style="position: relative; width:100%; background-color: transparent;">
+				<table id="tabellone_jqgrid">
+				</table>
+				<div id="tabellone_jqgrid_pager">
+				</div>
+			</div>
+			<div id="WA058_DivDettTurno" class="invisibile">
+				<div>
+					Orario:
+				</div>
+				<div>
+					<select id="WA058_DivDettTurno_CmbOrario" class="width50chr fontcourierImp" ></select>
+				</div>
+				<div style="margin-top: 1em;">
+					<table style="margin-left: auto; margin-right: auto;">
+						<tr>
+							<td>
+								Num. fascia 1&ordm; turno
+								<br>
+								<select id="WA058_DivDettTurno_CmbTurno1" class="width20chrImp fontcourierImp" ></select>
+								<select id="WA058_DivDettTurno_CmbTurnoEU1" class="width5chrImp fontcourierImp" ></select>
+							</td>
+							<td style="width: 3em;">
+							</td>
+							<td>
+								Num. fascia 2&ordm; turno
+								<br>
+								<select id="WA058_DivDettTurno_CmbTurno2" class="width20chrImp fontcourierImp"></select>
+								<select id="WA058_DivDettTurno_CmbTurnoEU2" class="width5chrImp fontcourierImp" ></select>
+							</td>
+						</tr>
+				  </table>
+				</div>
+				<div style="margin-top: 1em;">
+					<div>
+						Area:
+					</div>
+					<div>
+						<select id="WA058_DivDettTurno_CmbArea" class="width50chr fontcourierImp" ></select>
+					</div>
+				</div>
+				<div style="margin-top: 1em;">
+					<input type="checkbox" id="WA058_DivDettTurno_ChkAntincendio">&nbsp;Responsabile antincendio 
+				</div>
+				<div style="margin-top: 1em;">
+					<input type="checkbox" id="WA058_DivDettTurno_ChkReferente">&nbsp;Referente 
+				</div>
+				<div style="margin-top: 1em;">
+					<input type="checkbox" id="WA058_DivDettTurno_ChkRichiestoDaTurnista">&nbsp;Richiesto da turnista
+				</div>
+				<div>
+					<div class="groupbox" style="margin-top: 1em; width: 100%;">
+						<fieldset style="width: 95%;">
+							<legend>Assenze</legend>
+							<div>
+								1&ordf; Assenza
+								&nbsp;
+								<select id="WA058_DivDettTurno_CmbAss1" class="width40chrImp fontcourierImp" ></select>
+							</div>
+							<br>
+							<br>
+							<div style="margin-top: 1em;">
+								2&ordf; Assenza
+								&nbsp;
+								<select id="WA058_DivDettTurno_CmbAss2" class="width40chrImp fontcourierImp" ></select>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div>
+					&nbsp;
+				</div>
+				<div>
+					<textarea id="WA058_DivDettTurno_MemoNote" style="width: 100%; height: 100px; resize: none;"></textarea>
+				</div>
+				<div>
+					&nbsp;
+				</div>
+				<div style="text-align: right;">
+					<input type="button" id="WA058_DivDettTurno_Conferma" class="pulsante" value="Conferma">  
+					<input type="button" id="WA058_DivDettTurno_Annulla" class="pulsante" value="Annulla">
+				</div>
+				<input type="hidden" id="WA058_DivDettTurno_IndDipendente">
+				<input type="hidden" id="WA058_DivDettTurno_IndGiorno">
+			</div>
+			<div class="invisibile">
+				{%btnHdnCopiaPianif%}
+				{%btnHdnVisCompResAss%}
+				{%btnHdnInsCancGiustif%}
+				{%btnHdnPianifReper%}
+				{%edtHdnRigaSel%}
+				{%edtHdnColonnaSel%}
+				{%edtHdnPaginaAttuale%}
+				{%edtHdnScrollTop%}
+				{%edtHdnScrollLeft%}
+				{%btnHdnEsportaExcel%}
+			</div>
+		</div>
+		<div id="WA058_DivVisDatiOpz" class="jq-dropdown jq-dropdown-tip">
+			<ul class="jq-dropdown-menu">
+				<li>
+					<div>{%chkVisRigaTurni%}</div>
+				</li>
+				<li>
+					<div>{%chkVisMatricola%}</div>
+				</li>
+				<li>
+					<div>{%chkVisSaldiOre%}</div>
+				</li>
+				<li>
+					<div>{%chkVisTotTurni%}</div>
+				</li>
+				<li>
+					<div>{%chkVisRiposi%}</div>
+				</li>
+				<li>
+					<div>{%chkVisTabSint%}</div>
+				</li>
+				<li class="jq-dropdown-divider"></li>
+				<li>
+					<div>{%chkVisAssenzeMezzaGiorn%}</div>
+				</li>
+				<li>
+					<div>{%chkVisAssenzeAdOre%}</div>
+				</li>
+		   </ul>
+		</div>
+		<div id="WA058_DivLegenda" class="invisibile" title="Legenda">
+			<div style="overflow-y: scroll; height: 500px;">
+				<p>
+					<b>Celle tabellone</b>		
+					<div style="margin-left: auto; margin-right: auto;">
+						<table class="WA058_DivLegenda_Table">
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										&nbsp;
+									</div>
+								</td>
+								<td>
+									Non pianificato o riposo
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda bg_verde_pastello">
+										<div style="color:#000000;text-align:left;">MO: xxx</div>
+										<div style="color:#000000;text-align:left;">T1: x.z</div>
+									</div>
+								</td>
+								<td>
+									Sviluppo turni
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda bg_giallo_pastello">
+										<div style="color:#000000;text-align:left;">MO: xxx</div>
+										<div style="color:#000000;text-align:left;">T1: x.z</div>
+									</div>
+								</td>
+								<td>
+									Pianificato
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda bg_giallo_pastello">
+										<div style="color:#FF0000;text-align:left;">MO: xxx</div>
+										<div style="color:#FF0000;text-align:left;">T1: x.z</div>
+									</div>
+								</td>
+								<td>
+								  Modificato (testo rosso)
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda bg_aqua">
+										<div style="color:#000000;text-align:left;">MO: xxx</div>
+										<div style="color:#000000;text-align:left;">T1: x.z</div>
+									</div>
+								</td>
+								<td>
+									Cambio squadra
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda bg_grigio_argento">
+										&nbsp;
+									</div>
+								</td>
+								<td>
+									Non in squadra
+								</td>
+							</tr>
+						</table>
+					</div>
+				</p>
+				<br>
+				<p>
+					<b>Contenuto delle celle - Assenze</b>
+					<div style="margin-left: auto; margin-right: auto;">
+						<table class="WA058_DivLegenda_Table">
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="background-color:#FF0000;color:#FFFFFF;text-align:left;">A1: xxx</div>
+									</div>
+								</td>
+								<td>
+									Assenza operativa effettiva a giornata intera
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="background-color:#FF0000;color:#FFFFFF;text-align:left;font-style:italic;">A1: xxx</div>
+									</div>
+								</td>
+								<td>
+									Assenza non operativa a giornata intera aggiunta mediante pianificazione (solo in modalità <i>Gestione assenze</i> non operativa)
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="background-color:#00D900;color:#000000;text-align:left;">A1: xxx</div>
+									</div>
+								</td>
+								<td>
+									Assenza richiesta dal dipendente e da autorizzare
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="background-color:#00FFFF;color:#000000;text-align:left;">A1: xxx</div>
+									</div>
+								</td>
+								<td>
+									Assenza da validare
+								</td>							
+							</tr>
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white; width: 75px;">
+										<div style="background-color:#FFB9DC;color:#000000;text-align:left;">A1: xxx(T)</div>
+									</div>
+								</td>
+								<td>
+									Assenza a giornata parziale, la lettera tra parentesi <i>T</i> indica il tipo:
+									<br>
+									<i>M</i>: mezza giornata
+									<br>
+									<i>D</i>: da ore - a ore
+									<br>
+									<i>N</i>: numero di ore
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white; width: 75px;">
+										<div style="background-color:#CCFFFF;color:#000000;text-align:left;">A1: xxx(T)</div>
+									</div>
+								</td>
+								<td>
+									Assenza a giornata parziale da validare, la lettera tra parentesi <i>T</i> indica il tipo:
+									<br>
+									<i>M</i>: mezza giornata
+									<br>
+									<i>D</i>: da ore - a ore
+									<br>
+									<i>N</i>: numero di ore
+								</td>
+							</tr>
+						</table>
+					</div>
+				</p>
+				<br>
+				<p>
+					<b>Contenuto delle celle - Flag e reperibilità</b>
+					<div style="margin-left: auto; margin-right: auto;">
+						<table class="WA058_DivLegenda_Table">
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="background-color:#0000FF;color:#FFFF00;text-align:left;">R1: xxx</div>
+									</div>
+								</td>
+								<td style="width: 40%">
+									Turno di reperibilità
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="text-align: center;padding: 1px;">
+											<span style="padding: 1px;background-color:#FFA500;color:#FFFFFF;">A</span>
+											<span style="padding: 1px;background-color:#FF00FF;color:#FFFFFF;margin-left:2px;">R</span>
+											<span style="padding: 1px;background-color:#00FF00;color:#000000;margin-left:2px;">T</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									<i>A</i>: antincendio
+									<br>
+									<i>R</i>: referente turno
+									<br>
+									<i>T</i>: richiesto da turnista
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="position: relative; height: 0px;">
+											<img style="position: absolute; top:-2px; right: -2px;" src="./img/nota_corner.png">
+										</div>
+									</div>
+								</td>
+								<td>
+									Nota
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="WA058_DivLegenda" style="background-color: white;">
+										<div style="position: relative; height: 0px;">
+											<img style="position: absolute; top:-2px; left: -2px;" src="./img/anomalia_corner.png">
+										</div>
+									</div>
+								</td>
+								<td>
+									Anomalia
+								</td>
+							</tr>
+						</table>
+					</div>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+  <div class="medpTabRegion" style="position:relative;">
+    <div class="groupbox">
+      <fieldset style="width: 45em;">
+        <legend>{%lblInformazioniDellaRichiesta%}</legend>
+        <table>
+          <tr>
+            <td style="width:15em">{%lblIDRichiesta%}</td>
+            <td>{%lblIDRichiestaValue%}</td>
+          </tr>
+          <tr>
+            <td>{%lblDataRichiesta%}</td>
+            <td>{%lblDataRichiestaValue%}</td>
+          </tr>
+          <tr>
+            <td>{%lblCodiceIter%}</td>
+            <td>{%lblCodiceIterValue%}</td>
+          </tr>
+          <tr>
+            <td>{%lblRichiedente%}</td>
+            <td>{%lblRichiedenteValue%}</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top;">{%lblNoteRichiedente%}</td>
+            <td>{%mmNoteRichiedenteValue%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div class="groupbox spazio_top">
+      <fieldset style="width: 45em;">
+        <legend>{%lblInfoAutorizzatore%}</legend>
+				{%grdInfo%}
+        <!--<table>
+          <tr>
+            <td style="width:15em">{%lblDataAutorizzazione%}</td>
+            <td>{%lblDataAutorizzazioneValue%}</td>
+          </tr>
+          <tr>
+            <td>{%lblAutorizzatore%}</td>
+            <td>{%lblAutorizzatoreValue%}</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top;">{%lblNoteAutorizzatore%}</td>
+            <td>{%mmNoteAutorizzatoreValue%}</td>
+          </tr>
+        </table>-->
+      </fieldset>
+    </div>
+    <div id="grpRevoca" class="groupbox spazio_top">
+      <fieldset style="width: 45em;">
+        <legend>{%lblInfoRevoca%}</legend>
+        <table>
+          <tr>
+            <td style="width:15em">{%lblIDRevoca%}</td>
+            <td>{%lblIDRevocaValue%}</td>
+          </tr>
+          <tr>
+            <td>{%lblDataRevoca%}</td>
+            <td>{%lblDataRevocaValue%}</td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top;">{%lblNoteRevoca%}</td>
+            <td>{%mmNoteRevocaValue%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div id="grpDocumenti" class="groupbox spazio_top">
+      <fieldset style="width: 45em;">
+        <legend>{%lblElencoAllegati%}</legend>
+        {%grdDocumenti%}
+				<div style="width: 100%;  margin-top: 1em;" align="right">
+					<hr class="gradiente"/>				
+					<table class="medpTableContainer">
+						<tr>
+							<td style="width: 85%;">								
+								{%fileUpload%}								
+							</td>
+							<td>							
+								{%btnUpload%}							
+							</td>						
+						</tr>
+					</table>
+				</div>						
+      </fieldset>			
+    </div>
+  </div>
+</body>
+
+</html>

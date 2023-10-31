@@ -1,0 +1,52 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>	
+		<div class="medpElaborazioneFM" style="position:relative; height:32em;">
+	    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblAnno%}</td></tr><tr><td>{%sedtAnno%}</td></tr>
+		  </table>
+	    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 8em;">
+				<tr><td>{%lblDaMese%}</td></tr><tr><td>{%cmbDaMese%}</td></tr>
+		  </table>
+	    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 17em;">
+				<tr><td>{%lblAMese%}</td></tr><tr><td>{%cmbAMese%}</td></tr>
+		  </table>
+	    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 27em;">
+				<tr><td>{%lblTipo%}</td></tr><tr><td>{%dcmbTipo%}</td></tr>
+		  </table>
+	    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 34em;">
+				<tr><td>&nbsp;</td></tr><tr><td>{%lblDescTipo%}</td></tr>
+		  </table>
+	    
+			<table style="position:absolute;top:5em; left: 2em;">
+			<tr>
+				<td>
+					<div style="margin-top:1em">{%lblGruppi%}</div>
+					<div class="checkGroupDin" style="width: 45em;height:10em;overflow-x:auto;">{%clbGruppi%}</div>
+				</td>
+			</tr>
+		  </table>
+
+			<div id="rgpTipo" class="groupbox" style="position:absolute;top:18.5em; left: 2em;">
+	 			<fieldset >
+	  			{%rgpTipoBudget%}
+	  		</fieldset> 
+			</div>
+
+	    <div style="position:absolute;top:22em; left: 2em;">{%chkSaltoPagina%}</div>
+	    <div style="position:absolute;top:24em; left: 2em;">{%chkDettaglioDipendenti%}</div>
+	    <div style="position:absolute;top:26em; left: 2em;">{%chkTotGruppo%}</div>
+	    
+	    <div style="position:absolute;top:22em; left: 15em;">{%chkAggiornaFruito%}</div>
+	    <div style="position:absolute;top:24em; left: 15em;">{%chkTotMese%}</div>
+	    <div style="position:absolute;top:26em; left: 15em;">{%chkTotGenerale%}</div>
+	    
+			<div style="position:absolute;top:24em; left: 30em;">{%chkCostoInMoneta%}</div>
+			
+      <div style="position:absolute;top:29em; left: 2em;">{%btnGeneraPDF%}</div>
+
+    </div>
+	</body> 
+</html>

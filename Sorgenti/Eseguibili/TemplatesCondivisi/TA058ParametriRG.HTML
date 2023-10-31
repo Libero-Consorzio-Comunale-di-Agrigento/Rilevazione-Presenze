@@ -1,0 +1,53 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpTabRegion" style="position:relative;height:37em;">		    
+			<table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+				<tr>
+					<td>&nbsp;</td>
+					<td>{%lblInizio%}</td>
+					<td>{%lblFine%}</td>
+					<td>&nbsp;</td></tr>
+				<tr>
+					<td>{%imgPeriodoPrec%}</td>
+					<td>{%edtDataDa%}</td>
+					<td>{%edtDataA%}</td>
+					<td>{%imgPeriodoSucc%}</td>
+				</tr>									
+			</table>
+			
+			<table class="medpTableContainer" style="position:absolute;top: 5em; left: 2em;">
+				<tr><td colspan="2">{%lblSquadra%}</td></tr>
+				<tr><td>{%cmbSquadra%}</td><td>{%LblDescrSquadra%}</td></tr>									
+				<tr><td colspan="2">{%chkIncludiDipCS%}</td></tr>
+				<tr><td><br></td></tr>									
+				<tr><td colspan="2">{%lnkProfilo%}</td></tr>
+				<tr><td>{%cmbProfili%}</td><td>{%LblDescrProfilo%}</td></tr>									
+			</table>
+			
+			<div class="groupbox" style="position:absolute;top: 15em; left: 2em;">{%lblCopiaAss%}</div>
+							
+			<div class="groupbox align_center" style="position:absolute;top: 18.5em; left: 2em;">
+	 			<fieldset style="width:17em">
+		  		<legend>{%lblTipo%}</legend> 
+		  		{%rgpTipo%}
+	  		</fieldset> 
+			</div>			
+						
+			<table class="medpTableContainer" style="position:absolute;top: 23.5em; left: 1.75em;">
+				<tr><td>{%btnVisualizza%}</td></tr>
+				<tr><td style="padding-top:0.5em">{%btnEsegui%}</td></tr>									
+				<tr><td style="padding-top:0.5em">{%btnGeneraPDF%}</td></tr>
+			</table>								
+			
+			<div style="position:absolute;top: 32em; left: 2em;">{%chkIniCorr%}</div>
+			<div style="position:absolute;top: 34em; left: 2em;">{%chkArchiviaTabellone%}</div>
+			
+			<span style="position:absolute; top: 36em; left: 1.5em;">
+				{%lblModificheInCorso%}
+			</span>			
+		</div>		
+	</body>
+</html>

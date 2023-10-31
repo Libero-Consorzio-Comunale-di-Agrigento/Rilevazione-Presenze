@@ -1,0 +1,157 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <style type="text/css">
+      .WA040TabRegion.medpTabRegion input[type="radio"] {
+        margin-left: 0.5em !important;
+      }
+      
+      /*fieldset all'interno dei frame di dettaglio che contengono tabelle*/
+      .WA040TabRegion.groupbox fieldset table tr td {
+        padding-left:0.5em !important;
+      }
+      
+      .WA040TabRegion.groupbox fieldset table tr td:first-child span {
+        padding-left:0em !important;
+      }
+      
+      .WA040TabRegion.groupbox fieldset table tr td:first-child input {
+        margin-left:0em !important;
+      }
+    </style>
+    
+    <div id="wc040_dialog_stampa" class="medpDettaglioFM WA040TabRegion medpTabRegion" style="position:relative;height:52.5em;">
+
+			<table cellpadding="5" style="position:absolute;top: 1em; left: 2em;">
+				<tr>
+					<td>{%lnkProfilo%}{%lblProfilo%}</td>
+					<td>{%dCmbLkpProfili%}</td>
+				</tr>
+			</table>		
+		
+      <div class="groupbox" style="position:absolute;top: 3.5em; left: 2em;">
+        <fieldset style="height:6.5em; width:14.5em">
+          <legend>{%lblTipoStampa%}</legend> 
+          {%rgpTipoStampa%}
+        </fieldset> 
+      </div>
+			
+      <div class="WA040TabRegion groupbox" style="position:absolute;top: 3.5em; left:18.4em;">
+        <fieldset style="height:6.5em; width:20.5em">
+          <legend>{%lblPeriodo%}</legend> 
+          <table style="height: 5.5em; margin-left: 0.5em">
+            <tr><td>{%lblDataDa%}</td><td>{%edtDataDa%}</td><td>{%lblDataA%}</td><td>{%edtDataA%}</td></tr>
+          </table>
+        </fieldset> 
+      </div>
+			
+			<div class="WA040TabRegion groupbox" style="position:absolute;top:11.75em;left:2em;">
+        <fieldset style="width:37em">      
+          <legend>{%lblGLayout%}</legend>
+          <table cellpadding="5">
+            <tr>
+							<td>{%lblFont%}</td>
+							<td>{%cmbFontName%}</td>
+							<td>{%lblDimensione%}</td>
+							<td>{%cmbFontSize%}</td>
+						</tr>
+						<tr>
+							<td>{%lblOrientamentoPag%}</td>
+							<td>{%cmbOrientamentoPag%}</td>
+							<td>{%lblFormatoPag%}</td>							
+							<td>{%cmbFormatoPag%}</td>           
+						</tr>
+          </table>
+        </fieldset>
+      </div> 
+			
+			<div class="WA040TabRegion groupbox" style="position:absolute;top:19.5em;left:2em;">
+        <fieldset style="width:37em">      
+          <legend>{%lblGTitolo%}</legend>
+          <table cellpadding="5">
+            <tr>
+							<td>{%lblTitolo%}</td>
+							<td colspan="3">{%edtTitolo%}</td>
+						</tr>
+						<tr>
+							<td>{%lblTitoloSize%}</td>
+							<td>{%cmbFontTitoloSize%}</td>
+							<td>{%chkTitoloBold%}</td>							
+							<td>{%chkTitoloUnderline%}</td>           
+						</tr>
+          </table>
+        </fieldset>
+      </div>
+			
+			<table style="position:absolute;top:27.5em; left: 2em;">
+        <tr><td>{%lblCampoRaggr%}</td><td>&nbsp;</td></tr>
+        <tr><td style="width:20em">{%dcmbCampoRaggr%}</td><td>{%chkSaltoPagina%}</td></tr>
+      </table>
+      
+			<div id="grpTurni" style="position:absolute;top:30.5em; left: 2em;">
+        <table>
+          <tr>
+            <td>{%lblTurni%}</td>
+            <td style="width:15.5em">{%edtTurni%}{%btnScegliTurni%}</td>
+            <td>
+              <div class="groupbox">
+                <fieldset style="width:12em">
+                  <legend>{%lblSelTurni%}</legend> 
+                  {%rgpSelTurni%}
+                </fieldset> 
+              </div>
+            </td>
+            </tr>
+        </table>
+      </div>
+      
+			<table style="position:absolute;top:34.25em; left: 2em;">
+        <tr><td>{%lblCampoConNom%}</td><td>&nbsp;</td></tr>
+        <tr><td style="width:20em">{%dcmbCampoConNom%}</td><td>{%chkNomeCompleto%}</td></tr>
+      </table>
+            
+			<table style="position:absolute;top:37.75em; left: 2em;">
+        <tr><td style="width:20em">{%chkIncludiNonPianif%}</td><td>{%chkLegenda%}</td></tr>
+      </table>
+		
+      <div id="grpDettaglio"class="groupbox" style="position:absolute;top:37.75em; left: 2em;">
+        <fieldset style="height:4em; width:37em">
+          <legend>{%lblCampoDett%}</legend> 
+          {%rgpCampoDettaglio%}
+        </fieldset> 
+      </div>
+			<div style="position:absolute;top:39.35em; left:20em;">{%dcmbCampoDett%}</div>			
+
+			<div id="grpDettaglioTabellone" class="WA040TabRegion groupbox" style="position:absolute;top:39.75em; left: 2em;">
+        <fieldset style="width:37em">
+          <legend>{%lblDettaglioTabellone%}</legend> 
+          <table>
+            <tr>
+              <td>
+                <fieldset style="height:6em;">
+                  <legend>{%lblDatiPianif%}</legend> 
+                  <table style="width:17.4em">
+                    <tr><td>{%chkCodice%}</td><td>{%chkSigla%}</td><td>{%chkPriorita%}</td></tr>
+                    <tr><td colspan="2">{%chkOrario%}</td><td>{%chkOrarioInRiga%}</td></tr>
+                    <tr><td colspan="2">{%chkDatiAggiuntivi%}</td><td>{%chkDatiAggInRiga%}</td></tr>
+                    <tr><td colspan="3">{%chkDatoLibero%}</td></tr>
+                  </table>
+                </fieldset> 
+              </td>
+              <td>
+                <fieldset style="height:6em; width:16em">
+                  <legend>{%lblDatiAssenza%}</legend> 
+                  {%rgpDatiAssenza%}
+                </fieldset> 
+              </td>
+            </tr>
+          </table>
+        </fieldset> 
+      </div>
+      <div style="position:absolute;top:45.9em; left:32.5em;">{%edtSiglaAssenza%}</div>
+			<div style="position:absolute;top:50.0em; left: 2em;">{%btnGeneraPDF%}</div>
+    </div>
+  </body> 
+</html>
