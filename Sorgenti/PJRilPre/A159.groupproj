@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B0EC2A43-16C6-4DE9-B0D6-275567F03798}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="A159PArchiviazioneCartellini.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\CSI\CSI_Sviluppo\PJRilPre\A027PCarMen.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\CSI\CSI_Sviluppo\PJServizi\B027PCartellinoSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\PJServizi\B026PArchiviazioneCartelliniSrv.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="A159PArchiviazioneCartellini">
+        <MSBuild Projects="A159PArchiviazioneCartellini.dproj"/>
+    </Target>
+    <Target Name="A159PArchiviazioneCartellini:Clean">
+        <MSBuild Projects="A159PArchiviazioneCartellini.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A159PArchiviazioneCartellini:Make">
+        <MSBuild Projects="A159PArchiviazioneCartellini.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="A027PCarMen">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJRilPre\A027PCarMen.dproj"/>
+    </Target>
+    <Target Name="A027PCarMen:Clean">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJRilPre\A027PCarMen.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="A027PCarMen:Make">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJRilPre\A027PCarMen.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJServizi\B027PCartellinoSrv.dproj"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv:Clean">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJServizi\B027PCartellinoSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B027PCartellinoSrv:Make">
+        <MSBuild Projects="..\..\CSI\CSI_Sviluppo\PJServizi\B027PCartellinoSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv">
+        <MSBuild Projects="..\PJServizi\B026PArchiviazioneCartelliniSrv.dproj"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv:Clean">
+        <MSBuild Projects="..\PJServizi\B026PArchiviazioneCartelliniSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="B026PArchiviazioneCartelliniSrv:Make">
+        <MSBuild Projects="..\PJServizi\B026PArchiviazioneCartelliniSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="A159PArchiviazioneCartellini;A027PCarMen;B027PCartellinoSrv;B026PArchiviazioneCartelliniSrv"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="A159PArchiviazioneCartellini:Clean;A027PCarMen:Clean;B027PCartellinoSrv:Clean;B026PArchiviazioneCartelliniSrv:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="A159PArchiviazioneCartellini:Make;A027PCarMen:Make;B027PCartellinoSrv:Make;B026PArchiviazioneCartelliniSrv:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
