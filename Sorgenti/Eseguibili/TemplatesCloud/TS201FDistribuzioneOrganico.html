@@ -1,0 +1,83 @@
+{%DocType%}
+<html>
+  <head>
+	<style>
+		#TRVPIANTA a:link    {text-decoration: none;}
+		#TRVPIANTA a:visited {text-decoration: none;}
+		#TRVPIANTA a:hover   {text-decoration: underline;}
+		#TRVPIANTA a:active  {text-decoration: underline;}
+	</style>  
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    {%WC007FFormContainerFM%}	
+    	
+    <div class="medpElaborazioneFM" style="position:relative;height:62em;">
+	    <table class="medpTableContainer" style="position:absolute;top:1em;left:1em;height: 3.5em;">
+	  		<tr><td>{%lblDataDa%}</td><td>{%lblDataA%}</td><td>{%lblStruttura%}</td>               <td>               </td></tr>
+	  		<tr><td>{%edtDataDa%}</td><td>{%edtDataA%}</td><td>{%cmbStrutturaVisualizzazione%}</td><td>{%btnAggiorna%}</td></tr>
+		</table>
+		<div class="groupbox" style="position:absolute;top:5.5em;left:1em;">
+			<fieldset style="width:20em;height:5em;">
+				<legend>{%lblImpostazioni%}</legend>
+				{%rgpImpostazioni%}
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top:5.5em;left:23em;">
+			<fieldset style="width:17em;height:5em;">
+				<legend>{%lblVisualizzazioni%}</legend>
+				<div style="position:absolute;top:1.5em;left:0em;">{%chkDescrizioneDato%}</div>
+				<div style="position:absolute;top:3em;left:0em;">{%chkVisInizioFine%}</div>
+				<div style="position:absolute;top:4.5em;left:0em;">{%chkPercorso%}</div>
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top:5.5em;left:42em;">
+			<fieldset style="width:20em;height:5em;">
+				<legend>{%lblSelezioni%}</legend>
+				<div style="position:absolute;top:1.5em;left:0em;">{%chkVisStrutture%}</div>
+				<div style="position:absolute;top:3em;left:0em;">{%chkVisAttiPPrevisti%}</div>
+				<div style="position:absolute;top:4.5em;left:0em;">{%chkVisAttiFCopertura%}</div>
+			</fieldset>
+		</div>
+				
+		<div style="position:absolute;top:12em;left:1em;">
+		    {%grdComandi%}
+		</div>
+		<table class="medpTableContainer" style="position:absolute;top:12em;left:39em;">
+	  		<tr><td style="vertical-align:top">{%lblPercorso%}</td> 
+			    <td></td> 
+				<td style="vertical-align:top">{%memPercorso%}</td> 
+			</tr>
+		</table>
+		
+		<div id="trvscrollable" style="position:absolute;top:15.5em;left:1em;border:1px solid #6F9DB9;width:76em;height:30em;overflow-y:auto;overflow-x:auto;background-color:white;border-radius: 4px"  onscroll="onscrollDivWR010(this,'HIDDEN_WS201TRVSCROLLABLESCROLLTOP','HIDDEN_WS201TRVSCROLLABLESCROLLLEFT')">{%trvPianta%}</div>
+		<div style="position:absolute;top:16em;left:77.5em;">{%btnFunzioni%}</div>
+		<!-- <div style="position:absolute;top:19em;left:77.5em;">{%btnEspandi%}</div> -->
+		<!-- <div style="position:absolute;top:22em;left:77.5em;">{%btnComprimi%}</div> -->
+		
+		<div style="position:absolute;top:47em;left:1em;">{%grdNavBar%}</div>
+		<div id="VisPosti" class="groupbox" style="position:absolute;top:49em;left:1em; min-height: 8.5em;"> 
+			<fieldset>    
+				<legend>{%lblPosti%}</legend>
+				<table>
+					<tr><td style="vertical-align:top">
+							<div class="grigliaDatiNav">{%PagNavBarPosti%}</div>
+							<div class="grigliaDati">{%dgrdPosti%}</div>
+						</td>
+						<td style="vertical-align:top">
+							<div class="grigliaDatiNav">{%PagNavBarDettaglio%}</div>
+							<div class="grigliaDati">{%dgrdDettaglio%}</div>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+    </div>
+    {%<frm>WS201FSelezioneDatoFM</frm>%}			
+    {%<frm>WS201FValiditaNodoFM</frm>%}			
+    {%<frm>WS201FCaricamentoInizialeFM</frm>%}	
+    {%<frm>WS201FAllineamentoFM</frm>%}				
+    {%<frm>WS201FSelezioneAttiFM</frm>%}				
+  </body>
+</html>

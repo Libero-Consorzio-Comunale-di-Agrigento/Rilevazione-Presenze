@@ -1,0 +1,51 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>   	
+  	 <style type="text/css">    
+    .r003_list select{      
+     	width: 18em;
+      height: 40em;
+      margin: 0;
+    }
+    .addSerb {
+    	height:44.5em;
+    }
+		</style>
+  <div class="medpDettaglioFM" style="position:relative; height:49em">	
+		<div style="position:absolute;top:1em;left:1em;">
+			<table>
+				<tr>
+					<td>{%lblCodice%}</td>
+					<td style="padding-left:2em;">{%lblTitolo%}</td>					
+					<td style="padding-left:2em;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>{%dedtCodice%}</td>
+					<td style="padding-left:2em;">{%dedtTitolo%}</td>					
+					<td style="padding-left:2em;">{%dChkStampaBloccata%}</td>
+				</tr>				
+			</table>
+		</div>
+		<div style="position:absolute;top:5em;left:1em;">
+			{%cmbSerbatoi%}
+		</div>		
+		<div style="position:absolute;top:7em;left:1em;">
+			{%edtRicercaTesto%}{%btnRicercaGiu%}{%btnRicercaSu%}
+		</div>
+		<div class="r003_list" style="position:absolute;top:9em;left:1em;width:18em;height:38em;">
+			{%lstDatiSerbatoio%}
+		</div>				
+		<div style="position:absolute;top:9em;left:19.5em;">
+			{%btnAggiungiSerbatoio%}
+		</div>				
+		<div style="position:absolute;top:4.5em;left:23em;">
+			<div class="clearDiv" style="position:relative;width:58em;">
+     		{%grdTabDetail%}
+     		<div style="width:100%;">{%WR003GeneraleRG%}{%WR003OrdinamentoRG%}{%WR003AreaStampaRG%}{%WR003CodiciSerbatoioRG%}{%WR003FiltroSerbatoioRG%}{%WR003DettaglioSerbatoioRG%}</div>
+  	 	</div>	  		
+		</div>	  		   			
+  </div>  
+  </body> 
+</html>

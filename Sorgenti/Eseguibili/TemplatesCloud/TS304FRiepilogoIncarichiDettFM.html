@@ -1,0 +1,147 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <div class="medpDettaglioFM" style="position: relative; height: 45em;">
+
+    <table style="position: absolute; top: 1em; left: 1em; ">
+      <tr>
+        <td> {%lblCodice%}</td>
+      </tr>
+      <tr>
+        <td> {%dedtCodice%}</td>
+      </tr>
+    </table>
+    <table style="position: absolute; top: 1em; left: 10em; ">
+      <tr>
+        <td> {%lblDescrizione%}</td>
+      </tr>
+      <tr>
+        <td> {%dedtDescrizione%}</td>
+      </tr>
+    </table>
+    <table style="position: absolute; top: 1em; left: 68em;">
+      <tr>
+        <td> {%dchkTotale%}</td>
+      </tr>
+      <tr>
+        <td> {%dchkNumLivelli%}</td>
+      </tr>
+      <tr>
+        <td> {%dchkGerarchia%}</td>
+      </tr>
+    </table>
+
+    <div id="tabs" class="ui-tabs" style="position: absolute; top: 6em; height: 35em; width: 97%;">
+      <ul id="tabs_menu">
+        <li><a href="#unitaOrganizzativa">Unita organizzativa</a></li>
+        <li><a href="#tipoIncarico">Tipo incarico</a></li>
+        <li><a href="#posizione">Titolo posizione / Tipologia posizione</a></li>
+        <li><a href="#dipendenti">Dettaglio dipendenti</a></li>
+      </ul>
+
+      <div id="unitaOrganizzativa">
+        <table class="ts304Opzioni">
+          <tr>
+            <td style="padding-right: 2em; "> {%dchkStampaUnitaOrg%} </td>
+            <td style="padding-right: 2em; "> {%dchkSaltoPagUnitaOrg%}</td>
+            <td style="padding-right: 2em; "> {%lblFontUnitaOrg%} {%edtFontUnitaOrg%} {%btnFontUnitaOrg%}</td>
+          </tr>
+        </table>
+
+        <div class="ts304Lista">
+          <div>{%lblFiltroUnitaOrg%}</div>
+          <div class="checkGroupDin" style="width: 100%; height: 25em; ">
+            {%lstUnitaOrg%}
+          </div>
+        </div>
+      </div>
+
+      <div id="tipoIncarico">
+        <table class="ts304Opzioni">
+          <tr>
+            <td style="padding-right: 2em; ">{%dchkStampaTipoIncarico%}</td>
+            <td style="padding-right: 2em; ">{%dchkSaltoPagTipoIncarico%}</td>
+            <td style="padding-right: 2em; ">{%lblFontTipoIncarico%} {%edtFontTipoIncarico%} {%btnFontTipoIncarico%}</td>
+          </tr>
+        </table>
+
+        <div class="ts304Lista">
+          <div>{%lblFiltroTipoIncarico%}</div>
+          <div class="checkGroupDin" style="width: 100%; height: 25em; ">
+            {%lstTipoIncarico%}
+          </div>
+        </div>
+      </div>
+
+      <div id="posizione">
+        <table class="ts304Opzioni">
+          <tr>
+            <td style="padding-right: 2em; ">{%dchkStampaTitoloPos%}</td>
+            <td style="padding-right: 2em; ">{%dchkStampaTipologiaPos%}</td>
+            <td style="padding-right: 2em; ">{%dchkSaltoPagPosizione%}</td>
+            <td style="padding-right: 2em; ">{%lblFontPosiz%} {%edtFontPosiz%} {%btnFontPosiz%}</td>
+          </tr>
+        </table>
+
+        <table class="ts304Lista">
+          <tr>
+            <td width="70%">
+              {%lblFiltroTitoloPos%}
+            </td>
+            <td width="30%">
+              {%lblFiltroTipologiaPos%}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkGroupDin" style="width: 100%; height: 25em; ">
+                {%lstTitoloPos%}
+              </div>
+            </td>
+            <td>
+              <div class="checkGroupDin" style="width: 100%; height: 25em; ">
+                {%lstTipologiaPos%}
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="dipendenti">
+        <table class="ts304Opzioni">
+          <tr>
+            <td style="padding-right: 2em; ">
+              {%dchkStampaDipendenti%}</td>
+            <td style="padding-right: 2em; "> {%lblFontDipendenti%} {%edtFontDipendenti%} {%btnFontDipendenti%}</td>
+          </tr>
+        </table>
+
+        <div class="ts304Lista">
+          {%lblFiltroDatiAnag%}
+          {%grdDatiAnag%}
+        </div>
+      </div>
+    </div>
+
+    <div style="position: absolute; top: 43em; left: 1em; height: 3em; ">
+      <table>
+        <tr>
+          <td style="padding-right: 2em; ">{%chkSelAnagrafe%}</td>
+          <td style="padding-right: 2em; ">{%lblDataElab%} {%edtDataElab%} {%btnDataElab%} </td>
+          <td style="padding-right: 2em; ">
+            <div style="display: inline-block; width: 11em; ">{%imbGeneraPDF%}</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>   	
+  <div class="medpDettaglioFM" style="position:relative; height:39em">
+    <div class="groupbox" style="position:absolute;top:1em;left:1em;">
+			<fieldset>    	
+				<legend>{%lblTipoStampa%}</legend>
+				{%drgpTipoStampa%}
+			</fieldset>
+    </div>
+		<div class="groupbox" style="position:absolute;top:1em;left:10em;">
+			<fieldset>    	
+				<legend>{%lblFont%}</legend>
+				<table>
+					<tr><td>{%cmbFontName%}</td><td>{%cmbFontSize%}</td></tr>
+				</table>
+			</fieldset>
+    </div>    
+		<div style="position:absolute;top:1em;left:27em;">
+			<table>
+				<tr>
+					<td>{%lblOrientamentoPag%}</td>						
+				</tr>
+				<tr>
+					<td>{%cmbOrientamentoPag%}</td>						
+				</tr>
+			</table>
+		</div>
+		<div style="position:absolute;top:1em;left:37em;">
+			<table>
+				<tr>
+					<td>{%lblFormatoPag%}</td>						
+				</tr>
+				<tr>
+					<td>{%cmbFormatoPag%}</td>						
+				</tr>
+			</table>
+		</div>
+	  <div class="groupbox" style="position:absolute;top:7em;left:1em;">
+			<fieldset style="height:17em;width:12em;">    	
+				<legend>{%lblIntestazione%}</legend>
+				<table>
+					<tr><td>{%dchkNomeAzienda%}</td></tr>
+					<tr><td>{%dchkTitoloStampa%}</td></tr>
+					<tr><td>{%dchkPeriodoSelezionato%}</td></tr>
+					<tr><td>{%dchkDataCorrente%}</td></tr>
+					<tr><td>{%dchkNumeroPagina%}</td></tr>													
+				</table>				
+			</fieldset>
+    </div>   
+		<div class="groupbox" style="position:absolute;top:7em;left:15em;">
+			<fieldset style="height:17em;width:13em;">    	
+				<legend>{%lblStruttura%}</legend>
+				<table>
+					<tr><td>{%dchkSepRiga%}</td></tr>
+					<tr><td>{%dchkSepCol%}</td></tr>
+					<tr><td>{%dchkIntestazioneCol%}</td></tr>
+					<tr><td>{%dchkSoloTotali%}</td></tr>
+					<tr><td>{%dchkSaltoPagina%}</td></tr>
+					<tr><td>{%dchkTotParziali%}</td></tr>
+					<tr><td>{%dchkTotRiepilogo%}</td></tr>
+					<tr><td>{%dchkTotGenerali%}</td></tr>
+					<tr><td>{%dchkSaltoPaginaTotali%}</td></tr>																						
+				</table>				
+			</fieldset>
+    </div>   
+		<div class="groupbox" style="position:absolute;top:7em;left:30em;">
+			<fieldset style="height:9em;width:13em;">    	
+				<legend>{%lblVarie%}</legend>
+				<table>
+					<tr><td>{%dchkValoreNullo%}</td></tr>
+					<tr><td>{%dchkPeriodoStorico%}</td></tr>
+					<tr><td>{%dchkRotturaPeriodiNonContigui%}</td></tr>
+					<tr><td>{%dchkFiltriEsclusivi%}</td></tr>
+					<tr><td>{%dchkCDCPercentualizzati%}</td></tr>
+				</table>				
+			</fieldset>
+    </div>     
+		<div class="groupbox" style="position:absolute;top:18em;left:30em;">
+			<fieldset style="height:6em;width:15em;">    	
+				<legend>{%lblDipendenti%}</legend>
+				<table>
+					<tr><td>{%drgpFiltroInServizio%}</td></tr>
+				</table>				
+			</fieldset>
+    </div>     
+		<div style="position:absolute;top:26em;left:1em;">
+			<table>
+				<tr>
+					<td>{%lblQueryIntestazione%}</td>
+					<td>{%dcmbQueryIntestazione%}</td>
+				</tr>
+				<tr>
+					<td>{%lblQueryFineStampa%}</td>
+					<td>{%dcmbQueryFineStampa%}</td>
+				</tr>				
+			</table>							
+    </div>           
+    <div class="groupbox" style="position:absolute;top:30em;left:1em;">
+			<fieldset>
+				<legend>{%lblGeneraTabella%}</legend>
+				<table>
+					<tr>
+						<td style="padding-right:2em;">{%lblTabellaStampa%}</td>
+						<td>{%lblChiavi%}</td>						
+					</tr>
+					<tr>
+						<td style="padding-right:2em;">{%dedtTabellaStampa%}</td>
+						<td>
+							<table>
+								<tr><td style="padding-left:0em;">{%dedtChiavi%}</td><td>{%btnChiavi%}</td></tr>
+							</table>
+						</td>
+					</tr>				
+					<tr>
+						<td>
+							<div class="groupbox">
+								<fieldset style="width:18em">    					
+									{%dgrpRicreaTabella%}
+								</fieldset>
+    					</div>
+						</td>
+						<td>
+							<table>
+								<tr><td style="padding-left:0em;" colspan="2">{%lblDelete%}</td></tr>
+								<tr><td style="padding-left:0em;">{%dedtDelete%}</td><td>{%btnDelete%}</td></tr>								
+							</table>
+						</td>
+					</tr>		
+				</table>	
+			</fieldset>	
+			<div style="display:none">{%edtTabCaretPosition%}</div>
+    </div>           
+    
+  </div>
+  </body> 
+</html>

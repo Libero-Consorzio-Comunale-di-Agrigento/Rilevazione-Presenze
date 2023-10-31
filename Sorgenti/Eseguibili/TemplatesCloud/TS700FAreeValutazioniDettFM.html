@@ -1,0 +1,213 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:28em;">
+			<div style="position:absolute;top:1em;left:1em">
+				<table border="0" cellpadding="10px">
+					<tr>
+						<td>
+							<!--*A1-->
+							{%lblCodiceArea%}	
+							<br/>
+							{%dedtCodArea%}
+						</td>
+						<td colspan="3">
+							<style type="text/css">
+					  		.wDesc{width:865px;}
+					  	</style>
+							<!--*A2/A3/A4-->
+							{%lblDescrizione%}	
+							<br/>
+							{%dedtDescrizione%}	
+						</td>
+					</tr>
+					<tr>
+						<td width="190px">
+							<!--*B1-->
+							<table border="0" cellspacing="0" cellpadding="0"  style="margin-top:-20px;">
+								<tr>
+									<td>
+										{%lblPesoPercentuale%}	
+										<br/>
+										{%dedtPesoPercentuale%}	
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										{%lblPesoPercMin%}	
+										<br/>
+										{%dedtPesoPercMin%}
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										{%lblPesoPercMax%}	
+										<br/>
+										{%dedtPesoPercMax%}
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td colspan="2" width="537px" valign="top" style="min-width:537px;">
+							<!--*B2/B3-->
+							<fieldset style="border: 1px solid #D0D0D0; height:3em;">	
+							<legend>{%lblTipoPesoPercentuale%}</legend>
+								<table border="0" cellspacing="0" cellpadding="3">
+									<tr>
+										<td valign="top">											
+											{%drgpTipoPesoPercentuale%}	
+										</td>
+									</tr>
+								</table>
+							</fieldset>	
+						</td>
+						<td valign="top">
+							<!--*B4-->
+							<fieldset style="border: 1px solid #D0D0D0; height:3em;">	
+							<legend>{%lblTipoCollegamentoEsterno%}</legend>
+																		
+											<!--{%drgpTipoLinkItem%}-->	
+											<!--{%drgpTipoLinkItemAdv%}-->
+											{%rgpAdvTipoLinkItem%}
+					
+							</fieldset>	
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<!--*C1-->
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="7">
+										{%lblItemPersonalizzati%}
+									</td>
+								</tr>
+								<tr>
+									<td>
+										{%lblItemPersonalizzatiMin%}	
+									</td>	
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										{%dedtItemPersonalizzatiMin%}		
+									</td>	
+									<td>
+										&nbsp;&nbsp;
+									</td>
+									<td>
+										{%lblItemPersonalizzatiMax%}		
+									</td>	
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										{%dedtItemPersonalizzatiMax%}		
+									</td>	
+								</tr>
+							</table>
+						</td>
+						<td valign="top">
+							<!--*C2-->
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="3">
+										{%lblPesoItems%}
+									</td>
+								</tr>								
+								<tr>
+									<td>
+										{%dchkPesoVariabileItems%}	
+									</td>	
+									<td>
+										&nbsp;&nbsp;
+									</td>
+									<td>
+										{%dchkPesoEquoItems%}		
+									</td>	
+								</tr>
+							</table>
+						</td>
+						<td valign="top">
+							<!--*C3-->
+							{%dchkItemTuttiValutabili%}	
+							<br/>
+							{%dchkPunteggiSoloItemValutabili%}
+						</td>
+						<td valign="top">
+							<!--*C4-->
+							<fieldset style="border: 1px solid #D0D0D0; height:3em;">	
+							<legend>{%lblTipoPunteggioItems%}</legend>
+								<table border="0" cellspacing="0" cellpadding="3">
+									<tr>
+										<td>											
+											{%drgpTipoPunteggioItems%}	
+										</td>
+									</tr>
+								</table>
+							</fieldset>	
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top">
+							<!--*D1/2-->							
+							<style type="text/css">
+					  		.hDMem{height:81px; resize: none;}
+					  	</style>
+							<legend>{%lblTestoItemPersonalizzati%}</legend>
+							{%dmemTestoItemPersonalizzati%}
+						</td>
+						<td colspan="2" valign="top">
+							<!--*D3/4-->
+							<fieldset style="border: 1px solid #D0D0D0; height:6.7em;">	
+							<legend>{%lblStatiAvanzamento%}</legend>
+								<table border="0" cellspacing="0" cellpadding="3">
+									<tr>
+										<td colspan="2">											
+											{%lblStatiAbilitatiElementi%}	
+										</td>
+										<td>											
+											&nbsp;	
+										</td>
+										<td colspan="2">											
+											{%lblStatiAbilitatiPunteggi%}	
+										</td>
+									</tr>
+									<tr>
+										<td>											
+											{%dedtStatiAbilitatiElementi%}
+										</td>
+										<td>											
+											{%btnStatiAbilitatiElementi%}
+										</td>
+										<td>											
+											&nbsp;
+										</td>
+										<td>											
+											{%dedtStatiAbilitatiPunteggi%}
+										</td>
+										<td>											
+											{%btnStatiAbilitatiPunteggi%}
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											&nbsp;
+										</td>
+									</tr>
+								</table>
+							</fieldset>	
+						</td>
+					</tr>
+				</table>
+      </div>
+		</div>
+  </body> 
+</html>
+
+
+

@@ -1,0 +1,102 @@
+{%DocType%}
+<html>
+  <body> 
+    {%T000Intestazione%}
+  	{%ContenutoDinamico%}
+
+    <div class="medpElaborazioneFM" style="position:relative; height:50em;">		 
+			<div style="position:absolute; top:1.3em;">
+				{%lblModello%}
+			</div>
+			<div style="position:absolute; top:1em; left:7em;"> 
+				{%edtNomeCert%}
+			</div>
+			<div style="position:absolute; top:1em; left:41em;" >
+				{%btnRicerca%}
+			</div>				
+			<div style="position:absolute; top:4em;"> 
+				{%lblDal%}
+			</div>			
+			<div style="position:absolute; top:3.5em; left:7em;"> 
+				{%edtDaData%}
+			</div>					
+			<div style="position:absolute; top:4em; left:32em;"> 
+				{%lblAl%}
+			</div>			
+			<div style="position:absolute; top:3.5em; left:34em;"> 
+				{%edtAData%}
+			</div>					
+			<div id="tabs" class="ui-tabs" style="position:absolute; top:6em; height:34em; width:98%;">
+				<ul>
+					<li><a href="#DatiInput">Dati Input</a></li>
+					<li><a href="#Assenze">Assenze: causali richieste</a></li>
+						<li><a href="#Incarichi">Incarichi</a></li>
+					<li><a href="#Rischi">Rischi</a></li>
+					<li><a href="#DatiAnagrafici">Dati anagrafici</a></li>
+				</ul>
+				
+				<div id="DatiInput" class="ui-tabs-hide" >
+					<div style="position:absolute; top:4em; width:41em; height:30em;">{%SGVarInp%}</div>
+				</div>
+				<div id="Assenze" class="ui-tabs-hide" >
+					<div style="position:absolute; top:4em; width:50em; height:27em; overflow-y:scroll; background-color: lightgrey;">{%ListaCausali%}</div>
+					<div style="position:absolute; top:32em;">{%rgpOrdinamentoAss%}</div>
+				</div>
+				<div id="Incarichi" class="ui-tabs-hide" >
+					<div>
+						<div style="position:absolute; top:4em; margin-bottom:2em; color:red;">{%lblIncarichi%}</div>
+					</div>
+					<div>
+						<div style="position:absolute; top:7em; width:12em;">{%tabIncarichi%}</div>
+						<div style="position:absolute; top:7em; width:13em; left:17em; white-space: nowrap;">{%dcmbUnitaOrg%}</div>
+						<div style="position:absolute; top:7em; width:14em; left:33em;">{%lblUnitaOrg%}</div>
+					</div>
+					<div>
+						<div style="position:absolute; top:10em; width:12em;">{%meIWLabel2%}</div>
+						<div style="position:absolute; top:10em; width:13em; left:17em; white-space: nowrap;">{%dCmbTipoInc%}</div>
+						<div style="position:absolute; top:10em; width:14em; left:33em;">{%lblTipoInc%}</div>
+					</div>			
+					<div>
+						<div style="position:absolute; top:13em; width:12em;">{%lblPosizione%}</div>
+						<div style="position:absolute; top:13em; width:27em; left:17em; white-space: nowrap;">{%dcmbTitoloPosizione%}</div>
+					</div>	
+					<div>
+						<div style="position:absolute; top:16em; width:12em;">{%lblAffidamento%}</div>
+						<div style="position:absolute; top:16em; width:13em; left:17em; white-space: nowrap;">{%dcmbDataAffidamento%}</div>
+					</div>					
+				</div>
+				<div id="Rischi" class="ui-tabs-hide" >
+					<div style="position:absolute; top:4em;">{%lblDataFiltro%}</div>
+					<div style="position:absolute; top:4em; left:10em; white-space: nowrap;">{%cmbDataFiltroRischi%}</div>				
+				</div>
+				<div id="DatiAnagrafici" class="ui-tabs-hide" >
+					<div style="position:absolute; top:4em; width:15em;">{%lblDataInizioRapp%}</div>	
+					<div style="position:absolute; top:6em; width:15em; white-space: nowrap;">{%dcmbDataInizioRapp%}</div>				
+					<div style="position:absolute; top:9em; width:15em;">{%lblDataFineRapp%}</div>	
+					<div style="position:absolute; top:11em; width:15em; white-space: nowrap;">{%dcmbDataFineRapp%}</div>			
+				</div>			
+			</div>
+
+			<div style="position:absolute; top:42.5em;"> 
+				{%lblPathSalvataggio%}
+			</div>
+			<div style="position:absolute; top:42em; left:15em;">
+				{%EdtCopiaPath%}
+			</div>
+			<div style="position:absolute; top:42em; left:41em;">
+				{%BtnOpn%}
+			</div>
+			<div style="position:absolute; top:45em; left:21em;"> 
+				{%btnStampa%}
+			</div>	
+			<div style="position:absolute; top:45em; left:28em;"> 
+				{%btnElaborazioni%}
+			</div>		
+			<div style="position:absolute; top:45em; left:37em;"> 
+				{%btnAnomalie%}
+			</div>			
+    </div>	
+		
+		{%<frm>WC014FOpenDialogFM</frm>%}
+  </body> 
+</html>

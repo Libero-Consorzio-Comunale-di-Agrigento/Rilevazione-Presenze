@@ -1,0 +1,64 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:18em;">
+		
+		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+			<tr><td>{%lblCodice%}</td></tr>
+			<tr><td>{%dedtCodice%}</td></tr>	
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 13.5em;">
+			<tr><td>{%lblDescrizione%}</td></tr>
+			<tr><td>{%dedtDescrizione%}</td></tr>	
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 5em; left: 2em;">
+			<tr><td>{%lblStruttura%}</td></tr>
+			<tr><td>{%dcmbStruttura%}</td></tr>	
+		</table>
+		
+		<div class="groupbox" style="position:absolute;top:9em;left:2em;">
+			<fieldset style="width:19em">    	
+				<legend>{%lblFont%}</legend>
+				<table>
+					<tr>
+						<td>{%cmbFontName%}</td><td>{%cmbFontSize%}</td>
+					</tr>
+				</table>
+			</fieldset>
+    </div>    
+		<div style="position:absolute;top:14em;left:2em;">
+			<table>
+				<tr><td>{%lblOrientamentoPag%}</td></tr>
+				<tr><td>{%cmbOrientamentoPag%}</td></tr>
+			</table>
+		</div>
+		<div style="position:absolute;top:14em;left:13.5em;">
+			<table>
+				<tr><td>{%lblFormatoPag%}</td></tr>
+				<tr><td>{%cmbFormatoPag%}</td></tr>
+			</table>
+		</div>
+
+		<table class="medpTableContainer" style="position:absolute;top:9em;left:24em;height:9em;width:36em;">
+			<tr><td>{%dchkFlagTotale%}</td><td>{%dchkDettaglioAtti%}</td><td>{%dchkDettaglioDipendenti%}</td></tr>
+			<tr><td>{%dchkFlagPercentualizzaPT%}<td>{%dchkMovimentiDett%}</td><td>&nbsp;</td></tr>	
+			<tr><td>{%dchkIntestazioneColonne%}</td><td>&nbsp;</td><td>&nbsp;</td></tr>	
+			<tr><td>{%dchkRigheImpaginazione%}</td><td>&nbsp;</td><td>&nbsp;</td></tr>	
+		</table>
+		<div class="groupbox" style="position:absolute;top:11em;left:48em;">
+			<fieldset>    	
+				<legend></legend>
+				<table style="height:6em">
+					<tr><td>{%lblTabulazione%}</td><td>{%dedtTabulazione%}</td></tr>
+					<tr><td>{%lblOrdinamento%}</td><td>{%dcmbOrdinamento%}</td></tr>
+					<tr><td colspan="2">{%dchkFlagOrdinamento%}</td></tr>
+				</table>
+			</fieldset>
+    </div>    
+	</div>
+  </body> 
+</html>

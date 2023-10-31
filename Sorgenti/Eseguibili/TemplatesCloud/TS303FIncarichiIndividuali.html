@@ -1,0 +1,29 @@
+{%DocType%}
+<html>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+		{%WC007FFormContainerFM%}
+    <br>
+		<div class="medpTabRegion" style="position:relative;height:5em">
+			<div class="groupbox" style="position:relative;left:2em;">
+				<fieldset>
+					<legend>{%lblPeriodiAssenza%}</legend>
+					<table class="medpTableContainer" style="width:45em;height:2.5em;">
+						<tr><td>{%lblElencoCausali%}</td><td>{%edtElencoCausali%}</td><td>{%btnElencoCausali%}</td><td>{%btnVisAssenze%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+			<div class="groupbox" style="position:relative;left:5em;">
+				<fieldset>
+					<legend>{%lblPeriodoProva%}</legend>
+					<table class="medpTableContainer" style="width:25em;height:2.5em;">
+						<tr><td>{%lblInizioProva%}</td><td>{%lblFineProva%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+		</div>
+    <br>
+    <div style="width:100%">{%WS303FIncarichiIndividualiVociFM%}</div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    {%grdComandi%}
+    {%grdTabControl%}
+    <div style="width:100%">{%WS203FStampaPiantaOrganicaBrowseFM%}{%WS203FStampaPiantaOrganicaDettFM%}</div>
+    {%grdDetailTabControl%}
+    <div>{%WS203FRigheStampaFM%}{%WS203FColonneStampaFM%}{%WS203FDatiAnagraficiFM%}{%WS203FElencoDipendentiFM%}</div> 
+    <br>
+    <div class="medpToolBar">
+      <table style="margin-top:0.25em;height:4em">
+        <tr>
+          <td>{%grdC700NavigatorBar%}</td>
+          <td style="padding-right: 2em;" >{%chkSelAnagrafe%}</td>
+          <td style="padding-right: 2em;" >{%lblData%}{%edtData%}</td>
+          <td>{%btnGeneraPDF%}</td>
+        </tr>
+      </table>
+    </div>
+    {%<frm>WS203FElencoFontsFM</frm>%}
+    {%<frm>WS203FProprietaFM</frm>%}
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <br> <br> <br> <br>
+
+		<div class="groupbox" style="position:absolute;top:12.75em;left:2em;">
+  		<fieldset style="height:2.5em;width:15em;">
+    		<legend>{%lblVisualizza%}</legend>
+    		<span>{%rgpVisualizza%}</span>
+  		</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top:12.75em;left:20em;">
+  		<fieldset style="height:2.5em;width:12em;">
+    		<legend>{%lblModalita%}</legend>
+    		<span>{%rgpModalita%}</span>
+  		</fieldset>
+		</div>
+
+    <div style="position:relative; height:47em;">
+      <div style="position:absolute;top: 0em; left: 0em; width: 100%;">
+				{%grdTabControl%}
+				<div style="width: 100%;">{%WS030FProvvedimentiBrowseFM%}{%WS030FProvvedimentiDettFM%}{%WS030FDettaglioFM%}</div>
+      </div>	  		
+    </div>	
+    {%<frm>WC006FStoriaDipFM</frm>%}
+  </body>
+</html>
+

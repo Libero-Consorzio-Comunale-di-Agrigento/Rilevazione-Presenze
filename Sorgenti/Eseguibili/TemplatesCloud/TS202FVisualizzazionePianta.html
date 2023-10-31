@@ -1,0 +1,90 @@
+{%DocType%}
+<html>
+  <head>
+	<style>
+		#TRVPIANTA a:link    {text-decoration: none;}
+		#TRVPIANTA a:visited {text-decoration: none;}
+		#TRVPIANTA a:hover   {text-decoration: underline;}
+		#TRVPIANTA a:active  {text-decoration: underline;}
+	</style>  
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    	
+    <div class="medpElaborazioneFM" style="position:relative;height:62em;">
+	    <table class="medpTableContainer" style="position:absolute;top:1em;left:1em;height: 3.5em;">
+	  		<tr><td>{%lblData%}</td> <td>{%lblStruttura%}</td> <td></td> </tr>
+	  		<tr><td>{%edtData%}</td><td>{%cmbStrutturaVisualizzazione%}</td><td>{%btnAggiorna%}</td></tr>
+		</table>
+		<!--
+		<table class="medpTableContainer" style="position:absolute;top:1em;left:1em;height: 3.5em;">
+	  		<tr><td>{%lblData%}</td></tr>
+	  		<tr><td>{%edtData%}</td></tr>
+		</table>
+		<table class="medpTableContainer" style="position:absolute;top:1em;left:10em;height: 3.5em;">
+	  		<tr><td>{%lblStruttura%}</td></tr>
+	  		<tr><td>{%cmbStrutturaVisualizzazione%}</td></tr>
+		</table>
+		<table class="medpTableContainer" style="position:absolute;top:2em;left:55em;">
+	  		<tr><td>{%btnAggiorna%}</td></tr>
+		</table>
+		-->
+		<div class="groupbox" style="position:absolute;top:5.5em;left:1em;">
+			<fieldset style="width:20em;height:5em;">
+				<legend>{%lblImpostazioni%}</legend>
+				{%rgpImpostazioni%}
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top:5.5em;left:23em;">
+			<fieldset style="width:55em;height:5em;">
+				<legend>{%lblVisualizzazioni%}</legend>
+				<div style="position:absolute;top:1.5em;left:0em;">{%chkDescrizioneDato%}</div>
+				<div style="position:absolute;top:3em;left:0em;">{%chkTotalePrevisti%}</div>
+				<div style="position:absolute;top:4.5em;left:0em;">{%chkTotaleCoperti%}</div>
+				
+				<div style="position:absolute;top:1.5em;left:13em;">{%chkTotaleVacanti%}</div>
+				<div style="position:absolute;top:3em;left:13em;">{%chkTotaleCopertura%}</div>
+				<div style="position:absolute;top:4.5em;left:13em;">{%chkTotaleNonCoperti%}</div>
+				
+				<div style="position:absolute;top:1.5em;left:26em;">{%chkPercorso%}</div>
+				<div style="position:absolute;top:4.5em;left:26em;">{%chkVisDipendenti%}</div>
+				
+				<div style="position:absolute;top:1.5em;left:41em;">{%chkVisDelibere%}</div>
+				<div style="position:absolute;top:3em;left:41em;">{%chkMovimentigenerali1%}</div> 
+				<div style="position:absolute;top:4.5em;left:41em;">{%chkMovimentididettagliodellatto1%}</div> 
+			</fieldset>
+		</div>
+		<!--
+		<div class="groupbox" style="position:absolute;top:14em;left:1em;overflow-y:auto;overflow-x:auto;">
+			<fieldset style="background-color:white;width:77em;height:25em;">
+				<div style="position:absolute;top:1em;left:1em;">{%trvPianta%}</div>
+				<div style="position:absolute;top:1em;left:75em;">{%btnEspandi%}</div>
+				<div style="position:absolute;top:3.5em;left:75em;">{%btnComprimi%}</div>
+			</fieldset>
+		</div>
+		-->
+		<div style="position:absolute;top:13em;left:1em;border:1px solid #6F9DB9;width:76em;height:30em;overflow-y:auto;overflow-x:auto;background-color:white;border-radius: 4px">{%trvPianta%}</div>
+		<div style="position:absolute;top:13em;left:77.5em;">{%btnFunzioni%}</div>
+		
+		<div style="position:absolute;top:12.7em;left:50em;"> {%WS202VisDipendentiRG%} </div>
+		
+		<table class="medpTableContainer" style="position:absolute;top:44em;left:1em;">
+	  		<tr><td>{%lblPercorso%}</td></tr>
+	  		<tr><td>{%memPercorso%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top:49em;left:1em;">
+	  		<tr><td>{%lblDelibere%}</td></tr>
+	  		<tr><td>{%memDelibere%}</td></tr>
+		</table>
+
+		<!--
+		<div style="position:absolute;top:49em;left:1em">{%tbDettagli%}</div>
+			<div style="position:absolute;top:51.6em;left:1em">{%WS202VisDelibereRG%}</div>
+		<div style="position:absolute;top:47.6em;left:1em">{%WS202VisDipendentiRG%}{%WS202VisDelibereRG%}</div>
+		-->
+  </div>
+
+  </body>
+</html>

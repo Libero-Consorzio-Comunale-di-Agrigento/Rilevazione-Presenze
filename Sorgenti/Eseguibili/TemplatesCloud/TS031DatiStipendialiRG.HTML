@@ -1,0 +1,47 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:27em;">
+			<div class="groupbox" style="position:absolute;top:2em;left:2em;">
+				<fieldset style="width:43em;height:12em">
+					<legend>{%lblDetrIrpef%}</legend>
+					<table class="medpTableContainer">
+						<tr><td>{%lblUltimaDich%}</td><td>{%dedtUltimaDich%}</td></tr>
+					</table>					
+					<div class="groupbox">
+						<fieldset>
+							<legend>{%lblTipoDich%}</legend>
+							{%drgpTipoDetrazione%}
+						</fieldset>
+					</div><br/>						
+					<table class="medpTableContainer" style="position:absolute;top:8em;">
+						<tr><td>{%lblPercCarico%}</td><td>{%dedtPercCarico%}</td></tr>
+					</table>
+					<table class="medpTableContainer" style="position:absolute;top:8em;left:20em;">
+						<tr><td>{%dchkDetrFiglioHandicap%}</td></tr>
+					</table>
+					<table class="medpTableContainer" style="position:absolute;top:11em">
+						<tr><td>{%dchkDet100Affid%}</td></tr>
+					</table>
+				</fieldset>
+			</div>	
+			<div class="groupbox" style="position:absolute;top:2em;left:48em;">
+				<fieldset style="height:12em;width:25em">
+					<legend>{%lblAssegnoFam%}</legend>
+					<table class="medpTableContainer">
+						<tr style="position:absolute;top:2em"><td>{%dchkComponenteNucleo%}</td></tr>
+						<tr style="position:absolute;top:3.5em"><td>{%dchkSpecialeANF%}</td></tr>
+						<tr style="position:absolute;top:5em"><td>{%dchkInabile%}</td></tr>
+					</table>	
+					<table class="medpTableContainer" style="position:absolute;top:8em;">
+						<tr><td>{%lblRedditoANF%}</td><td>{%lblAltriRedditi%}</td><td>{%lblTotale%}</td></tr>
+						<tr><td>{%dedtRedditoAnf%}</td><td>{%dedtRedditoAltroANF%}</td><td>{%edtTotaleANF%}</td></tr>
+					</table>
+				</fieldset>
+			</div>
+			<div style="position:absolute;top:17em;left:2.5em;">{%dchkInserimentoCU%}</div>
+		</div>
+	</body>
+</html>
