@@ -1,0 +1,174 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	<div class="medpDettaglioFM" style="position:relative;height:45em;">
+		<table style="position:absolute;top: 2em; left: 2em;">
+			<tr>
+				<td>{%lblMinMinuti%}</td>
+				<td>{%dedtMinMinuti%}</td>
+			</tr>
+			<tr>
+				<td>{%lblMaxMinuti%}</td>
+				<td>{%dedtMaxMinuti%}</td>
+			</tr>
+		</table>
+		<div class="groupbox" style="position:absolute;top: 7em; left: 2em;">
+			<fieldset style="width:17.5em">
+				<legend>{%lblTipoMinMinimi%}</legend>
+				{%drgpTipoMinMinimi%}
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top: 11.8em; left: 2em;">
+			<fieldset>
+				<legend>{%lblArrGG%}</legend>
+				<table>
+					<tr>
+						<td>{%LblArrotondamento2%}</td>
+						<td>{%dedtArrotondamento2%}</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>{%dchkPerdiArr%}</td>
+					</tr>
+					<tr>
+						<td>{%dchkArrFascie%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top: 20em; left: 2em;">
+			<fieldset style="width:55em;height:5em">
+				<legend>{%lblAutoCausalizzazione%}</legend>
+				<table style="position:absolute;top: 2em; left: 1em;">
+					<tr>
+						<td>{%lblLinkAssenza%}</td>
+						<td>{%cmbLinkAssenza%}</td>
+					</tr>
+				</table>
+				<div style="position:absolute;top: 4.2em; left: 4.8em;">{%dlblLinkAssenza%}</div>
+				<div class="groupbox" style="position:absolute;top: 1em; left: 26em;">
+					<fieldset>
+						<legend>{%lblAutogiustDalleAlle%}</legend>
+						{%drgpAutogiustDalleAlle%}
+					</fieldset>
+				</div>
+				<div style="position:absolute;top: 2em; left: 42em;">{%dchkCompetenzeAutoGiust%}</div>
+			</fieldset>
+		</div>
+
+		<div style="position:absolute;top: 2em; left: 23em;">{%dchkEsclusioneFasciaObb%}</div>
+		<table style="position:absolute;top: 2em; left: 42.5em;">
+			<tr>
+				<td>{%lblSogliaFasceObblFac%}</td>
+				<td>{%dedtSogliaFasceObblFac%}</td>
+			</tr>
+		</table>
+		<table style="position:absolute;top: 4em; left: 23em;">
+			<tr>
+				<td>{%lblFlexTimbrCaus%}</td>
+				<td>{%dcmbFlexTimbrCaus%}</td>
+			</tr>
+		</table>
+
+		<div class="groupbox" style="position:absolute;top: 7em; left: 22em;">
+			<fieldset style="width:34.8em;height:11.3em">
+				<legend>{%lblGettoni%}</legend>
+				<table style="position:absolute;top: 2em; left: 1em;">
+					<tr>
+						<td>{%lblGettOre%}</td>
+						<td>{%dedtGettOre%}</td>
+					</tr>
+				</table>
+				<table style="position:absolute;top: 4em; left: 1em;">
+					<tr>
+						<td>{%lblGettoneDalle%}</td>
+						<td>{%dedtGettoneDalle%}</td>
+					</tr>
+				</table>
+				<table style="position:absolute;top: 4em; left: 8.6em;">
+					<tr>
+						<td>{%lblGettoneAlle%}</td>
+						<td>{%dedtGettoneAlle%}</td>
+					</tr>
+				</table>
+				<table style="position:absolute;top: 6.5em; left: 1em;">
+					<tr>
+						<td>{%lblGettIndennita%}</td>
+						<td>{%cmbGettIndennita%}</td>
+					</tr>
+				</table>
+				<div style="position:absolute;top: 8.5em; left: 1.5em;">{%dlblDGettIndennita%}</div>
+				<div style="position:absolute;top: 10em; left: 1.5em;">{%dchkGettSpezzoni%}</div>
+				<div class="groupbox" style="position:absolute;top: 2em; left: 18em;">
+					<fieldset style="width:15em">
+						<legend>{%lblGettOreInf%}</legend>
+						{%dgrpGettOreInf%}
+					</fieldset>
+				</div>
+				<div class="groupbox" style="position:absolute;top: 6.5em; left: 18em;">
+					<fieldset style="width:15em">
+						<legend>{%lblGettOreSup%}</legend>
+						{%dgrpGettOreSup%}
+					</fieldset>
+				</div>
+			</fieldset>
+		</div>
+
+		<table style="position:absolute;top: 27em; left: 2em;">
+			<tr>
+				<td colspan="2">{%dchkIncludiIndTurno%}</td>
+			</tr>
+			<tr>
+				<td colspan="2">{%dchkPercInail%}</td>
+			</tr>
+			<tr>
+				<td colspan="2">{%dchkCompCausOreMax%}</td>
+			</tr>
+			<tr>
+				<td>{%lblCausCompDebitoGG%}</td>
+				<td>{%cmbCausCompDebitoGG%}</td>
+			</tr>
+
+		</table>
+		<div class="groupbox" style="position:absolute;top: 27em; left: 33em;">
+			<fieldset style="width:24em;">
+				<legend>{%lblUnInserimento%}</legend>
+				<table>
+					<tr>
+						<td>{%dchkUnInserimentoH%}</td>
+						<td>{%dchkUnInserimentoD%}</td>
+					</tr>
+					<tr>
+						<td colspan="2">{%dchkCausalizzaTimbIntersecanti%}</td>
+					</tr>
+					<tr>
+						<td colspan="2">{%dchkTimbFittizie%}</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div class="groupbox" style="position:absolute;top: 34.5em; left: 2em;">
+			<fieldset style="width:24em;">
+				<legend>{%lblCumulaRichiesteWeb%}</legend>
+				{%drgpCumulaRichiesteWeb%}
+			</fieldset>
+		</div>
+
+		<table style="position:absolute;top: 36.5em; left: 33em;">
+			<tr>
+				<td>{%dchkInserimentoTimb%}</td>
+			</tr>
+			<tr>
+				<td>{%dchkInserimentoTimbVirt%}</td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+
+</html>

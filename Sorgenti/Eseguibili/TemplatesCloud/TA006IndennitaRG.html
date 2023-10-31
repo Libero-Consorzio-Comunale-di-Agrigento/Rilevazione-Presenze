@@ -1,0 +1,199 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:41em;">
+
+			<div class="groupbox" style="position:absolute;top: 2em; left: 2em;">
+	 			<fieldset style="height:24em;position:relative;width:24em">
+		  			<legend>{%lblIndPresenza%}</legend> 
+	  				<table class="medpTableContainer">
+							<tr>
+								<td>{%lblTolleranza%}</td>
+								<td>{%P2E05%}</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="groupbox" >
+				 						<fieldset style="width:22em">
+					  					<legend>{%lblCompNot%}</legend> 
+				  						{%drgpCompNot%}
+				  					</fieldset> 
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="groupbox">
+				 						<fieldset style="width:22em">
+					  					<legend>{%lblIndIntera%}</legend> 					  				
+				  						<table class="medpTableContainer">
+												<tr>
+													<td>{%lblOreMinManutenz%}</td>
+													<td>{%dedtMMIndPres%}</td>
+												</tr>
+												<tr>
+													<td colspan="2">								
+														<div class="groupbox" >
+							 								<fieldset style="width:19em">
+								  							<legend>{%lblFlagPres%}</legend> 
+							  								{%drgpFlagPres%}
+							  							</fieldset> 
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<div class="groupbox" >
+							 								<fieldset style="width:19em">
+								  							<legend>{%lblMezzaInd%}</legend> 
+							  								<table class="medpTableContainer">
+																	<tr><td>{%dchkFlagMPres%}</td><td>{%dedtMMIndMPres%}</td></tr>
+																</table>
+							  							</fieldset> 
+														</div>				  			
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<div class="groupbox">
+															<fieldset style="width:19em">
+															<legend>{%lblIndMaggiorata%}</legend>
+															<table  class="medpTableContainer">
+																<tr><td>{%lblMMIndPresMag%}</td><td>{%dedtMMIndPresMag%}</td><td>{%lblCoeffIndPresMag%}</td><td>{%dedtCoeffIndPresMag%}</td></tr>
+															</table>
+															</fieldset>
+														</div>
+													</td>
+												</tr>
+											</table>
+				  					</fieldset> 
+									</div>
+								</td>
+							</tr>
+						</table>
+	  		</fieldset> 
+			</div>
+
+
+			<div style="position:absolute;top: 2em; left:30em;">
+				{%P2E12%}
+			</div>
+			<div style="position:absolute;top: 2em; left:45em;">
+				{%dchkFasciaNotteFestCompleta%}
+			</div>
+			<div style="position:absolute;top: 4em; left:30em;">
+				{%dchkRientroPomeridiano%}
+			</div>
+			
+			<div class="groupbox" style="position:absolute;top: 6em; left:30em;">
+	 			<fieldset style="width:26em;position:relative;height:9em">
+		  		<legend>{%lblIndFestiva%}</legend> 
+		  		<table>
+		  			<tr>
+		  				<td>
+	  						<div class="groupbox">
+	  							<legend></legend> 
+	  							<fieldset style="width:13em">{%drgpIndFestiva%}</fieldset>
+	  						</div>
+	  					</td>
+	  					<td style="vertical-align:middle;">
+	  						<table>
+	  							<tr><td>{%lblOreIndFest%}</td></tr>	
+	  							<tr><td>{%dedtOreIndFest%}</td></tr>	
+	  						</table>
+	  					</td>
+	  				</tr>					
+	  			</table>				
+				{%dchkIndFestivaUsaNotteCompleta%}
+	  		</fieldset> 
+			</div>
+			
+			<div class="groupbox" style="position:absolute;top: 16.5em; left:30em;">
+				<fieldset style="width:26em;position:relative;height:9.5em">
+		  		<legend>{%lblRiposoCompensativo%}</legend> 
+					<table>
+				 	<tr>
+				  	<td>
+							<div class="groupbox">
+	  						<legend></legend> 
+	  						<fieldset style="width:13em">{%drgpRiposoCompensativo%}</fieldset>
+	  			    </div>
+				  	</td>				  	
+				  	<td style="vertical-align:middle;">		
+	  					<table>
+	  						<tr><td>{%lblDebitoRipCom%}</td></tr>	
+	  						<tr><td>{%dedtDebitoRipCom%}</td></tr>	
+	  					</table>
+				  	</td>
+				 	</tr>
+					<tr>
+				  	<td style="padding-top:0.5em;">
+	  			  	{%dchkRipcomGGNonLav%}
+				  	</td>
+				 	</tr>
+					<tr>
+				  	<td>
+	  			  	{%dchkRipcomDebitoGG%}
+				  	</td>
+				 	</tr>
+					</table>
+				</fieldset> 
+			</div>
+
+			<div style="position:absolute;top: 27.5em; left: 2em;">{%dchkArrTimbInterne%}</div>
+			<div class="groupbox" style="position:absolute;top: 29em; left: 2em;">
+	 			<fieldset>
+		  		<legend>{%lblArrotFuoriOrario%}</legend> 
+	  			<table>
+	  				<tr><td>{%lblSuEntrata%}</td><td>{%P2E01%}</td><td>{%lblSuUscita%}</td><td>{%P2E02%}</td></tr>
+	  			</table>
+	  		</fieldset> 
+			</div>
+			
+			<div class="groupbox" style="position:absolute;top: 27.5em; left: 24em;">
+	 			<fieldset style="width:32em;position:relative;height:4.5em">
+		  		<legend>{%lblArrotGiornaliero%}</legend> 
+		  		<table>		  			  			
+	  				<tr>
+	  					<td>{%lblP2E03%}</td>
+	  					<td>{%P2E03%}</td>
+							<td style="padding-left:1em">{%lblArrNeg%}</td>
+							<td>{%P2E04%}</td>
+	  					<td style="padding-left:1em">{%lblArrEccedLiq%}</td>
+	  					<td>{%dedtArrEccedLiq%}</td>
+						</tr>
+						<tr>
+	  					<td>{%lblArrEccedLiq%}</td>
+	  					<td>{%dedtArrEccedLiq%}</td>
+							<td style="padding-left:1em"	colspan="4">{%dchkArrEccFasceComp%}</td>
+						</tr>
+					</table>
+	  		</fieldset> 
+			</div>
+	
+			<div class="groupbox" style="position:absolute;top: 33.5em; left: 2em;">
+	 			<fieldset style="width:18em">
+		  		<legend>{%lblIndPresStr%}</legend> 
+	  			{%drgpIndPresStr%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 33.5em; left: 24em;">
+	 			<fieldset>
+		  		<legend>{%lblIndFestStr%}</legend> 
+	  			{%drgpIndFestStr%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 33.5em; left: 40.8em;">
+	 			<fieldset>
+		  		<legend>{%lblIndNotStr%}</legend> 
+	  			{%drgpIndNotStr%}
+	  		</fieldset> 
+		 </div>
+		 <div class="groupbox" style="position:absolute;top: 40em; left: 2em;">{%dchkIntersezAutoGiust%}</div>
+	
+			
+		</div>
+	</body>
+</html>

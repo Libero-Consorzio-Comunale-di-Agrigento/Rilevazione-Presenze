@@ -1,0 +1,29 @@
+{%DocType%}
+<html>
+<head>
+</head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    {%grdComandi%}
+    {%grdCorrezione%}
+    <div class="medpElaborazioneFM" style="position:relative; height:35em;">
+      <div class="grigliaDatiNav" style="position:absolute;top:0em; left: 0em;width:100%;">
+       <table style="width:100%"><tr><td style="width:10em;">{%lnkLegenda%}</td><td>{%lblCartellinoCaption%}</td><td style="width:15em;text-align:right;">{%lblDataControllo%}</td></tr></table>
+      </div>
+      <div id="divscrollable" style="position:absolute;top:2em; left: 0em;width:100%;height: 33.5em;overflow-y:auto;overflow-x: auto; background-color: transparent;" onscroll="onscrollDivWR010(this,'HIDDEN_WA023DIVSCROLLABLESCROLLTOP','HIDDEN_WA023DIVSCROLLABLESCROLLLEFT')">
+       {%grdCartellino%}
+      </div>
+      {%<frm>WC024FLegendaFM</frm>%}
+      {%<frm>WA023FGestTimbFM</frm>%}
+      {%<frm>WA023FGestGiustFM</frm>%}
+      {%<frm>WA023FRipristinoTimbOrigFM</frm>%}
+      {%<frm>WA023FAllTimbUgualiFM</frm>%}
+      {%<frm>WC021FRiepilogoAssenzeFM</frm>%}
+      {%<frm>WA023FValidaAssenzeFM</frm>%}
+      {%<frm>WC018FInfoRichiestaFM</frm>%}
+      {%<frm>WC027FInfoDatiFM</frm>%}
+      {%<frm>WC028FRichiesteInCorsoFM</frm>%}
+    </div>
+  </body>
+</html>

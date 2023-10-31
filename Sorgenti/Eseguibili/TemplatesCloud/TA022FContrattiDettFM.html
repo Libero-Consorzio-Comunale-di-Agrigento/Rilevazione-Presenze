@@ -1,0 +1,102 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+  <div class="medpDettaglioFM" style="position:relative; height:38em;">
+    <div style="position:absolute;top: 2em; left: 2em;">{%lblCodice%}</div>
+    <div style="position:absolute;top: 2em; left: 6em;">{%dedtCodice%}</div>
+    <div style="position:absolute;top: 2em; left: 11em;">{%lblDescrizione%}</div>
+    <div style="position:absolute;top: 2em; left: 17em;">{%dedtDescrizione%}</div>
+    <div style="position:absolute;top: 4em; left: 11em;">{%lblDecorrenza%}</div>
+    <div style="position:absolute;top: 4em; left: 17em;">{%dedtDecorrenza%}</div>
+    
+    <div id="tabs" class="ui-tabs" style="position:absolute;top:6em;height:32em;width:99%;">
+      <ul>
+        <li><a href="#Parametri">Parametri</a></li>
+        <li><a href="#Fasce">Fasce orarie contrattuali</a></li>
+        <li><a href="#OreSupplementari">Ore supplementari Part-time</a></li>
+		<li><a href="#FasceAziendali">Fasce maggiorazione aziendali</a></li>		
+      </ul>
+
+      <!-- Parametri -->
+      <div id="Parametri" class="ui-tabs-hide" >
+        <div class="groupbox" style="position:absolute;top: 4em; left: 2em;">
+        <fieldset>
+          <legend>{%lblTipoContratto%}</legend>
+          <div>{%drgpTipoContratto%}</div>
+        </fieldset>
+        </div>
+
+        <div class="groupbox" style="position:absolute;top: 4em; left: 20em;">
+        <fieldset>
+          <legend>{%lblTipoIndennita%}</legend>
+          <div>{%drgpTipoIndennita%}</div>
+        </fieldset>
+        </div>
+        <div style="position:absolute;top: 14.5em; left: 2em;">{%lblDurataReperibilita%}</div>
+        <div style="position:absolute;top: 14.2em; left: 13em;">{%dedtDurataReperibilita%}</div>
+        <div style="position:absolute;top: 14.5em; left: 20em;">{%lblMaxStraordinario%}</div>
+        <div style="position:absolute;top: 14.2em; left: 47em;">{%dedtMaxStraordinario%}</div>
+        <div style="position:absolute;top: 16.5em; left: 20em;">{%lblMaxEccedenza%}</div>
+        <div style="position:absolute;top: 16.2em; left: 47em;">{%dedtMaxEccedenza%}</div>
+        <div style="position:absolute;top: 18.5em; left: 20em;">{%lblArrotondamentoIndennita%}</div>
+        <div style="position:absolute;top: 18.2em; left: 47em;">{%dedtArrotondamentoIndennita%}</div>
+        <div style="position:absolute;top: 20.5em; left: 20em;">{%dchkOreLavFasceConAss%}</div>
+        <div class="groupbox" style="position:absolute;top: 18.5em; left: 2em;">
+        <fieldset>
+          <legend>{%lblFasciaIndennitaNotturna%}</legend>
+          <table cellpadding="5">
+          <tr align="left">
+            <td>{%lblDalle%}</td>
+            <td>{%lblAlle%}</td>
+          </tr>
+          <tr align="left">
+            <td>{%dedtIndNotteDa%}</td>
+            <td>{%dedtIndNotteA%}</td>
+          </tr>
+          <tr align="left">
+            <td>{%lblArrotondamento%}</td>
+            <td>{%lblTolleranza%}</td>
+          </tr>
+          <tr align="left">
+            <td>{%dedtArrotondamento%}</td>
+            <td>{%dedtTolleranza%}</td>
+          </tr>
+          </table>
+        </fieldset>
+        </div>
+      </div>
+
+      <!-- Fasce -->
+      <div id="Fasce" class="ui-tabs-hide" >
+        <div style="position:absolute;top: 4em; left: 1em;width: 97%;height: 22em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+        {%grdFasce%}
+        </div>
+      </div>
+      
+      <!-- ore supplementari -->
+      <div id="OreSupplementari" class="ui-tabs-hide" >
+        <div style="position:absolute;top: 4em; left: 1em;width: 97%;height: 22em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+        <div style="padding: 3px;">
+          {%lblT203Decorrenza%} {%cmbT203Decorrenza%} {%imgT203Storicizza%}
+        </div>
+        {%grdOreSupplementari%}
+        </div>
+      </div>
+	  
+	  <!-- Fasce maggiorazioe aziendali -->
+	  <div id="FasceAziendali"  class="ui-tabs-hide" >	  
+		<div class="grigliaDatiNav" style="position:absolute;top: 4em; left: 1em;width: 97%;height: 10em;overflow-y:auto;overflow-x: auto;">
+			{%PagNavBarFasceAziendali%}			
+		</div>
+        <div style="position:absolute;top: 6.5em; left: 1em;width: 97%;height: 22em;overflow-y:auto;overflow-x: auto; background-color: transparent;">	
+			{%grdFasceAziendali%}
+        </div>	  
+	  </div>
+	  
+    </div>
+  </div>
+  </body> 
+</html>
+

@@ -1,0 +1,91 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 26em; ">
+      <div style="position:absolute;top: 1em; left: 2em;">{%lblCodice%}</div>
+      <div style="position:absolute;top: 1em; left: 10.5em;">
+        {%lblDescrizione%}
+      </div>
+      <div style="position:absolute;top: 2.5em; left: 2em;">{%dedtCodice%}</div>
+      <div style="position:absolute;top: 2.5em; left: 10.5em;">
+        {%dedtDescrizione%}
+      </div>
+      <div style="position:absolute;top: 3em; left: 50em;">
+        {%lblTotaleSettimane%}
+      </div>
+      <div style="position:absolute;top: 3em; left: 59em;">
+        {%lblNumSettimane%}
+      </div>
+
+      <table style="position:absolute;top: 5em; left: 2em;">
+        <tr>
+          <td>{%dchkIgnoraTimbrature%}</td>
+        </tr>
+        <tr>
+          <td>{%dchkIgnoraStaccoPMT%}</td>
+        </tr>
+        <tr>
+          <td>{%dchkPrioritaDomFest%}</td>
+        </tr>
+        <tr>
+          <td>{%dchkPrioritaDomNonLav%}</td>
+        </tr>
+      </table>
+
+      <div class="groupbox fs100 width95chr" style="position:absolute; top: 12em; left: 2em;">
+        <fieldset>
+          <legend>{%lblPrioritaScelta%}</legend>
+          <table cellpadding="5">
+            <tr>
+              <td rowspan="2" class="width40chr">
+                <div class="groupbox fs100 height3 width20chr" style="margin-top: -1em; ">
+                  <fieldset>
+                    <legend>{%lblConfrontaTimbrature%}</legend>
+                    {%drgpConfrontaTimbrature%}
+                  </fieldset>
+                </div>
+              </td>
+              <td>{%dchkScostamentoEntrata%}</td>
+              <td>{%lblMinRitardoEntrata%}</td>
+              <td>{%dedtMinRitardoEntrata%}</td>
+            </tr>
+            <tr>
+              <td>{%dchkTimbratureEsterne%}</td>
+              <td>{%lblAnticipoUscita%}</td>
+              <td>{%dedtAnticipoUscita%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="groupbox fs100 width95chr" style="position:absolute;top: 20em; left: 2em;">
+        <fieldset>
+          <legend>{%lblPesiPrioritaScelta%}</legend>
+          <table class="width100pc">
+            <tr>
+              <td>{%lblPesoPRITIMSC_S%}</td>
+              <td>{%dedtPesoPRITIMSC_S%}</td>
+              <td>{%lblPesoPRITIMSC_A%}</td>
+              <td>{%dedtPesoPRITIMSC_A%}</td>
+              <td>{%lblPesoSCOSTENTRATA_S%}</td>
+              <td>{%dedtPesoSCOSTENTRATA_S%}</td>
+              <td>{%lblPesoRITARDO_ENTRATA%}</td>
+              <td>{%dedtPesoRITARDO_ENTRATA%}</td>
+            </tr>
+            <tr>
+              <td>{%lblPesoTIMBESTERNE%}</td>
+              <td>{%dedtPesoTIMBESTERNE%}</td>
+              <td>{%lblPesoTIMBNONAPPOGGIATE_S%}</td>
+              <td>{%dedtPesoTIMBNONAPPOGGIATE_S%}</td>
+              <td>{%lblPesoTIMBNONAPPOGGIATE_N%}</td>
+              <td>{%dedtPesoTIMBNONAPPOGGIATE_N%}</td>
+              <td>{%lblPesoMINANTSCELTA%}</td>
+              <td>{%dedtPesoMINANTSCELTA%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

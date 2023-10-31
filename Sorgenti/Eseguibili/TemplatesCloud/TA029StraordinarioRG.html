@@ -1,0 +1,97 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+   <div class="medpTabRegion" style="height:34em;"> 	
+	<div style="position:absolute;top:1em; left:2em;">
+	<table>
+	  <tr>
+		<td>{%lblVarManEccLiq%}</td>
+		<td>{%dedtOreVariazEcc%}</td>
+		<td style="padding-left:1.4em">{%lblVarResidua%}</td>
+		<td>{%edtVarEccLiqAnno%}</td>
+		<td style="padding-left:1.4em">{%lblStraordLiqfb%}</td>
+		<td>{%dedtLiqFuoriBudget%}</td>
+	  </tr>
+	</table>
+	</div>
+	<div style="position:absolute;top:4em; left:2em;">
+	<table>
+	  <tr>
+		<td>{%lblLiqEntroDisp%}</td>
+		<td>{%edtLiquidazioniAnnue%}</td>
+		<td>{%btnLiquidazioniAnnue%}</td>
+	  </tr>
+	</table>
+	</div>
+	<div class="groupbox" style="position:absolute;top:7em; left: 2em;">
+	  <fieldset style="width: 52em">
+	   <legend>{%lblLimitiEccOr%}</legend>
+	  <table>
+	   <tr>
+	     <td>{%lblLiqAnno%}</td>
+	     <td>{%edtStrAutAnn%}</td>
+	     <td style="padding-left:1.4em">{%lblLiqMese%}</td>
+	     <td>{%edtStrAutMen%}</td>
+	     <td>{%lblResMese%}</td>
+	     <td>{%edtEccResAutMen%}</td>
+	     <td>{%btnLimitiIndividuali%}</td>
+	   </tr>
+  	  </table>		
+ 	 </fieldset>	
+	</div>
+	<div class="groupbox" style="position:absolute;top:12em; left: 2em;">
+	  <fieldset style="width: 52em">
+	   <legend>{%lblLiqAutLim%}</legend>
+	  <table>
+	   <tr>
+	     <td>{%lblOreCausalizzate%}</td>
+	     <td>{%edtOreCausalizzateEsterneLiq%}</td>
+	     <td>{%lblStaordEst%}</td>
+	     <td>{%edtStrEst%}</td>
+	   </tr>
+  	  </table>		
+ 	 </fieldset>	
+	</div>
+	<div class="groupbox" style="position:absolute;top:7em; left: 57em;">
+	  <fieldset>
+	   <legend>{%lblEccComp%}</legend>
+	  <table>
+	   <tr>
+	     <td>{%lblMaturataMese%}</td>
+	     <td>{%dedtOreEccedComp%}</td>
+	   </tr>
+	   <tr>
+	     <td>{%lblCausalizzata%}</td>
+	     <td>{%dedtOreEccedCompOltreSoglia%}</td>
+	   </tr>
+	   <tr>
+	     <td>{%lblResiduaMese%}</td>
+	     <td>{%edtEccCompMese%}</td>
+	   </tr>  
+	   <tr>
+	     <td>{%lblMaturataAnno%}</td>
+	     <td>{%edtEccCompAnno%}</td>
+	   </tr>  
+	   <tr>
+	     <td>{%lblResiduaAnno%}</td>
+	     <td>{%edtEccResidua%}</td>
+	   </tr>  
+  	  </table>		
+ 	 </fieldset>	
+	</div>
+	<div style="position:absolute;top:17em; left: 2em;">{%btnLiquidazioneAutomatica%}</div>
+	<div style="position:absolute;top:17.5em; left: 45em;">{%lblLiquidStrBloccata%}</div>
+        <div style="position:absolute;top:20em; left: 2em;width: 70em;height: 14em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+	{%grdStraord%}
+ 	{%grdTotaliStraord%}
+	</div>
+
+
+    </div>	
+  </body>
+
+</html>
+
+

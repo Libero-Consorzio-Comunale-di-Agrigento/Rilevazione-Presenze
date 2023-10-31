@@ -1,0 +1,79 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:41em;">
+			<table style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblTipoOrario%}</td><td>{%dcmbTipoOra%}</td></tr>
+			</table>
+			<table style="position:absolute;top: 2em; left:27em;">
+				<tr><td>{%lblPerLav%}</td><td>{%dcmbPerLav%}</td></tr>
+			</table>
+
+			<div class="groupbox" style="position:absolute;top: 6em; left: 2em;">
+	 			<fieldset>
+		  		<legend>{%lblObblFac%}</legend> 
+	  			{%drgpObblFac%}
+	  		</fieldset> 
+			</div>
+			<table style="position:absolute;top:11em; left:2em;">
+				<tr><td>{%lblOreTeor%}</td><td>{%dedtOreTeor%}</td></tr>
+				<tr><td>{%lblOreTeorGGAss%}</td><td>{%dedtOreTeorGGAss%}</td></tr>
+				<tr><td>{%lblOreMin%}</td><td>{%dedtOreMin%}</td></tr>
+				<tr><td>{%lblOreMax%}</td><td>{%dedtOreMax%}</td></tr>
+				<tr><td>{%dchkCompDetr%}</td><td></td></tr>
+				<tr><td>{%lblTipoFle%}</td><td>{%dcmbTipoFle%}</td></tr>				
+			</table>
+			
+			<table style="position:absolute;top: 5.8em; left:27em;">
+				<tr><td>{%dchkCoperturaCarenza%}</td></tr>
+				<tr><td>{%dchkCausaleDisabilBloccante%}</td></tr>
+			</table>
+
+			<div id="pnlTurni" style="position:absolute;top: 9em; left:27em;">
+				<table>
+					<tr><td>{%dchkRegoleProfilo%}</td></tr>
+					<tr><td>{%dchkForzaTurnoPianificato%}</tr></td>
+					<tr><td>{%dchkFrazDeb%}</td></tr>
+					<tr><td>{%dchkFrazDebNoTurnista%}</td></tr>
+					<tr><td>{%dchkNotteEntrata%}</td></tr>
+					<tr><td>{%dchkFlexDopoMezanotte%}</td></tr>
+					<tr><td>{%lblMinUscitaNotte%}{%dedtMinUscitaNotte%}</td></tr>
+				</table>
+			</div>
+			
+			<!--Il contenuto del div id="RicalcoloDebitoOrario" è invisibile dalla versione 10.2(0)-->
+			<!--
+			<div class="groupbox" id="RicalcoloDebitoOrario" style="position:absolute;top: 17em; left:2em;">
+	 			<fieldset style="position:relative;width:62em;height:10em">
+		  		<legend>{%dchkRicalcoloDebitoGG%}</legend> 
+	  			<div style="position:absolute;top: 2.5em; left:3em;">{%dchkRicalcoloSpostaPN%}</div>
+					<div style="position:absolute;top: 4.5em; left:3em;">{%dchkRicalcoloOffNoTimb%}</div>
+					<table style="position:absolute;top: 2.2em; left:22em;">
+						<tr><td>{%lblRicalcoloMin%}</td><td style="padding-left:1.3em">{%dedtRicalcoloMin%}</td></tr>
+					</table>
+					<table style="position:absolute;top: 4.2em; left:22em;">
+						<tr><td>{%lblRicalcoloMax%}</td><td>{%dedtRicalcoloMax%}</td></tr>
+					</table>
+					<table style="position:absolute;top: 2.2em; left:36em;">
+						<tr><td>{%lblRicalcoloDebMin%}</td><td>{%dedtRicalcoloDebMin%}</td></tr>
+					</table>
+					<table style="position:absolute;top: 4.2em; left:36em;">
+						<tr><td>{%lblRicalcoloDebMax%}</td><td style="padding-left:1.2em">{%dedtRicalcoloDebMax%}</td></tr>
+					</table>
+		
+					<table style="position:absolute;top: 7em; left:2.5em;">
+						<tr><td>{%lblRicalcoloCausNeg%}</td><td>{%dlckRicalcoloCausNeg%}</td></tr>
+					</table>
+					<table style="position:absolute;top: 7em; left:39.5em;">
+						<tr><td>{%lblRicalcoloCausPos%}</td><td>{%dlckRicalcoloCausPos%}</td></tr>
+					</table>
+	  		</fieldset> 
+			</div>
+			-->
+			
+			<div class="grigliaDati" style="position:absolute;top: 23em; left:2em;width:63em">{%grdTimbrature%}</div>
+		</div>
+	</body>
+</html>

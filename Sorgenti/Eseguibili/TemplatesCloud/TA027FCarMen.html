@@ -1,0 +1,52 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:36em;">
+      <div style="position:absolute;top: 1em; left: 2em;">{%lblDa%}</div>
+      <div style="position:absolute;top: 1em; left: 10em;">{%lblA%}</div>
+      <div style="position:absolute;top: 2.5em; left: 1.5em;">{%edtDa%}</div>
+      <div style="position:absolute;top: 2.5em; left: 9.5em;">{%edtA%}</div>
+      <div style="position:absolute;top: 1.5em; left: 27em; width: 15em;">{%imbBloccoRiepiloghi%}</div>
+      <div style="position:absolute;top: 5em; left: 27em;">{%chkAutogiustificazione%}</div>
+      <div style="position:absolute;top: 7em; left: 27em;">{%chkAbbattimentoBancaOre%}</div>
+      <div style="position:absolute;top: 9em; left: 27em;">{%chkIgnoraAnomalieStampa%}</div>
+      <div style="position:absolute;top: 11em; left: 27em;">{%chkNumeraPagine%}</div>
+      <div style="position:absolute;top: 11em; left: 37.3em;">{%edtNumeraPagine%}</div>
+      <div style="position:absolute;top: 13em; left: 27em;">{%chkPaginaParita%}</div>
+
+      <div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+        <fieldset>
+          <legend>{%lblParametrizzazioneStampa%}</legend>
+          <span>{%lblParametrizzazione%}</span><br>
+          <span>{%cmbParametrizzazione%}</span>
+          <span style="margin-left: 0.5em;">{%dlblDescrizione%}</span><br>
+          <span>{%chkParametrizzazioniTipoCartellino%}</span>
+        </fieldset>
+      </div>
+      <div class="groupbox" style="position:absolute;top: 19em; left: 2em;">
+        <fieldset>
+          <legend>{%lblOpzioniAggiornamento%}</legend>
+          <span>{%chkAggiornamentoSchedaRiepilogativa%}</span><br>
+          <span>{%chkIgnoraAnomalieAggiornamento%}</span><br>
+          <span>{%chkAggiornamentoBuoniPasto%}</span><br>
+          <span>{%chkAggiornamentoAccessiMensa%}</span><br>
+          <span>{%chkInserimentoRiposi%}</span>
+        </fieldset>
+      </div>
+      <div style="position:absolute;top: 16em; left: 27em; width: 15em;">{%imbGeneraPDF%}</div>
+      <div style="position:absolute;top: 19em; left: 27em; width: 15em;">{%imbSoloAggiornamento%}</div>
+      <div style="position:absolute;top: 22em; left: 27em; width: 15em;">{%imbArchiviazioneCartellini%}</div>
+	  <div style="position:absolute;top: 25em; left: 27em; width: 15em;">{%imbAnomalie%}</div>
+      
+      <div style="position:absolute;top: 30em; left: 2em;width:96%;">{%lblElabInCorso%}</div>
+      <div style="position:absolute;top: 32em; left: 2em;width:96%;">{%pbAvanzamento%}</div>
+    </div>
+    {%btnHdnInviaFile%}	
+  </body>
+</html>
+

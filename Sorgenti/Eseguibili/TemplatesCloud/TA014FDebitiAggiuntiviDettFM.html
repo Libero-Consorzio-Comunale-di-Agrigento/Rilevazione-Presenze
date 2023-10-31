@@ -1,0 +1,62 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:19em;">
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+      <tr><td>{%lblAnno%}</td><td>{%dedtAnno%}</td></tr>
+    </table> 
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 11em;">
+      <tr><td>{%lnkCodice%}</td><td>{%dcmbCodice%}</td><td>{%lblDescCodice%}</td></tr>
+    </table> 
+		<div class="groupbox" style="position:absolute;top: 4.5em; left: 2em;">
+			<fieldset>
+				<legend>{%lblDebito%}</legend>
+				<span>{%drgpDebito%}</span>
+			</fieldset>
+			{%dchkGestAnticipo%}
+		</div>
+		<div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+			<fieldset>
+				<legend>{%lblDebitoAggiuntivo%}</legend>
+			<table>
+			<tr>
+				<td style="padding-right: 10px;">{%lblGennaio%}</td>
+				<td style="padding-right: 10px;">{%lblFebbraio%}</td>
+				<td style="padding-right: 10px;">{%lblMarzo%}</td>	
+				<td style="padding-right: 10px;">{%lblAprile%}</td>
+				<td style="padding-right: 10px;">{%lblMaggio%}</td>
+				<td style="padding-right: 10px;">{%lblGiugno%}</td>
+			</tr>
+			<tr>
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtGennaio%}</td>		
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtFebbraio%}</td>		
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtMarzo%}</td>		
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtAprile%}</td>		
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtMaggio%}</td>		
+				<td style="padding-right: 10px;padding-bottom: 10px">{%dedtGiugno%}</td>
+			</tr>
+			<tr>
+				<td>{%lblLuglio%}</td>
+				<td>{%lblAgosto%}</td>
+				<td>{%lblSettembre%}</td>
+				<td>{%lblOttobre%}</td>
+				<td>{%lblNovembre%}</td>
+				<td>{%lblDicembre%}</td>
+			</tr>
+			<tr>
+				<td>{%dedtLuglio%}</td>		
+				<td>{%dedtAgosto%}</td>		
+				<td>{%dedtSettembre%}</td>		
+				<td>{%dedtOttobre%}</td>		
+				<td>{%dedtNovembre%}</td>		
+				<td>{%dedtDicembre%}</td>
+			</tr>
+			</table>
+			</fieldset>
+		</div>		
+	</div>
+  </body> 
+</html>
+

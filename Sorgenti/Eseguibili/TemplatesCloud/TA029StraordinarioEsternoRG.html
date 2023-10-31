@@ -1,0 +1,64 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+   <div class="medpTabRegion" style="height:34em;"> 	
+	<div  class="groupbox" style="position:absolute; top:1em; width:96%; left:2em;">
+ 	  <fieldset style="width:98%;height:12em;">
+	    <legend>{%lblStraordinarioEsterno%}</legend>
+  	    <div style="position:absolute;width:42em;height:11em;overflow-y:auto;overflow-x: auto; background-color: transparent;">{%grdStraordinarioEsterno%}</div>
+	    <div style="position:absolute;left:46em">
+	    <table>
+		<tr><td>{%lblStraordLiquid%}</td></tr>
+		<tr><td>{%edtStraordLiquid%}</td></tr>
+		<tr><td>{%lblStraordEsterno%}</td></tr>
+		<tr><td>{%edtStraordEsterno%}</td></tr>
+	    </table>
+	    </div>	
+ 	  </fieldset>	
+	</div>		
+	<div  class="groupbox" style="position:absolute; top:15em; width:96%; left:2em;">
+	  <fieldset style="width:98%;height:15em;">
+	    <legend>{%lblBancaOre%}</legend>
+    	      <div style="position:absolute;width:25em;height:14em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+	      {%grdOreCompensabili%}
+    	      {%grdTotOreCompensabili%}
+		</div>	    
+	      <div  class="groupbox" style="position:absolute; left:28em; width:16em;">
+		  <fieldset style="width:16em;height:12em;">
+			<legend>{%lblDatiMensili%}</legend>
+			<table>
+			  <tr><td>{%lblDaCausaliEscluse%}</td><td>{%edtBancaOreCausEsc%}</td></tr>
+			  <tr><td>{%lblRecupCaus%}</td><td>{%dedtOreCompRecuparate%}</td></tr>
+			  <tr><td>{%lblRecupNeg%}</td><td>{%edtBancaOreRecInterna%}</td></tr>
+			  <tr><td>{%lblLiquidata%}</td><td>{%dedtOreCompLiq%}</td></tr>
+			  <tr><td>{%lblBancaOreLiqVar%}</td><td>{%dedtBancaOreLiqVar%}</td></tr>
+			  <tr><td colspan="2">{%lblLIquidCompBloccata%}</td></tr>
+			</table>
+		  </fieldset>
+	      </div>	
+	      <div  class="groupbox" style="position:absolute; left:48em; width:24em;">
+		  <fieldset style="width:24em;height:12em;">
+			<legend>{%lblDatiAnnuali%}</legend>
+			<table>
+			  <tr><td>{%lblMaturata%}</td><td>{%edtBancaOreMaturata%}</td>
+			    <td>{%lblResiduaPrec%}</td><td>{%edtBancaOreResiduaPrec%}</td>
+			  </tr>
+			  <tr><td>{%lblRecuperata%}</td><td>{%edtBancaOreRecuperata%}</td>
+			    <td>{%lblResiduaCorr%}</td><td>{%edtBancaOreResiduaCorr%}</td>
+			  </tr>
+			  <tr><td>{%lblBancaOreLiquidata%}</td><td>{%edtBancaOreLiquidata%}</td>
+			    <td>{%lblResidua%}</td><td>{%edtBancaOreResidua%}</td>
+			  </tr>
+			  <tr><td colspan="3">{%lblMaturataCaus%}</td><td>{%edtBancaOreCausEscAnno%}</td>
+			  </tr>
+			</table>
+		  </fieldset>
+	      </div>	
+
+ 	  </fieldset>	
+	</div>
+   </div>	
+  </body>
+</html>

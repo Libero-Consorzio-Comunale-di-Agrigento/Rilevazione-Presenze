@@ -1,0 +1,110 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+   <div class="medpTabRegion" style="height:34em;"> 	
+     <div style="position:absolute;top: 1em; left: 2em;">{%lblDebitoContr%}</div>
+     <div style="position:absolute;top: 2.5em; left: 2em;">{%dEdtDebitoContr%}</div>
+     <div style="position:absolute;top: 1em; left: 10em;">{%lblDebitoCompl%}</div>
+     <div style="position:absolute;top: 2.5em; left: 10em;">{%edtDebitoCompl%}</div>
+     <div style="position:absolute;top: 1em; left: 18em;">{%lblOreLavorate%}</div>
+     <div style="position:absolute;top: 2.5em; left: 18em;">{%edtOreLavorate%}</div>
+     <div style="position:absolute;top: 1em; left: 26em;">{%lblOrePresenza%}</div>
+     <div style="position:absolute;top: 2.5em; left: 26em;">{%edtOrePresenza%}</div>
+     <div style="position:absolute;top: 1em; left: 34em;">{%lblOreAssenza%}</div>
+     <div style="position:absolute;top: 2.5em; left: 34em;">{%dedtOreAssenza%}</div>
+     <div style="position:absolute;top: 1em; left: 42em;">{%lblOreInail%}</div>
+     <div style="position:absolute;top: 2.5em; left: 42em;">{%dedtOreInail%}</div>
+     <div style="position:absolute;top: 1em; left: 51em;">{%lblSaldoMese%}</div>
+     <div style="position:absolute;top: 2.5em; left: 51em;">{%edtSaldoMese%}</div>
+     <div style="position:absolute;top: 1em; left: 59em;">{%lblMesePrec%}</div>
+     <div style="position:absolute;top: 2.5em; left: 59em;">{%edtMesePrec%}</div>
+
+     <div style="position:absolute;top: 5em; left: 2em;">{%lblScostNeg%}</div>
+     <div style="position:absolute;top: 6.5em; left: 2em;">{%dEdtScostNeg%}</div>
+     <div style="position:absolute;top: 5em; left: 10em;">{%lblRecAnnoPrec%}</div>
+     <div style="position:absolute;top: 6.5em; left: 10em;">{%dEdtRecAnnoPrec%}</div>
+     <div style="position:absolute;top: 6.5em; left: 18em;">{%dEdtRecLiqPrec%}</div>
+     <div style="position:absolute;top: 5em; left: 26em;">{%lblRecAnnoCorr%}</div>
+     <div style="position:absolute;top: 6.5em; left: 26em;">{%dEdtRecAnnoCorr%}</div>
+     <div style="position:absolute;top: 6.5em; left: 34em;">{%dEdtRecLiqCorr%}</div>
+     <div style="position:absolute;top: 5em; left: 42em;">{%lblSaldoAnnoPrec%}</div>
+     <div style="position:absolute;top: 6.5em; left: 42em;">{%edtSaldoAnnoPrec%}</div>
+     <div style="position:absolute;top: 5em; left: 51em;">{%lblSaldoAnnoCorr%}</div>
+     <div style="position:absolute;top: 6.5em; left: 51em;">{%edtSaldoAnnoCorr%}</div>
+     <div style="position:absolute;top: 5em; left: 59em;">{%lblSaldoAnno%}</div>
+     <div style="position:absolute;top: 6.5em; left: 59em;">{%edtSaldoAnno%}</div>
+
+     <div style="position:absolute;top: 9em; left: 2em;">{%lblOrePerse%}</div>
+     <div style="position:absolute;top: 10.5em; left: 2em;">{%edtOrePerse%}</div>
+     <div style="position:absolute;top: 9em; left: 10em;">{%lblOreTroncate%}</div>
+     <div style="position:absolute;top: 10.5em; left: 10em;">{%edtOreTroncate%}</div>
+     <div style="position:absolute;top: 9em; left: 18em;">{%lblOreAddebitate%}</div>
+     <div style="position:absolute;top: 10.5em; left: 18em;">{%edtOreAddebitate%}</div>
+     <div style="position:absolute;top: 9em; left: 26em;">{%lblOreEsclComp%}</div>
+     <div style="position:absolute;top: 10.5em; left: 26em;">{%edtOreEsclComp%}</div>
+     <div style="position:absolute;top: 9em; left: 42em;">{%lblVariazioneSaldo%}</div>
+     <div style="position:absolute;top: 10.5em; left: 42em;">{%edtVariazioneSaldo%} {%btnOreLiqAnniPrec%}</div>
+     <div style="position:absolute;top: 9em; left: 51em;">{%lblLiqOreAnniPrec%}</div>
+     <div style="position:absolute;top: 10.5em; left: 51em;">{%edtLiqOreAnniPrec%}</div>
+
+     <div style="position:absolute;top: 10.5em; left: 59em;">{%btnSaldiMobili%}</div>
+     <div class="groupbox" style="position:absolute; top:13em; left: 2em;">
+	 	 <fieldset style="width:38em">
+		  <legend>{%lblDatiInFasce%}</legend>
+		  <table style="position:relative;left:11em;">
+		   <tr><td colspan="2">{%lblOreAssestamento%}</td></tr>
+		   <tr><td>{%cmbCausale1MinAss%}</td> 
+		       <td>{%cmbCausale2MinAss%}</td>
+		   </tr>
+	  	</table>		
+	 	 </fieldset>	
+	   </div>
+	   <div style="position:absolute; top: 20em; left: 2em;width: 40em;height: 13em; overflow-y:auto; overflow-x:auto; background-color: transparent;">
+	   {%grdFasce%}
+	   {%grdTotaliFasce%}
+	   </div>
+
+	   <div class="groupbox" style="position:absolute; top:13em; left: 43em;">
+	 	 <fieldset style="width:30em">
+		  <legend>{%lblRiposiCompensativi%}</legend>
+		  <table>
+		   <tr><td>{%lblRipComMaturati%}</td> 
+		       <td>{%lblRipComNonFruiti%}</td>
+		       <td>{%lblAbbRipComMes%}</td>
+		       <td>{%lblSaldoRipCom%}</td>
+		   </tr>
+		   <tr><td>{%dEdtRipCom%}</td> 
+		       <td>{%edtRipComNonFruiti%}</td>
+		       <td>{%edtAbbRipComMes%}</td>
+		       <td>{%edtSaldoRipCom%}</td>
+		   </tr>
+		   <tr><td colspan="4">{%lblRipComFasce%}</td></tr>
+	  	</table>		
+	 	 </fieldset>	
+	   </div>
+	   <div class="groupbox" style="position:absolute; top:21em; left: 43em;">
+	 	 <fieldset style="width:30em">
+		  <legend>{%lblDebitoAggiuntivo%}</legend>	  		
+		  <table>
+		   <tr><td>{%dChkGestioneAnticipo%}</td> 
+		   </tr>
+		  </table>
+		  <table>	
+		  <tr><td>{%lblDebitoPO%}</td> <td>{%lblDebPOAnno%}</td> <td>{%lblResiduoPOAnno%}</td> 
+		   </tr>
+		  <tr><td>{%dEdtDebitoPO%}</td> <td>{%edtDebPOAnno%}</td> <td>{%edtResiduoPOAnno%}</td>
+		   </tr>
+		  <tr><td>{%lblResoPOMese%}</td> <td>{%lblResoPOAnno%}</td>
+		   </tr>
+		  <tr><td>{%edtResoPOMese%}</td> <td>{%edtResoPOAnno%}</td>
+		   </tr>
+      </table>	
+ 	 	 </fieldset>	
+     </div>
+  </div>	
+  </body>
+</html>
+
+

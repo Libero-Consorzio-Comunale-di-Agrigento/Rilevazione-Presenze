@@ -1,0 +1,103 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <div id="wa004gestione" style="position: relative; height: 100%;">
+
+      <!-- radiogroup gestione (dipendenti / coniugi esterni) -->
+      <div>
+        {%rgpGestione%}
+      </div>
+
+      <!-- radiogroup causali (presenza / assenza) -->
+      <div class="spazio_top">
+        {%rgpCausali%}
+      </div>
+
+      <!-- periodo di inserimento / cancellazione -->
+      <div class="clearDiv spazio_top">
+        <table>
+          <tbody>
+            <tr>
+              <td>{%lblDaData%}</td>
+              <td>{%lblAData%}</td>
+              <td>{%lblNumGG%}</td>
+            </tr>
+            <tr>
+              <td>{%edtDaData%}</td>
+              <td>{%edtAData%}</td>
+              <td>{%edtNumGG%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- nuovo periodo -->
+      <div class="clearDiv spazio_top">
+        {%chkNuovoPeriodo%}
+      </div>
+
+      <!-- causale -->
+      <div class="clearDiv spazio_top">
+        <table class="width98pc">
+          <tbody>
+            <tr>
+              <td class="width50pc">{%lnkCausale%}</td>
+              <td class="align_right">{%cmbCausale%}</td>
+              <td style="width: 16px">{%btnFiltroCausaleSelezionata%}</td>
+            </tr>
+            <tr>
+              <td colspan="2">{%lblDescCausale%}</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- familiari -->
+      <div class="clearDiv spazio_top">
+        <table class="width98pc">
+          <tbody>
+            <tr>
+              <td class="width50pc">{%lnkFamiliari%}</td>
+              <td class="width50pc">{%cmbFamiliari%}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- tipo di fruizione -->
+      <div class="clearDiv spazio_top">
+        {%rgpTipoGiust%}
+      </div>
+
+      <div class="clearDiv spazio_verticale">&nbsp;</div>
+
+      <!-- fruizione in numero ore / dalle - alle -->
+      <div class="clearDiv spazio_top">
+        {%lblDaOre%} {%edtDaOre%} {%lblAOre%} {%edtAOre%}
+      </div>
+
+      <!-- note -->
+      <div class="clearDiv spazio_top height2">
+        {%lblNote%} {%edtNote%} &nbsp;
+      </div>
+
+      <!-- recapito per visite fiscali -->
+      <div class="clearDiv spazio_top">
+        <div style="margin: 0 auto; width: 12em;">{%imgRecapitoAlternativo%}</div>
+      </div>
+
+      <!-- pulsanti di gestione -->
+      <div class="clearDiv spazio_top">
+        <div style="margin: 0 auto;">
+          <div style="display: inline-block; width: 30%; margin-right: 3%;">{%imgInserisci%}</div>
+          <div style="display: inline-block; width: 30%; margin-right: 3%;">{%imgCancella%}</div>
+          <div style="display: inline-block; width: 30%;">{%imgAnomalie%}</div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

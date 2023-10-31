@@ -1,0 +1,68 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="medpTabRegion" style="height:34em;">   
+      <div style="position:absolute;top:1em; left: 2em;width:57em;height: 11em;overflow-y:auto;overflow-x: auto; background-color: transparent;">{%grdFascePresenza%}</div>
+      <div style="position:absolute;top:1em; left: 61em;width:25em;height: 11em;overflow-y:auto;overflow-x: auto; background-color: transparent;">{%grdCauPresPaghe%}</div>
+      <div style="position:absolute;top:14em; left: 2em">
+        <table>
+          <tr><td>{%lblCausPresenza%}</td><td>{%cmbCausPresenza%}</td><td>{%btnSaldiMobiliCausale%}</td><td>{%lblOreEscluseIncluse%}</td></tr>
+        </table>
+      </div>
+      <div  class="groupbox" style="position:absolute;top:17em;left:2em; width:42em;">
+        <fieldset style="width:42em;height:16em;">
+        <legend>{%lblAnno%}</legend>
+        <table> 
+          <tr>
+            <td>{%lblCompRegis%}</td>
+            <td>{%lblCompEffettivo%}</td>
+            <td>{%lblRipComp%}</td>
+          </tr>
+          <tr>
+            <td>{%edtOreEsclCompAnno%}</td>
+            <td>{%edtOreEsclCompAnnoEff%}</td>
+            <td>{%edtRecuperoAnno%}</td>
+          </tr>
+        </table>
+        <div style="position:absolute;top:6em; left: 1em;width:40em;height: 11em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+        {%grdPresAnnue%}
+        {%grdPresAnnueTot%}
+        </div>
+        </fieldset>
+      </div>
+
+      <div  class="groupbox" style="position:absolute;top:17em;left:46em; width:40em;">
+        <fieldset style="width:40em;height:16em;">
+        <legend>{%lblMese%}</legend>
+        <div style="position:absolute;top:1em;left:1em">
+          <table>
+            <tr>
+              <td>{%lblCompRegisMese%}</td>
+              <td>{%lblCompEffettivoMese%}</td>
+              <td>{%lblOreGettoneResidue%}</td>
+            </tr>
+            <tr>
+              <td>{%dedtOreEsclCompMese%}{%btnOnChangeCompensabile%}</td>     
+              <td>{%edtOreEsclCompMeseEff%}</td>
+              <td>{%dedtGettoneResiduo%}</td>
+            </tr>
+          </table>
+        </div>
+        <div style="position:absolute;top:5em;left:1em">      
+          <table>
+            <tr><td>{%lblLiquidazioneBloccata%}</td></tr>
+            <tr><td>{%btnAttivaLiquidazione%}</td></tr>
+          </table>
+        </div>
+        
+        <div style="position:absolute;top:5em; left: 13em;width:27em;height: 12em;overflow-y:auto;overflow-x: auto; background-color: transparent;">
+        {%grdPresLiq%}
+        {%grdPresLiqTot%}
+        </div>
+        </fieldset>
+      </div>  
+    </div>  
+  </body>
+</html>

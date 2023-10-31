@@ -1,0 +1,46 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%} 
+    {%<frm>WA013FSviluppoIndivFM</frm>%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:36em;">
+    	<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblDataPatrono%}</td><td>{%edtDataPatrono%}</td></tr>
+			</table>			
+			<div class="groupbox" style="position:absolute;top: 5em; left: 2em;">
+				<fieldset>
+					<legend>{%lblGiorniLavorativi%}</legend>
+					<span>{%chkLunedi%}</span><br>
+					<span>{%chkMartedi%}</span><br>
+					<span>{%chkMercoledi%}</span><br>
+					<span>{%chkGiovedi%}</span><br>
+					<span>{%chkVenerdi%}</span><br>
+					<span>{%chkSabato%}</span><br>
+					<span>{%chkDomenica%}</span>
+				</fieldset>
+			</div>
+			<div class="groupbox" style="position:absolute;top: 5em; left: 15em;">
+				<fieldset>
+					<legend>{%lblGenCalendari%}</legend>
+					<table cellpadding="5">
+					<tr align="left">
+						<td>{%lblDa%}</td>
+						<td>{%lblA%}</td>							
+					</tr>
+					<tr align="left">
+						<td>{%edtDa%}</td>
+						<td>{%edtA%}</td>
+					</tr>					
+					</table>
+				</fieldset>
+			</div>	
+			<div style="position:absolute;top: 13em; left: 15em;">{%btnGeneraCalendario%}</div>
+			<div style="position:absolute;top: 15.8em; left: 15em;">{%btnVisualizzaCalendario%}</div>
+			<div style="position:absolute;top: 18.6em; left: 15em;">{%btnCancellaCalendario%}</div>
+    </div>   
+  </body>
+</html>

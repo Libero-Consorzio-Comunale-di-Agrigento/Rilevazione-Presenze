@@ -1,0 +1,50 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+
+  <style type="text/css">
+	.legenda {
+	}
+
+	.legenda table {
+	  width: 100%;
+	}
+
+	.legenda div {
+	  padding-top: 0px !important;
+	}
+
+	.legenda table th,
+	.legenda table td {
+	  padding: 0 3px;
+	  line-height: 1.6em;
+	}
+
+	.legenda table td input {
+	  margin: 0;
+	}
+
+	.border_standard {
+	  border: 1px solid #B3B3B3;
+	}
+
+  </style>
+    <div id="wc012_container">
+        
+        <div style="width: 50em;height: 3em;overflow-y: auto;overflow-x: auto; background-color: transparent;">
+          {%grdLegenda%}
+        </div>
+
+	<div style="width: 100%;height: 25em;overflow-y: auto;overflow-x: auto; background-color: white;">
+          {%grdCalendario%}
+        </div>
+
+	<div class="area_pulsanti">
+          <div class="FloatDestra50" style="text-align: right; margin-top: 0.4em;">{%btnChiudi%}</div>
+          <div class="clearDiv"></div>
+      </div>
+    </div>
+  </body>
+</html>

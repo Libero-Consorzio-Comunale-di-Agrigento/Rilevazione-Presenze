@@ -1,0 +1,252 @@
+{%DocType%}
+<html>
+  <head> </head>
+
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 49.5em;">
+      <div style="position: absolute; top: 1em; left: 1em;">
+        {%lblCodice%} {%dedtCodice%}
+      </div>
+
+      <div style="position: absolute; top: 1em; left: 11em;">
+        {%lblDescCausale%} {%dedtDescCausale%}
+      </div>
+
+      <div style="position: absolute; top: 3.5em; left: 1em;">
+        {%lblDescrizione%}
+        <span style="margin-left: 6px;"></span>
+        {%dedtDescrizione%}
+      </div>
+
+      <div id="tabs" class="ui-tabs" style="position:absolute; top: 6em; height: 43.5em; width:96%;">
+        <ul>
+          <li><a href="#cartellino">{%lblCartellino%}</a></li>
+          <li><a href="#regoleInserimento">{%lblRegoleInserimento%}</a></li>
+          <li><a href="#regoleCumuloFruizione">{%lblRegoleCumuloFruizione%}</a></li>
+        </ul>
+
+        <div class="ui-tabs-hide" id="cartellino">
+          <div class="groupbox" style="position:absolute; top: 4em; left: 1em;">
+            <fieldset style="width: 22em;">
+              <legend>{%lblValorGior%}</legend>
+              {%drgpValorGior%}
+            </fieldset>
+          </div>
+
+          <div style="position: absolute; top: 15em; left: 1em;">
+            {%lblValorGiorOre%}
+            <span style="margin-left: 62px;"></span>
+            {%dedtValorGiorOre%}
+          </div>
+
+          <div class="groupbox" style="position:absolute; top: 17em; left: 1em;">
+            <fieldset style="width: 22em;">
+              <legend>{%lblValorGiorComp%}</legend>
+              {%drgpValorGiorComp%}
+            </fieldset>
+          </div>
+
+          <div style="position: absolute; top: 29.3em; left: 1em;">
+            {%lblValorGiorOreComp%}
+            <span style="margin-left: 62px;"></span>
+            {%dedtValorGiorOreComp%}
+          </div>
+
+          <div style="position: absolute; top: 31.5em; left: 1em;">
+            {%dchkValorGiorOrePropPT%}
+          </div>
+
+          <div style="position: absolute; top: 34em; left: 1em;">
+            {%dchkPesoGiorDaOrario%}
+          </div>
+
+          <div style="position: absolute; top: 4em; left: 25.5em;">
+            {%lblHMAssenza%}
+            <span style="margin-left: 70px;"></span>
+            {%dedtHMAssenza%}
+          </div>
+
+          <div style="position: absolute; top: 6em; left: 25.5em;">
+            {%dchkHMAssenzaPropPT%}
+          </div>
+
+          <div class="groupbox" style="position: absolute; top: 8em; left: 25.5em;">
+            <fieldset style="width: 24em;">
+              <legend>{%lblGrpPausaMensa%}</legend>
+              <div class="displayBlock">
+                {%dchkTimbPM%}
+              </div>
+              <div class="displayBlock">
+                {%dchkTimbPMH%}
+              </div>
+              <div class="displayBlock">
+                {%dchkTimbPMDetraz%}
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="groupbox" style="position:absolute; top: 15em; left: 25.5em;">
+            <fieldset style="width: 24em;">
+              <legend>{%lblGrpFruizAbilSP%}</legend>
+              <div class="displayBlock">
+                {%dchkFruizAbilSPGiorni%}
+              </div>
+              <div class="displayBlock">
+                {%dchkFruizAbilSPOre%}
+              </div>
+            </fieldset>
+          </div>
+
+          <div style="position: absolute; top: 20.5em; left: 25.5em;">
+            {%dchkGiustDaARecupFlex%}
+          </div>
+          <div style="position: absolute; top: 22em; left: 25.5em;">
+            {%dchkSceltaOrario%}
+          </div>
+          <div style="position: absolute; top: 23.5em; left: 25.5em;">
+            {%dchkAbbatteStrInd%}
+          </div>
+          <div style="position: absolute; top: 25em; left: 25.5em;">
+            {%dchkIndPres%}
+          </div>
+          <div style="position: absolute; top: 26.5em; left: 25.5em;">
+            {%dchkIndPresSuFestivo%}
+          </div>					
+          <div style="position: absolute; top: 28em; left: 25.5em;">
+            {%dchkIndTurno%}
+          </div>
+
+          <div class="groupbox" style="position:absolute; top: 30em; left: 25.5em;">
+            <fieldset style="width: 23em">
+              <legend>{%lblIntersezioneTimbrature%}</legend>
+              {%drgpIntersezioneTimbrature%}
+            </fieldset>
+          </div>
+
+          <div class="groupbox" style="position:absolute; top: 37em; left: 25.5em;">
+            <fieldset style="width: 23em">
+              <legend>{%lblConteggioTimbInterna%}</legend>
+              {%drgpConteggioTimbInterna%}
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="ui-tabs-hide" id="regoleInserimento">
+          <div style="position: absolute; top: 4em; left: 1em;">
+            <table style="height: 5.5em;">
+              <tr>
+                <td style="width: 17.5em;">
+                  <span class="intestazione">
+                    Causale cumulativa giornaliera delle
+                    <br />
+                    fruizioni orarie
+                  </span>
+                </td>
+                <td>
+                  {%dcmbCausaleHMAssenza%}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="intestazione">
+                    Causale da inserire se fruizione oraria
+                  </span>
+                </td>
+                <td>
+                  {%dcmbCausaleFruizOre%}
+                </td>
+              </tr>
+            </table>
+          </div>
+					<div class="groupbox" style="position: absolute; top: 4em; left: 33em;">
+            <fieldset style="width: 17em">
+              <legend>{%lblCondizioneAllegati%}</legend>
+              {%drgpCondizioneAllegati%}
+            </fieldset>					
+          </div>
+
+					<div class="groupbox" style="position: absolute; top: 12em; left: 33em;">					
+						<fieldset style="width: 17em">
+							<legend>{%lblGEDAP%}</legend> 
+						 <div style="position: relative">
+								{%lblCausale%} {%dCmbCausaleGEDAP%}
+							</div>							
+							<div class="groupbox" style="position: relative; padding: 0; margin: 0">
+								<fieldset style="width: 16em">
+									<legend>{%lblTipoGEDAP%}</legend>
+									{%dgrpTipoGEDAP%}
+								</fieldset>					
+							</div>
+					</div>
+					
+          <div style="position: absolute; top: 9.5em; left: 1em;">
+            {%dchkCheckSoloCompetenze%}
+          </div>
+
+          <div style="position: absolute; top: 11em; left: 1em;">
+            {%dchkFruizInternaPN%}
+          </div>
+
+          <div style="position: absolute; top: 13.5em; left: 1em;">
+            {%lblCausaliCompatibili%}
+          </div>
+          <div style="position: absolute; top: 15em; left: 1em;">
+            {%dedtCausaliCompatibili%} {%btnCausaliCompatibili%}
+          </div>
+
+          <div class="groupbox" style="position:absolute; top: 17.5em; left: 1em;">
+            <fieldset style="width: 23em">
+              <legend>{%lblStatoCompatibilta%}</legend>
+              {%drgpStatoCompatibilta%}
+            </fieldset>
+          </div>
+
+          <div style="position: absolute; top: 22em; left: 1em;">
+            {%lblCausaliCheckComp%}
+          </div>
+          <div style="position: absolute; top: 23.5em; left: 1em;">
+            {%dedtCausaliCheckComp%} {%btnCausaliCheckComp%}
+          </div>
+
+          <div style="position: absolute; top: 26.5em; left: 1em;">
+            {%lblVisualComp%} {%dcmbVisualCompetenze%}
+          </div>
+
+          <div class="groupbox fs100" style="position:absolute; top: 29em; left: 1em;">
+            <fieldset>
+              <legend>{%lblInserimentoImpeditoSeResiduo%}</legend>
+              <table>
+                <tr>
+                  <td>{%lblCausCheckNoCompI%}</td>
+                  <td>{%dedtCausCheckNoCompI%} {%btnCausCheckNoCompI%}</td>
+                </tr>
+                <tr>
+                  <td>{%lblCausCheckNoCompM%}</td>
+                  <td>{%dedtCausCheckNoCompM%} {%btnCausCheckNoCompM%}</td>
+                </tr>
+                <tr>
+                  <td>{%lblCausCheckNoCompN%}</td>
+                  <td>{%dedtCausCheckNoCompN%} {%btnCausCheckNoCompN%}</td>
+                </tr>
+                <tr>
+                  <td>{%lblCausCheckNoCompD%}</td>
+                  <td>{%dedtCausCheckNoCompD%} {%btnCausCheckNoCompD%}</td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
+        </div>
+        
+        <div class="ui-tabs-hide" id="regoleCumuloFruizione">
+          <div style="position: absolute; top: 4em; left: 1em;">
+            {%lblCMCausPresIncluse%}
+          </div>
+          <div style="position: absolute; top: 5.5em; left: 1em;">
+            {%dedtCMCausPresIncluse%} {%btnCMCausPresIncluse%}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:25em;">
+		
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			<tr><td>{%lblCodice%}</td></tr><tr><td>{%dedtCodice%}</td></tr>
+		</table>
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 7em;">
+			<tr><td>{%lblDescrizione%}</td></tr><tr><td>{%dedtDescrizione%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 6.5em; left: 2em;">
+			<tr><td>{%lblnumglav%}</td><td>{%dedtNGGLav%}</td></tr>
+		</table>
+		<div style="position:absolute;top: 6.7em; left: 14em;">{%dchkIgnoraFestivita%}</div>
+		
+		<div class="groupbox" style="position:absolute;top: 10em; left: 2em;">
+			<fieldset>
+				<legend>{%lblGiorniLavorativi%}</legend>
+				<span>{%dchkLunedi%}</span><br>
+				<span>{%dchkMartedi%}</span><br>
+				<span>{%dchkMercoledi%}</span><br>
+				<span>{%dchkGiovedi%}</span><br>
+				<span>{%dchkVenerdi%}</span><br>
+				<span>{%dchkSabato%}</span><br>
+				<span>{%dchkDomenica%}</span>
+			</fieldset>
+		</div>
+		<div style="position:absolute;top: 10em; left: 12em;">{%lblFestivitaAggiuntive%}</div>
+		<div style="position:absolute;top: 12em; left: 12em;width: 25em;height: 10em;overflow-y:auto;overflow-x: auto; background-color: white;">{%grdFestivita%}</div>
+		<div class="groupbox" style="position:absolute;top: 10em; left: 40em;">
+			<fieldset>
+				<legend>{%lblGenerazioneCalendari%}</legend>
+				<table cellpadding="5">
+				<tr align="left">
+					<td>{%lblDa%}</td>
+					<td>{%lblA%}</td>							
+				</tr>
+				<tr align="left">
+					<td>{%edtDa%}</td>
+					<td>{%edtA%}</td>
+				</tr>					
+				</table>
+			</fieldset>
+		</div>	
+		<div style="position:absolute;top: 17em; left: 40em; width: 16em;">{%imbGeneraCalendario%}</div>
+		<div style="position:absolute;top: 19.8em; left: 40em; width: 16em;">{%imbVisualizzaCalendario%}</div>
+	</div>
+  </body> 
+</html>
+

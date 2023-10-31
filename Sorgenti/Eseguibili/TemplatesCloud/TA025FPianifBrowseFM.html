@@ -1,0 +1,77 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    <div class="medpTabRegion" style="height:47em">
+		 	<table style="margin-top:1em;">
+	  		<tr>
+	  			<td>{%lblDataDa%}</td>
+	  			<td>{%edtDataDa%}</td>
+	  			<td style="padding-left:1em">{%lblDataA%}</td>
+	  			<td>{%edtDataA%}</td>
+	  			<td style="padding-left:2em">{%btnVisualizza%}</td>
+	  		</tr>
+	  	</table>	  	
+      
+      {%grdDetailNavBar%}<br>       
+      <div class="grigliaDatiNav" >
+      	{%PagNavBarTabella%}
+      </div>
+      <div class="grigliaDati" >
+       {%grdTabella%}      
+      </div>      
+      <br>
+      
+    	<div class="groupbox" >
+    		<fieldset id="fsInsPer" style="height: 14em;width:41em;">
+    			<legend>{%chkInsPeriodo%}</legend>
+    			<div id="grpInsPeriodo" style="position: relative; ">
+    				<div style="position:absolute;top:1.5em;left:1em;width: 5em">{%chkPulOrario%}</div>		
+    				<div style="position:absolute;top:7em;left:1em;width: 5em">{%chkPulIndennita%}</div>
+    				<div style="position:absolute;top:11em;left:1em;width: 5em">{%chkPulDato%}</div>
+    				<table style="position:absolute;top:0em;left:6em">
+    					<tr><td>{%lblOrario%}</td></tr>
+    					<tr><td>{%cmbOrario%}</td></tr>  
+    					<tr><td>{%lblDescOrario%}</td></tr>
+    				</table>
+    				<table style="position:absolute;top:0.1em;left:13.3em">
+    					<tr><td>{%lbl1Turno%}</td></tr>
+    					<tr><td>{%cmbTurno1%}</td></tr>
+    				</table>
+						<div style="position:absolute;top:1.6em;left:19em">{%cmbTurno1EU%}</div>
+						
+						<table style="position:absolute;top:0.1em;left:24em">
+    					<tr><td>{%lbl2Turno%}</td></tr>
+    					<tr><td>{%cmbTurno2%}</td></tr>
+    				</table>
+						<div style="position:absolute;top:1.6em;left:30em">{%cmbTurno2EU%}</div>
+						<div style="position:absolute;top:1.4em;left:35em">{%btnInserisci%}</div>
+						
+    				<table style="position:absolute;top:5.5em;left:6em">
+    					<tr><td>{%lblIndPresenza%}</td></tr>
+    					<tr><td>{%cmbIndennita%}</td></tr> 
+    				</table>
+    				<div style="position:absolute;top:7.3em;left:14em">{%lblDescIndennita%}</div>
+    				<table style="position:absolute;top:9.5em;left:6em">
+    					<tr><td>{%lblDatoLibero%}&nbsp;</td></tr>
+    					<tr><td>{%cmbDatoLibero%}</td></tr>     					
+    				</table>
+    				<div style="position:absolute;top:11.5em;left:14em">{%lblDescDatoLibero%}</div>
+    		  </div>
+    		</fieldset>
+    	</div>	      		      		
+          	
+    	<div class="clearFloat" ></div>
+      <br>
+      {%grdCalendarioNavBar%}
+      <div class="grigliaDatiNav">
+      	{%PagNavBarCalendario%}
+      </div>
+      <div class="grigliaDati">
+       {%grdCalendario%}      
+      </div>
+      
+    </div>
+  </body> 
+</html>

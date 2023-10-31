@@ -1,0 +1,83 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:41em;">
+			<table class="medpTableContainer" style="position:absolute;top:2em;left:2em">
+				<tr><td>{%lblTipoMensa%}</td><td>{%dcmbTipoMensa%}</td></tr>
+			</table>
+
+			<table class="medpTableContainer" style="position:absolute;top:4em;left:2em">
+				<tr><td>{%lblMMMinimi%}</td><td>{%dedtMMMinimi%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top:4em;left:16em">
+				<tr><td>{%lblMinPercorr%}</td><td>{%dedtMinPercorr%}</td></tr>
+			</table>
+			<table class="medpTableContainer" style="position:absolute;top:4em;left:26em">
+				<tr><td>{%lblPMTTolleranza%}</td><td>{%dedtPMTTolleranza%}</td></tr>
+			</table>
+
+			<div class="groupbox" style="position:absolute;top:2em;left:37.5em">
+	 			<fieldset>
+		  		<legend></legend> 
+						<table class="medpTableContainer">
+							<tr><td>{%lblPMStaccoInf%}</td><td>{%dedtPMStaccoInf%}</td></tr>
+							<tr><td>{%lblPMOreMinimeInf%}</td><td>{%dedtPMOreMinimeInf%}</td></tr>
+						</table>
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top:7em;left:2em">
+	 			<fieldset style="height:15em">
+		  		<legend>{%lblPausaMensaTimbrata%}</legend> 
+					<div style="display:block">{%dchkCausaleObbl%}</div>
+					<div style="display:block">{%dchkTimbratureUE%}</div>
+					<div style="display:block">{%dchkPMTTIMBAUTORIZZATE%}</div>
+					<div style="display:block">{%dchkPMTTimbMaturaMensa%}</div>
+					<div style="display:block">{%dchkPMTLimiteFlex%}</div>
+					<div style="display:block">{%dchkPMTUscitaRit%}</div>	
+					<table class="medpTableContainer">					
+						<tr><td>{%lblTollFuoriOrario%}</td><td>{%dedtTollFuoriOrario%}</td></tr>
+						<tr><td>{%lblPMTStaccoMin%}</td><td>{%dedtPMTStaccoMin%}</td></tr>
+						<tr><td>{%lblPMRecupUscita%}</td><td>{%dedtPMRecupUscita%}</td></tr>
+					</table>
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top:7em;left:30em">
+	 			<fieldset style="height:15em">
+		  		<legend>{%lblMensaAutomatica%}</legend> 
+					<div style="display:block">{%dchkPMAutoURit%}</div>
+					<div style="display:block">{%dchkDetrAutCont%}</div>
+					<div style="display:block">{%dchkPMAPreservaTimbInFascia%}</div>					
+					<div style="display:block">{%dchkDetrazParzStaccoInf%}</div>
+					<table class="medpTableContainer">								
+						<tr><td>{%lblPausaMensaAutomatica%}</td><td>{%dedetPausaMensaAutomatica%}</td></tr>
+						<tr><td>{%lblRientroMinimo%}</td><td>{%dedtRientroMinimo%}</td></tr>
+					</table>					
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top:23.5em;left:2em">
+	 			<fieldset style="height:9em;width:53em;position:relative">
+		  		<legend>{%lblTimbraturaMensa%}</legend> 
+		  		<div class="groupbox" style="position:absolute;top:1em;left:1em" >
+			 			<fieldset style="width:35em">
+				  		<legend>{%lblTimbraturaMensaInterna%}</legend> 
+				  		{%drgpTimbraturaMensaInterna%}
+			  		</fieldset>
+			  		{%lblTimbraturaMensaDetrazione%}{%dedtTimbraturaMensaDetrazione%}
+					</div>
+					<table class="medpTableContainer" style="position:absolute;top:5em;left:1em">
+						<tr><td>{%dchkPmtSoloTimbMensa%}</td><td>{%dchkTimbraturaMensa%}</td></tr>
+						<tr><td>{%dchkPMTTimbraturaMensa%}</td><td>{%dchkTimbraturaMensaDetrTot%}</td></tr>
+						<tr><td>{%dchkPMTNoOreMinTimbMensa%}</td><td>{%dchkTimbraturaMensaFlex%}</td></tr>
+		  		</table>
+	  		</fieldset> 
+			</div>
+
+			<div class="grigliaDati" style="position:absolute;top:34em;left:2em;width:54em">{%grdPausaMensa%}</div>
+		</div>
+	</body>
+</html>

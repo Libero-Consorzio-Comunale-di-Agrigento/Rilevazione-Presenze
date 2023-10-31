@@ -1,0 +1,88 @@
+{%DocType%}
+<html>
+  <head>    
+  </head>
+  <body>    
+  <div class="medpDettaglioFM" style="position:relative; height:45em;">
+
+    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+      <tr><td>{%lblNomeScarico%}</td></tr>
+      <tr><td>{%dedtNomeScarico%}</td></tr>
+    </table>  
+    <table class="medpTableContainer" style="position:absolute;top: 2em; left: 17em;">
+      <tr><td>{%lblAziendeAbilitate%}</td></tr>
+      <tr><td>{%dedtAziendeAbilitate%}{%btnAziendeAbilitate%}</td></tr>
+    </table>  
+    
+    <div class="groupbox" style="position:absolute;top: 2em; left: 56em;">
+      <fieldset>
+        <legend>{%lblTipologiaTimbrature%}</legend>
+        <div>{%drgpTipologiaTimbrature%}</div>
+      </fieldset>
+    </div>
+    <div style="position:absolute;top: 5.5em; left: 2em;">{%dchkScaricoAutomatico%}</div>
+    <div style="position:absolute;top: 5.5em; left: 30.7em;">{%dchkProceduraPrima%}</div>
+    <div style="position:absolute;top: 5.5em; left: 51em;">{%btnSrcTriggerBefore%}</div>
+    <div style="position:absolute;top: 7em; left: 2em;">{%dchkScaricoDating%}</div>
+    <div style="position:absolute;top: 7.2em; left: 15.3em;">{%lblOffsetAnno%}</div>
+    <div style="position:absolute;top: 7em; left: 23em;">{%dedtOffsetAnno%}</div>    
+    <div style="position:absolute;top: 7em; left: 30.7em;">{%dchkProceduraDopo%}</div>
+    <div style="position:absolute;top: 7em; left: 51em;">{%btnSrcTriggerAfter%}</div>
+    <div class="groupbox" style="position:absolute;top: 9em; left: 2em;">
+      <fieldset>
+        <legend>{%lblPeriodoTolleranza%}</legend>
+        <table>
+        <tr>
+          <td>{%lblGiorniPrecElab%}</td>
+          <td>&nbsp;</td>  
+          <td>{%dedtGiorniPrecElab%}</td>
+          <td>&nbsp;&nbsp;&nbsp;</td>          
+          <td>{%dchkSegnalaAnomalia%}</td>
+        </tr>
+        <tr>
+          <td>{%lblGiorniSucElab%}</td>
+          <td>&nbsp;</td>  
+          <td>{%dedtGiorniSucElab%}</td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td>{%dchkRegistra%}</td>
+        </tr>
+        </table>
+      </fieldset>
+    </div>
+    
+    <div style="position:absolute;top: 16em; left: 2em;width:55em">
+      <div class="groupbox">
+        <fieldset style="width:52.5em">
+          <legend>{%lblFileSequenziale%}</legend>
+          <div>{%lblNomeFile%}</div><br>
+          <div>{%dedtNomeFile%}</div><br>          
+          <fieldset style="width:47.5em">
+            <legend>{%chkExprChiave%}</legend>        
+            <div>{%dmemExprChiave%}</div>
+          </fieldset>
+          <br>
+          <table>
+          <tr>
+            <td>{%lblCodiceEntrata%}</td>
+            <td>&nbsp;</td>  
+            <td>{%dedtCodiceEntrata%}</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>          
+            <td>{%lblCodiceUscita%}</td>
+            <td>&nbsp;</td>  
+            <td>{%dedtCodiceUscita%}</td>
+          </tr>
+          </table>
+        </fieldset>
+      </div>      
+      <div class="groupbox" style="margin-top:2em;">
+      <fieldset style="width:52.5em">
+        <legend>{%lblMappatura%}</legend>    
+              <div class="grigliaDati" style="width:95em;overflow-y: auto;overflow-x: auto;">
+                {%grdMappatura%}
+              </div>
+      </fieldset>
+      </div>
+    </div>
+  </div>
+  </body> 
+</html>

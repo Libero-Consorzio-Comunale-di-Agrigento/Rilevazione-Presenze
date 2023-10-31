@@ -1,0 +1,81 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:41em;">
+			<table style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblTipoStraordinario%}</td><td>{%dcmbTipoStraordinario%}</td></tr>
+			</table>
+			<div style="position:absolute;top: 4em; left:2em;">{%dchkStrRipFasce%}</div>
+			<div class="groupbox" style="position:absolute;top: 7em; left: 2em;">
+	 			<fieldset style="position:relative;height:25em;width:22em">
+		  		<legend>{%lblEccedenzeLiqComp%}</legend> 
+	  			<div style="position:absolute;top: 1.5em; left:0.5em;">{%dchkSoloComp%}</div>
+					<table style="position:absolute;top: 3em; left: 0em;">
+						<tr><td>{%lblP4E13%}</td><td>{%dedtP4E13%}</td></tr>
+						<tr><td>{%lblScostGGMinSoglia%}</td><td>{%dedtScostGGMinSoglia%}</td></tr>
+						<tr><td>{%lblOraMaxComp%}</td><td>{%dedtOraMaxComp%}</td></tr>
+						<tr><td>{%lblArrotondamentoSottoSoglia%}</td><td>{%dedtArrotondamentoSottoSoglia%}</td></tr>
+						<tr><td>{%lblArrotondDopoSoglia%}</td><td>{%dedtP4E14%}</td></tr>						
+					</table>
+	  			<div style="position:absolute;top: 13.5em; left:0.5em;">{%dchkArrotComp%}</div>	  			
+	  			
+	  			<div style="position:absolute;top: 15.5em; left: 0.5em;">
+		  			<div class="groupbox">
+				 			<fieldset>
+					  		<legend>{%lblEccedenzeSottoSoglia%}</legend> 
+				  			{%drgpEComp2%}{%drgpEComp1%}
+				  		</fieldset> 
+						</div>
+						<table style="margin-top:1em;">
+							<tr><td>{%lblEccCompCausalizzata%}</td><td>{%dcmbEccCompCausalizzata%}</td></tr>
+						</table>
+				</div>
+					
+	  		</fieldset> 
+			</div>
+			
+			<div class="groupbox" style="position:absolute;top: 34em; left: 2em;">
+	 			<fieldset>
+		  		<legend>{%lblCarenzaObbNoLiq%}</legend> 
+		  		{%dchkCarenzaObbNoLiq%}
+	  		</fieldset> 
+			</div>
+			<table style="position:absolute;top: 39em; left: 2em;">
+	 			<tr>
+		  		<td>{%lblDetrazRiepprNorm%}</td><td>{%dcmbDetrazRiepprNorm%}</td> 
+	  		</tr> 
+			</table>
+			
+
+			<div class="groupbox" style="position:absolute;top: 2em; left: 30em;">
+	 			<fieldset style="position:relative;height:18em;width:22em">
+		  		<legend>{%lblStraordFuoriFascia%}</legend> 
+					<table>
+						<tr><td>{%lblP4E01%}</td><td>{%dedtP4E01%}</td></tr>
+						<tr><td colspan="2">{%dChkCompseInf%}</td></tr>
+						<tr><td>{%lblP4E03%}</td><td>{%dedtP4E03%}</td></tr>
+						<tr><td>{%lblP4E04%}</td><td>{%dedtP4E04%}</td></tr>
+						<tr><td>{%lblP4E05%}</td><td>{%dedtP4E05%}</td></tr>
+						<tr><td>{%lblP4E06%}</td><td>{%dedtP4E06%}</td></tr>
+						<tr><td colspan="2">{%dchkArrotComp2%}</td></tr>
+						<tr><td colspan="2">{%dchkSpezzNonCausScartoEcc%}</td></tr>						
+						<tr><td colspan="2">{%dchkStrNotteSpezzato%}</td></tr>						
+		  		</table>
+	  		</fieldset> 
+			</div>			
+			<div class="groupbox" style="position:absolute;top: 22.2em; left: 30em;">
+	 			<fieldset style="width:22em">
+		  		<legend>{%lblVincoliFruizStr%}</legend> 
+					<table>
+						<tr><td>{%lblP4E07%}</td><td>{%dedtP4E07%}</td></tr>
+						<tr><td colspan="2">{%chkDopoOreMax%}</td></tr>				
+		  		</table>
+	  		</fieldset> 
+			</div>
+			<div class="grigliaDati" style="position:absolute;top: 30em; left:30em;width:23em;overflow-x:auto">{%grdStraordinario%}</div>	  			
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:45em;">
+	 		<div class="grigliaDati" style="position:absolute;top:2em;left:2em;width:49em;height:40em;overflow:Auto">
+	 			{%grdFasce%}
+	 		</div>
+			<div class="groupbox" style="position:absolute;top: 2em; left: 52em;">
+	 			<fieldset style="width:21em">
+		  		<legend>{%lblTipoNonAutorizzate%}</legend> 
+	  			{%drgpTipoNonAutorizzate%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 6.5em; left: 52em;">
+	 			<fieldset style="width:21em">
+		  		<legend>{%lblTipoUNonAutorizzate%}</legend> 
+	  			{%drgpTipoUNonAutorizzate%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 11em; left: 52em;">
+	 			<fieldset style="width:21em">
+		  		<legend>{%lblControlloTimbTurno%}</legend> 
+	  			{%drgpControlloTimbTurno%}
+	  		</fieldset> 
+			</div>
+			<table style="position:absolute;top: 20em; left: 52em;">
+				<tr><td>{%lblCausFuoriTurno%}</td><td>{%cmbCausFuoriTurno%}</td></tr>
+				<tr><td colspan="2">{%dlblCausFuoriTurno%}</td></tr>
+			</table>
+			<div class="groupbox" style="position:absolute;top: 24em; left: 52em;">
+	 			<fieldset style="width:21em">
+		  		<legend>{%lblTurniPianificati%}</legend> 
+	  			{%dchkTurniPianificati%}
+	  		</fieldset> 
+			</div>
+		</div>
+	</body>
+</html>

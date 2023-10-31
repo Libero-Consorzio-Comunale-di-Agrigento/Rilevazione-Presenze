@@ -1,0 +1,67 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+    <style type="text/css">
+		  .WA016drgpGSignific input {margin-top: 1em !important; margin-bottom: 1em !important;} /*per spaziare gli elementi di drgpGSignific*/
+    </style>
+    
+		<div class="medpDettaglioFM" style="position:relative;height:47em;">
+			<div class="groupbox" style="position:absolute;top: 2em; left: 2em;">
+	 			<fieldset style="height:22em">
+		  		<legend>{%lblGSignific%}</legend> 
+	  			{%drgpGSignific%}
+	  		</fieldset> 
+			</div>
+			<div class="groupbox" style="position:absolute;top: 2em; left: 16em;">
+	 			<fieldset style="width:16em;height:6.2em">
+		  		<legend>{%lblUMInserimento%}</legend>
+	  			<table>
+	  				<tr><td>{%dchkUMInserimento%}</td><td>{%dchkUMInserimentoH%}</td></tr>
+	  				<tr><td>{%dchkUMInserimentoMg%}</td><td>{%dchkUMInserimentoD%}</td></tr>
+                    <tr><td colspan="2">{%dchkFruizGGNeutra%}</td></tr>
+	  			</table>
+	  		</fieldset>
+			</div>
+			<div class="groupbox" style="position:absolute;top: 10em; left: 16em;">
+	 			<fieldset style="width:16em;height:14em">
+		  		<legend>{%lblVincoliFruizione%}</legend> 
+	  			<table>
+	  				<tr><td>{%lblFruizMin%}</td><td>{%dedtFruizMin%}</td></tr>
+	  				<tr><td>{%lblFruizMax%}</td><td>{%dedtFruizMax%}</td></tr>
+	  				<tr><td>{%lblFruizArr%}</td><td>{%dedtFruizArr%}</td></tr>
+	  				<tr><td colspan="2">{%dchkFruizCompetenzeArr%}</td></tr>
+	  				<tr><td colspan="2">{%dchkFruizMaxDebito%}</td></tr>
+	  				<tr><td>{%lblOreGGMaxInf6%}</td><td>{%dedtOreGGMaxInf6%}</td></tr>
+	  				<tr><td>{%lblOreGGMaxSup6%}</td><td>{%dedtOreGGMaxSup6%}</td></tr>
+	  			</table>
+	  		</fieldset> 
+			</div>
+			<table style="position:absolute;top: 2em; left: 34em;">
+				<tr><td>{%dchkFruibile%}</td></tr>
+				<tr><td>{%dchkMaturFerie%}</td></tr>
+				<tr><td>{%dchkNoSuperoCompetenze%}</td></tr>
+				<tr><td>{%dchkNoSuperoCompWeb%}</td></tr>
+				<tr><td>{%dchkAllungaProva%}</td></tr>
+				<tr><td>{%dchkIterIgnoraFineRapporto%}</td></tr>
+				<tr><td>{%dchkRegistraStorico%}</td></tr>
+				<tr><td>{%dchkValidazione%}</td></tr>
+				<tr><td>{%dchkRicorsione%}</td></tr>				
+				<tr><td>{%dcmbggnnLav%}</td></tr>
+				<tr><td>{%dchkVisitaFiscale%}</td></tr>
+				<tr><td>{%dchkPeriodoLungo%}</td></tr>
+				<tr><td>{%dchkMaternitaObbl%}</td></tr>
+				<tr><td>{%dchkAbbatteGGSerTempoDet%}</td></tr>
+				<tr><td>{%dchkAbbatteGgValutazione%}</td></tr>
+			</table>
+
+			<table style="position:absolute;top: 26em; left: 2em;">
+				<tr><td align="right">{%lblAbbattimentoInail%}</td><td>{%dedtPercInail%}</td><td></td></tr>			
+				<tr><td align="right">{%lblCausaleSuccessiva%}</td><td>{%cmbCausaleSuccessiva%}</td><td>{%dlblCausaleSuccessiva%}</td></tr>
+				<tr><td align="right">{%lblCausale10Giorni%}</td><td>{%cmbCausale10Giorni%}</td><td>{%dlblCodCaus3%}</td></tr>
+			</table>
+			
+		</div>
+	</body>
+</html>

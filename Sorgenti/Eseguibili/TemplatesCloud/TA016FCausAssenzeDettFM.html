@@ -1,0 +1,52 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	<div class="medpDettaglioFM" style="position:relative;height: 65em;">
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;border-collapse:separate; border-spacing:0.2em">
+			<tr>
+				<td>{%lblCodice%}</td>
+				<td>{%dedtCodice%}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>{%lblSiglaProspetto%}</td>
+				<td>{%dedtSiglaCausale%}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>{%lnkRaggruppamento%}</td>
+				<td>{%cmbCodRaggr%}</td>
+				<td>{%dlblRaggruppamento%}</td>
+			</tr>
+		</table>
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 18em;border-collapse:separate; border-spacing:0.2em">
+			<tr>
+				<td>{%lblDescrizione%}</td>
+				<td>{%dedtDescrizione%}</td>
+			</tr>
+			<tr>
+				<td>{%lblDescrizioneEstesa%}</td>
+				<td>{%dedtDescrizioneEstesa%}</td>
+			</tr>
+		</table>
+		<div style="position:absolute;top: 7em; left: 45em;">{%dchkAnnoSolare%}</div>
+
+		<div style="position:absolute;top: 10em; left: 2em; width: 96%;">
+			{%grdTabDetail%}
+			<div style="width: 100%;">
+				{%WA016CartellinoRG%}
+				{%WA016RegInserimentoRG%}
+				{%WA016RegCumuloRG%}
+				{%WA016CompetenzeRG%}
+				{%WA016FiniEconomiciRG%}
+				{%WA016ParamStoricizRG%}
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

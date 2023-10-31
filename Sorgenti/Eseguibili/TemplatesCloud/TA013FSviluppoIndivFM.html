@@ -1,0 +1,65 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+  	 <style type="text/css">
+				.legenda table {
+				  width: 100%;
+				}
+				.legenda div {
+				  padding-top: 0px !important;
+				}
+				.legenda table th,
+				.legenda table td {
+				  padding: 0 3px;
+				  line-height: 1.6em;
+				}
+				.legenda table td input {
+				  margin: 0;
+				}
+				.border_standard {
+				  border: 1px solid #B3B3B3;
+				}
+				.cal_legenda:hover{
+					cursor:pointer;	
+				}
+				.cal_target:hover
+				{
+					background-color: #FC6769;
+			  	box-shadow: 0 0 1em #0099FF;
+			  	-webkit-box-shadow: 0 0 1em #0099FF;
+					-moz-box-shadow:    0 0 1em #0099FF;
+			  	-webkit-transition: background-color 0.4s linear;
+			    -moz-transition: background-color 0.4s linear;
+          transition: background-color 0.4s linear;
+				}
+			 </style>
+			 
+			 <script type="text/javascript">
+					$(document).ready(function() {
+						$(".cal_legenda").each(function(index) {
+						  $(this).attr("id","cal_legenda_"+index);		  
+						});
+						
+						$(".cal_legenda").click(function() {
+  							executeAjaxEvent("&idLegenda=" + $(this).attr('id'), null,"OnModificaTipoData",false, null, true);
+							});
+					});					
+		</script>
+		 
+    <div id="wc013_container" style="position:relative"> 
+    		<div style="position:absolute;left:55em;top:0.6em">{%lblData%}{%edtData%}</div>       
+        <div style="width: 50em;height: 3em;overflow-y: auto;overflow-x: auto; background-color: transparent;">
+          {%grdLegenda%}
+        </div>
+				<div style="width: 100%;height: 25em;overflow-y: auto;overflow-x: auto; background-color: white;">
+          {%grdCalendario%}
+        </div>
+				<div class="area_pulsanti">
+          <div class="FloatDestra50" style="text-align: right; margin-top: 0.4em;">{%btnChiudi%}</div>
+          <div class="clearDiv"></div>
+      </div>
+    </div>
+  </body>
+</html>

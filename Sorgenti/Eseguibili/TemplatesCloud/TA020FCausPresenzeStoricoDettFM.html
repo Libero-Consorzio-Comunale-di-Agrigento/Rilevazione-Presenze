@@ -1,0 +1,119 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 46em; ">
+      <div style="position: absolute; top: 1em; left: 1em;">
+        {%lblCodice%} {%dedtCodice%}
+      </div>
+      <div style="position: absolute; top: 1em; left: 11em;">
+        {%lblDescCausale%} {%dedtDescCausale%}
+      </div>
+      <div style="position: absolute; top: 3em; left: 1em;">
+        <table>
+          <tr>
+            <td>
+              {%lblCausTimb%}
+            </td>
+            <td>
+              <span style="margin-left: 9px;"></span>
+              {%edtCausTimb%}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {%lblInclEsclOreNorm%}
+            </td>
+            <td>
+              <span style="margin-left: 9px;"></span>
+              {%edtInclEsclOreNorm%}
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="position: absolute; top: 8em; left: 1em;">
+        {%lblDescrizione%}
+        <span style="margin-left: 6px;"></span>
+        {%dedtDescrizione%}
+      </div>
+      <!--<div style="position: absolute; top: 11.5em; left: 1em;">
+					{%dchkNonAbilEliminaTimb%}
+				</div>
+				<div style="position: absolute; top: 13em; left: 1em;">
+					{%chkAnomCausNonAccop%}
+        </div> 
+      -->
+      <div class="groupbox fs100 width45chr" style="position: absolute; top: 10.5em; left: 1em;">
+        <fieldset>
+          <legend>{%lblPausaMensa%}</legend>
+          <table>
+            <tr>
+              <td>{%dchkMaturaMensa%}</td>
+            </tr>
+            <tr>
+              <td>{%dchkTimbPM%}</td>
+            </tr>
+            <tr>
+              <td>{%dchkTimbPMH%}</td>
+            </tr>
+            <tr>
+              <td>{%dchkTimbPMDetraz%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="groupbox fs100 width45chr" style="position:absolute; top: 20em; left: 1em;">
+        <fieldset>
+          <legend>{%lblIntersezioneTimbrature%}</legend>
+          {%drgpIntersezioneTimbrature%}
+        </fieldset>
+      </div>
+
+      <div class="groupbox fs100 width45chr" style="position: absolute; top: 27em; left: 1em;">
+        <fieldset>
+          <legend>{%lblIterAutStr%}</legend>
+          <table class="medpTableContainer">
+            <tr>
+              <td>{%lblIterAutStrArrotLiq%}</td>
+              <td>{%dedtIterAutStrArrotLiq%}</td>
+            </tr>
+            <tr>
+              <td colspan="2">{%dchkIterAutStrArrotLiqFasce%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      
+      <div class="groupbox fs100 width95pc" style="position: absolute; top: 34em; left: 1em;">
+        <fieldset>
+          <legend>{%lblCdzAbilitazione%}</legend>
+          {%memoCdzAbilitazione%}
+        </fieldset>
+      </div>
+
+      <table style="position: absolute; top: 10.5em; left: 31em;">
+	    <tr><td colspan = "2">{%dchkAutoCompletamentoUE%}</td></tr>
+        <tr><td colspan = "2">{%dchkSeparaCausaliUE%}</td></tr>
+        <tr><td>{%lblCausCompDebitoGG%}</td><td>{%cmbCausCompDebitoGG%}</td>
+        </tr>
+        <tr>
+          <td>{%lblOrdineDetraz%}</td><td>{%dedtOrdineDetraz%}</td>
+        </tr>
+        <tr>
+          <td colspan = "2">
+	    	<div class="groupbox fs100 width40chr">
+			  <fieldset>
+				<legend>{%lblConteggioTimbInterna%}</legend>
+				{%drgpConteggioTimbInterna%}
+			  </fieldset>
+			</div>		  
+    	  </td>
+        </tr>
+	    <tr><td colspan = "2">{%dchkSpezzStraord%}</td></tr>
+        <tr><td colspan = "2">{%dchkRiconoscimentoTurno%}</td></tr>
+      </table>
+
+    </div>
+  </body>
+</html>

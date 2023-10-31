@@ -1,0 +1,132 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:67em;">
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lnkTipoCumulo%}</td><td>{%dcmbTipoCumulo%}</td></tr>
+				<tr><td></td><td align="right">{%lnkPeriodoCumuloPersonalizzato%}{%dchkPeriodoCumuloPersonalizzato%}</td></tr>
+			</table>	
+			
+			<div class="groupbox" style="position:absolute;top: 6em; left: 2em;">
+	 			<fieldset style="width:66em; height:39em">
+		  		<legend>{%lblCarCumulo%}</legend> 
+		  		<div style="position:relative">
+			  		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 1em;">
+							<tr><td>{%lblConsideraCumulo%}</td><td>{%dedtCausaliCollegate%}</td><td>{%btnCausaliCollegate%}</td></tr>
+						</table>	
+			  		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 32em;">
+							<tr><td>{%lblCodCau2%}</td><td>{%dedtCodCau2%}</td><td>{%btnCodCau2%}</td></tr>
+						</table>	
+						<table class="medpTableContainer" style="position:absolute;top: 5em; left: 32em;">
+							<tr><td>{%lblCausaliCumuloL133%}</td><td>{%dedtCausaliCumuloL133%}</td><td>{%btnCausaliCumuloL133%}</td></tr>
+						</table>	
+						<div class="groupbox" style="position:absolute;top: 4em; left: 1em;">
+				 			<fieldset style="width:28em">
+					  		<legend>{%lblCumulaRichiesteWeb%}</legend> 
+					  		{%drgpCumulaRichiesteWeb%}
+							</fieldset>
+						</div>						
+						<div class="groupbox" style="position:absolute;top: 8em; left: 1em;">
+				 			<fieldset>
+					  		<legend>{%lblCumuloTipoOre%}</legend> 
+					  		{%dgrpCumuloTipoOre%}
+							</fieldset>
+						</div>						
+						<div class="groupbox" style="position:absolute;top: 8em; left: 11em;">
+				 			<fieldset>
+					  		<legend>{%lblCumuloGlobale%}</legend> 
+					  		{%dgrpCumuloGlobale%}
+							</fieldset>
+						</div>						
+			  		<table class="medpTableContainer" style="position:absolute;top: 9em; left: 32em;">
+							<tr><td>{%lblRaggr%}</td><td>{%dcmbRaggruppamento%}</td></tr>
+						</table>	
+						<div id="grpUMCumulo" class="groupbox" style="position:absolute;top: 12em; left: 1em;">
+				 			<fieldset style="width:10em">
+					  		<legend>{%lblUMCumulo%}</legend> 
+					  		{%drgpUMCumulo%}
+							</fieldset>
+						</div>	
+						<table class="medpTableContainer" style="position:absolute;top: 13em; left: 15em;">
+							<tr><td>{%lblDurataCumulo%}</td><td>{%dedtDurataCumulo%}</td><td>{%dchkCumuloFamGGDopo%}{%dchkCTMantieniResidNeg%}</td></tr>
+						</table>	
+						<table class="medpTableContainer" style="position:absolute;top: 13em; left: 28em;">
+							<tr><td>{%lblGMCumulo%}</td><td>{%dedtGMCumulo%}</td></tr>
+						</table>	
+						
+						<table class="medpTableContainer" style="position:absolute;top: 16em; left: 1em;">
+							<tr><td>{%lblCumuloFamiliari%}</td><td>{%dcmbCumuloFamiliari%}</td></tr>
+						</table>	
+						<table class="medpTableContainer" style="position:absolute;top: 16em; left: 19em;">
+							<tr><td>{%lblCausale%}</td><td>{%cmbCodCauInizio%}</td><td>{%lblDCausale%}</td></tr>
+						</table>
+						
+						<table class="medpTableContainer" style="position:absolute;top: 18em; left: 1em;">
+							<tr><td>{%lblAssenze%}</td><td>{%dedtAssenze%}</td><td>{%btnAssenze%}</td></tr>
+						</table>
+						<table class="medpTableContainer" style="position:absolute;top: 20em; left: 1em;">
+							<tr><td>{%dchkFestGiustif%}</td><td>{%dchkDomeniche%}</td><td>{%dchkPianiFreper%}</td></tr>
+							<tr><td>{%dchkProgressivo%}</td><td>{%dchkFestivi%}</td></tr>
+						</table>
+						<table class="medpTableContainer" style="position:absolute;top: 23.4em; left: 1em;">
+							<tr><td>{%lblCMDebSett%}</td><td>{%dedtCMDebSett%}</td></tr>
+						</table>
+						<div id="grpGiorniNonLav" class="groupbox" style="position:absolute;top: 23.4em; left: 17em;">
+				 			<fieldset style="width:19em">
+					  		<legend>{%lblGiorniNonLav%}</legend> 
+					  		{%dgrpGiorniNonLav%}
+							</fieldset>
+						</div>	
+						<div id="grpCausTollerate" class="groupbox" style="position:absolute;top: 27em; left: 1em;">
+				 			<fieldset style="width:45em;height:8em;">
+					  		<legend>{%lblCausTollerate%}</legend> 
+					  		<div class="grigliaDati" style="position:absolute;width:44em;height:7em;overflow:Auto">{%grdCausTollerate%}</div>
+							</fieldset>
+						</div>	
+						<div id="pnlCongParentali" style="position:absolute;top: 27em; left: 1em;">				 	
+							<div>{%dchkVarCompFruizMMInteri%}</div>
+							<table class="medpTableContainer">
+								<tr><td>{%lblCompIndivConiugeEsistente%}</td><td>{%dedtCompIndivConiugeEsistente%}</td></tr>
+							</table>
+							<table class="medpTableContainer">
+								<tr><td>{%lblMMContVarComp%}</td><td>{%dedtMMContVarComp%}</td><td>{%lblVarCompFruizMMCont%}</td><td>{%dedtVarCompFruizMMCont%}</td></tr>
+							</table>
+						</div>	
+						
+					</div>				
+			  </fieldset> 
+			</div>
+			
+			<div class="groupbox" style="position:absolute;top: 47em; left: 2em;">
+				<fieldset style="width:60em;height:10em">
+					<legend>{%dchkFruizione%}</legend> 
+					<div style="position:relative">
+			  		<table class="medpTableContainer" style="position:absolute;top: 1em; left: 1em;">
+							<tr><td>{%lblFruizioneDurata%}</td><td>{%dedtDurata%}</td></tr>
+							<tr><td>{%lblFruizioneDopo%}</td><td>{%dedtOffsetFruizione%}</td></tr>
+						</table>
+						<div style="position:absolute;top: 5em; left: 1em;width:10em">{%dchkFruizioneFamGGDopo%}</div>												
+						<div class="groupbox" style="position:absolute;top: 1em; left: 13em;">
+				 			<fieldset style="width:10em;height:5em">
+					  		<legend>{%lblUMFruizione%}</legend>
+					  		{%drgpUMFruizione%} 
+							</fieldset>
+						</div>						
+						<div class="groupbox" style="position:absolute;top: 1em; left: 25em;">
+				 			<fieldset style="width:30em;height:5em">
+					  		<legend>{%lblRiferimento%}</legend> 
+					  			<table class="medpTableContainer" >
+										<tr><td align="right">{%lblFruizioneFamiliari%}</td><td>{%dcmbFruizioneFamiliari%}</td><td></td></tr>
+										<tr><td align="right">{%lblFruizioneCausale%}</td><td>{%cmbCauFruizione%}</td><td>{%lblDCodCauFruizione%}</td></tr>	
+									</table>	
+							</fieldset>
+						</div>	
+					</div>				  		
+				</fieldset>
+			</div>	
+			
+		</div>
+	</body>
+</html>
