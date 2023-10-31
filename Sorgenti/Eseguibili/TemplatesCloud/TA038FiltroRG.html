@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+  <style type="text/css">
+    .tipoElenco fieldset{
+      width: 10em;
+    }
+  </style>
+  <div class="medpTabRegion"  style="position:relative; height:44em;"> 	
+    <div style="position:absolute; top:0em; left:0em; height:40em; width:19em;">
+      <div style="position:absolute; top:2em; left: 2em;">{%chkTuttiDipendenti%}</div>
+      <div style="position:absolute; top:4em; left: 2em;"><table><tr><td>{%lblDalMese%}</td></tr><tr><td>{%edtDalMese%}</td></tr></table></div>
+      <div style="position:absolute; top:8em; left: 2em;"><table><tr><td>{%lblAlMese%}</td></tr><tr><td>{%edtAlMese%}</td></tr></table></div>
+      <div style="position:absolute; top:12em; left: 2em;">{%chkMeseCassa%}</div>
+      <div style="position:absolute; top:14em; left: 2em;">{%cmbMeseCassa%}</div>
+      <div class="groupbox" style="position:relative; top:16em; left: 2em;">
+ 	 <fieldset style="width:10em">
+	  <legend>{%lblTipoVoci%}</legend>
+	  <table>
+	   <tr><td>{%chkUMNumero%}</td></tr>
+	   <tr><td>{%chkUMOre%}</td></tr>
+	   <tr><td>{%chkUMValuta%}</td></tr>
+          </table>
+ 	 </fieldset>	
+      </div>
+      <div class="tipoElenco" style="position:absolute; top:24em; left: 2em;width:10em;">
+	  {%rgpTipoElenco%}	  
+      </div>
+    </div>
+    <div style="position:absolute; top:0em; left:19em; height:40em; width:20em;">
+        <div style="position:absolute; top:2em; left: 0em;">{%lblVociPaghe%}</div>	
+        <div style="position:absolute; top:4em; left: 0em;">{%chkVoci%}</div>	
+        <div class="checkGroupDin" style="position:absolute; top:6em; left: 0em;width:19em;height:35em;">{%cgpVociPaghe%}</div>	
+    </div>  
+    <div style="position:absolute; top:0em; left:39em; height:40em; width:30em;">
+        <div style="position:absolute; top:2em; left: 0em;">{%lblCodiciInterni%}</div>	
+        <div style="position:absolute; top:4em; left: 0em;">{%chkCodici%}</div>	
+        <div class="checkGroupDin" style="position:absolute; top:6em; left: 0em;width:30em;height:35em;">{%cgpCodiciInterni%}</div>	
+    </div>  
+
+  </div>
+  </body> 
+</html>

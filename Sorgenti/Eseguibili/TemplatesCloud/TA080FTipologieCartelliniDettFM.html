@@ -1,0 +1,55 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position: relative; height: 55em;">
+      <div style="position:absolute;top: 2.2em; left: 2em;">{%lblCodice%}</div>
+      <div style="position:absolute;top: 2em; left: 6em;">{%dedtCodice%}</div>
+      <div style="position:absolute;top: 2.2em; left: 15em;">
+        {%lblDescrizione%}
+      </div>
+      <div style="position:absolute;top: 2em; left: 21em;">
+        {%dedtDescrizione%}
+      </div>
+
+      <div class="groupbox" style="position:absolute;top: 4em; left: 2em;">
+        <fieldset>
+          <legend>{%lblCartellino%}</legend>
+          <div>{%drgpCartellino%}</div>
+        </fieldset>
+      </div>
+
+      <div class="groupbox" style="position:absolute;top: 4em; left: 12em;">
+        <fieldset>
+          <legend>{%lblConteggioIstituti%}</legend>
+          <div>{%drgpConteggioIstituti%}</div>
+        </fieldset>
+      </div>
+
+      <table style="position:absolute;top: 5.2em; left: 26em;">
+        <tr>
+          <td>{%lblTipoConteggio%}</td>
+          <td>{%dcmbTipoConteggio%}</td>
+        </tr>
+      </table>
+
+      <div style="position:absolute;top: 7.2em; left: 23em;">
+        {%lblScostamentoSettimanale%}
+      </div>
+      <div style="position:absolute;top: 7em; left: 36em;">
+        {%dedtScostamentoSettimanale%}
+      </div>
+
+      <div style="position:absolute;top: 10em; left: 2em; width: 96%;">
+        {%grdTabDetail%}
+        <div style="width: 100%;">
+          {%WA080RecuperiRG%} 
+          {%WA080AbbattimentiRG%} 
+          {%WA080OpzioniRG%}
+          {%WA080LimitiEccedenzeBancaOreRG%}
+          {%WA080IterAutStrRG%}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

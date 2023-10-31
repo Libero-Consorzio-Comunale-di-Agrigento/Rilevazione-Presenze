@@ -1,0 +1,152 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <div class="medpElaborazioneFM" style="position:relative; height:40em;">
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			  <tr><td>{%lblDaData%}</td><td>{%edtDaData%}</td></tr>
+			</table>		    	
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 15em;">
+			  <tr><td>{%lblAData%}</td><td>{%edtAData%}</td></tr>
+			</table>		    	
+	
+			<div id="tabs" class="ui-tabs" style="position:absolute;top:5em;height:25em;width:96%;">
+				<ul>
+				  <li><a href="#Parametri">{%lblParamDaAppl%}</a></li>
+				  <li><a href="#QualifMinisteriali">{%lblQualMinisteriali%}</a></li>
+				  <li><a href="#TipiRapporto">{%lblTipiRapporto%}</a></li>
+				</ul>
+				<div class="ui-tabs-hide" id="Parametri">
+					<div style="position:absolute;top:4em;left:2em">{%chkGGLavorativi%}</div>
+					<div style="position:absolute;top:6em;left:2em">{%ChkAssTutte%}</div>
+					<div style="position:absolute;top:8em;left:2em">{%chkSantoPatrono%}</div>
+					<div style="position:absolute;top:4em;left:25em">{%ChkContNumDip%}</div>
+					<div style="position:absolute;top:6em;left:25em">{%ChkPartOr%}</div>
+					<table class="medpTableContainer" style="position:absolute;top: 10em; left: 2em;">
+					  <tr><td>{%lblCausaliFormaz%}</td><td>{%edtCausali%}</td><td>{%btnCausali%}</td></tr>
+					</table>		
+					
+					<div id="tabs" class="ui-tabs" style="position:absolute;top: 13em; left: 2em;height:11.6em;width:96%;">
+						<ul>
+						  <li><a href="#OgniAssenza">{%lblOgniAssenza%}</a></li>
+						  <li><a href="#AssPerDip">{%lblAssPerDip%}</a></li>
+						  <li><a href="#AssPerQual">{%lblAssPerQual%}</a></li>
+						</ul>
+						<div class="ui-tabs-hide" id="OgniAssenza">
+							<table>
+								<tr>
+									<td>
+							  		<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblArrotondamentoAssenza%}</legend> 
+								  			{%rgpArrotondamentoAssenza%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>									
+									<td>
+										<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblTipoArrotondamentoAssenza%}</legend> 
+								  			{%rgpTipoArrotondamentoAssenza%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="ui-tabs-hide" id="AssPerDip">
+							<table>
+								<tr>
+									<td>
+							  		<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblArrotondamentoTotale%}</legend> 
+								  			{%rgpArrotondamentoTotale%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>									
+									<td>
+										<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblTipoArrotondamentoTotale%}</legend> 
+								  			{%rgpTipoArrotondamentoTotale%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>
+								</tr>
+							</table>							
+						</div>
+						<div class="ui-tabs-hide" id="AssPerQual">
+							<table>
+								<tr>
+									<td>
+							  		<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblArrotondamentoQualifica%}</legend> 
+								  			{%rgpArrotondamentoQualifica%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>									
+									<td>
+										<div class="groupbox" >
+								 			<fieldset>
+									  		<legend>{%lblTipoArrotondamentoQualifica%}</legend> 
+								  			{%rgpTipoArrotondamentoQualifica%}
+								  		</fieldset> 
+										</div> 		  																				
+									</td>
+								</tr>
+							</table>							
+						</div>
+
+					</div>
+
+				</div>
+				<div class="ui-tabs-hide" id="QualifMinisteriali">
+					<div style="position:absolute;top:4em;left:2em;height:19em;overflow-y:scroll">{%LstListaCausali%}</div>
+				</div>
+				<div class="ui-tabs-hide" id="TipiRapporto">
+					<div style="position:absolute;top:4em;left:2em;height:19em;overflow-y:scroll">{%LstListaTipiRapporto%}</div>
+				</div>
+			 </div>
+			 
+			<table class="medpTableContainer" cellspacing="2em" style="position:absolute;top: 33em; left: 2em;">
+			  <!--<tr><td>{%chkElabora%}</td></tr>
+			      <tr><td>{%chkStampa%}</td></tr>-->
+			  <tr>
+			  	<td>{%chkElabora%}</td>
+			  	<td>&nbsp;</td>
+			    <td>
+						<style type="text/css">
+							#RGPSTAMPA_INPUT_2{
+								margin-left:1em;
+							}
+							#RGPSTAMPA_INPUT_3{
+								margin-left:1em;
+							}
+						</style>
+						<div class="groupbox">
+							<fieldset>	
+								<legend>Generazione file</legend>
+									<table cellpadding="3">
+										<tr>
+											<td>
+												{%rgpStampa%}	
+											</td>																									
+										</tr>
+									</table>
+							</fieldset>	
+						</div>
+					</td>
+				</tr>
+			</table>		    	
+			 
+			<div style="position:absolute;top:38em;left:12em">{%btnGeneraPDF%}</div>
+ 			<div style="position:absolute;top:38em;left:2em">{%btnEsegui%}</div>
+			 
+    </div>
+  </body>
+</html>

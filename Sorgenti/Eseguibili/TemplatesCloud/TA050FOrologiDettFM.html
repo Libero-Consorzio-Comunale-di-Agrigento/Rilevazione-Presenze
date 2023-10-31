@@ -1,0 +1,112 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height: 46em;">
+				
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			<tr><td>{%lblCodice%}</td></tr><tr><td>{%dedtCodice%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 8em;">
+			<tr><td>{%lblDescrizione%}</td></tr><tr><td>{%dedtDescrizione%}</td></tr>
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 6em; left: 2em;">
+			<tr><td>{%lblIndirizzo%}</td></tr><tr><td>{%dedtIndirizzo%}</td></tr>
+		</table>
+		
+		<div style="position:absolute;top: 10em; left: 2em;">{%rgpFunzione%}</div>
+		<div style="position:absolute;top: 15em; left: 2em;">{%dchkPausaMensa%}</div>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 17em; left: 2em;">
+			<tr><td>{%lnkTimbratureMensa%}</td><td>{%cmbTimbratureMensa%}</td><td>{%lblDescTimbratureMensa%}</td></tr>
+		</table>
+		
+		<div class="groupbox" style="position:absolute;top: 20em; left: 2em;">
+			<fieldset>
+				<legend>{%lblVersoTimbratura%}</legend>
+				<div>{%drgpVersoTimbratura%}</div>
+			</fieldset>
+		</div>
+				
+		<div style="position:absolute;top: 20em; left: 20em;">{%rgpTipologiaLocalita%}</div>
+			
+		<table class="medpTableContainer" style="position:absolute;top: 25em; left: 2em;">
+			<tr><td colspan="4">{%lnkDescrizioneLocalita%}</td></tr>
+			<tr><td>{%cmbDescrizioneLocalita%}</td><td>{%edtDescComune%}</td><td>{%btnComuni%}</td><td>{%dedtComune%}</td></tr>
+		</table>
+
+		<div id="wa050PosizioneRilevatore" class="groupbox" style="position:absolute;top: 29em; left: 2em;">
+			<fieldset>
+				<legend>{%lblPosizioneRilevatore%}</legend>
+				<table>
+					<tr><td>{%lblLat%}</td><td>{%dedtLat%}</td><td>{%lblLng%}</td><td>{%dedtLng%}</td><td>{%imgCercaPosizione%}</td></tr>
+					<tr><td colspan="2">{%lblRaggioValidita%}</td><td>{%dedtRaggioValidita%}</td><td colspan="2">{%lblRaggioValiditaMetri%}</td></tr>
+				</table>
+			</fieldset>
+		</div>
+
+		<table class="medpTableContainer" style="position:absolute;top: 36em; left: 2em;">
+			<tr><td>{%lblRilevatore%}</td></tr><tr><td>{%dedtRilevatore%}</td></tr>
+		</table>
+			
+		<table class="medpTableContainer" style="position:absolute;top: 36em; left: 14em;">
+			<tr><td>{%lnkScarico%}</td></tr><tr><td>{%cmbScarico%}</td></tr>
+		</table>
+		
+		<div class="groupbox" style="position:absolute;top: 40em; left: 2em;">
+			<fieldset>
+				<legend>{%lblMessaggi%}</legend>
+				<table>
+					<tr><td>{%lblPostazione%}</td><td>{%lblIndirizzoTerm%}</td><td colspan="2">{%lblIndirizzoIP%}</td></tr>
+					<tr><td>{%dedtPostazione%}</td><td>{%dedtIndirizzoTerm%}</td><td>{%dedtIndirizzoIP%}</td><td>{%dchkRicezioneMessaggi%}</td></tr>
+				</table>
+			</fieldset>
+		</div>
+		
+		<div id="WA050_modalRicercaPosizione" style="height: 40em;">
+      <div class="pac-card" id="cardRicercaPosizione">
+        <div>
+          <div id="title" class="pac-title">
+            Ricerca posizione
+          </div>
+          <div id="type-selector" class="pac-controls">
+            <input type="radio" name="type" id="changetype-all" checked="checked">
+            <label for="changetype-all">Tutto</label>
+            <input type="radio" name="type" id="changetype-establishment">
+            <label for="changetype-establishment">Aziende</label>
+            <input type="radio" name="type" id="changetype-address">
+            <label for="changetype-address">Indirizzi</label>
+          </div>
+        </div>
+        <div id="pac-container">
+          <input id="inputLocalita" type="text" placeholder="Inserisci un luogo da cercare">
+        </div>
+      </div>
+  
+      <div class="pac-card" id="cardImpostazioni" style="visibility: hidden">
+        <div id="rilevatoreTitle" class="pac-title">
+          Rilevatore
+        </div>
+        <div id="settings" class="pac-controls">
+          <label>Raggio validit&agrave; timbratura</label>
+          <input id="raggioValidita" type="number" min="-1" max="9999" value="60">
+          <label>metri</label>
+        </div>
+      </div>
+  
+      <div id="map"></div>
+  
+      <div id="infowindow-content">
+        <img src="" width="16" height="16" id="place-icon">
+        <span id="place-name" class="title"></span><br>
+        <span id="place-address"></span>
+      </div>
+    </div>
+				
+	</div>
+	
+  </body> 
+</html>

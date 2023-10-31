@@ -1,0 +1,51 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+
+	<div class="medpDettaglioFM" style="position: relative; height: 30em;">
+		<div style="position: absolute; top: 0.5em; left: 2em;">
+			{%lblInfo%}
+		</div>
+
+		<div class="groupbox" style="position:absolute;top: 2em; left: 2em;">
+			<fieldset style="width:46em">
+				<legend>{%lblSalvataggioRisultato%}</legend>
+				<table>
+					<tr>
+						<td>{%btnEsportaFile%}</td>
+						<td style="padding-left:1.4em;">
+              <div class="groupbox">
+                <fieldset style="width:6.5em">
+                  <legend>{%lblFormatoFile%}</legend> 
+                  {%rgpFormatoFile%}
+                </fieldset> 
+              </div>
+						</td>
+						<td>{%chkIntestazione%}</td>
+						<td>{%chkNoRitornoACapo%}</td>
+					</tr>
+					<tr>
+						<td>{%btnCreaTab%}</td>
+						<td colspan="3" style="padding-left:1.4em;">{%lblNomeTabella%}{%edtNomeTab%}</td>
+					</tr>
+				</table>
+
+			</fieldset>
+		</div>
+
+		<div style="position:absolute;top: 7em; left: 51em;">{%btnCartellino%}</div>
+
+		<div style="position:absolute;top: 10em; left: 2em;height:21em;overflow-y:scroll">
+			<div class="grigliaDatiNav">{%PagNavBarRisultati%}</div>
+			{%grdRisultati%}
+		</div>
+
+	</div>
+
+</body>
+
+</html>

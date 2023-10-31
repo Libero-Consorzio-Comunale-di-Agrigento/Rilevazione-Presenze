@@ -1,0 +1,39 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative;height:17em;">
+			<div style="position:absolute;top: 1em; left: 2em;">{%chkDipendenteCorrente%}</div>	
+			
+			<table class="medpTableContainer" style="position:absolute;top: 3em; left: 2em;">
+				<tr><td>{%lnkTurnazione%}</td><td>{%cmbTurnazione%}</td><td>{%lblDescrTurnazione%}</td></tr>
+				<tr><td>{%lblDataPartenza%}</td><td>{%edtDataPartenza%}</td><td></td></tr>
+				<tr><td>{%lblPuntoPartenza%}</td><td>{%edtPuntoPartenza%}{%btnPuntoPartenza%}</td><td></td></tr>
+		  </table>
+		  
+			<div class="groupbox" style="position:absolute;top: 10em; left: 2em;">
+	 			<fieldset style="width:36.5em;height:6em;position:relative">
+		  		<legend>{%lblParInserimento%}</legend> 
+					<table>
+						<tr>
+							<td style="vertical-align:top">
+								<table>
+									<tr><td>{%chkPianifDaCalendario%}</td></tr>
+									<tr><td>{%chkGGLav%}</td></tr>
+									<tr><td>{%chkRiposi%}</td></tr>
+					  		</table>
+					  	</td>
+							<td style="vertical-align:top">
+								<table>
+									<tr><td>{%chkInsAutomatico%}</td></tr>
+									<tr><td>{%chkPregresso%}</td></tr>
+					  		</table>
+					  	</td>
+					  </tr>
+					</table>
+	  		</fieldset>	  		 
+			</div>		  
+		</div>
+	</body>
+</html>

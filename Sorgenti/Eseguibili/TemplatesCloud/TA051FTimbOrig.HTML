@@ -1,0 +1,33 @@
+{%DocType%}
+<html>
+  <body> 
+    {%T000Intestazione%}
+  	{%ContenutoDinamico%}
+		<div class="medpDettaglioFM" style="position:relative; height:47em;">
+			<table style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblAnno%}</td><td>{%edtAnno%}</td></tr>
+			</table>
+			<table style="position:absolute;top: 2em; left: 11em;">
+				<tr><td>{%lblMese%}</td><td>{%cmbMese%}</td></tr>
+			</table>			
+			<table style="position:absolute;top: 5em; left: 2em;">
+				<tr><td>{%lblDa%}</td><td>{%edtDa%}</td></tr>
+				<tr><td style="padding-top:0.5em">{%lblA%}</td><td style="padding-top:0.5em">{%edtA%}</td></tr>
+			</table>			
+			<div style="position:absolute;top: 10em; left: 2em;">{%chkSaltoPagina%}</div>
+			<table style="position:absolute;top: 12.5em; left: 2em;">
+				<tr><td>{%lblCampo%}</td></tr>
+				<tr><td>{%cmbCampoRaggr%}</td></tr>
+			</table>			
+
+			<div class="groupbox" style="position:absolute;top:16.5em; left: 2em;">
+	 			<fieldset>
+		  		<legend>{%lblTimbrature%}</legend> 
+	  			{%rgpTimbrature%}
+	  		</fieldset> 
+			</div>
+
+			<div style="position:absolute;top: 22em; left: 2em;">{%btnGeneraPDF%}</div>
+		</div>	
+  </body> 
+</html>

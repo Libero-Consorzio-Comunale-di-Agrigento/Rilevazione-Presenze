@@ -1,0 +1,118 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+		<div class="medpDettaglioFM" style="position:relative; height:30em;">		
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblCodice%}</td><td>{%dedtCodice%}</td></tr>
+			</table>
+	
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 20em;">
+				<tr><td>{%lblDescrizione%}</td><td>{%dedtDescrizione%}</td></tr>
+				<tr><td></td><td>{%dedtDescrizioneLunga%}</td></tr>
+			</table>		
+				
+			<div id="tabs" class="ui-tabs" style="position:absolute;top:6.5em;height:24em;width:99%;">
+				<ul>
+				  <li><a href="#Massimi_minimi">Massimi Minimi</a></li>
+				  <li><a href="#Parametri">Parametri</a></li>
+				</ul>
+	
+				<!-- Massimi_minimi -->
+				<div id="Massimi_minimi" class="ui-tabs-hide">
+				    <div class="groupbox" style="position:absolute;top: 5em; left: 2em;">
+						<fieldset>
+							<legend>{%lblLimitiOperatori%}</legend>
+							<table cellpadding="5" > 
+								<tr align="left">
+									<td></td>
+									<td colspan="2" align="center">{%lblTurno1%}</td>
+									<td colspan="2" align="center">{%lblTurno2%}</td>
+									<td colspan="2" align="center">{%lblTurno3%}</td>
+									<td colspan="2" align="center">{%lblTurno4%}</td>
+								</tr>
+								<tr align="left">
+									<td></td>
+									<td align="center">{%lblFerTurno1%}</td>
+									<td align="center">{%lblFestTurno1%}</td>
+									<td align="center">{%lblFerTurno2%}</td>
+									<td align="center">{%lblFestTurno2%}</td>
+									<td align="center">{%lblFerTurno3%}</td>
+									<td align="center">{%lblFestTurno3%}</td>
+									<td align="center">{%lblFerTurno4%}</td>
+									<td align="center">{%lblFestTurno4%}</td>
+								</tr>
+								<tr align="left">
+									<td>{%lblMinimo%}</td>
+									<td>{%dedtTotmin1%}</td>
+									<td>{%dedtFesmin1%}</td>
+									<td>{%dedtTotmin2%}</td>
+									<td>{%dedtFesmin2%}</td>
+									<td>{%dedtTotmin3%}</td>
+									<td>{%dedtFesmin3%}</td>
+									<td>{%dedtTotmin4%}</td>
+									<td>{%dedtFesmin4%}</td>
+								</tr>
+								<tr align="left">
+									<td>{%lblMassimo%}</td>
+									<td>{%dedtTotmax1%}</td>
+									<td>{%dedtFesmax1%}</td>
+									<td>{%dedtTotmax2%}</td>
+									<td>{%dedtFesmax2%}</td>
+									<td>{%dedtTotmax3%}</td>
+									<td>{%dedtFesmax3%}</td>
+									<td>{%dedtTotmax4%}</td>
+									<td>{%dedtFesmax4%}</td>
+								</tr>
+							</table>
+						</fieldset>
+				    </div>
+			    </div>
+	
+				<!-- Parametri -->
+				<div id="Parametri" class="ui-tabs-hide">
+					<div style="position:absolute;top: 4em; left: 2em;">{%lblCausaleCompetenzeRiposo%}</div>
+					<div style="position:absolute;top: 4em; left: 16em;">{%cmbCausComp%}</div>
+					<div style="position:absolute;top: 4em; left: 25em;">{%lblDescrCausaleCompetenzeRiposo%}</div>
+					
+					<div style="position:absolute;top: 6.5em; left: 2em;">{%lblPrioritaVerificaTurni%}</div>
+					<div style="position:absolute;top: 6.5em; left: 16em;">{%dedtPrioritaMinMax%}</div>
+					
+					<div style="position:absolute;top: 6.5em; left: 22em;">{%lblFestMensiliMinime%}</div>
+					<div style="position:absolute;top: 6.5em; left: 34em;">{%dedtMinFestMese%}</div>
+					
+					<div style="position:absolute;top: 9em; left: 2em;">{%lblMaxNottiMese%}</div>
+					<div style="position:absolute;top: 9em; left: 16em;">{%edtMaxNottiMese%}</div>
+			
+					<div class="groupbox" style="position:absolute;top: 11em; left: 2em;">
+						<fieldset>
+							<legend>{%lblControlliPeriodo%}</legend>
+							<table cellpadding="5" > 
+								<tr align="left">
+									<td>{%lblMinInd1%}</td>
+									<td>{%dedtMinInd1%}</td>
+									<td>{%lblMaturazIndennita%}</td>
+									<td>{%dedtMaturazIndennita%}</td>
+								</tr>
+								<tr align="left">
+									<td>{%lblMinInd2%}</td>
+									<td colspan="3">{%dedtMinInd2%}</td>
+								</tr>
+								<tr align="left">
+									<td>{%lblMinInd3%}</td>
+									<td colspan="3">{%dedtMinInd3%}</td>
+								</tr>
+								<tr align="left">
+									<td>{%lblMinInd4%}</td>
+									<td colspan="3">{%dedtMinInd4%}</td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+  </body>
+</html>

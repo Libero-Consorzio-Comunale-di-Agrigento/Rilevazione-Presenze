@@ -1,0 +1,142 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position: relative; height: 41em;">
+      <table
+        class="medpTableContainer"
+        style="position:absolute; top: 1em; left: 2em;"
+      >
+        <tr>
+          <td>
+            <div class="groupbox">
+              <fieldset>
+                <legend>{%lblOrdinePrelievo%}</legend>
+                <table>
+                  <tr>
+                    <td>{%lblCompensabileAnnoPrecedente%}</td>
+                    <td>{%dedtCompensabileAnnoPrecedente%}</td>
+                    <td>{%lblArrotCompAnnoPrec%}</td>
+                    <td>{%dedtArrotCompAnnoPrec%}</td>
+                  </tr>
+                  <tr>
+                    <td>{%lblLiquidabileAnnoPrecedente%}</td>
+                    <td>{%dedtLiquidabileAnnoPrecedente%}</td>
+                    <td>{%lblArrotLiqAnnoPrec%}</td>
+                    <td>{%dedtArrotLiqAnnoPrec%}</td>
+                  </tr>
+                  <tr>
+                    <td>{%lblCompensabileAnnoAttuale%}</td>
+                    <td>{%dedtCompensabileAnnoAttuale%}</td>
+                    <td>{%lblArrotCompAnnoAtt%}</td>
+                    <td>{%dedtArrotCompAnnoAtt%}</td>
+                  </tr>
+                  <tr>
+                    <td>{%lblLiquidabileAnnoAttuale%}</td>
+                    <td>{%dedtLiquidabileAnnoAttuale%}</td>
+                    <td>{%lblArrotLiqAnnoAtt%}</td>
+                    <td>{%dedtArrotLiqAnnoAtt%}</td>
+                  </tr>
+                </table>
+              </fieldset>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="groupbox" style="width:100%">
+              <fieldset>
+                <legend>{%lblSaldiNegativiDaRecuperare%}</legend>
+                <div>{%drgpSaldiNegativiDaRecuperare%}</div>
+              </fieldset>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="medpTableContainer" style="position:absolute;top: 19em; left: 2em;">
+        <tr>
+          <td>{%dchkRipcomInclusiSaldo%}</td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>
+            {%lblCausaleRiposiCompensativi%}{%cmbCausaleRiposiCompensativi%}
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>{%lblDescCausaleRiposiCompensativi%}</td>
+        </tr>
+      </table>
+
+      <div class="groupbox" style="position:absolute; top: 1em; left: 37em;">
+        <fieldset>
+          <legend>{%lblRecuperoDebitoPaghe%}</legend>
+          <table>
+            <tr>
+              <td>{%lblMesiPrecedenti%}</td>
+              <td>{%dedtMesiPrecedenti%}</td>
+            </tr>
+            <tr>
+              <td>{%lblOreMassimeRecuperabili%}</td>
+              <td>{%dedtOreMassimeRecuperabili%}</td>
+            </tr>
+            <tr>
+              <td>{%lblRecDebitomaxtollerato%}</td>
+              <td>{%dedtRecDebitomaxtollerato%}</td>
+            </tr>
+          </table>
+
+          <div class="groupbox" style="margin-top:1em">
+            <fieldset>
+              <legend>{%lblOreUtilizzabili%}</legend>
+              <div>{%drgpOreUtilizzabili%}</div>
+            </fieldset>
+          </div>
+		  <div class="groupbox" style="margin-top:1em">
+            <fieldset>
+              <legend>{%lblRecuperoDebitoPeriodicita%}</legend>
+              <div>{%drgpRecuperoDebitoPeriodicita%}</div>
+            </fieldset>
+          </div>
+        </fieldset>
+      </div>
+
+      <table class="medpTableContainer" style="position:absolute; top: 15.5em; left: 37em;">
+        <tr><td>{%lblCausaliCompensabiliMensili%}</td></tr>
+        <tr><td>{%dedtCausaliCompensabiliMensili%}{%btnCausaliCompensabiliMensili%}</td></tr>
+        <tr><td>{%rgpCausaliCompMensSaldo%}</td></tr>
+        <tr><td>{%rgpCausaliCompMeseRecNeg%}</td></tr>
+      </table>
+
+      <table class="medpTableContainer" style="position:absolute; top: 27em; left: 37em;">
+        <tr><td>{%lblOreCausalizzateCompensabili%}</td></tr>
+        <tr><td>{%dedtOreCausalizzateCompensabili%}{%btnOreCausalizzateCompensabili%}</td></tr>        
+		<tr><td>{%rgpCausaliCompAnnSaldo%}</td></tr>
+        <tr><td>{%rgpCausaliCompAnnAddebPaghe%}</td></tr>
+        <tr><td>{%lblRiepassCompensabiliAnno%}</td></tr>
+        <tr><td>{%dedtRiepassCompensabiliAnno%}{%btnRiepassCompensabiliAnno%}</td></tr>        
+      </table>
+
+      <div class="groupbox" style="position:absolute; top: 35em; left: 2em;">
+        <fieldset>
+          <legend>{%lblFestivitaInfrasettimanali%}</legend>
+          <table>
+            <tr>
+              <td>{%lblCausaliAssenzaTollerate%}</td>
+              <td>{%dedtCausaliAssenzaTollerate%}</td>
+              <td>{%btnCausaliAssenzaTollerate%}</td>
+            </tr>
+            <tr>
+              <td>{%lblApplicaAnagrafiche%}</td>
+              <td>{%dedtApplicaAnagrafiche%}</td>
+              <td>{%imgApplicaAnagrafiche%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

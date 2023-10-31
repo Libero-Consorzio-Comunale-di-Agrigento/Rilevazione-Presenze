@@ -1,0 +1,47 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <div class="medpElaborazioneFM" style="position:relative;height:22em;">
+	    <div style="position:absolute;top:2em;left:1em;">{%lblDataDa%}</div>
+  	  <div style="position:absolute;top:1.8em;left:6em;">{%edtDataDa%}</div>
+    	<div style="position:absolute;top:2em;left:15.5em;">{%lblDataA%}</div>
+    	<div style="position:absolute;top:1.8em;left:19.5em;">{%edtDataA%}</div>
+  	  <div style="position:absolute;top:4em;left:1em;">{%lblTestoMsg%}</div>
+  	  <div style="position:absolute;top:5.5em;left:0.5em;">{%edtTestoMsg%}</div>
+    	<div style="position:absolute;top:1em;left:33em;">{%chkDettaglioCompleto%}</div>
+			<div style="position:absolute;top:2.5em;left:33em;">{%chkSelAnagrafe%}</div>
+    	<div style="position:absolute;top:4em;left:33em;">{%chkUltimoMovimento%}</div>
+    	<div style="position:absolute;top:2.5em;left:50em;">{%imgC700SelezioneAnagrafe%}</div>
+    	<div style="position:absolute;top:2.5em;left:52em;">{%imgC700EreditaSelezione%}</div>
+			<table style="position:absolute;top:7.5em;left:0em;">
+				<tr>
+					<td>
+						<div class="listChkAziendeObj" style="margin-left:1em">{%lblAziende%}</div>
+						<div class="checkGroupDin listChkAziendeObj" style="width:15em;height:13em;margin-left:1em">{%listChkAziende%}</div>
+					</td>
+					<td>
+						<div class="listChkOperatoriObj" style="margin-left:1em">{%lblOperatori%}</div>
+						<div class="checkGroupDin listChkOperatoriObj" style="width:15em;height:13em;margin-left:1em">{%listChkOperatori%}</div>
+					</td>
+					<td>
+						<div class="listChkMaschereObj" style="margin-left:1em">{%lblMaschere%}</div>
+						<div class="checkGroupDin listChkMaschereObj" style="width:25em;height:13em;margin-left:1em">{%listChkMaschere%}</div>
+					</td>
+					<td>
+						<div class="listChkOperazioniObj" style="margin-left:1em">{%lblOperazioni%}</div>
+						<div class="checkGroupDin listChkOperazioniObj" style="width:15em;height:13em;margin-left:1em">{%listChkOperazioni%}</div>
+					</td>
+					<td>
+						<div class="listChkCampiVisibiliObj" style="margin-left:1em">{%lblCampiVisibili%}</div>
+						<div class="checkGroupDin listChkCampiVisibiliObj" style="width:15em;height:13em;margin-left:1em">{%listChkCampiVisibili%}</div>
+					</td>
+				</tr>
+			</table>
+    </div>
+    <div style="position:relative;">{%WA083FMsgElaborazioniBrowseFM%}</div>
+  </body>
+</html>

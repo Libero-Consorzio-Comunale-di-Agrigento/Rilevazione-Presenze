@@ -1,0 +1,57 @@
+{%DocType%}
+<html>
+  <body> 
+   <div id="WA042_ImpostazioniGrafico">
+  	<script type="text/javascript">        
+		  $(document).ready(
+		    function()
+		    {
+		      $('.colorPicker').jPicker();
+		    });
+		</script>
+
+   	<div style="position:relative;margin-bottom:24.5em">     	
+	  	<div class="groupbox" style="position:absolute; top:1em; left:1em">
+	 			<fieldset style="height:8em;width:37em;position:relative">		  		
+		  		<legend>{%lblGrpPresenza%}</legend>
+		  		<table style="position:absolute; top:2em; left:1em">
+		  			<tr><td>{%lblCausPresenza%}</td><td>{%cmbPresenza%}</td></tr>
+		  			<tr><td></td><td>{%lblDescrPresenza%}</td></tr>
+		  		</table>	
+		  		<table style="position:absolute; top:6em; left:1em">
+		  			<tr><td>{%lblColorePresenza%}&nbsp;&nbsp;&nbsp;&nbsp;</td><td>{%edtColorePresenza%}</td></tr>
+		  		</table>	
+		  		<table style="position:absolute; top:1em; left:26em">
+		  			<tr><td>{%BtnSalvaPresenze%}</td></tr>
+		  			<tr><td>{%BtnCancellaPresenze%}</td></tr>
+		  			<tr><td>{%BtnImportaPresenze%}</td></tr>
+		  		</table>		  				  			  		
+	  		</fieldset>     	
+	  	</div>    
+	  	
+	  	<div class="groupbox" style="position:absolute; top:11em; left:1em">
+	 			<fieldset style="height:8em;width:37em;position:relative">		  		
+		  		<legend>{%lblGrpAssenza%}</legend>
+		  		<table style="position:absolute; top:2em; left:1em">
+		  			<tr><td>{%lblCausAssenza%}</td><td>{%cmbAssenza%}</td></tr>
+		  			<tr><td></td><td>{%lblDescrAssenza%}</td></tr>
+		  		</table>		
+		  		<table style="position:absolute; top:6em; left:1em"> 
+		  			<tr><td>{%lblColoreAssenza%}&nbsp;&nbsp;&nbsp;&nbsp;</td><td>{%edtColoreAssenza%}</td></tr>
+		  		</table> 		
+		  		<table style="position:absolute; top:1em; left:26em">
+		  			<tr><td>{%BtnSalvaAssenze%}</td></tr>
+		  			<tr><td>{%BtnCancellaAssenze%}</td></tr>
+		  			<tr><td>{%BtnImportaAssenze%}</td></tr>
+		  		</table>		  				  			  		
+	  		</fieldset>     	
+	  	</div>   
+	  	<div style="position:absolute; top:21.5em; left:1em">{%ChkCausaliNonAbbinate%}</div>      	     	   
+    </div> 
+    <div style="position:relative" class="area_pulsanti">
+	    <div class="FloatDestra">{%btnChiudi%}</div>
+	    <div class="clearDiv"></div>
+    </div>    
+   </div>
+  </body>
+</html>

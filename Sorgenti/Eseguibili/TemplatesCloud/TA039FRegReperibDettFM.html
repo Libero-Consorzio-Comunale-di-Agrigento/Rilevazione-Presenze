@@ -1,0 +1,161 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+  <div class="medpDettaglioFM" style="position:relative;height: 45em;">
+    <table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+      <tr>
+        <td>{%lblCodice%}</td>
+        <td>{%dedtCodice%}</td>
+        <td style="text-align: right">{%lblSigla%}</td>
+        <td style="text-align: right">{%dedtSigla%}</td>
+      </tr>
+      <tr>
+        <td>{%lblDescrizione%}</td>
+        <td colspan="3">{%dedtDescrizione%}</td>
+      </tr>
+    </table>
+    <div class="groupbox" style="position:absolute;top: 5em; left: 2em;">
+      <fieldset style="width:38em">
+        <legend>{%lblTipologia%}</legend>
+        {%drgpTipologia%}
+      </fieldset>
+    </div>
+    <table class="medpTableContainer" style="position:absolute;top: 9.5em; left: 2em;">
+      <tr>
+        <td>{%lblOraInizio%}</td>
+        <td>{%dedtOraInizio%}</td>
+      </tr>
+    </table>
+    <table class="medpTableContainer" style="position:absolute;top: 9.5em; left: 16em;;">
+      <tr>
+        <td>{%lblOraFine%}</td>
+        <td>{%dedtOraFine%}</td>
+      </tr>
+    </table>
+    <table class="medpTableContainer" style="position:absolute;top: 9.5em; left: 29em;">
+      <tr>
+        <td>{%lblDurata%}</td>
+        <td>{%dedtTurnoIntero%}</td>
+      </tr>
+    </table>
+
+    <div class="groupbox" style="position:absolute;top: 12em; left: 2em;">
+      <fieldset style="width:10em;height:5.5em">
+        <legend>{%lblTipoTurno%}</legend>
+        {%drgpTipoTurno%}
+      </fieldset>
+    </div>
+
+    <div class="groupbox" style="position:absolute;top: 12em; left: 19.2em;">
+      <fieldset style="height:13.5em">
+        <legend>{%lblVociPaghe%}</legend>
+        <table class="medpTableContainer">
+          <tr>
+            <td>{%lblTurniInteri%}</td>
+            <td>{%dedtVpTurno%}</td>
+          </tr>
+          <tr>
+            <td>{%lblOre%}</td>
+            <td>{%dedtVpOre%}</td>
+          </tr>
+          <tr>
+            <td>{%lblOreMaggiorate%}</td>
+            <td>{%dedtVpMaggiorate%}</td>
+          </tr>
+          <tr>
+            <td>{%lblOreNonMaggiorate%}</td>
+            <td>{%dedtVpNonMaggiorate%}</td>
+          </tr>
+          <tr>
+            <td>{%lblGettoneChiamata%}</td>
+            <td>{%dedtVpGettoneChiamata%}</td>
+          </tr>
+          <tr>
+            <td>{%lblTurniEccedenti%}</td>
+            <td>{%dedtVpMaxMese%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div class="groupbox" style="position:absolute;top: 20em; left: 2em;">
+      <fieldset style="width:10em;height:5.5em">
+        <legend>{%lblSuddivisioneOre%}</legend>
+        {%drgpTipoOre%}
+      </fieldset>
+    </div>
+    <div style="position:absolute;top: 24.3em; left: 7em;">{%dedtOreNormali%}</div>
+
+    <div class="groupbox" style="position:absolute;top: 27.3em; left: 2em;">
+      <fieldset>
+        <legend>{%lblLimiteMensile%}</legend>
+        <table class="medpTableContainer">
+          <tr>
+            <td>{%lblPianifMaxMese%}</td>
+            <td>{%dedtPianifMaxMese%}</td>
+            <td>{%dchkBloccaMaxMese%}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>{%dchkPianifMaxMeseTurniInteri%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div style="position:absolute;top: 33.5em; left: 8em;">{%dchkDetrazMensa%}</div>
+    <div style="position:absolute;top: 35.5em; left: 8em;">{%dchkOreNonCaus%}</div>
+
+    <table class="medpTableContainer" style="position:absolute;top: 37.5em; left: 8em;">
+      <tr>
+        <td>{%lblTolleranza%}</td>
+        <td>{%dedtTolleranza%}</td>
+        <td style="padding-left:3.7em">{%lblOreCompresenza%}</td>
+        <td>{%dedtCompresenza%}</td>
+      </tr>
+    </table>
+    <table class="medpTableContainer" style="position:absolute;top: 39.5em; left: 8em;">
+      <tr>
+        <td>{%lblOreMinIndennita%}</td>
+        <td>{%dedtOreMinIndennita%}</td>
+      </tr>
+    </table>
+
+    <div class="groupbox" style="position:absolute;top: 41.8em; left: 2em;">
+      <fieldset style="width:38em">
+        <table align="center" class="medpTableContainer">
+          <tr>
+            <td>{%lblCampoAnagrafico%}</td>
+            <td>{%dcmbCampiAnagra%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div class="groupbox" style="position:absolute;top: 44.8em; left: 2em;">
+      <fieldset style="width:38em">
+        <legend>{%lblTollChiamata%}</legend>
+        <table class="medpTableContainer">
+          <tr>
+            <td>{%lblTollChiamataInizio%}</td>
+            <td>{%dedtTollChiamataInizio%}</td>
+            <td>{%lblTollChiamataInizio2%}</td>
+          </tr>
+          <tr>
+            <td>{%lblTollChiamataFine%}</td>
+            <td>{%dedtTollChiamataFine%}</td>
+            <td>{%lblTollChiamataFine2%}</td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+  </div>
+</body>
+
+</html>

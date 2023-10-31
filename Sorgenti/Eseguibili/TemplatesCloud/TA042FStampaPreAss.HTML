@@ -1,0 +1,87 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:45em;">
+    	<div class="groupbox" style="position:absolute;top: 1em; left: 2em;">
+	 			<fieldset style="height:5.2em;width:18em;position:relative">
+		  		<legend>{%chkGiornoCorrente%}</legend> 
+	  			<table style="position:absolute;top: 0.5em; left: 1em;">
+	  				<tr><td>{%lblDaData%}</td></tr>
+	  				<tr><td>{%edtDaData%}</td></tr>
+	  			</table>
+	  			<table style="position:absolute;top: 0.5em; left: 10em;">
+	  				<tr><td>{%lblAData%}</td></tr>
+	  				<tr><td>{%edtAData%}</td></tr>
+	  			</table>
+	  		</fieldset> 
+			</div>
+
+			<table style="position:absolute;top: 1em; left: 24em;">
+				<tr><td>{%lblDaOra%}</td></tr>
+				<tr><td>{%edtDaOra%}</td></tr>
+			</table>
+			<table style="position:absolute;top: 1em; left: 31em;">
+				<tr><td>{%lblAOra%}</td></tr>
+				<tr><td>{%edtAOra%}</td></tr>
+			</table>
+    	
+    	<div style="position:absolute;top: 5.0em; left: 24em;">{%btnAvanzati%}</div> 
+			
+			<table style="position:absolute;top: 8.5em; left: 2em;">
+				<tr>
+					<td>
+						<div>{%rgpTipoStampa%}</div><!--style="position:absolute;top: 8.5em; left: 2em;"-->
+					</td>
+					<td>					
+						<div class="GGContinuativi" style="position:absolute;top: 4.5em; width:20em; display:none">{%edtGGContinuativi%}{%lblGGContinuativi%}</div><!--style="position:absolute;top: 13em; left: 30em;display:none"-->
+						<div class="groupbox height6 InfoAggiuntiveGrafico" style="display:none"><!--style="position:absolute;top: 8.5em; left: 30em;display:none"-->
+							<fieldset style="height:6em;width:28em;position:relative">
+								<legend>{%lblInfoAggiuntive%}</legend>
+								<div>{%chkVisLineeV%}</div> 
+								<div>{%chkVisLineeH%}</div>
+								<table style="margin-top:1em">
+									<tr><td>{%lblTitoloGrafico%}</td><td>{%edtTitoloGrafico%}</td></tr>
+								</table>
+							</fieldset>     	
+						</div>    					
+					</td>
+				</tr>
+			</table>
+			<table style="position:absolute;top: 17em; left: 2em;">
+				<tr><td>{%chkDescrizioneAssenze%}</td></tr>
+				<tr><td>{%chkTurnista%}</td></tr>
+				<tr><td>{%chkTabellare%}</td></tr>
+			</table>
+			<table style="position:absolute;top: 17em; left: 23em;">
+				<tr><td>{%chkRaggData%}</td></tr>
+				<tr><td>{%chkTotaliData%}</td></tr>
+				<tr><td>{%chkSaltoPaginaData%}</td></tr>
+			</table>
+			<table style="position:absolute;top: 17em; left: 38em;">
+				<tr><td>{%chkTotali%}</td></tr>
+				<tr><td>{%chkTotaliGruppo%}</td></tr>
+				<tr><td>{%chkSaltoPagina%}</td></tr>
+			</table>
+    	
+ 
+ 			<div style="position:absolute;top: 23em; left: 2em;">{%lblIntestazione%}</div>
+ 			<div style="position:absolute;top: 24.5em; left: 2em;">{%lblSeparatoreIntestazione%}{%edtSeparatoreIntestazione%}</div>
+			<div class="checkGroupDin" style="position:absolute;top: 26.5em; left: 2em;width: 19em;height:15.5em;">{%LstIntestazione%}</div>
+
+ 			<div style="position:absolute;top: 23em; left: 24em;">{%lblDettaglio%}</div>
+			<div class="checkGroupDin" style="position:absolute;top: 25em; left: 24em;width: 19em;height:17em;">{%LstDettaglio%}</div>
+
+    	
+    	<div style="position:absolute;top: 43em; left: 2em;">{%btnGeneraPDF%}</div>
+		<div style="position:absolute;top: 43em; left: 17em;">{%btnVisStampa%}</div>
+    {%<frm>WA042FImpostazioniEUCausalizzateFM</frm>%}
+    {%<frm>WA042FImpostazioniProspettoFM</frm>%}
+    {%<frm>WA042FImpostazioniGraficoFM</frm>%}
+    </div>
+  </body>
+</html>

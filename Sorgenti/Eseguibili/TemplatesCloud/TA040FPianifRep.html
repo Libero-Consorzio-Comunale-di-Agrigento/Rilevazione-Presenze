@@ -1,0 +1,24 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <br> <br> 
+
+    <div style="position:absolute;top:13em; left: 2em;">{%lblAnno%}&nbsp{%edtAnno%}</div>
+    <div style="position:absolute;top:13em; left: 14em;">{%lblMese%}&nbsp{%edtMese%}</div>
+    <div style="position:absolute;top:13em; left: 26em;">{%chkNonContDipPian%}</div>
+		<div style="position:absolute;top:13em; left: 48em;">{%chkRecapitiAlternativi%}</div>
+
+    <div style="position:relative; height:50em;">
+      <div style="position:absolute;top: 0em; left: 0em; width: 100%;">
+				{%grdTabDetail%}
+				<div style="width: 100%;">{%WA040FPianifRepBrowseFM%}{%WA040FInserimentoFM%}{%WA040FDialogStampaFM%}</div>
+      </div>	  		
+    </div>	
+  
+  </body>
+</html>

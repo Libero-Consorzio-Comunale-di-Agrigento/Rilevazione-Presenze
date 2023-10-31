@@ -1,0 +1,40 @@
+{%DocType%}
+<html>
+  <body> 
+    {%T000Intestazione%}
+  	{%ContenutoDinamico%}
+    <div class="medpElaborazioneFM" style="position:relative; height:40em;">
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+				<tr><td>{%lblAnno%}</td></tr>
+				<tr><td>{%edtAnno%}</td></tr>
+			</table>			
+
+	  	<div class="groupbox" style="position:absolute;top: 2em; left: 8em;">
+				<fieldset style="width:15em">
+					<legend>{%lblOreImporti%}</legend>				
+  			  {%rgpOreImporti%}
+				</fieldset>
+			</div>
+
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 27em;">
+				<tr><td colspan="2">{%lblTipo%}</td></tr>
+				<tr><td>{%dcmbTipo%}</td><td>{%lblDescTipo%}</td></tr>
+			</table>			
+
+			<div class="checkGroupDin" style="position:absolute;top: 7em; left: 2em; width:50em; height:17em; overflow-x:auto;overflow-y:auto">
+				{%clbGruppi%}
+			</div>				
+
+      <div style="position:absolute;top:25em; left:2em;">{%chkAssegnaBudget%}{%lblAssegnaBudget%}{%lblAlMeseBudget%}{%cmbAMeseBudget%}</div>
+      <div style="position:absolute;top:27em; left:2em;">{%chkCalcolaFruito%}{%lblCalcolaFruito%}{%lblDalMeseFruito%}{%cmbDaMeseFruito%}{%lblAlMeseFruito%}{%cmbAMeseFruito%}</div>
+      <div style="position:absolute;top:29em; left:2em;">{%chkRiportaResiduo%}{%lblRiportaResiduo%}{%lblDalMeseResiduo%}{%cmbDaMeseResiduo%}{%lblAlMeseResiduo%}{%cmbAMeseResiduo%}{%lblMesiSuccResiduo%}</div>
+      <div style="position:absolute;top:31em; left:2em;">{%chkControlloFiltriAnagrafe%}{%lblControlloFiltriAnagrafe%}</div>
+      <div style="position:absolute;top:33em; left:2em;">{%chkDuplicaGruppi%}{%lblDuplicaGruppi%}{%lblDuplicaSuAnno%}{%edtDuplicaSuAnno%}</div>
+
+      <div style="position:absolute;top:37em; left:5em;">{%imgEsegui%}</div>
+      <div style="position:absolute;top:37em; left:15em;">{%imgAnomalie%}</div>
+
+    </div>
+		
+  </body> 
+</html>

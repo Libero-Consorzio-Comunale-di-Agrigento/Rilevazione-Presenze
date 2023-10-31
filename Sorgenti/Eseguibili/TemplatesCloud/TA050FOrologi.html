@@ -1,0 +1,89 @@
+{%DocType%}
+<html>
+	<head>
+	   <style>
+	    #WA050_modalRicercaPosizione {
+        display: none;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+      #infowindow-content {
+        display: none;
+      }
+      #map #infowindow-content {
+        display: inline;
+      }
+      .pac-card {
+        margin: 10px 0 0 10px;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+      }
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+      .pac-controls label {
+        font-family: Tahoma;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      .pac-title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px 12px;
+      }
+      #inputLocalita {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 4px 0 4px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+      #inputLocalita: focus {
+        border-color: #4d90fe;
+      }
+      #raggioValidita {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 15px;
+        margin-left: 12px;
+        padding: 0 4px 0 4px;
+        text-overflow: ellipsis;
+        width: 4em;
+      }
+      #raggioValidita:focus {
+        border-color: #4d90fe;
+      }
+      .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+        text-align: right;
+      }
+	    </style>
+	    
+  </head>
+  <body>
+    {%T000Intestazione%}
+    <!-- creazione dinamica componenti onBeforeProcess del templateProcessor WR100-->	
+    {%ContenutoDinamico%}
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWNZW68FwUw_zxJ-MvS5I0IvYbYQzCxXc&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>
+

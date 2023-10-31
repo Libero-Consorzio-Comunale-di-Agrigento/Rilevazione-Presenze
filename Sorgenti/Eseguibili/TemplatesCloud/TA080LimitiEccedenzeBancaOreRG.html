@@ -1,0 +1,96 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position:relative; height: 40em;">
+			
+			<div class="groupbox fs100" style="position: absolute; top: 1em; left: 2em; height: 17em; width: 29em;">
+        <fieldset>
+          <legend>{%lblLimitiEccedenzaLiquidabile%}</legend>
+          <table>
+            <tr>
+              <td>{%rgpTipoApplicazioneEccedenzaLiquidabile%}</td>
+            </tr>
+          </table>
+
+          <div class="groupbox fs100" style="width: 24.5em; margin-left: 0.5em; margin-top: 0.5em;">
+            <fieldset>
+              <legend>{%lblApplicazioneLimitiEccedenzaLiquidabile%}</legend>
+              <div>{%drgpApplicazioneLimitiEccedenzaLiquidabile%}</div>
+            </fieldset>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="groupbox fs100" style="position: absolute; top: 1em; left: 32em; height: 17em; width: 29em;">
+        <fieldset>
+          <legend>{%lblLimitiEccedenzaResiduabile%}</legend>
+          <table>
+            <tr>
+              <td>{%rgpTipoApplicazioneEccedenzaResiduabile%}</td>
+            </tr>
+          </table>
+
+          <div class="groupbox fs100 clearDiv" style="width:24.5em; margin-left:0.5em; margin-top: 0.5em;">
+            <fieldset>
+              <legend>{%lblApplicazioneLimitiEccedenzaResiduabile%}</legend>
+              <div>{%drgpApplicazioneLimitiEccedenzaResiduabile%}</div>
+            </fieldset>
+          </div>
+          <div id="grpLimitiCausali" class="groupbox fs100 clearDiv" style="width: 24.5em; margin-left:0.5em; margin-top: 0.5em;">
+            <fieldset>
+              <legend>{%lblLimitiCausali%}</legend>
+              <div>
+                {%dEdtLimitiCausali%} {%btnLimitiCausali%}
+              </div>
+            </fieldset>
+          </div>
+        </fieldset>
+      </div>
+
+      <div style="position:absolute;top: 19.5em; left: 2.5em;">
+        {%dchkTrasformaSuperoTetto%}
+      </div>
+
+      <div class="groupbox fs100" style="position: absolute; top: 21.5em; left: 2em; width: 60em;">
+        <fieldset>
+          <legend>{%dchkGestioneBancaOre%}</legend>
+          <table class="medpTableContainer width100pc">
+            <tr>
+							<td>{%dchkEsclusioneOreNormali%}</td>
+							<td>{%dchkLimiteSaldoComplessivo%}</td>
+            </tr>
+            <tr>
+							<td>{%dchkEsclusioneAbbattimenti%}</td>
+							<td>{%dchkLimiteStraordAnnuale%}</td>
+						</tr>
+						<tr>
+							<td>{%dchkAbbatteCompensabile%}</td>
+							<td rowspan="2">
+                <div class="groupbox">
+                  <fieldset>
+                    <legend>{%lblControllaFaseLiquidazione%}</legend>
+                    <div>{%drgpControllaFaseLiquidazione%}</div>
+                  </fieldset>
+                </div>
+              </td>
+						</tr>
+						<tr>
+              <td>{%dchkRiportoResidui%}</td>
+						</tr>
+						<tr>
+							<td>{%dchkConsideraResiduiAnnoPrecedente%}</td>
+							<td>
+								{%lblArrotondamentoMensile%}
+								&nbsp;
+								{%dedtArrotondamentoMensile%}
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div style="position:absolute; top: 34em; left: 2em;">{%btnSoglie%}</div>
+    </div>
+  </body>
+</html>

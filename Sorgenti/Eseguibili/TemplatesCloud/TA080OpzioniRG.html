@@ -1,0 +1,140 @@
+{%DocType%}
+<html>
+  <head> </head>
+  <body>
+    <div class="medpDettaglioFM" style="position: relative; height: 40em;">
+      <table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+        <tr>
+          <td>{%lblRicalcoloIndennitaNotturna%}</td>
+          <td>{%dcmbRicalcoloIndennitaNotturna%}</td>
+        </tr>
+        <tr>
+          <td>{%lblRicalcoloIndennitaPresenza%}</td>
+          <td>{%dcmbRicalcoloIndennitaPresenza%}</td>
+        </tr>
+      </table>
+
+      <div class="groupbox" style="position:absolute;top: 5em; left: 2em; ">
+        <fieldset style="height:24.5em; width:28em">
+          <legend>{%lblOpzioniPassaggioAnno%}</legend>
+          <table cellpadding="2">
+            <tr>
+              <td>{%lblLimiteOreResiduabili%}</td>
+              <td>{%dedtLimiteOreResiduabili%}</td>
+            </tr>
+            <tr>
+              <td align="right">{%lblSalvaEccedenza%}</td>
+              <td>{%cmbPARaggrLimite%}</td>
+            </tr>
+            <tr>
+              <td>{%lblLimiteOreResiduabiliAnnoCorrente%}</td>
+              <td>{%dedtLimiteOreResiduabiliAnnoCorrente%}</td>
+            </tr>
+            <tr>
+              <td align="right">{%lblSalvaEccedenzaSaldoAtt%}</td>
+              <td>{%cmbPARaggrLimiteSaldoAtt%}</td>
+            </tr>
+            <tr>
+              <td>{%lblLimiteOreResiduabiliAnnoPrecedente%}</td>
+              <td>{%dedtLimiteOreResiduabiliAnnoPrecedente%}</td>
+            </tr>
+            <tr>
+              <td align="right">{%lblSalvaEccedenzaPrec%}</td>
+              <td>{%cmbPARaggrLimiteSaldoPrec%}</td>
+            </tr>
+          </table>
+
+          <div>{%dchkGestioneAzzeramentoPeriodico%}</div>
+          <br />
+          <div class="groupbox">
+            <fieldset>
+              <legend>{%lblRipartizioneOre%}</legend>
+              <div>{%drgpRipartizioneOre%}</div>
+            </fieldset>
+          </div>
+        </fieldset>
+      </div>
+
+      <div style="position:absolute; top: 1em; left: 33em;">
+        {%dchkLiquidazioneDistribuita%}
+      </div>
+      <div style="position:absolute; top: 3em; left: 33em;">
+        {%dchkRiutilizzoStraordinario%}
+      </div>
+
+      <div class="groupbox fs100" style="position:absolute; top: 5em; left: 33em; width: 26em;">
+        <fieldset>
+          <legend>{%lblRegimeDebitoCredito%}</legend>
+          <table>
+            <tr>
+              <td colspan="2">
+                {%rgpSaldoNegativo%}
+
+                <div style="position:absolute; top: 4.7em; left: 12em;">{%dedtStabilitoAdOre%}</div>
+              </td>
+            </tr>
+            <tr>
+              <td>{%lblSaldoCompensabileMassimo%}</td>
+              <td>{%dedtSaldoCompensabileMassimo%}</td>
+            </tr>
+            <tr>
+              <td>{%lblArrotondamentoLiquidabile%}</td>
+              <td>{%dedtArrotondamentoLiquidabile%}</td>
+            </tr>
+            <tr>
+              <td>{%lblArrotondamentoRecupero%}</td>
+              <td>{%dedtArrotondamentoRecupero%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="groupbox fs100" style="position:absolute; top: 20em; left: 33em; width: 26em;">
+        <fieldset>
+          <legend>{%lblOpzioniDebitoAggiuntivo%}</legend>
+          <div>
+            {%dchkDebitoAggiuntivoMensile%}<br />{%dchkConsideraOreResidue%}
+          </div>
+        </fieldset>
+      </div>
+
+      <div style="position:absolute; top: 25.5em; left: 33em;">
+        {%rgpGGVuotoTurnista%}
+      </div>
+
+      <div style="position:absolute; top: 29.5em; left: 33.5em;">
+        {%dchkIterEccGGCheckSaldo%}
+      </div>
+
+      <table style="position:absolute; top: 31.5em; left: 2em;">
+        <tr>
+          <td>{%lblParametrizzazioneStampa%}</td>
+          <td style="padding-left:1em">{%cmbParametrizzazioneStampa%}</td>
+          <td style="padding-left:1em">{%lblDescParametrizzazioneStampa%}</td>
+        </tr>
+      </table>
+
+      <div class="groupbox" style="position:absolute; top: 33.5em; left: 2em;">
+        <fieldset style="width:57em">
+          <legend>{%lblRientriObbl%}</legend>
+          <table>
+            <tr>
+              <td>{%lblCausRientriObbl%}</td>
+              <td>{%dedtCausRientriObbl%}</td>
+              <td>{%btnCausRientriObbl%}</td>
+              <td>{%btnRientri%}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      
+      <table style="position:absolute; top: 38.5em; left: 2em;">
+        <tr>
+          <td>{%lblXParam%}</td>
+          <td style="padding-left:1.6em">{%dedtXParam%}</td>
+        </tr>
+      </table>
+      
+    </div>
+  </body>
+</html>

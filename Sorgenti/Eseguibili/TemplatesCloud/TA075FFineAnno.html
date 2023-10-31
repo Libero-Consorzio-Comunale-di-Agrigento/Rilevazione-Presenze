@@ -1,0 +1,59 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+
+    <div class="medpElaborazioneFM" style="position:relative; height:36em;">
+      <table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+          <tr><td>{%lblDaData%}</td><td>{%edtAnno%}</td></tr>
+      </table>
+
+      <table style="position:absolute;top: 4em; left: 2em;">
+        <tr>
+          <td>{%chkTriggerBefore%}</td> 
+          <td>{%btnSrcResiduiTriggerBefore%}</td>
+        </tr>
+        <tr>
+          <td>{%chkTriggerAfter%}</td>
+          <td>{%btnSrcResiduiTriggerAfter%}</td>
+        </tr>
+      </table>
+
+      <div style="position:absolute;top: 8em; left: 2em;">{%chkCalendari%}</div>
+      <div style="position:absolute;top: 9.5em; left: 2em;">{%chkProfiliAsse%}</div>
+      <div style="position:absolute;top: 11em; left: 2em;">{%chkProfiliIndividuali%}</div>  
+      <div style="position:absolute;top: 12.5em; left: 2em;">{%chkDebitiAggiuntivi%}</div>
+      <div style="position:absolute;top: 14em; left: 2em;">{%chkDebitiAggiuntiviIndiv%}</div>
+      
+      <div class="groupbox" style="position:absolute;top: 17em; left: 2em;">
+        <fieldset>
+          <legend>{%lblLimitiEccedenze%}</legend>
+          <table>
+            <tr><td>{%chkLimitiIndividualiAnnuali%}</td></tr>
+            <tr><td style="padding-left: 2em;">{%chkLimitiIndividualiAnnualiOvr%}</td></tr>
+            <tr><td>{%chkLimitiIndividualiMensili%}</td></tr>
+            <tr><td style="padding-left: 2em;">{%chkLimitiIndividualiMensiliOvr%}</td></tr>
+            <tr><td>{%chkLimitiMensili%}</td><tr>
+            <tr><td style="padding-top: 1em;">{%rgpLimiti%}</td></tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div style="position:absolute;top: 8em; left: 25em;">{%chkResiduiBuoniTicket%}</div>
+      <div style="position:absolute;top: 9.5em; left: 27em;">{%chkResiduiBuoniTicketOvr%}</div>
+      <div style="position:absolute;top: 11em; left: 25em;">{%chkResiduiCrediti%}</div>
+      <div style="position:absolute;top: 12.5em; left: 25em;">{%chkResiduiOre%}</div>  
+      <div style="position:absolute;top: 14em; left: 27em;">{%chkResiduiOreOvr%}</div>  
+      <div style="position:absolute;top: 15.5em; left: 25em;">{%chkResiduiAsse%}</div>
+      <div style="position:absolute;top: 17em; left: 27em;">{%chkResiduiAsseOvr%}</div>  
+      <div style="position:absolute;top: 19em; left: 25em;">{%memResiduiAssenza%}</div>
+
+      <div style="position:absolute;top: 31em; left: 2em;">{%btnEsegui%}</div>
+      <div style="position:absolute;top: 31em; left: 10em;">{%btnAnomalie%}</div>
+    
+    </div>
+  </body>
+</html>

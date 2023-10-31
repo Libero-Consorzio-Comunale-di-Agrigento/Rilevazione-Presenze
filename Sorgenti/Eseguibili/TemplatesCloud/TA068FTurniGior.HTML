@@ -1,0 +1,24 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:36em;">
+			<table class="medpTableContainer" style="position:absolute;top: 1em; left: 2em;">
+			  <tr><td>{%lblData%}</td><td>{%edtData%}</td></tr>
+			  <tr><td style="padding-top:1em">{%lblIntestazione%}</td><td style="padding-top:1em">{%edtIntestazione%}</td></tr>
+			</table>		
+			<div class="groupbox" style="position:absolute;top: 7.5em; left: 2em;">
+	 			<fieldset style="width:15em">
+		  		<legend>{%lblTPianif%}</legend> 
+		  		{%rgpTPianif%}
+	  		</fieldset> 
+			</div>
+			
+			<div style="position:absolute;top: 13.5em; left: 2em;">{%btnGeneraPDF%}</div>
+    </div>
+  </body>
+</html>

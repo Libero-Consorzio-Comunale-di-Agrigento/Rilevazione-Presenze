@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    
+    <div class="medpElaborazioneFM" style="position:relative; height:20em;">
+      <div style="position:absolute;top: 1em; left: 0em; width: 96%;">	
+       <div style="position:relative;text-align:left;margin-left:auto;margin-right:auto;width:37.5em;">{%chkAllineaMovSucc%}</div>
+       <div style="position:relative;text-align:left;margin-left:auto;margin-right:auto;width:37.5em;">{%chkAllineaPrimoStorico%}</div>
+       <div class="groupbox" style="position:relative;text-align:center;width:100%">
+  	 <fieldset style="width:35em">
+	   <legend>Ottimizzazione periodi storici uguali</legend>
+           <div class="groupbox" style="position:relative;text-align:center;width:100%;clear:both;">
+	     <fieldset style="width:34em">
+	       <legend>Esecuzione immediata</legend>
+	       <table style="text-align:left;">
+		<tr><td>{%chkPresenze%}</td><td>{%chkAssLiberaPresenze%}</td></tr>
+		<tr><td>{%chkStipendi%}</td><td>{%chkAssLiberaStipendi%}</td></tr>
+               </table> 	
+	     </fieldset>          
+           </div>  
+	   <div class="groupbox" style="position:relative;text-align:center;width:100%;clear:both;">
+	     <fieldset style="width:34em">
+	       <legend>Schedulazione giornaliera job</legend>
+	       <table>
+		<tr><td colspan="3">{%btnRicreazioneJob%}</td><td>{%lblOrarioJob%}</td><td>{%edtOrarioJob%}</td><td>{%btnApplicaOrario%}</td></tr>
+		<tr><td colspan="3">{%lblIdJob%}</td></tr>	
+	       </table>	
+	     </fieldset>
+           </div>  		
+	 </fieldset>
+       </div> 	
+	<div style="position:relative; width:20em; margin-left:auto; margin-right:auto">{%imgEsegui%}</div> 	
+	<div style="position:relative; width:20em; margin-left:auto; margin-right:auto"> {%imgAnomalie%}</div> 	
+
+       </div>		
+    </div>	
+  </body>
+
+</html>
+

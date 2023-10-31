@@ -1,0 +1,45 @@
+{%DocType%}
+<html>
+
+<head>
+</head>
+
+<body>
+	{%T000Intestazione%}
+	{%ContenutoDinamico%}
+
+	<div class="medpElaborazioneFM" style="position:relative; height:28.5em;">
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			<tr>
+				<td>{%lblDataDa%}</td>
+				<td>{%lblDataA%}</td>
+			</tr>
+			<tr>
+				<td>{%edtDataDa%}</td>
+				<td>{%edtDataA%}</td>
+			</tr>
+		</table>
+
+		<div style="position:absolute;top:6em; left: 2em;">{%chkSalva%}</div>
+		<div style="position:absolute;top:8em; left: 2em;">{%chkIgnoraAnomalie%}</div>
+		<div style="position:absolute;top:10em; left: 2em;">{%chkSpezzoniMese%}</div>
+		<div style="position:absolute;top:12em; left: 2em;">{%chkCumula%}</div>
+		<div class="groupbox" style="position:absolute;top:14em; left: 2em;">
+			<fieldset>
+				<legend>{%lblTipoStampa%}</legend>
+				{%rgpTipoStampa%}
+			</fieldset>
+		</div>
+		<div style="position:absolute;top:18em; left: 2em;">{%chkSoloAnomalie%}</div>
+		<div style="position:absolute;top:20em; left: 2em;">{%chkSaltoPagina%}</div>
+		<div style="position:absolute;top:24em; left: 2em;">{%lblCampo%}</div>
+		<div style="position:absolute;top:26em; left: 2em;">{%cmbCampo%}</div>
+
+		<div style="position:absolute;top:8em; left: 27em;">{%btnGeneraPDF%}</div>
+		<div style="position:absolute;top:12em; left: 27em;">{%btnSoloAggiornamento%}</div>
+		<div style="position:absolute;top:16em; left: 27em;">{%btnAnomalie%}</div>
+	</div>
+
+</body>
+
+</html>

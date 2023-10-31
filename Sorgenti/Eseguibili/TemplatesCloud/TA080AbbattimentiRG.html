@@ -1,0 +1,90 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body>   	
+  <div class="medpDettaglioFM" style="position: relative; height: 40em;">
+  			
+		<div style="position:absolute;top: 0.5em; left: 2em;width:26em">{%rgpLimiteEccedenzaCompensabile%}</div>
+		
+		<div style="position:absolute;top: 2.2em; left: 23.5em;">{%dedtSaldoPos%}</div>
+		<div style="position:absolute;top: 7em; left: 2em;">{%dchkAbbattimentoEcced%}</div>
+		<div style="position:absolute;top: 9em; left: 2em;">{%dchkSaldoMeseLordo%}</div>  
+		
+		<div class="groupbox" style="position:absolute;top: 11.6em; left: 2em;">
+		<fieldset style="width:26em">
+			<legend>{%lblAbbattimentoMensile%}</legend>
+			<div>{%drgpAbbattimentoMensile%}</div>
+		</fieldset>
+		</div>	
+
+		<div class="groupbox" style="position:absolute;top: 20.5em; left: 2em;">
+			<fieldset style="width:26em;height:11.4em">
+				<legend>{%lblRiposiNonFruiti%}</legend>			
+				<div class="groupbox">
+				<fieldset>
+					<legend>{%lblModalita%}</legend>
+					<div>{%drgpModalita%}</div>
+				</fieldset>
+				</div><br><br><br><br>&nbsp;	
+				<table cellpadding="2">
+				<tr align="left">
+					<td>{%lblAbbattimentoLiquidabileMensile%}</td>
+					<td>{%cmbAbbattimentoLiquidabileMensile%}</td>				
+				</tr>	
+				<tr align="left">
+					<td>{%lblDescAbbattimentoLiquidabileMensile%}</td>			
+				</tr>							
+				</table>
+			</fieldset>
+		</div>	
+
+		<div class="groupbox" style="position:absolute;top: 0.5em; left: 31em;">
+		<fieldset style="width:26em">
+			<legend>{%lblAbbattimentoEccedenza%}</legend>	
+			<div><br><br><br><span style="margin-left:0.5em;">{%dchkRecuperaNegativo%}</span></div>
+			<table cellpadding="2">
+				<tr align="left">
+					<td>{%lblMesiPeriodicita%}</td>
+					<td>{%dedtMesiPeriodicita%}</td>				
+				</tr>					
+				<tr align="left">
+					<td>{%lblAbbattimentoMassimo%}</td>
+					<td>{%dedtAbbattimentoMassimo%}</td>				
+				</tr>
+				<tr align="left">
+					<td>{%lblSaldiAnnui%}{%imgInvertiSaldiAnnui%}</td>
+					<td>{%cgpSaldiAnnui%}</td>				
+				</tr>
+				<tr align="left">
+					<td>{%lblSaldoRiferimento%}</td>
+					<td>{%dcmbSaldoRiferimento%}</td>				
+				</tr>
+			</table>
+		</fieldset>
+		</div>
+
+		<div style="position:absolute;top: 2.5em; left: 32em;">{%rgpPeriodicitaAbbattimento%}</div>
+
+		<div class="groupbox" style="position:absolute;top: 20.5em; left: 31em;">
+			<fieldset style="width:26em;height:11.4em">
+				<legend>{%lblAbbattimentoOre%}</legend>		
+				<table cellpadding="1">
+				<tr align="left">
+					<td>{%btnMesiRiferimento%}</td>
+					<td>{%dchkSaldoLiquidabile%}</td>				
+				</tr>	
+				<tr align="left">
+					<td></td>
+					<td>{%dchkSaldoCompensabile%}</td>				
+				</tr>					
+				</table>	
+				<fieldset>
+					<legend>{%lblOreRecuperate%}</legend>			
+					<div>{%drgpOreRecuperate%}</div>
+				</fieldset>	
+			</fieldset>
+		</div>	
+  </div>
+  </body> 
+</html>

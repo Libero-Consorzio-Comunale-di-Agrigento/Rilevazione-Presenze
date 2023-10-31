@@ -1,0 +1,67 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:40em;">
+		
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			<tr><td>{%lblCodice%}</td></tr><tr><td>{%dedtCodice%}</td></tr>	
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 2em; left: 12em;">
+			<tr><td>{%lblDescrizione%}</td></tr><tr><td>{%dedtDescrizione%}</td></tr>	
+		</table>
+		
+		<div style="position:absolute;top: 6em; left: 2em;">{%rgpTipoSupporto%}</div>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 10.5em; left: 2em;">
+			<tr><td>{%lblNomeFile%}</td></tr><tr><td>{%dedtNomeFile%}</td></tr>	
+		</table>
+		
+		<div style="position:absolute;top: 14.5em; left: 2em;">{%dchkSalvataggioAutomatico%}</div>
+		<div style="position:absolute;top: 14.5em; left: 15em;">{%dchkRicreazioneAutomatica%}</div>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 16.5em; left: 2em;">
+			<tr><td>{%lblUtentePaghe%}</td></tr><tr><td>{%dedtUtentePaghe%}</td></tr>	
+		</table>
+		
+		<table class="medpTableContainer" style="position:absolute;top: 16.5em; left: 17em;">
+			<tr><td>{%lblNomeEnte%}</td></tr><tr><td>{%dedtNomeEnte%}</td></tr>	
+		</table>	
+		
+		<div style="position:absolute;top: 20.5em; left: 2em;">{%rgpPrecisione%}</div>
+		
+		<div class="groupbox" style="position:absolute;top: 20.5em; left: 17em;">
+			<fieldset>
+				<legend>{%lblSeparatore%}</legend>
+				<div>{%drgpSeparatore%}</div>
+			</fieldset>
+		</div>
+		
+		<div class="groupbox" style="position:absolute;top: 28em; left: 2em;">
+			<fieldset>
+				<legend>{%lblData%}</legend>
+				<div>{%lblFormatoData%}&nbsp;&nbsp;{%dcmbFormatoData%}</div>
+			</fieldset>
+		</div>
+		
+		<div class="groupbox" style="position:absolute;top: 32.5em; left: 2em;">
+			<fieldset>
+				<legend>{%lblTipoData%}</legend>
+				<div>{%drgpTipoData%}</div>
+			</fieldset>
+		</div>
+
+		<div class="groupbox" style="position:absolute;top: 2em; left: 40em;width:60em;height:36em;overflow-y:auto;overflow-x: auto;">
+			<fieldset>
+				<legend>{%lblMappatura%}</legend>
+				<div class="grigliaDati">
+      				  {%grdMappatura%}
+	      			</div>
+			</fieldset>
+		</div>
+		
+	</div>
+  </body> 
+</html>

@@ -1,0 +1,273 @@
+{%DocType%}
+<html>
+  <head>
+  </head>
+  <body> 
+	<div class="medpDettaglioFM" style="position:relative; height:53em;">
+		<div style="position:absolute;top: 2em; left: 2em;">{%lblCodice%}</div>
+		<div style="position:absolute;top: 2em; left: 8.5em;">{%dcmbCodice%}</div>
+		<div style="position:absolute;top: 2em; left: 21.5em;">{%lblDescCodice%}</div>
+		<div class="groupbox" style="position:absolute;top: 0.5em; left: 47em;">
+			<fieldset>
+				<legend>{%lblGestione%}</legend>
+				<span>{%drgpGestione%}</span>
+			</fieldset>
+		</div>
+		<div id="tabs" class="ui-tabs" style="position:absolute;top:6em;height:47em;width:99%;">
+			<ul>
+			  <li><a href="#Maturazione">Maturazione</a></li>
+			  <li><a href="#Acquisto">Acquisto</a></li>
+			</ul>
+
+			<!-- Maturazione -->
+			<div id="Maturazione" class="ui-tabs-hide" >
+				<div style="position:absolute;top: 5em; left: 2em;">{%lblRegolaSuccessiva%}</div>
+				<div style="position:absolute;top: 4.8em; left: 20em;">{%dcmbRegolasuccessiva%}</div>
+				<div style="position:absolute;top: 5em; left: 33em;">{%lblDescRegolasuccessiva%}</div>
+				
+				<div style="position:absolute;top: 7em; left: 2em;">{%dchkGiorniNonLav%}</div>
+				<div style="position:absolute;top: 7em; left: 20em;">{%dchkAccessiMensa%}</div>
+				<div style="position:absolute;top: 7em; left: 40em;">{%dchkPausaMensa%}</div>
+				<div style="position:absolute;top: 7em; left: 62em;">{%dchkPausaMensaGestita%}</div>
+				<div style="position:absolute;top: 9em; left: 2em;">{%dchkOrarioSpezzato%}</div>
+				<div style="position:absolute;top: 9em; left: 20em;">{%dchkMissioni%}</div>
+				<div style="position:absolute;top: 9em; left: 40em;">{%dchkOreMinNettoPM%}</div>
+				<div style="position:absolute;top: 9em; left: 62em;">{%dchkRegolaRientroPomeridiano%}</div>
+				
+				<div style="position:absolute;top: 11em; left: 2em;">{%lblCausaliAssenzaTollerate%}</div>
+				<div style="position:absolute;top: 11em; left: 40em;">{%lblCausaliPresenzaEscluse%}</div>
+				<div style="position:absolute;top: 12.5em; left: 2em;">{%dedtAssenza%}</div>
+				<div style="position:absolute;top: 12.5em; left: 35em;">{%btnAssenza%}</div>
+				<div style="position:absolute;top: 12.5em; left: 40em;">{%dedtPresenza%}</div>
+				<div style="position:absolute;top: 12.5em; left: 73em;">{%btnPresenza%}</div>
+				<div style="position:absolute;top: 15em; left: 2em;">{%lblCausTicket%}</div>
+				<div style="position:absolute;top: 15em; left: 24em;">{%lblForzaMaturazione%}</div>
+				<div style="position:absolute;top: 15em; left: 46em;">{%lblInibMaturazione%}</div>
+				<div style="position:absolute;top: 16.5em; left: 2em;">{%dedtCausTicket%}</div>
+				<div style="position:absolute;top: 16.5em; left: 20.5em;">{%btnCausTicket%}</div>
+				<div style="position:absolute;top: 16.5em; left: 24em;">{%dedtForzaMaturazione%}</div>
+				<div style="position:absolute;top: 16.5em; left: 42.5em;">{%btnForzaMaturazione%}</div>
+				<div style="position:absolute;top: 16.5em; left: 46em;">{%dedtInibMaturazione%}</div>
+				<div style="position:absolute;top: 16.5em; left: 64.5em;">{%btnInibMaturazione%}</div>
+				<div class="groupbox" style="position:absolute;top: 19em; left: 2em;">
+					<fieldset>
+						<legend>{%lblOreLavorateMinime%}</legend>
+						<table cellpadding="1">
+							<tr align="left">
+								<td>{%lblPeriodoCompl%}</td>
+								<td>{%dcmbPeriodoCompl%}</td>
+								<td>{%dedtOreMinime%}</td>
+							</tr>
+							<tr align="left">
+								<td>{%lblMattinaPomeriggio%}</td>
+								<td align="right">{%dedtOreMattina%}</td>
+								<td>{%dedtOrePomeriggio%}</td>
+							</tr>
+							<tr align="left">
+								<td>{%lblRientroPom%}</td>
+								<td align="right">{%dedtIniPom%}</td>
+								<td>{%dchkUsaIntervalloMensa%}</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+				<div class="groupbox" style="position:absolute;top: 19em; left: 43em;">
+					<fieldset>
+						<legend>{%lblFasciaDebitoGG%}</legend>
+						<table cellpadding="5">
+							<tr align ="left">
+								<td>
+									{%lblDebitoMin%}
+								</td>
+								<td>
+									{%dedtDebitoMin%}
+								</td>
+							</tr>
+							<tr align ="left">
+								<td>
+									{%lblDebitoMax%}
+								</td>
+								<td>
+									{%dedtDebitoMax%}
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+				<div style="position:absolute;top: 20em; left: 53em;">{%lblEccedenzaMin%}</div>
+				<div style="position:absolute;top: 20em; left: 66em;">{%dedtEccedenzaMin%}</div>
+				<div style="position:absolute;top: 22em; left: 53em;">{%lblDebitoGiornMin%}</div>
+				<div style="position:absolute;top: 22em; left: 66em;">{%dedtDebitoGiornMin%}</div>
+				<div style="position:absolute;top: 26em; left: 53em;">{%lblNumMaxBuoni%}</div>
+				<div style="position:absolute;top: 26em; left: 66em;">{%dedtNumMaxBuoni%}</div>
+				<div style="position:absolute;top: 24em; left: 53em;">{%lblNumMaxBuoniSett%}</div>
+				<div style="position:absolute;top: 24em; left: 66em;">{%dedtNumMaxBuoniSett%}</div>				
+				<div class="groupbox" style="position:absolute;top: 28em; left: 2em;">
+				<fieldset>
+					<legend>{%lblFascia1%}</legend>
+					<table cellpadding="5">
+						<tr align ="left">
+							<td>
+								{%lblDa1%} <br>
+								{%dedtDa1%}
+							</td>
+							<td>
+								{%lblA1%} <br>
+								{%dedtA1%}
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+					<div>{%dchkFascia1Esclusiva%}</div>
+				</fieldset>
+				</div>
+				<div class="groupbox" style="position:absolute;top: 28em; left: 14em;">
+				<fieldset>
+					<legend>{%lblFascia2%}</legend>
+					<table cellpadding="5">
+						<tr align ="left">
+							<td>
+								{%lblDa2%} <br>
+								{%dedtDa2%}
+							</td>
+							<td>
+								{%lblA2%} <br>
+								{%dedtA2%}
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</fieldset>
+				</div>
+				<div class="groupbox" style="position:absolute;top: 28em; left: 28em;">
+				<fieldset>
+					<legend>{%lblIntervallo%}</legend>
+					<table cellpadding="5">
+						<tr align ="left">
+							<td>
+								{%lblIntervalloMinimo%} <br>
+								{%dedtIntervalloMinimo%}
+							</td>
+							<td>
+								{%lblIntervalloMassimo%} <br>
+								{%dedtIntervalloMassimo%}
+							</td>
+							<td align="right">
+								{%lblRientroMassimo%} <br>
+								{%dedtRientroMassimo%}
+							</td>
+							<td>{%dchkIntervalloEffettivo%}</td>
+						</tr>
+					</table>
+					<div>
+						{%dchkIntervalloInternoPMT%}
+					</div>
+					<br>
+					<div>
+						{%lblCausAssenzaPM%}
+					</div>
+					<br>
+					<div>
+						{%dedtCausAssenzaPM%}
+						{%btnCausAssenzaPM%}
+					</div>
+				</fieldset>
+				</div>
+				<div style="position:absolute;top: 28em; left: 62em;">{%drgpTipoGiorniFissi%}</div>
+				<div style="position:absolute;top: 31em; left: 62em;">{%cgpGiorniFissi%}</div>
+				<div class="groupbox" style="position:absolute;top: 39em; left: 2em;">
+					<fieldset>
+						<legend>{%lblTurniLav%}</legend>
+						<table cellpadding="5">
+							<tr align ="left">
+								<td>{%lblTurniLavGG%}</td><td>{%dedtTurniLavGG%}</td>
+							</tr>
+							<tr align ="left">
+								<td>{%lblTurniLavOre%}</td><td>{%dedtTurniLavOre%}</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+				<div class="groupbox" style="position:absolute;top: 39em; left: 28em;">
+					<fieldset>
+						<legend>{%lblRecupDebito%}</legend>
+						<table cellpadding="5">
+							<tr align ="left">
+								<td>{%lblRecupDebitoStart%}</td><td>{%dedtRecupDebitoStart%}</td>
+							</tr>
+							<tr align ="left">
+								<td>{%lblRecupDebitoMM%}</td><td>{%dedtRecupDebitoMM%}</td>
+							</tr>
+						</table>
+					</fieldset>
+				</div>
+				<div style="position:absolute;top: 41em; left: 53em;">{%lblSaldoAnnuoMin%}</div>
+				<div style="position:absolute;top: 41em; left: 63em;">{%dedtSaldoAnnuoMin%}</div>
+			</div>
+
+			<!-- Acquisto -->
+			<div id="Acquisto" class="ui-tabs-hide" >
+					<div style="position:absolute;top: 5em; left: 2em;">{%lblMesiPrecedenti%}</div>
+				<div style="position:absolute;top: 5em; left: 21em;">{%dedtMesiPrecedenti%}</div>
+				<div style="position:absolute;top: 7em; left: 2em;">{%lblConguaglioMax%}</div>
+				<div style="position:absolute;top: 7em; left: 21em;">{%dedtConguaglioMax%}</div>
+				<div style="position:absolute;top: 9em; left: 2em;">{%lblRestituzioneMax%}</div>
+				<div style="position:absolute;top: 9em; left: 21em;">{%dedtRestituzioneMax%}</div>
+				<div style="position:absolute;top: 11em; left: 2em;">{%lblAcquistoMinimo%}</div>
+				<div style="position:absolute;top: 11em; left: 21em;">{%dedtAcquistoMinimo%}</div>
+				<div style="position:absolute;top: 13em; left: 2em;">{%lblResiduoPrecedente%}</div>
+				<div style="position:absolute;top: 13em; left: 19em;">{%dedtResiduoPrecedente%}</div>
+				<div style="position:absolute;top: 15em; left: 2em;">{%lblConguaglioMaxPrec%}</div>
+				<div style="position:absolute;top: 15em; left: 21em;">{%dedtConguaglioMaxPrec%}</div>
+				<div class="groupbox" style="position:absolute;top: 4.5em; left: 26em;">
+				<fieldset>
+					<legend>{%lblAcquistiTeorici%}</legend>
+					<div class="groupbox">
+					<fieldset>
+						<legend>{%lblModalitaPreferenziale%}</legend>
+						<div>
+							{%drgpAcquistoTeorico%}
+							<div style="position:absolute;top: 5.5em; left: 11em;">{%dedtQuantita%}</div>
+						</div>
+					</fieldset>
+					</div>
+					<br>
+					<div class="groupbox">
+					<fieldset>
+						<legend>{%lblPersonaleTurnista%}</legend>
+						<table>
+							<tr>
+								<td>{%dchkGGLavSempreCalendario%}</td>
+							</tr>
+							<tr>
+								<td>{%dchkGGLavNoPianifCalendario%}</td>
+							</tr>
+						</table>
+					</fieldset>
+					</div>
+					<br>
+					<div style="clear: both; display:block !important;">
+   					<div style="display:block !important;">{%dchkAssenzeAcquisto%}</div>
+						<div style="display:block !important;">{%dchkHhMinAcquisto%}</div>
+						<table cellpadding="5">
+							<tr align="left">
+								<td>{%lblMediaMaxAcquisto%}</td>
+								<td>{%dedtMediaMaxAcquisto%}</td>
+							</tr>
+							<tr align="left">
+								<td>{%lblMediaMinAcquisto%}</td>
+								<td>{%dedtMediaMinAcquisto%}</td>
+							</tr>
+						</table>
+		  		</div>
+				</fieldset>
+				</div>
+				<div style="position:absolute;top: 4.5em; left: 52em;">{%cgpPeriodicitaAcquisto%}</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

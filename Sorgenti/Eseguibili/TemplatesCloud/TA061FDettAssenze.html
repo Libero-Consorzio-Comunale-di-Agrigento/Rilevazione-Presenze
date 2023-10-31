@@ -1,0 +1,128 @@
+{%DocType%}
+<html>
+	<head>
+  </head>
+  <body>
+    {%T000Intestazione%}
+    {%ContenutoDinamico%}
+    <br>
+    <div class="medpElaborazioneFM" style="position:relative; height:55em;">
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 2em;">
+			  <tr><td>{%lnkTipoAcc%}</td></tr><tr><td>{%cmbTipoAcc%}</td><td>{%lblTipoAcc%}</td><td></td></tr>
+			</table>		    	
+
+			<table style="position:absolute;top:6em; left: 2em;">
+			<tr>
+				<td>
+					<div style="margin-top:1em">{%lblCodAcc%}</div>
+					<div class="checkGroupDin" style="width: 31em;height:10em;overflow-x:auto;">{%lstCodAcc%}</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div style="margin-top:1em">{%lblCodCau%}</div>
+					<div class="checkGroupDin" style="width: 31em;height:34.5em;overflow-x:auto;">{%LstCausali%}</div>
+				</td>
+			</tr>
+		  </table>
+
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 35em;">
+			  <tr><td>{%lblDaData%}</td><td>{%edtDaData%}</td></tr>
+			</table>		    	
+			<table class="medpTableContainer" style="position:absolute;top: 2em; left: 46.5em;">
+			  <tr><td>{%lblAData%}</td><td>{%edtAData%}</td></tr>
+			</table>
+			<div style="position:absolute;top: 5em; left: 35em;">{%btnGeneraPDF%}</div>		    	
+			<div style="position:absolute;top: 5em; left: 50em;">{%btnVisStampa%}</div>		    	
+			<div class="groupbox" style="position:absolute;top: 8em; left: 35em;">
+	 			<fieldset style="width:36em;height:8.7em;position:relative">
+		  		<legend>{%lblRegStamp%}</legend> 
+		  		<table>
+		  			<tr>
+		  				<td colspan="5">{%chkSoloAssRegSucc%}</td>
+		  			</tr>
+		  			<tr>
+		  				<td>{%lblDaRegStamp%}</td>
+		  				<td>{%edtDaRegStamp%}</td>
+		  				<td>{%lblARegStamp%}</td>
+		  				<td>{%edtARegStamp%}</td>
+							<td>{%chkSalvaUltRegStamp%}</td>	  			  			
+						</tr>
+						<tr>
+							<td colspan="5">
+	  						<div class="groupbox">
+			 						<fieldset >
+				  					<legend>{%lblAssenzeConsiderate%}</legend> 
+			  						{%rgpAssenzeConsiderate%}
+			  					</fieldset> 
+			  				</div>
+			  			</td>
+			  		</tr>
+					</table>
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top: 19em; left: 35em;">
+	 			<fieldset style="width:36em;height:18em;position:relative">
+		  		<legend>{%lblDati%}</legend>
+		  		<div style="position:absolute;top: 1em; left: 0em;">{%chkDatiIndividuali%}</div>	  			  			
+		  		<div style="position:absolute;top: 2.7em; left: 1em;">{%chkStampaDatiAnagrafici%}</div>
+				  <div style="position:absolute;top: 4.7em; left: 1em;">{%chkStampaNominativo%}</div>	  			  			
+		  		<div style="position:absolute;top: 6.7em; left: 1em;">{%chkStampaMatricola%}</div>	  			  			 
+		  		<div style="position:absolute;top: 8.7em; left: 1em;">{%chkStampaBadge%}</div>
+		  		<div style="position:absolute;top: 10.7em; left: 0em;">{%chkDettGiorn%}</div>	  			  			
+		  		<div style="position:absolute;top: 12.7em; left: 0em;">{%chkDettPer%}</div>	
+		  		<div class="groupbox" style="position:absolute;top: 14.7em; left: 0.5em;">
+			 			<fieldset >
+				  		<legend>{%lblOrdinamento%}</legend> 
+			  			{%rgpOrdinamento%}
+			  		</fieldset> 
+					</div> 					
+					<table class="medpTableContainer" style="position:absolute;top: 1em; left: 16em;">
+					  <tr><td>{%lblCampo%}</td></tr><tr><td>{%cmbCampo%}</td></tr>
+					</table>		    	
+					<div style="position:absolute;top: 4.7em; left: 16em;">{%chkSaltoPagRaggrup%}</div>	
+					<div style="position:absolute;top: 6.7em; left: 16em;">{%chkSaltoPagIndividuale%}</div>	 		
+		  		<div class="groupbox" style="position:absolute;top: 10.7em; left: 16em;">
+			 			<fieldset >
+				  		<legend>{%lblValidate%}</legend> 
+			  			{%rgpValidate%}
+			  		</fieldset> 
+					</div> 		  			
+	  		</fieldset> 
+			</div>
+  
+			<div class="groupbox" style="position:absolute;top: 39em; left: 35em;">
+	 			<fieldset style="width:36em;height:9em;position:relative">
+		  		<legend>{%lblConteggi%}</legend>
+		  		<div style="position:absolute;top: 1em; left: 0em;">{%chkConiuge%}</div>	
+		  		<div style="position:absolute;top: 3em; left: 0em;">{%chkRiduzioni%}</div>	
+		  		<div style="position:absolute;top: 5em; left: 0em;">{%chkSoloRiduzioni%}</div>	
+		  		<div style="position:absolute;top: 7em; left: 0em;">{%chkConteggiGG%}</div>			  		
+		  		<div style="position:absolute;top: 1em; left: 16em;">{%chkGiorniSignificativi%}</div>	
+					<table class="medpTableContainer" style="position:absolute;top: 3em; left: 16em;">
+					  <tr><td>{%lblGGMinCont%}</td><td>{%edtGGMinCont%}</td></tr>
+					</table>		    			  		
+		  		<div style="position:absolute;top: 5em; left: 16em;">{%chkCausaliCumulate%}</div>	
+		  		<div style="position:absolute;top: 7em; left: 16em;">{%chkPeriodoServizio%}</div>	
+	  		</fieldset> 
+			</div>
+
+			<div class="groupbox" style="position:absolute;top: 50em; left: 35em;">
+	 			<fieldset style="width:36em;height:4em;position:relative">
+		  		<legend>{%lblTotali%}</legend>
+		  		<table>
+		  			<tr>
+		  				<td style="width:14.5em">{%chkTotIndividuali%}</td>
+		  				<td>{%chkTotFam%}</td>
+		  			</tr>
+		  			<tr>
+		  				<td style="width:14.5em">{%chkTotRaggrup%}</td>
+		  				<td>{%chkTotGenerali%}</td>			  		
+		  			</tr>
+		  		</table>
+	  		</fieldset> 
+			</div>
+    </div>
+  </body>
+</html>
